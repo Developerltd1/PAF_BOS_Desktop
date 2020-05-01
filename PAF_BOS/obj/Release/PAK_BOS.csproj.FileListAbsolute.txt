@@ -1,0 +1,87 @@
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\PAF_BOS.exe.config
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\Reports\ReportAttandance.rdlc
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\PAF_BOS.exe
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\PAF_BOS.pdb
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\DevComponents.DotNetBar2.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\DPCtlUruNet.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\DPUruNet.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\ExcelDataReader.DataSet.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\ExcelDataReader.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\Microsoft.SqlServer.Types.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\ExcelDataReader.pdb
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\ExcelDataReader.xml
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\ExcelDataReader.DataSet.pdb
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\ExcelDataReader.DataSet.xml
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.CadetExcelDataImportfrm.resources
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\obj\Release\AttendanceSystem.Reports.Attendancefrm.resources
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.Mainfrm.resources
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.AdminForms.UserRolePermission.resources
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.CaderRegistrationfrm.resources
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.CadetPunishmentfrm.resources
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.AttandanceSessiontfrm.resources
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.CadetSearchPermissiontfrm.resources
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.UserRegistrationfrm.resources
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.Loginfrm.resources
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.Method2CadetExcelDataImportfrm.resources
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.Properties.Resources.resources
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\obj\Release\PAK_BOS.csproj.GenerateResource.Cache
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\obj\Release\RdlCompile.cache
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\obj\Release\RdlCompile.compiled
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.exe
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.pdb
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\DatabaseFiles\AAA_PAF_BOS.mdf
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\PAF_BOS\bin\Release\DatabaseFiles\AAA_PAF_BOS_log.ldf
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\Reports\ReportAttandance.rdlc
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\App.config
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\PAF_BOS.exe.config
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\PAF_BOS.exe
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\PAF_BOS.pdb
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\DevComponents.DotNetBar2.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\DPCtlUruNet.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\DPUruNet.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\ExcelDataReader.DataSet.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\ExcelDataReader.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\Microsoft.ReportViewer.WinForms.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\Microsoft.SqlServer.Types.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\ExcelDataReader.pdb
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\ExcelDataReader.xml
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\ExcelDataReader.DataSet.pdb
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\ExcelDataReader.DataSet.xml
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\bin\Release\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.CadetExcelDataImportfrm.resources
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\obj\Release\AttendanceSystem.Reports.Attendancefrm.resources
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.Mainfrm.resources
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.AdminForms.UserRolePermission.resources
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.CaderRegistrationfrm.resources
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.CadetPunishmentfrm.resources
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.AttandanceSessiontfrm.resources
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.CadetSearchPermissiontfrm.resources
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.UserRegistrationfrm.resources
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.Loginfrm.resources
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.Method2CadetExcelDataImportfrm.resources
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.Properties.Resources.resources
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\obj\Release\PAK_BOS.csproj.GenerateResource.Cache
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\obj\Release\RdlCompile.cache
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\obj\Release\RdlCompile.compiled
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.exe
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.pdb

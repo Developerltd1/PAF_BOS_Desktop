@@ -1,0 +1,108 @@
+C:\Users\msajjad\Desktop\PAF_BOS\AttendanceScreen\bin\Debug\AttendanceScreen.exe.config
+C:\Users\msajjad\Desktop\PAF_BOS\AttendanceScreen\bin\Debug\AttendanceScreen.exe
+C:\Users\msajjad\Desktop\PAF_BOS\AttendanceScreen\bin\Debug\AttendanceScreen.pdb
+C:\Users\msajjad\Desktop\PAF_BOS\AttendanceScreen\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\msajjad\Desktop\PAF_BOS\AttendanceScreen\obj\Debug\AttendanceScreen.Properties.Resources.resources
+C:\Users\msajjad\Desktop\PAF_BOS\AttendanceScreen\obj\Debug\AttendanceScreen.UserAttendancefrm.resources
+C:\Users\msajjad\Desktop\PAF_BOS\AttendanceScreen\obj\Debug\AttendanceScreen.csproj.GenerateResource.Cache
+C:\Users\msajjad\Desktop\PAF_BOS\AttendanceScreen\obj\Debug\AttendanceScreen.exe
+C:\Users\msajjad\Desktop\PAF_BOS\AttendanceScreen\obj\Debug\AttendanceScreen.pdb
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\obj\Debug\AttendanceScreen.csprojResolveAssemblyReference.cache
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\obj\Debug\AttendanceScreen.Properties.Resources.resources
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\obj\Debug\AttendanceScreen.UserAttendancefrm.resources
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\obj\Debug\AttendanceScreen.csproj.GenerateResource.Cache
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\Reports\ReportAttandance.rdlc
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\AttendanceScreen.exe.config
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\AttendanceScreen.exe
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\AttendanceScreen.pdb
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\PAF_BOS.exe
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\ExcelDataReader.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\PAF_BOS.pdb
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\ExcelDataReader.pdb
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\ExcelDataReader.xml
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\obj\Debug\AttendanceScreen.exe
+C:\Users\AQIB\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\OK\PAF_BOS By Sir Sajjad\PAF_BOS_BeforeMofidicationByGhandal\PAF_BOS\AttendanceScreen\obj\Debug\AttendanceScreen.pdb
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\obj\Debug\AttendanceScreen.csprojResolveAssemblyReference.cache
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\obj\Debug\AttendanceScreen.Properties.Resources.resources
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\obj\Debug\AttendanceScreen.UserAttendancefrm.resources
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\obj\Debug\AttendanceScreen.csproj.GenerateResource.Cache
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\AttendanceScreen.exe.config
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\Reports\ReportAttandance.rdlc
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\App.config
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\AttendanceScreen.exe
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\AttendanceScreen.pdb
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\PAF_BOS.exe
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\ExcelDataReader.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\PAF_BOS.pdb
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\ExcelDataReader.pdb
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\ExcelDataReader.xml
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\obj\Debug\AttendanceScreen.exe
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\obj\Debug\AttendanceScreen.pdb
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\AppStart\AAA_PAF_BOS.mdf
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\bin\Debug\AppStart\AAA_PAF_BOS_log.ldf
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\AppStart\AAA_PAF_BOS.mdf
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\AppStart\AAA_PAF_BOS_log.ldf
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\Reports\ReportAttandance.rdlc
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\App.config
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\AttendanceScreen.exe.config
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\AttendanceScreen.exe
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\AttendanceScreen.pdb
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\PAF_BOS.exe
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\ExcelDataReader.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\ExcelDataReader.DataSet.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\PAF_BOS.pdb
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\ExcelDataReader.pdb
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\ExcelDataReader.xml
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\ExcelDataReader.DataSet.pdb
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\ExcelDataReader.DataSet.xml
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\obj\Debug\AttendanceScreen.csprojResolveAssemblyReference.cache
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\obj\Debug\AttendanceScreen.Properties.Resources.resources
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\obj\Debug\AttendanceScreen.UserAttendancefrm.resources
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\obj\Debug\AttendanceScreen.csproj.GenerateResource.Cache
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\obj\Debug\AttendanceScreen.exe
+C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\obj\Debug\AttendanceScreen.pdb

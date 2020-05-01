@@ -1,0 +1,56 @@
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\bin\Debug\Reports\AttendancefrmReport.rdlc
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\bin\Debug\Reports\UserDetailsfrmReport.rdlc
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\bin\Debug\PAF_BOS.exe.config
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\bin\Debug\PAF_BOS.exe
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\bin\Debug\PAF_BOS.pdb
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\bin\Debug\DevComponents.DotNetBar2.dll
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\bin\Debug\Microsoft.ReportViewer.Common.dll
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\bin\Debug\Microsoft.SqlServer.Types.dll
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\bin\Debug\DevComponents.DotNetBar2.xml
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\bin\Debug\de\Microsoft.SqlServer.Types.resources.dll
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\bin\Debug\es\Microsoft.SqlServer.Types.resources.dll
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\bin\Debug\it\Microsoft.SqlServer.Types.resources.dll
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.AdminForms.ChangeUserShiftfrm.resources
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.AdminForms.ManageUserfrm.resources
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.AdminForms.ManageDepartmentfrm.resources
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.AdminForms.ManageShiftfrm.resources
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.AdminForms.ManageClientfrm.resources
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.ChangePasswordfrm.resources
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.Loginfrm.resources
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.Mainfrm.resources
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.Reports.Attendancefrm.resources
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.Reports.Clientsfrm.resources
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.Reports.UserDetailsfrm.resources
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.UserAttendancefrm.resources
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.Properties.Resources.resources
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\obj\Debug\PAK_BOS.csproj.GenerateResource.Cache
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.exe
+C:\Users\msajjad\Desktop\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.pdb
+C:\Users\AQIB\Desktop\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\Classes\Old_Material\PAF_BOS Initial\PAF_BOS\PAF_BOS\bin\Debug\PAF_BOS.exe.config
+C:\Users\AQIB\Desktop\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\Classes\Old_Material\PAF_BOS Initial\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.exe
+C:\Users\AQIB\Desktop\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\Classes\Old_Material\PAF_BOS Initial\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.pdb
+C:\Users\AQIB\Desktop\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\Classes\Old_Material\PAF_BOS Initial\PAF_BOS\PAF_BOS\obj\Debug\PAK_BOS.csprojResolveAssemblyReference.cache
+C:\Users\AQIB\Desktop\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\Classes\Old_Material\PAF_BOS Initial\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.AdminForms.ChangeUserShiftfrm.resources
+C:\Users\AQIB\Desktop\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\Classes\Old_Material\PAF_BOS Initial\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.AdminForms.ManageUserfrm.resources
+C:\Users\AQIB\Desktop\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\Classes\Old_Material\PAF_BOS Initial\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.AdminForms.ManageDepartmentfrm.resources
+C:\Users\AQIB\Desktop\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\Classes\Old_Material\PAF_BOS Initial\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.AdminForms.ManageShiftfrm.resources
+C:\Users\AQIB\Desktop\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\Classes\Old_Material\PAF_BOS Initial\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.AdminForms.ManageClientfrm.resources
+C:\Users\AQIB\Desktop\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\Classes\Old_Material\PAF_BOS Initial\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.ChangePasswordfrm.resources
+C:\Users\AQIB\Desktop\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\Classes\Old_Material\PAF_BOS Initial\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.Loginfrm.resources
+C:\Users\AQIB\Desktop\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\Classes\Old_Material\PAF_BOS Initial\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.Mainfrm.resources
+C:\Users\AQIB\Desktop\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\Classes\Old_Material\PAF_BOS Initial\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.Reports.Attendancefrm.resources
+C:\Users\AQIB\Desktop\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\Classes\Old_Material\PAF_BOS Initial\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.Reports.Clientsfrm.resources
+C:\Users\AQIB\Desktop\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\Classes\Old_Material\PAF_BOS Initial\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.Reports.UserDetailsfrm.resources
+C:\Users\AQIB\Desktop\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\Classes\Old_Material\PAF_BOS Initial\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.UserAttendancefrm.resources
+C:\Users\AQIB\Desktop\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\Classes\Old_Material\PAF_BOS Initial\PAF_BOS\PAF_BOS\obj\Debug\PAF_BOS.Properties.Resources.resources
+C:\Users\AQIB\Desktop\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\Classes\Old_Material\PAF_BOS Initial\PAF_BOS\PAF_BOS\obj\Debug\PAK_BOS.csproj.GenerateResource.Cache

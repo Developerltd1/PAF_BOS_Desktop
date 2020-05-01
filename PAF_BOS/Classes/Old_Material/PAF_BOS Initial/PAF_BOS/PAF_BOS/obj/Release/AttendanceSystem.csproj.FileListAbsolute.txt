@@ -1,0 +1,51 @@
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\AttendanceSystem.exe.config
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.csprojResolveAssemblyReference.cache
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.AdminForms.ChangeUserShiftfrm.resources
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.AdminForms.ManageUserfrm.resources
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.AdminForms.ManageDepartmentfrm.resources
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.AdminForms.ManageShiftfrm.resources
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.AdminForms.ManageClientfrm.resources
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.ChangePasswordfrm.resources
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.Loginfrm.resources
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.Mainfrm.resources
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.Reports.Attendancefrm.resources
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.Reports.Clientsfrm.resources
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.Reports.UserDetailsfrm.resources
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.UserAttendancefrm.resources
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.Properties.Resources.resources
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.csproj.GenerateResource.Cache
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\Reports\AttendancefrmReport.rdlc
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\Reports\UserDetailsfrmReport.rdlc
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\AttendanceSystem.exe
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\AttendanceSystem.XmlSerializers.dll
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\AttendanceSystem.pdb
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\DevComponents.DotNetBar2.dll
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\DPCtlUruNet.dll
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\DPUruNet.dll
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\Microsoft.ReportViewer.Common.dll
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\Microsoft.ReportViewer.DataVisualization.dll
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\Microsoft.ReportViewer.WinForms.dll
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\Microsoft.SqlServer.Types.dll
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\DevComponents.DotNetBar2.xml
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\de\Microsoft.SqlServer.Types.resources.dll
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\es\Microsoft.SqlServer.Types.resources.dll
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\fr\Microsoft.SqlServer.Types.resources.dll
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\it\Microsoft.SqlServer.Types.resources.dll
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\ja\Microsoft.SqlServer.Types.resources.dll
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\ko\Microsoft.SqlServer.Types.resources.dll
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\pt\Microsoft.SqlServer.Types.resources.dll
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\ru\Microsoft.SqlServer.Types.resources.dll
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\zh-Hans\Microsoft.SqlServer.Types.resources.dll
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\zh-Hant\Microsoft.SqlServer.Types.resources.dll
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.exe
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.pdb
+D:\Learning\VU\Project\Final Year Project\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.XmlSerializers.dll
+C:\Users\msajjad\Desktop\Final Year Project\AttendanceSystem\AttendanceSystem\bin\Release\AttendanceSystem.exe.config
+C:\Users\msajjad\Desktop\Final Year Project\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.exe
+C:\Users\msajjad\Desktop\Final Year Project\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.pdb
+C:\Users\msajjad\Desktop\Final Year Project\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.XmlSerializers.dll
+C:\Users\msajjad\Desktop\AttendanceSystem\AttendanceSystem\bin\Release\AttendanceSystem.exe.config
+C:\Users\msajjad\Desktop\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.exe
+C:\Users\msajjad\Desktop\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.pdb
+C:\Users\msajjad\Desktop\AttendanceSystem\AttendanceSystem\obj\Release\AttendanceSystem.XmlSerializers.dll
