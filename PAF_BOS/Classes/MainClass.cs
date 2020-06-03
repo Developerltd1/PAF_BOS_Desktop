@@ -158,8 +158,44 @@ namespace PAF_BOS
                 cmd.Dispose();
             }
         }
-         
- 
+        public static DataTable GetGroundSessionByOutDate(DateTime OutDate)
+        {
+            // DataTable Declaration
+            DataTable dt = new DataTable();
+            DateTime TOOutDate = DateTime.Parse(string.Format("{0} 11:59:59 PM", OutDate.ToString("dd-MMM-yyyy")));
+
+            SqlConnection conn = null;
+            SqlCommand cmd = null;
+            try
+            {
+                string ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["PAFBOS_ConnectionString"].ToString();
+                conn = new SqlConnection(ConnectionString);
+                cmd = new SqlCommand("usp_GetCreatedGroundSessionByCheckOUTDate", conn);
+
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
+
+                cmd.Parameters.AddWithValue("@AllowedCheckOUTDateTime", OutDate);
+                cmd.Parameters.AddWithValue("@TOAllowedCheckOUTDateTime", TOOutDate);
+
+                conn.Open();
+                Adapter.Fill(dt);
+                conn.Close();
+
+
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                return dt;
+            }
+            finally
+            {
+                conn.Dispose();
+                cmd.Dispose();
+            }
+        }
+
         public static class MngPAFBOS
         {
             #region MODELS
@@ -482,6 +518,56 @@ namespace PAF_BOS
                     cmd.Dispose();
                 }
             }
+            public static void InsertGroundAttendanceSessions(DateTime CheckOutActualTime, DateTime CheckInActualTime, string ActivityTitle, string Description, bool isActive, int Cadet_ID, int User_ID, out bool Status, out string StatusDetails)
+            {
+                Status = false;
+                StatusDetails = null;
+
+                SqlConnection conn = null;
+                SqlCommand cmd = null;
+                try
+                {
+                    string ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["PAFBOS_ConnectionString"].ToString();
+                    conn = new SqlConnection(ConnectionString);
+                    cmd = new SqlCommand("usp_InsertGroundAttendanceSessions", conn);
+
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@CheckOutActualTime", CheckOutActualTime);
+                    cmd.Parameters.AddWithValue("@CheckInActualTime", CheckInActualTime);
+                    cmd.Parameters.AddWithValue("@ActivityTitle", ActivityTitle);
+                    cmd.Parameters.AddWithValue("@Description", Description);
+                    cmd.Parameters.AddWithValue("@isActive", isActive);
+                    cmd.Parameters.AddWithValue("@Cadet_ID", Cadet_ID);
+                    cmd.Parameters.AddWithValue("@User_ID", User_ID);
+
+                    SqlParameter StatusParm = new SqlParameter("@Status", SqlDbType.Bit);
+                    StatusParm.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(StatusParm);
+
+                    SqlParameter StatusDetailsParm = new SqlParameter("@StatusDetails", SqlDbType.VarChar, 200);
+                    StatusDetailsParm.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(StatusDetailsParm);
+
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+
+                    Status = (bool)StatusParm.Value;
+                    StatusDetails = (string)StatusDetailsParm.Value;
+                }
+                catch (Exception ex)
+                {
+                    Status = false;
+                    StatusDetails = ex.Message;
+                    return;
+                }
+                finally
+                {
+                    conn.Dispose();
+                    cmd.Dispose();
+                }
+            }
             public static void AddCadetPermission(int UserID, int CadetID, out bool Status, out string StatusDetails)
             {
                 Status = false;
@@ -626,7 +712,6 @@ namespace PAF_BOS
             {
                 Status = false;
                 StatusDetails = null;
-
 
                 // DataTable Declaration
                 DataTable dt = new DataTable();

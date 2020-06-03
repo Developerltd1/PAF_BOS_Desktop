@@ -87,7 +87,7 @@
             this.textBoxUserName.PreventEnterBeep = true;
             this.textBoxUserName.Size = new System.Drawing.Size(224, 26);
             this.textBoxUserName.TabIndex = 1;
-            this.textBoxUserName.Text = "rehan01";
+            this.textBoxUserName.Text = "Shakeel01";
             // 
             // textBoxPassword
             // 

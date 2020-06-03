@@ -106,8 +106,6 @@ C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\P
 C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\obj\Debug\AttendanceScreen.csproj.GenerateResource.Cache
 C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\obj\Debug\AttendanceScreen.exe
 C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_CheckIn_CheckOut_System\AttendanceScreen\obj\Debug\AttendanceScreen.pdb
-D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Debug\AppStart\AAA_PAF_BOS.mdf
-D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Debug\AppStart\AAA_PAF_BOS_log.ldf
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Debug\Reports\ReportAttandance.rdlc
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Debug\App.config
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Debug\AttendanceScreen.exe.config
@@ -120,6 +118,7 @@ D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Debug\ExcelDataReader.dll
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Debug\ExcelDataReader.DataSet.dll
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Debug\Microsoft.SqlServer.Types.dll
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Debug\PAF_BOS.pdb
+D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Debug\DevComponents.DotNetBar2.xml
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Debug\ExcelDataReader.pdb
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Debug\ExcelDataReader.xml
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Debug\ExcelDataReader.DataSet.pdb

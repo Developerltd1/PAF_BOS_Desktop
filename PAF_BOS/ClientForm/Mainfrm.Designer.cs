@@ -40,6 +40,7 @@
             this.btnItem_CADET_REGISTRATION = new DevComponents.DotNetBar.ButtonItem();
             this.btnItem_CADET_PUNSIHMENT = new DevComponents.DotNetBar.ButtonItem();
             this.btnItem_CADET_ATTANDANCE_PERMISSION = new DevComponents.DotNetBar.ButtonItem();
+            this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION = new DevComponents.DotNetBar.ButtonItem();
             this.qatCustomizeItem1 = new DevComponents.DotNetBar.QatCustomizeItem();
             this.btnChangePassword = new DevComponents.DotNetBar.ButtonItem();
             this.AdminMenu = new DevComponents.DotNetBar.RibbonTabItem();
@@ -107,7 +108,7 @@
             this.btnItem_USER_ATTANDANCE_ACCESS,
             this.btnItem_FORM_ROLES});
             this.ribbonBar3.ItemSpacing = 10;
-            this.ribbonBar3.Location = new System.Drawing.Point(549, 0);
+            this.ribbonBar3.Location = new System.Drawing.Point(731, 0);
             this.ribbonBar3.Name = "ribbonBar3";
             this.ribbonBar3.Size = new System.Drawing.Size(286, 183);
             this.ribbonBar3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
@@ -164,12 +165,13 @@
             this.btnItem_USER,
             this.btnItem_CADET_REGISTRATION,
             this.btnItem_CADET_PUNSIHMENT,
-            this.btnItem_CADET_ATTANDANCE_PERMISSION});
+            this.btnItem_CADET_ATTANDANCE_PERMISSION,
+            this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION});
             this.ribbonBar1.ItemSpacing = 10;
             this.ribbonBar1.Location = new System.Drawing.Point(3, 0);
             this.ribbonBar1.Name = "ribbonBar1";
             this.ribbonBar1.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.ribbonBar1.Size = new System.Drawing.Size(546, 183);
+            this.ribbonBar1.Size = new System.Drawing.Size(728, 183);
             this.ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar1.TabIndex = 2;
             this.ribbonBar1.Text = "Management";
@@ -231,6 +233,18 @@
             this.btnItem_CADET_ATTANDANCE_PERMISSION.SubItemsExpandWidth = 14;
             this.btnItem_CADET_ATTANDANCE_PERMISSION.Text = "Add Attandance Session";
             this.btnItem_CADET_ATTANDANCE_PERMISSION.Click += new System.EventHandler(this.btnItem_CADET_ATTANDANCE_PERMISSION_Click);
+            // 
+            // btnItem_CADET_GROUND_ATTANDANCE_PERMISSION
+            // 
+            this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION.BeginGroup = true;
+            this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION.Image = global::PAF_BOS.Properties.Resources.attendance;
+            this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION.ImagePaddingHorizontal = 20;
+            this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION.Name = "btnItem_CADET_GROUND_ATTANDANCE_PERMISSION";
+            this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION.RibbonWordWrap = false;
+            this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION.SubItemsExpandWidth = 14;
+            this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION.Text = "Add Ground Attandance Session";
+            this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION.Click += new System.EventHandler(this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION_Click);
             // 
             // qatCustomizeItem1
             // 
@@ -502,5 +516,6 @@
         private DevComponents.DotNetBar.ButtonItem btnItem_USER;
         private DevComponents.DotNetBar.ButtonItem btnManageClient;
         private DevComponents.DotNetBar.ButtonItem btnAttendanceReport;
+        private DevComponents.DotNetBar.ButtonItem btnItem_CADET_GROUND_ATTANDANCE_PERMISSION;
     }
 }

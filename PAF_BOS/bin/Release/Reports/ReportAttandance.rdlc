@@ -818,7 +818,7 @@
         <Value>logo_PAF</Value>
         <Sizing>FitProportional</Sizing>
         <Top>0.25655in</Top>
-        <Left>1.05613in</Left>
+        <Left>0.92071in</Left>
         <Height>1in</Height>
         <Width>0.65625in</Width>
         <ZIndex>4</ZIndex>
@@ -849,7 +849,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
         <Top>0.61334in</Top>
-        <Left>5.39603in</Left>
+        <Left>4.7502in</Left>
         <Height>0.40625in</Height>
         <Width>5.09375in</Width>
         <ZIndex>5</ZIndex>
@@ -881,7 +881,7 @@
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
         <Top>1.31078in</Top>
-        <Left>11.20056in</Left>
+        <Left>11.75264in</Left>
         <Height>0.23049in</Height>
         <Width>0.39485in</Width>
         <ZIndex>6</ZIndex>
@@ -913,9 +913,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
         <Top>1.31078in</Top>
-        <Left>11.6093in</Left>
+        <Left>12.16138in</Left>
         <Height>0.23049in</Height>
-        <Width>1.66144in</Width>
+        <Width>1.22394in</Width>
         <ZIndex>7</ZIndex>
         <Style>
           <Border>
@@ -948,9 +948,9 @@
         </Paragraphs>
         <rd:DefaultName>Textbox1</rd:DefaultName>
         <Top>1.27044in</Top>
-        <Left>0.50405in</Left>
+        <Left>0.44155in</Left>
         <Height>0.27083in</Height>
-        <Width>1.83333in</Width>
+        <Width>1.63541in</Width>
         <ZIndex>8</ZIndex>
         <Style>
           <Border>
@@ -963,7 +963,7 @@
         </Style>
       </Textbox>
     </ReportItems>
-    <Height>3.16667in</Height>
+    <Height>4.125in</Height>
     <Style />
   </Body>
   <Width>14.27074in</Width>

@@ -137,6 +137,12 @@
     <Compile Include="ClientForm\Attendancefrm.designer.cs">
       <DependentUpon>Attendancefrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientForm\GroundAttandanceSessiontfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientForm\GroundAttandanceSessiontfrm.Designer.cs">
+      <DependentUpon>GroundAttandanceSessiontfrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientForm\Mainfrm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +154,12 @@
     </Compile>
     <Compile Include="ClientForm\DashBoardCharts.Designer.cs">
       <DependentUpon>DashBoardCharts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientForm\AttandanceSessiontfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientForm\AttandanceSessiontfrm.Designer.cs">
+      <DependentUpon>AttandanceSessiontfrm.cs</DependentUpon>
     </Compile>
     <Compile Include="ClientForm\UserRolePermission.cs">
       <SubType>Form</SubType>
@@ -166,12 +178,6 @@
     </Compile>
     <Compile Include="ClientForm\CadetPunishmentfrm.Designer.cs">
       <DependentUpon>CadetPunishmentfrm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="ClientForm\AttandanceSessiontfrm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ClientForm\AttandanceSessiontfrm.Designer.cs">
-      <DependentUpon>AttandanceSessiontfrm.cs</DependentUpon>
     </Compile>
     <Compile Include="ClientForm\CadetSearchPermissiontfrm.cs">
       <SubType>Form</SubType>
@@ -214,11 +220,17 @@
     <EmbeddedResource Include="ClientForm\Attendancefrm.resx">
       <DependentUpon>Attendancefrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ClientForm\GroundAttandanceSessiontfrm.resx">
+      <DependentUpon>GroundAttandanceSessiontfrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClientForm\Mainfrm.resx">
       <DependentUpon>Mainfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientForm\DashBoardCharts.resx">
       <DependentUpon>DashBoardCharts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientForm\AttandanceSessiontfrm.resx">
+      <DependentUpon>AttandanceSessiontfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientForm\UserRolePermission.resx">
       <DependentUpon>UserRolePermission.cs</DependentUpon>
@@ -228,9 +240,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ClientForm\CadetPunishmentfrm.resx">
       <DependentUpon>CadetPunishmentfrm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ClientForm\AttandanceSessiontfrm.resx">
-      <DependentUpon>AttandanceSessiontfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientForm\CadetSearchPermissiontfrm.resx">
       <DependentUpon>CadetSearchPermissiontfrm.cs</DependentUpon>
@@ -254,12 +263,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="bin\Debug\Client.png" />
-    <None Include="bin\Debug\PAF_BOS.exe.config" />
-    <None Include="bin\Debug\PAF_BOS.vshost.exe.config" />
-    <None Include="bin\Debug\PAF_BOS.vshost.exe.manifest" />
-    <None Include="bin\Debug\Reports\AttendancefrmReport.rdlc" />
-    <None Include="bin\Debug\Reports\UserDetailsfrmReport.rdlc" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\System.Data.DataSet.datasource" />
     <None Include="Properties\DataSources\System.Data.DataTable.datasource" />
@@ -387,7 +390,6 @@
     <None Include="Resources\cadet.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="bin\Release\" />
     <Folder Include="ClientForm\NO\" />
   </ItemGroup>
   <ItemGroup>
@@ -449,36 +451,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\logo_PAF.PNG" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="AppStart\AAA_PAF_BOS.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="AppStart\AAA_PAF_BOS_log.ldf">
-      <DependentUpon>AAA_PAF_BOS.mdf</DependentUpon>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="AppStart\PAFDatabaseScript.sql" />
-    <Content Include="bin\Debug\DevComponents.DotNetBar2.dll" />
-    <Content Include="bin\Debug\DevComponents.DotNetBar2.xml" />
-    <Content Include="bin\Debug\de\Microsoft.SqlServer.Types.resources.dll" />
-    <Content Include="bin\Debug\es\Microsoft.SqlServer.Types.resources.dll" />
-    <Content Include="bin\Debug\fr\Microsoft.SqlServer.Types.resources.dll" />
-    <Content Include="bin\Debug\it\Microsoft.SqlServer.Types.resources.dll" />
-    <Content Include="bin\Debug\ja\Microsoft.SqlServer.Types.resources.dll" />
-    <Content Include="bin\Debug\ko\Microsoft.SqlServer.Types.resources.dll" />
-    <Content Include="bin\Debug\Microsoft.ReportViewer.Common.dll" />
-    <Content Include="bin\Debug\Microsoft.ReportViewer.DataVisualization.dll" />
-    <Content Include="bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll" />
-    <Content Include="bin\Debug\Microsoft.ReportViewer.WinForms.dll" />
-    <Content Include="bin\Debug\Microsoft.SqlServer.Types.dll" />
-    <Content Include="bin\Debug\PAF_BOS.exe" />
-    <Content Include="bin\Debug\PAF_BOS.pdb" />
-    <Content Include="bin\Debug\PAF_BOS.vshost.exe" />
-    <Content Include="bin\Debug\pt\Microsoft.SqlServer.Types.resources.dll" />
-    <Content Include="bin\Debug\ru\Microsoft.SqlServer.Types.resources.dll" />
-    <Content Include="bin\Debug\zh-Hans\Microsoft.SqlServer.Types.resources.dll" />
-    <Content Include="bin\Debug\zh-Hant\Microsoft.SqlServer.Types.resources.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

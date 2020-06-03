@@ -130,5 +130,11 @@ namespace PAF_BOS
             AttendanceSystem.Reports.Attendancefrm frm = new AttendanceSystem.Reports.Attendancefrm();
             CheckFormStatus(frm);
         }
+
+        private void btnItem_CADET_GROUND_ATTANDANCE_PERMISSION_Click(object sender, EventArgs e)
+        {
+            GroundAttandanceSessiontfrm frm = new GroundAttandanceSessiontfrm();
+            CheckFormStatus(frm);
+        }
     }
 }
