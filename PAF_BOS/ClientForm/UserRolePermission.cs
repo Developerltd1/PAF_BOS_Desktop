@@ -167,6 +167,12 @@ namespace PAF_BOS.AdminForms
                     {
                         JIMessageBox.ShowInformationMessage("Roles Assign Successfully \n Thank You");
                         FillGridViewAssignedForms();
+
+                        #region DisableForms
+                        Mainfrm obj = new Mainfrm();
+                        obj.udf_FormsButtonDisable();
+                        Application.DoEvents();
+                        #endregion
                     }
                 }
             }
@@ -206,6 +212,11 @@ namespace PAF_BOS.AdminForms
                     {
                         JIMessageBox.ShowInformationMessage("Roles Remove Successfully \n Thank You");
                         FillGridViewAssignedForms();
+                        #region DisableForms
+                        Mainfrm obj = new Mainfrm();
+                        obj.udf_FormsButtonDisable();
+                        Application.DoEvents();
+                        #endregion
                     }
                 }
 

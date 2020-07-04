@@ -68,11 +68,117 @@ namespace PAF_BOS
                 cmd.Dispose();
             }
         }
+
+        public static DataTable SessionCreatedForCadetByUserID(int UserID, out bool Status, out string StatusDetails)
+        {
+            Status = false;
+            StatusDetails = null;
+
+            // DataTable Declaration
+            DataTable dt = new DataTable();
+
+            SqlConnection conn = null;
+            SqlCommand cmd = null;
+            try
+            {
+                string ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["PAFBOS_ConnectionString"].ToString();
+                conn = new SqlConnection(ConnectionString);
+                cmd = new SqlCommand("usp_SessionCreatedForCadetByUserID", conn);
+
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
+
+                cmd.Parameters.AddWithValue("@UserID", UserID);
+
+                SqlParameter StatusParm = new SqlParameter("@Status", SqlDbType.Bit);
+                StatusParm.Direction = ParameterDirection.Output;
+                cmd.Parameters.Add(StatusParm);
+
+                SqlParameter StatusDetailsParm = new SqlParameter("@StatusDetails", SqlDbType.VarChar, 200);
+                StatusDetailsParm.Direction = ParameterDirection.Output;
+                cmd.Parameters.Add(StatusDetailsParm);
+
+                conn.Open();
+                Adapter.Fill(dt);
+                conn.Close();
+
+                Status = (bool)StatusParm.Value;
+                StatusDetails = (string)StatusDetailsParm.Value;
+
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                Status = false;
+                StatusDetails = ex.Message;
+
+                //Return Value
+                return dt;
+            }
+            finally
+            {
+                conn.Dispose();
+                cmd.Dispose();
+            }
+        }
         public static DataTable GetCadetDataByUserID(int UserID, out bool Status, out string StatusDetails)
         {
             Status = false;
             StatusDetails = null;
 
+
+            // DataTable Declaration
+            DataTable dt = new DataTable();
+
+            SqlConnection conn = null;
+            SqlCommand cmd = null;
+            try
+            {
+                string ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["PAFBOS_ConnectionString"].ToString();
+                conn = new SqlConnection(ConnectionString);
+                cmd = new SqlCommand("usp_GetCadetDataForAttendanceSession", conn);
+
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
+
+                cmd.Parameters.AddWithValue("@UserID", UserID);
+
+                SqlParameter StatusParm = new SqlParameter("@Status", SqlDbType.Bit);
+                StatusParm.Direction = ParameterDirection.Output;
+                cmd.Parameters.Add(StatusParm);
+
+                SqlParameter StatusDetailsParm = new SqlParameter("@StatusDetails", SqlDbType.VarChar, 200);
+                StatusDetailsParm.Direction = ParameterDirection.Output;
+                cmd.Parameters.Add(StatusDetailsParm);
+
+                conn.Open();
+                Adapter.Fill(dt);
+                conn.Close();
+
+                Status = (bool)StatusParm.Value;
+                StatusDetails = (string)StatusDetailsParm.Value;
+
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                Status = false;
+                StatusDetails = ex.Message;
+
+                //Return Value
+                return dt;
+            }
+            finally
+            {
+                conn.Dispose();
+                cmd.Dispose();
+            }
+        }
+
+        public static DataTable GetCadetDataForAttendanceSession(int UserID, out bool Status, out string StatusDetails)
+        {
+            Status = false;
+            StatusDetails = null;
 
             // DataTable Declaration
             DataTable dt = new DataTable();
@@ -218,6 +324,374 @@ namespace PAF_BOS
 
             #region OPERATIONS
 
+
+            public static void UpdateCadet_with_InsertCadetHistory1(int CadetID, int SQN_User_ID, int Course_ID, int Tape_ID, int Role_ID, int CreatedBy_User_ID, string Batch, string CadetName, string CadetFatherName, string PAKNumber, string Address, string CNIC, string BloodGroup, string ContactNumber, string MobileNumber, string RFIDCardNumber, out bool _Status, out string _StatusDetails)
+            {
+                _Status = false;
+                _StatusDetails = null;
+
+                SqlConnection conn = null;
+                SqlCommand cmd = null;
+                try
+                {
+                    string ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["PAFBOS_ConnectionString"].ToString();
+                    conn = new SqlConnection(ConnectionString);
+                    cmd = new SqlCommand("usp_UpdateCadet_with_InsertCadetHistory1", conn);
+
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@CadetID", CadetID);
+                    cmd.Parameters.AddWithValue("@SQN_User_ID", SQN_User_ID);
+                    cmd.Parameters.AddWithValue("@Course_ID", Course_ID);
+                    cmd.Parameters.AddWithValue("@Tape_ID", Tape_ID);
+                    cmd.Parameters.AddWithValue("@Role_ID", Role_ID);
+                    cmd.Parameters.AddWithValue("@CreatedBy_User_ID", CreatedBy_User_ID);
+                    cmd.Parameters.AddWithValue("@Batch", Batch);
+                    cmd.Parameters.AddWithValue("@CadetName", CadetName);
+                    cmd.Parameters.AddWithValue("@CadetFatherName", CadetFatherName);
+                    cmd.Parameters.AddWithValue("@PAKNumber", PAKNumber);
+                    cmd.Parameters.AddWithValue("@Address", Address);
+                    cmd.Parameters.AddWithValue("@CNIC", CNIC);
+                    cmd.Parameters.AddWithValue("@BloodGroup", BloodGroup);
+                    cmd.Parameters.AddWithValue("@ContactNumber", ContactNumber);
+                    cmd.Parameters.AddWithValue("@MobileNumber", MobileNumber);
+                    cmd.Parameters.AddWithValue("@RFIDCardNumber", RFIDCardNumber);
+
+                    SqlParameter _StatusParm = new SqlParameter("@_Status", SqlDbType.Bit);
+                    _StatusParm.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(_StatusParm);
+
+                    SqlParameter _StatusDetailsParm = new SqlParameter("@_StatusDetails", SqlDbType.VarChar, 100);
+                    _StatusDetailsParm.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(_StatusDetailsParm);
+
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+
+                    _Status = (bool)_StatusParm.Value;
+                    _StatusDetails = (string)_StatusDetailsParm.Value;
+                }
+                catch (Exception ex)
+                {
+                    _Status = false;
+                    _StatusDetails = ex.Message;
+                    return;
+                }
+                finally
+                {
+                    conn.Dispose();
+                    cmd.Dispose();
+                }
+            }
+
+
+            public static DataTable GetCadetsAllCourses()
+            {
+
+                // DataTable Declaration
+                DataTable dt = new DataTable();
+
+                SqlConnection conn = null;
+                SqlCommand cmd = null;
+                try
+                {
+                    string ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["PAFBOS_ConnectionString"].ToString();
+                    conn = new SqlConnection(ConnectionString);
+                    cmd = new SqlCommand("SELECT CourseName FROM CadetCourses", conn);
+
+                    cmd.CommandType = CommandType.Text;
+                    SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
+
+                    conn.Open();
+                    Adapter.Fill(dt);
+                    conn.Close();
+
+                    return dt;
+                }
+                catch (Exception ex)
+                {
+                    //Return Value
+                    return dt;
+                }
+                finally
+                {
+                    conn.Dispose();
+                    cmd.Dispose();
+                }
+            }
+            public static DataTable GetCadetsPictureByCadetID(int CadetID)
+            {
+
+                // DataTable Declaration
+                DataTable dt = new DataTable();
+
+                SqlConnection conn = null;
+                SqlCommand cmd = null;
+                try
+                {
+                    string ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["PAFBOS_ConnectionString"].ToString();
+                    conn = new SqlConnection(ConnectionString);
+                    cmd = new SqlCommand("SELECT CadetID, Picture from Cadets WHERE CadetID=@CadetID", conn);
+
+                    cmd.CommandType = CommandType.Text;
+                    SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
+                    cmd.Parameters.AddWithValue("@CadetID", CadetID);
+
+                    conn.Open();
+                    Adapter.Fill(dt);
+                    conn.Close();
+
+                    return dt;
+                }
+                catch (Exception ex)
+                {
+                    //Return Value
+                    return dt;
+                }
+                finally
+                {
+                    conn.Dispose();
+                    cmd.Dispose();
+                }
+            }
+            public static void RemoveCadet(int CadetID, out bool Status, out string StatusDetails)
+            {
+                Status = false;
+                StatusDetails = null;
+
+                SqlConnection conn = null;
+                SqlCommand cmd = null;
+                try
+                {
+                    string ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["PAFBOS_ConnectionString"].ToString();
+                    conn = new SqlConnection(ConnectionString);
+                    cmd = new SqlCommand("usp_DeleteCadets", conn);
+
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("@CadetID", CadetID);
+
+                    SqlParameter StatusParm = new SqlParameter("@Status", SqlDbType.Bit);
+                    StatusParm.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(StatusParm);
+
+                    SqlParameter StatusDetailsParm = new SqlParameter("@StatusDetails", SqlDbType.VarChar, 200);
+                    StatusDetailsParm.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(StatusDetailsParm);
+
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+
+                    Status = (bool)StatusParm.Value;
+                    StatusDetails = (string)StatusDetailsParm.Value;
+                }
+                catch (Exception ex)
+                {
+                    Status = false;
+                    StatusDetails = ex.Message;
+                    return;
+                }
+                finally
+                {
+                    conn.Dispose();
+                    cmd.Dispose();
+                }
+            }
+            public static DataTable GellAllCadets(out bool Status, out string StatusDetails)
+            {
+                Status = false;
+                StatusDetails = null;
+
+
+                // DataTable Declaration
+                DataTable dt = new DataTable();
+
+                SqlConnection conn = null;
+                SqlCommand cmd = null;
+                try
+                {
+                    string ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["PAFBOS_ConnectionString"].ToString();
+                    conn = new SqlConnection(ConnectionString);
+                    cmd = new SqlCommand("GellAllCadets", conn);
+
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
+
+
+                    SqlParameter StatusParm = new SqlParameter("@Status", SqlDbType.Bit);
+                    StatusParm.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(StatusParm);
+
+                    SqlParameter StatusDetailsParm = new SqlParameter("@StatusDetails", SqlDbType.VarChar, 200);
+                    StatusDetailsParm.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(StatusDetailsParm);
+
+                    conn.Open();
+                    Adapter.Fill(dt);
+                    conn.Close();
+
+                    Status = (bool)StatusParm.Value;
+                    StatusDetails = (string)StatusDetailsParm.Value;
+
+                    return dt;
+                }
+                catch (Exception ex)
+                {
+                    Status = false;
+                    StatusDetails = ex.Message;
+
+                    //Return Value
+                    return dt;
+                }
+                finally
+                {
+                    conn.Dispose();
+                    cmd.Dispose();
+                }
+            }
+
+            public static DataTable GetAllCadetss()
+            {
+
+                // DataTable Declaration
+                DataTable dt = new DataTable();
+
+                SqlConnection conn = null;
+                SqlCommand cmd = null;
+                try
+                {
+                    string ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["PAFBOS_ConnectionString"].ToString();
+                    conn = new SqlConnection(ConnectionString);
+                    cmd = new SqlCommand("Select CadetID,CadetName,CadetFatherName,PAKNumber,[Address],CNIC,BloodGroup,ContactNumber,MobileNumber,RFIDCardNumber,SQN_User_ID,Course_ID,Tape_ID,CreatedBy_User_ID,Role_ID from Cadets", conn);
+
+                    SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
+                    conn.Open();
+                    Adapter.Fill(dt);
+                    conn.Close();
+
+                    return dt;
+                }
+                catch (Exception ex)
+                {
+                    //Return Value
+                    return dt;
+                }
+                finally
+                {
+                    conn.Dispose();
+                    cmd.Dispose();
+                }
+            }
+            public static DataTable GellAllCadetsByUserID(int UserID, out bool Status, out string StatusDetails)
+            {
+                Status = false;
+                StatusDetails = null;
+
+                // DataTable Declaration
+                DataTable dt = new DataTable();
+                SqlConnection conn = null;
+                SqlCommand cmd = null;
+                try
+                {
+                    string ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["PAFBOS_ConnectionString"].ToString();
+                    conn = new SqlConnection(ConnectionString);
+                    cmd = new SqlCommand("GellAllCadetsByUserID", conn);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
+
+                    cmd.Parameters.AddWithValue("@USER_ID", UserID);
+
+                    SqlParameter StatusParm = new SqlParameter("@Status", SqlDbType.Bit);
+                    StatusParm.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(StatusParm);
+
+                    SqlParameter StatusDetailsParm = new SqlParameter("@StatusDetails", SqlDbType.VarChar, 200);
+                    StatusDetailsParm.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(StatusDetailsParm);
+
+                    conn.Open();
+                    Adapter.Fill(dt);
+                    conn.Close();
+
+                    Status = (bool)StatusParm.Value;
+                    StatusDetails = (string)StatusDetailsParm.Value;
+
+                    return dt;
+                }
+                catch (Exception ex)
+                {
+                    Status = false;
+                    StatusDetails = ex.Message;
+
+                    //Return Value
+                    return dt;
+                }
+                finally
+                {
+                    conn.Dispose();
+                    cmd.Dispose();
+                }
+            }
+
+            #region usp_GetCadetAttendanceReportByCadetID Code 
+
+            public static DataTable usp_GetCadetAttendanceReportByCadetID(int CadetID,  out bool Status, out string StatusDetails)
+            {
+                Status = false;
+                StatusDetails = null;
+
+                // DataTable Declaration
+                DataTable dt = new DataTable();
+
+                SqlConnection conn = null;
+                SqlCommand cmd = null;
+                try
+                {
+                    string ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["PAFBOS_ConnectionString"].ToString();
+                    conn = new SqlConnection(ConnectionString);
+                    cmd = new SqlCommand("usp_GetCadetAttendanceReportByCadetID", conn);
+
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
+
+                    cmd.Parameters.AddWithValue("@CadetID", CadetID);
+                   
+                    SqlParameter StatusParm = new SqlParameter("@Status", SqlDbType.Bit);
+                    StatusParm.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(StatusParm);
+
+                    SqlParameter StatusDetailsParm = new SqlParameter("@StatusDetails", SqlDbType.VarChar, 200);
+                    StatusDetailsParm.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(StatusDetailsParm);
+
+                    conn.Open();
+                    Adapter.Fill(dt);
+                    conn.Close();
+
+                    Status = (bool)StatusParm.Value;
+                    StatusDetails = (string)StatusDetailsParm.Value;
+
+                    return dt;
+                }
+                catch (Exception ex)
+                {
+                    Status = false;
+                    StatusDetails = ex.Message;
+
+                    //Return Value
+                    return dt;
+                }
+                finally
+                {
+                    conn.Dispose();
+                    cmd.Dispose();
+                }
+            }
+
+
+            #endregion
+
             public static DataSet GetMainDashBoardData(out bool Status, out string StatusDetails)
             {
                 Status = false;
@@ -270,7 +744,7 @@ namespace PAF_BOS
                 }
             }
 
-            public static void UpdatePunishments_with_InsertPunishmentsHistory(int PunishmentID, int Cadet_ID, int Category_ID, string Remarks, bool IsSpecialWaiver, bool IsPunishCompleted, int USER_ID, int Role_ID, out bool Status, out string StatusDetails)
+            public static void UpdatePunishments_with_InsertPunishmentsHistory(int PunishmentID, int Cadet_ID, int Category_ID, string Remarks, bool IsSpecialWaiver, bool IsPunishCompleted, int USER_ID, int Role_ID, out bool Status, out string StatusDetails,DateTime To,DateTime From)
             {
                 Status = false;
                 StatusDetails = null;
@@ -293,6 +767,8 @@ namespace PAF_BOS
                     cmd.Parameters.AddWithValue("@IsPunishCompleted", IsPunishCompleted);
                     cmd.Parameters.AddWithValue("@USER_ID", USER_ID);
                     cmd.Parameters.AddWithValue("@Role_ID", Role_ID);
+                    cmd.Parameters.AddWithValue("@To", To);
+                    cmd.Parameters.AddWithValue("@From", From);
 
                     SqlParameter StatusParm = new SqlParameter("@Status", SqlDbType.Bit);
                     StatusParm.Direction = ParameterDirection.Output;
@@ -658,7 +1134,7 @@ namespace PAF_BOS
                     cmd.Dispose();
                 }
             }
-            public static void InsertPunishments_with_PunishmentsHistory(int Cadet_ID, int Category_ID, string Remarks, bool IsSpecialWaiver, bool IsPunishCompleted, int User_ID, int Role_ID, out bool Status, out string StatusDetails)
+            public static void InsertPunishments_with_PunishmentsHistory(int Cadet_ID, int Category_ID, string Remarks, bool IsSpecialWaiver, bool IsPunishCompleted, int User_ID, int Role_ID, out bool Status, out string StatusDetails,DateTime To, DateTime From)
             {
                 Status = false;
                 StatusDetails = null;
@@ -680,6 +1156,8 @@ namespace PAF_BOS
                     cmd.Parameters.AddWithValue("@IsPunishCompleted", IsPunishCompleted);
                     cmd.Parameters.AddWithValue("@User_ID", User_ID);
                     cmd.Parameters.AddWithValue("@Role_ID", Role_ID);
+                    cmd.Parameters.AddWithValue("@To", To);
+                    cmd.Parameters.AddWithValue("@From", From);
 
                     SqlParameter StatusParm = new SqlParameter("@Status", SqlDbType.Bit);
                     StatusParm.Direction = ParameterDirection.Output;
@@ -708,7 +1186,7 @@ namespace PAF_BOS
                     cmd.Dispose();
                 }
             }
-            public static DataTable GetPunishments(string PakNo, string RFIDCardNumber, out bool Status, out string StatusDetails)
+            public static DataTable GetPunishments(string PakNo, out bool Status, out string StatusDetails)
             {
                 Status = false;
                 StatusDetails = null;
@@ -728,7 +1206,6 @@ namespace PAF_BOS
                     SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
 
                     cmd.Parameters.AddWithValue("@PakNo", PakNo);
-                    cmd.Parameters.AddWithValue("@RFIDCardNumber", RFIDCardNumber);
 
                     SqlParameter StatusParm = new SqlParameter("@Status", SqlDbType.Bit);
                     StatusParm.Direction = ParameterDirection.Output;
@@ -1785,6 +2262,38 @@ namespace PAF_BOS
                     cmd.CommandType = CommandType.StoredProcedure;
                     SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
 
+                    conn.Open();
+                    Adapter.Fill(dt);
+                    conn.Close();
+                    return dt;
+                }
+                catch (Exception ex)
+                {
+                    JIMessageBox.ShowErrorMessage(ex.Message);
+                    return dt;
+                }
+                finally
+                {
+                    conn.Dispose();
+                    cmd.Dispose();
+                }
+            }
+
+            public static DataTable GetCadetIdAndPakNo()
+            {
+                DataTable dt = new DataTable();
+                SqlConnection conn = null;
+                SqlCommand cmd = null;
+                try
+                {
+                    string ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["PAFBOS_ConnectionString"].ToString();
+                    conn = new SqlConnection(ConnectionString);
+
+                    cmd = new SqlCommand("SELECT CadetID,PAKNumber FROM Cadets", conn);
+
+                    cmd.CommandType = CommandType.Text;
+                    SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
+                    
                     conn.Open();
                     Adapter.Fill(dt);
                     conn.Close();

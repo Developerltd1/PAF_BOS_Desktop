@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.ribbonClientPanel1 = new DevComponents.DotNetBar.Ribbon.RibbonClientPanel();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.ribbonBar1 = new DevComponents.DotNetBar.RibbonBar();
@@ -78,9 +78,9 @@
             this.reportViewer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            reportDataSource2.Name = "AttendanceReport";
-            reportDataSource2.Value = null;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource1.Name = "AttendanceReport";
+            reportDataSource1.Value = null;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "PAF_BOS.Reports.ReportAttandance.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 108);
             this.reportViewer1.Name = "reportViewer1";
@@ -330,10 +330,9 @@
             this.ControlBox = false;
             this.Controls.Add(this.ribbonClientPanel1);
             this.DoubleBuffered = true;
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "Attendancefrm";
             this.Text = "Attendance Report";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Attendancefrm_Load);
             this.ribbonClientPanel1.ResumeLayout(false);
             this.ribbonBar1.ResumeLayout(false);

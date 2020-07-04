@@ -66,11 +66,14 @@ C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\P
 C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\obj\Release\AttendanceScreen.csproj.GenerateResource.Cache
 C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\obj\Release\AttendanceScreen.exe
 C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\AttendanceScreen\obj\Release\AttendanceScreen.pdb
-D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\AppStart\AAA_PAF_BOS.mdf
-D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\AppStart\AAA_PAF_BOS_log.ldf
+D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\obj\Release\AttendanceScreen.csprojResolveAssemblyReference.cache
+D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\obj\Release\AttendanceScreen.Properties.Resources.resources
+D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\obj\Release\AttendanceScreen.Test.UserAttendancefrm.resources
+D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\obj\Release\AttendanceScreen.csproj.GenerateResource.Cache
+D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\AttendanceScreen.exe.config
+D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\Reports\SingleCadetReportAttandance.rdlc
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\Reports\ReportAttandance.rdlc
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\App.config
-D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\AttendanceScreen.exe.config
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\AttendanceScreen.exe
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\AttendanceScreen.pdb
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\DevComponents.DotNetBar2.dll
@@ -78,11 +81,9 @@ D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\PAF_BOS.exe
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\Microsoft.ReportViewer.WinForms.dll
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\ExcelDataReader.dll
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\ExcelDataReader.DataSet.dll
-D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\Microsoft.ReportViewer.Common.dll
-D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\Microsoft.ReportViewer.ProcessingObjectModel.dll
-D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\Microsoft.ReportViewer.DataVisualization.dll
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\Microsoft.SqlServer.Types.dll
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\PAF_BOS.pdb
+D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\DevComponents.DotNetBar2.xml
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\ExcelDataReader.pdb
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\ExcelDataReader.xml
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\ExcelDataReader.DataSet.pdb
@@ -97,9 +98,5 @@ D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\pt\Microsoft.SqlServer.T
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\ru\Microsoft.SqlServer.Types.resources.dll
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\zh-Hans\Microsoft.SqlServer.Types.resources.dll
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\bin\Release\zh-Hant\Microsoft.SqlServer.Types.resources.dll
-D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\obj\Release\AttendanceScreen.csprojResolveAssemblyReference.cache
-D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\obj\Release\AttendanceScreen.Properties.Resources.resources
-D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\obj\Release\AttendanceScreen.UserAttendancefrm.resources
-D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\obj\Release\AttendanceScreen.csproj.GenerateResource.Cache
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\obj\Release\AttendanceScreen.exe
 D:\PAF_BOS\PAF_BOS_Desktop\AttendanceScreen\obj\Release\AttendanceScreen.pdb

@@ -13,6 +13,7 @@ namespace PAF_BOS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            //Application.Run(new CadetExcelDataImportfrm());  
             Application.Run(new Loginfrm());
             if (!string.IsNullOrEmpty(MainClass.UserName))
             {

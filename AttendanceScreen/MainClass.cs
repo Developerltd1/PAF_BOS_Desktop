@@ -4,10 +4,13 @@ using System.Data;
 
 namespace AttendanceScreen
 {
-    class MainClass
-    {  
+    public class MainClass
+    {
+        
         public static class MngPAFBOS
         {
+         
+
             public static DataTable GetCadetsByCardNumber(string CardNumber)
             {
 
@@ -126,7 +129,7 @@ namespace AttendanceScreen
                 {
                     string ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["PAFBOS_ConnectionString"].ToString();
                     conn = new SqlConnection(ConnectionString);
-                    cmd = new SqlCommand("[usp_CreateAttendanceUpdated]", conn);
+                    cmd = new SqlCommand("usp_CreateAttendanceUpdated", conn);
 
                     cmd.CommandType = CommandType.StoredProcedure;
 

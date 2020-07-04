@@ -43,6 +43,14 @@ namespace PAF_BOS
                             if (it.Name == row["FormName"].ToString())
                                 it.Enabled = true;
                         }
+                        foreach (DevComponents.DotNetBar.ButtonItem itt in it.SubItems)
+                        {
+                            foreach (DataRow row in checkRole.Rows)
+                            {
+                                if (it.Name == row["FormName"].ToString())
+                                    it.Enabled = true;
+                            }
+                        }
                     }
                 }
             }
@@ -52,14 +60,21 @@ namespace PAF_BOS
             } 
         }
 
-        private void udf_FormsButtonDisable()
+        public void udf_FormsButtonDisable()
         {
+            Application.DoEvents();
             btnItem_USER.Enabled = false; 
             btnItem_CADET_REGISTRATION.Enabled = false;
             btnItem_CADET_PUNSIHMENT.Enabled = false;
             btnItem_CADET_ATTANDANCE_PERMISSION.Enabled = false;
             btnItem_USER_ATTANDANCE_ACCESS.Enabled = false;
             btnItem_FORM_ROLES.Enabled = false;
+            btnItemAttendanceReport.Enabled = false;
+            buttonItemCadetAttendanceReport.Enabled = false;
+            btnItem_ALLCADET_PUNSIHMENT.Enabled = false;
+            btnItem_ALLCADET_PUNSIHMENT.Enabled = false;
+            buttonItemExcelSheet.Enabled = false;
+
         }
 
         //allow only single instance of form open
@@ -131,10 +146,43 @@ namespace PAF_BOS
             CheckFormStatus(frm);
         }
 
-        private void btnItem_CADET_GROUND_ATTANDANCE_PERMISSION_Click(object sender, EventArgs e)
+        private void btnCadetAttendanceReport_Click(object sender, EventArgs e)
         {
-            GroundAttandanceSessiontfrm frm = new GroundAttandanceSessiontfrm();
+            ClientForm.SingleCadetAttendancefrm frm = new ClientForm.SingleCadetAttendancefrm();
             CheckFormStatus(frm);
         }
+
+      
+
+       
+
+        private void btnAttendanceReport(object sender, EventArgs e)
+        {
+            AttendanceSystem.Reports.Attendancefrm frm = new AttendanceSystem.Reports.Attendancefrm();
+            CheckFormStatus(frm);
+        }
+
+     
+
+        private void btnItem_ALLCADET_PUNSIHMENT_Click(object sender, EventArgs e)
+        {
+            CCCadetPunishmentfrm frm = new CCCadetPunishmentfrm();
+            CheckFormStatus(frm);
+        }
+
+        private void buttonItemExcelSheet_Click(object sender, EventArgs e)
+        {
+            CadetExcelDataImportfrm frm = new CadetExcelDataImportfrm();
+            CheckFormStatus(frm);
+        }
+
+        // private void btnItem_CADET_GROUND_ATTANDANCE_PERMISSION_Click(object sender, EventArgs e)
+        // {
+        //     //GroundAttandanceSessiontfrm frm = new GroundAttandanceSessiontfrm();
+        //     //CheckFormStatus(frm);
+        //     Method2CadetExcelDataImportfrm frm = new Method2CadetExcelDataImportfrm();
+        //      CheckFormStatus(frm);
+        //     
+        // }
     }
 }

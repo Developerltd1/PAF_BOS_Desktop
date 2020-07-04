@@ -117,10 +117,10 @@
     <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdminForm\CadetExcelDataImportfrm.cs">
+    <Compile Include="ClientForm\CadetExcelDataImportfrm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AdminForm\CadetExcelDataImportfrm.Designer.cs">
+    <Compile Include="ClientForm\CadetExcelDataImportfrm.Designer.cs">
       <DependentUpon>CadetExcelDataImportfrm.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\FingerScannerClass.cs" />
@@ -161,6 +161,18 @@
     <Compile Include="ClientForm\AttandanceSessiontfrm.Designer.cs">
       <DependentUpon>AttandanceSessiontfrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientForm\CaderRemove.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientForm\CaderRemove.Designer.cs">
+      <DependentUpon>CaderRemove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClientForm\SingleCadetAttendancefrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientForm\SingleCadetAttendancefrm.designer.cs">
+      <DependentUpon>SingleCadetAttendancefrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ClientForm\UserRolePermission.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -191,20 +203,25 @@
     <Compile Include="ClientForm\UserRegistrationfrm.Designer.cs">
       <DependentUpon>UserRegistrationfrm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ClientForm\CCCadetPunishmentfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientForm\CCCadetPunishmentfrm.Designer.cs">
+      <DependentUpon>CCCadetPunishmentfrm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Loginfrm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Loginfrm.Designer.cs">
       <DependentUpon>Loginfrm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Demo\Method2CadetExcelDataImportfrm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Demo\Method2CadetExcelDataImportfrm.Designer.cs">
-      <DependentUpon>Method2CadetExcelDataImportfrm.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Reports\DataSetReports.cs">
       <DependentUpon>DataSetReports.xsd</DependentUpon>
     </Compile>
@@ -214,7 +231,7 @@
       <DependentUpon>DataSetReports.xsd</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs" />
-    <EmbeddedResource Include="AdminForm\CadetExcelDataImportfrm.resx">
+    <EmbeddedResource Include="ClientForm\CadetExcelDataImportfrm.resx">
       <DependentUpon>CadetExcelDataImportfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ClientForm\Attendancefrm.resx">
@@ -232,6 +249,12 @@
     <EmbeddedResource Include="ClientForm\AttandanceSessiontfrm.resx">
       <DependentUpon>AttandanceSessiontfrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ClientForm\CaderRemove.resx">
+      <DependentUpon>CaderRemove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClientForm\SingleCadetAttendancefrm.resx">
+      <DependentUpon>SingleCadetAttendancefrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ClientForm\UserRolePermission.resx">
       <DependentUpon>UserRolePermission.cs</DependentUpon>
     </EmbeddedResource>
@@ -247,11 +270,11 @@
     <EmbeddedResource Include="ClientForm\UserRegistrationfrm.resx">
       <DependentUpon>UserRegistrationfrm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ClientForm\CCCadetPunishmentfrm.resx">
+      <DependentUpon>CCCadetPunishmentfrm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Loginfrm.resx">
       <DependentUpon>Loginfrm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Demo\Method2CadetExcelDataImportfrm.resx">
-      <DependentUpon>Method2CadetExcelDataImportfrm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -283,9 +306,23 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Reports\SingleCadetReportAttandance.rdlc">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reports\ReportAttandance.rdlc">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+    <None Include="Reports\DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Reports\DataSet1.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Reports\DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="Reports\DataSetReports.xsc">
       <DependentUpon>DataSetReports.xsd</DependentUpon>
     </None>
@@ -390,7 +427,7 @@
     <None Include="Resources\cadet.png" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="ClientForm\NO\" />
+    <Folder Include="AdminForm\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\man.png" />

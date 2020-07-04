@@ -9,34 +9,152 @@ using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using AQDBFramwork.Messageboxes;
 using System.Speech.Synthesis;
+using DevComponents.DotNetBar;
 
-namespace AttendanceScreen
+namespace AttendanceScreen.Test
 {
     public partial class UserAttendancefrm : DevComponents.DotNetBar.Office2007Form
     {
         public UserAttendancefrm()
         {
-          
+
             InitializeComponent();
-           
+
         }
         SpeechSynthesizer speech = new SpeechSynthesizer();
 
         Timer ClockTimer;
         int Delay = 0;
+        #region Image_Setting
+        private void DefaultImagePropertiesCard()
+        {
+            pictureBoxMainImage.Location = new System.Drawing.Point(450, 46);
+            pictureBoxMainImage.Size = new System.Drawing.Size(311, 295);
+            pictureBoxMainImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
+        }
+        private void DefaultImageProperties()
+        {
+            pictureBoxMainImage.BeginInvoke((MethodInvoker)delegate () { pictureBoxMainImage.Location = new System.Drawing.Point(450, 46); });
+            pictureBoxMainImage.BeginInvoke((MethodInvoker)delegate () { pictureBoxMainImage.Size = new System.Drawing.Size(311, 295); });
+            pictureBoxMainImage.BeginInvoke((MethodInvoker)delegate () { pictureBoxMainImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage; });
+            pictureBoxMainImage.BeginInvoke((MethodInvoker)delegate () { pictureBoxMainImage.Image = Properties.Resources.ScanFInger2; });
+        }
+        private void setImageProperties(PictureBox picture, int width, int height, int x, int y, PictureBoxSizeMode Type)
+        {
+            picture.BeginInvoke((MethodInvoker)delegate () { picture.Location = new System.Drawing.Point(x, y); });
+            picture.BeginInvoke((MethodInvoker)delegate () { picture.Size = new System.Drawing.Size(width, height); });
+            picture.BeginInvoke((MethodInvoker)delegate () { picture.SizeMode = Type; });
+        }
+        #endregion
+        #region LabelX_Default
+        private void setLabelXSetting(LabelX label, string textValue, int width, int height, int x, int y, Color color)
+        {
+            label.BeginInvoke((MethodInvoker)delegate () { label.Location = new System.Drawing.Point(x, y); });
+            label.BeginInvoke((MethodInvoker)delegate () { label.Size = new System.Drawing.Size(width, height); });
+            label.BeginInvoke((MethodInvoker)delegate () { label.Text = textValue; });
+
+            label.BeginInvoke((MethodInvoker)delegate () { label.ForeColor = System.Drawing.Color.Red; label.ForeColor = color; });
+        }
+        #endregion
+        #region labelScanRFID_Thumb
+        private void labelHideNshow(bool condition)
+        {
+            if (labelScanRFID_Thumb.InvokeRequired)
+            {
+                labelScanRFID_Thumb.BeginInvoke((MethodInvoker)delegate () { labelScanRFID_Thumb.Visible = condition; });
+            }
+        }
+        private void labelHideNshowCard(bool condition)
+        {
+            labelScanRFID_Thumb.Visible = condition;
+        }
+
+        private void labelHideNshowTimeDate(bool TimeCondition, bool DateCondition)
+        {
+            if (TimeLabel.InvokeRequired)
+            {
+                TimeLabel.BeginInvoke((MethodInvoker)delegate () { TimeLabel.Visible = TimeCondition; });
+                DateLabel.BeginInvoke((MethodInvoker)delegate () { DateLabel.Visible = DateCondition; });
+            }
+        }
+        private void labelHideNshowCardTimeDate(bool TimeCondition, bool DateCondition)
+        {
+            TimeLabel.Visible = TimeCondition;
+            DateLabel.Visible = DateCondition;
+        }
+        #endregion
+        #region pictureBoxMainImage_Default
+        private void DefaultScanCenterImagelocation()
+        {
+            if (pictureBoxMainImage.InvokeRequired)
+            {
+                pictureBoxMainImage.BeginInvoke((MethodInvoker)delegate ()
+                {
+                    pictureBoxMainImage.Location = new System.Drawing.Point(450, 46);
+                    pictureBoxMainImage.Size = new System.Drawing.Size(311, 295);
+                });
+            }
+        }
+        private void DefaultScanImagelocation()
+        {
+            #region DefaultScanImagelocation
+            if (pictureBoxMainImage.InvokeRequired)
+            {
+                pictureBoxMainImage.BeginInvoke((MethodInvoker)delegate ()
+                {
+                    pictureBoxMainImage.Location = new System.Drawing.Point(301, 55);
+                    pictureBoxMainImage.Size = new System.Drawing.Size(311, 295);
+                    pictureBoxMainImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage; 
+                    pictureBoxMainImage.Image = Properties.Resources.ScanFInger2; 
+                    labelScanRFID_Thumb.Location = new System.Drawing.Point(288, 362);
+                    labelScanRFID_Thumb.Size = new System.Drawing.Size(345, 36);
+                });
+            }
+            #endregion
+        }
+
+
+
+        private void DefaultScanCenterImagelocationCard()
+        {
+                    pictureBoxMainImage.Location = new System.Drawing.Point(450, 46);
+                    pictureBoxMainImage.Size = new System.Drawing.Size(311, 295);
+        }
+        private void DefaultScanImagelocationCard()
+        {
+                    pictureBoxMainImage.Location = new System.Drawing.Point(301, 55);
+                    pictureBoxMainImage.Size = new System.Drawing.Size(311, 295);
+                    pictureBoxMainImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+                    pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
+                    labelScanRFID_Thumb.Location = new System.Drawing.Point(288, 362);
+                    labelScanRFID_Thumb.Size = new System.Drawing.Size(345, 36);
+        }
+
+
+
+
+
+
+
+        #endregion
         private void frmUserAttendance_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;
             Application.DoEvents();
-
-           
+            #region DefaultScanImagelocation
+            pictureBoxMainImage.Location = new System.Drawing.Point(301, 55);
+            pictureBoxMainImage.Size = new System.Drawing.Size(311, 295);
+            labelScanRFID_Thumb.Location = new System.Drawing.Point(288, 362);
+            labelScanRFID_Thumb.Size = new System.Drawing.Size(345, 36);
+            #endregion
 
             Delay = int.Parse(System.Configuration.ConfigurationManager.AppSettings["Delay"]);
-            Delay *= 1000;
+            Delay *= 2000;
 
             #region Clock
             DateLabel.Text = DateTime.Now.ToString("dd MMM yyyy");
-            TimeLabel.Text = DateTime.Now.ToString("HH:mm:ss");
+            TimeLabel.Text = DateTime.Now.ToString("HH"+"mm") + " HRS";
             Application.DoEvents();
             ClockTimer = new Timer();
             ClockTimer.Tick += ClockTimer_Tick;
@@ -47,14 +165,14 @@ namespace AttendanceScreen
             checkInternetConnection();
             CheckDevice();
         }
-        
+ 
         //CheckInternetConnection
         #region 
         [DllImport("wininet.dll")]
         private extern static bool InternetGetConnectedState(out int conn, int val);
         private void checkInternetConnection()
         {
-          int Out;
+            int Out;
             if (InternetGetConnectedState(out Out, 0) == true)
             {
                 labelConnection.Text = "Connected";
@@ -64,8 +182,8 @@ namespace AttendanceScreen
                 labelConnection.Text = "Not Connected";
             }
         }
-        #endregion 
-    
+        #endregion
+
         List<Fmd> fmds = new List<Fmd>();
         ReaderCollection conectedDevices = null;   //CollectionReader Class -lib[using DPUruNet;]
         public Reader CurrentReader = null;        //Like FingerPrint Reader Class -lib[using DPUruNet.Reader;]
@@ -121,12 +239,14 @@ namespace AttendanceScreen
                 this.SendMessage(FingerScannerClass.Action.SendMessage, "Error:  " + ex.Message);
             }
         }
-      
+
         //Timer for Clock
         private void ClockTimer_Tick(object sender, EventArgs e)
         {
             DateLabel.Text = DateTime.Now.ToString("dd MMM yyyy");
-            TimeLabel.Text = DateTime.Now.ToString("HH:mm");
+            TimeLabel.Text = DateTime.Now.ToString("HH"+"mm") + " HRS";
+           //DateLabel.Text = DateTime.Now.ToString("dd MMM yyyy");
+           //TimeLabel.Text = DateTime.Now.ToString("HH:mm:ss");
         }
         private void labelVuLink_Click(object sender, EventArgs e)
         {
@@ -221,94 +341,78 @@ namespace AttendanceScreen
             string StatusDetails = null;
             string AttendanceType = null;
             string SessionInformation = null;
+         
             #region
-
             //Search Using Thumb
             if (matchID.Count > 0)
             {
                 //store value in attendance table.
                 MainClass.MngPAFBOS.CreateAttendance(matchID[0], out SessionInformation, out AttendanceType, out Status, out StatusDetails);
-
+                //** Left_THUMB **//
                 //==============START=====================//
-                //ALL
-                #region
-
-                //TRUE
-                
+                #region START To AND THUMB
                 if (Status == true)
                 {
-                    #region
-                    if (SessionInformation == "SESSION EXPIRE")
-                    {
-                        speech.SpeakAsync("SESSION EXPIRE");
-                        //display From Database
-                        #region
-                        if (labelAttendanceType.InvokeRequired)
-                        {
-                            labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = AttendanceType; });
-                        }
+                    #region BOOK IN DELAY
 
-                        if (labelDelay.InvokeRequired)
-                        {
-                            labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = SessionInformation; });
-                        }
-                        pictureBoxMainImage.Image = Properties.Resources.Failed;
-                        #endregion
-                        //After Delay
-                        System.Threading.Thread.Sleep(Delay);
-                        //display Null All 
-                        #region
-                        pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
-                        if (labelAttendanceType.InvokeRequired)
-                        {
-                            labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = null; });
-                        }
-                        if (labelAttendanceTime.InvokeRequired)
-                        {
-                            labelAttendanceTime.BeginInvoke((MethodInvoker)delegate () { labelAttendanceTime.Text = null; });
-                        }
-                        if (labelDelay.InvokeRequired)
-                        {
-                            labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = null; });
-                        }
-                        #endregion
-                    }
-                    if (SessionInformation == "INVALID SESSION")
+                    if (AttendanceType == "Delayed Booked In")
                     {
-                        speech.SpeakAsync("INVALID SESSION");
+                        speech.SpeakAsync("Delayed Booked In");
                         //display From Database
-                        #region
-                        if (labelAttendanceType.InvokeRequired)
+                        labelHideNshow(false);
+                        labelHideNshowTimeDate(false, false);
+                        DefaultScanCenterImagelocation();
+                        if (labelAttendanceType.InvokeRequired) //AttendanceType
                         {
+                            setLabelXSetting(labelAttendanceType, AttendanceType, 486, 64, 370, 32, Color.Black);
                             labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = AttendanceType; });
                         }
-                        if (labelAttendanceTime.InvokeRequired)
+                        if (labelAttendanceTime.InvokeRequired) //Time
                         {
-                            labelAttendanceTime.BeginInvoke((MethodInvoker)delegate () { labelAttendanceTime.Text = DateTime.Now.ToString("HH:mm"); });
+                            labelAttendanceTime.ForeColor = System.Drawing.Color.Black;
+                            labelAttendanceTime.BeginInvoke((MethodInvoker)delegate () { labelAttendanceTime.Text = DateTime.Now.ToString("HH"+"mm") + " HRS"; });
                         }
                         DataTable c = MainClass.MngPAFBOS.GetCadetsByCadetID(matchID[0]);
                         DataRow[] rows = c.Select("CadetID=" + matchID[0]);
                         Image pic = ImageClass.GetImageFromBase64(rows[0]["Picture"].ToString());
 
-                        if (pictureBoxPhoto.InvokeRequired)
+                        if (pictureBoxPhoto.InvokeRequired) //CadetPic
                         {
+                            pictureBoxPhoto.ForeColor = System.Drawing.Color.Black;
                             pictureBoxPhoto.BeginInvoke((MethodInvoker)delegate () { pictureBoxPhoto.Image = pic; });
                         }
-                        if (labelName.InvokeRequired)
+                        if (labelName.InvokeRequired) //CadetName
                         {
+                            labelName.ForeColor = System.Drawing.Color.Black;
                             labelName.BeginInvoke((MethodInvoker)delegate () { labelName.Text = rows[0]["CadetName"].ToString(); });
                         }
-                        if (labelDelay.InvokeRequired)
+                        if (labelPakNumber.InvokeRequired) //CadetPak
                         {
-
-                            labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = SessionInformation; });
+                            labelPakNumber.ForeColor = System.Drawing.Color.Black;
+                            labelPakNumber.BeginInvoke((MethodInvoker)delegate () { labelPakNumber.Text = "Pak/ " + rows[0]["PAKNumber"].ToString(); });
                         }
-                        pictureBoxMainImage.Image = Properties.Resources.Failed;
-                        #endregion
+                        if (labelDelay.InvokeRequired) //StatusDetails <<Book In Time:>>
+                        {
+                            labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = StatusDetails; });
+                            setLabelXSetting(labelDelay, StatusDetails, 190, 54, 12, 398, Color.Black);
+
+                        }
+                        if (pictureBoxMainImage.InvokeRequired) ////CadetPak << ScanImage >>
+                        {
+                            pictureBoxMainImage.BeginInvoke((MethodInvoker)delegate ()
+                            {
+                                pictureBoxMainImage.Image = Properties.Resources.ArrowDownDelay;
+                                setImageProperties(pictureBoxMainImage, 311, 295, 450, 92, PictureBoxSizeMode.CenterImage);
+                            });
+                        }
+
                         //After Delay
                         System.Threading.Thread.Sleep(Delay);
                         //display Null All 
-                        #region
+                        labelHideNshow(true);
+                        labelHideNshowTimeDate(true, true);
+                        DefaultScanImagelocation();
+                      //  DefaultImageProperties();
                         pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
                         if (labelAttendanceType.InvokeRequired)
                         {
@@ -322,52 +426,87 @@ namespace AttendanceScreen
                         {
                             pictureBoxPhoto.BeginInvoke((MethodInvoker)delegate () { pictureBoxPhoto.Image = null; });
                         }
+                        if (pictureBoxPhoto.InvokeRequired)
+                        {
+                            pictureBoxArrow.BeginInvoke((MethodInvoker)delegate () { pictureBoxArrow.Image = null; });
+                        }
                         if (labelName.InvokeRequired)
                         {
                             labelName.BeginInvoke((MethodInvoker)delegate () { labelName.Text = null; });
+                        }
+                        if (labelPakNumber.InvokeRequired)
+                        {
+                            labelPakNumber.BeginInvoke((MethodInvoker)delegate () { labelPakNumber.Text = null; });
                         }
                         if (labelDelay.InvokeRequired)
                         {
                             labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = null; });
                         }
-                        #endregion
                     }
-                    if (SessionInformation == "VALID SESSION")
+                    #endregion
+                    #region BOOK IN
+
+                    if (AttendanceType == "Timely Booked In")
                     {
                         speech.SpeakAsync("THANK YOU");
                         //display From Database
-                        #region
-                        if (labelAttendanceType.InvokeRequired)
+                        labelHideNshow(false);
+                        labelHideNshowTimeDate(false, false);
+                        DefaultScanCenterImagelocation();
+                        if (labelAttendanceType.InvokeRequired) //AttendanceType
                         {
+                            setLabelXSetting(labelAttendanceType, AttendanceType, 486, 64, 370, 32, Color.Black);
                             labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = AttendanceType; });
                         }
-                        if (labelAttendanceTime.InvokeRequired)
+                        if (labelAttendanceTime.InvokeRequired) //Time
                         {
-                            labelAttendanceTime.BeginInvoke((MethodInvoker)delegate () { labelAttendanceTime.Text = DateTime.Now.ToString("HH:mm"); });
+                            labelAttendanceTime.ForeColor = System.Drawing.Color.Black;
+                            labelAttendanceTime.BeginInvoke((MethodInvoker)delegate () 
+                            {
+                                labelAttendanceTime.Text = DateTime.Now.ToString("HH"+"mm") + " HRS";
+                            });
                         }
                         DataTable c = MainClass.MngPAFBOS.GetCadetsByCadetID(matchID[0]);
                         DataRow[] rows = c.Select("CadetID=" + matchID[0]);
                         Image pic = ImageClass.GetImageFromBase64(rows[0]["Picture"].ToString());
 
-                        if (pictureBoxPhoto.InvokeRequired)
+                        if (pictureBoxPhoto.InvokeRequired) //CadetPic
                         {
+                            pictureBoxPhoto.ForeColor = System.Drawing.Color.Black;
                             pictureBoxPhoto.BeginInvoke((MethodInvoker)delegate () { pictureBoxPhoto.Image = pic; });
                         }
-                        if (labelName.InvokeRequired)
+                        if (labelName.InvokeRequired) //CadetName
                         {
+                            labelName.ForeColor = System.Drawing.Color.Black;
                             labelName.BeginInvoke((MethodInvoker)delegate () { labelName.Text = rows[0]["CadetName"].ToString(); });
                         }
-                        if (labelDelay.InvokeRequired)
+                        if (labelPakNumber.InvokeRequired) //CadetPak
                         {
-
-                            labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = SessionInformation; });
+                            labelPakNumber.ForeColor = System.Drawing.Color.Black;
+                            labelPakNumber.BeginInvoke((MethodInvoker)delegate () { labelPakNumber.Text = "Pak/ " + rows[0]["PAKNumber"].ToString(); });
                         }
-                        pictureBoxMainImage.Image = Properties.Resources.Success;
-                        #endregion
+                        if (labelDelay.InvokeRequired) //StatusDetails <<Book In Time:>>
+                        {
+                            labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = StatusDetails; });
+                            setLabelXSetting(labelDelay, StatusDetails, 190, 54, 12, 398, Color.Black);
+
+                        }
+                        if (pictureBoxMainImage.InvokeRequired) ////CadetPak << ScanImage >>
+                        {
+                            pictureBoxMainImage.BeginInvoke((MethodInvoker)delegate ()
+                            {
+                                pictureBoxMainImage.Image = Properties.Resources.ArrowDown;
+                                setImageProperties(pictureBoxMainImage, 311, 295, 450, 92, PictureBoxSizeMode.CenterImage);
+                            });
+                        }
+
                         //After Delay
                         System.Threading.Thread.Sleep(Delay);
                         //display Null All 
-                        #region
+                        labelHideNshow(true);
+                        labelHideNshowTimeDate(true, true);
+                        //DefaultImageProperties();
+                        DefaultScanImagelocation();
                         pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
                         if (labelAttendanceType.InvokeRequired)
                         {
@@ -381,52 +520,86 @@ namespace AttendanceScreen
                         {
                             pictureBoxPhoto.BeginInvoke((MethodInvoker)delegate () { pictureBoxPhoto.Image = null; });
                         }
+                        if (pictureBoxPhoto.InvokeRequired)
+                        {
+                            pictureBoxArrow.BeginInvoke((MethodInvoker)delegate () { pictureBoxArrow.Image = null; });
+                        }
                         if (labelName.InvokeRequired)
                         {
                             labelName.BeginInvoke((MethodInvoker)delegate () { labelName.Text = null; });
+                        }
+                        if (labelPakNumber.InvokeRequired)
+                        {
+                            labelPakNumber.BeginInvoke((MethodInvoker)delegate () { labelPakNumber.Text = null; });
                         }
                         if (labelDelay.InvokeRequired)
                         {
                             labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = null; });
                         }
-                        #endregion
                     }
-                    if (SessionInformation == "ALREADY CHECKED")
+                    #endregion
+                    #region BOOK OUT
+
+                    if (AttendanceType == "Book Out Authorized")
                     {
-                        speech.SpeakAsync("ALREADY CHECKED");
+                        speech.SpeakAsync("THANK YOU");
                         //display From Database
-                        #region
-                        if (labelAttendanceType.InvokeRequired)
+                        labelHideNshow(false);
+                        labelHideNshowTimeDate(false, false);
+                        DefaultScanCenterImagelocation();
+                        if (labelAttendanceType.InvokeRequired) //AttendanceType
                         {
+                            setLabelXSetting(labelAttendanceType, AttendanceType, 486, 64, 370, 32, Color.Black);
                             labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = AttendanceType; });
                         }
-                        if (labelAttendanceTime.InvokeRequired)
+                        if (labelAttendanceTime.InvokeRequired) //Time
                         {
-                            labelAttendanceTime.BeginInvoke((MethodInvoker)delegate () { labelAttendanceTime.Text = DateTime.Now.ToString("HH:mm"); });
+                            labelAttendanceTime.BeginInvoke((MethodInvoker)delegate () 
+                            {
+                                string labelAttendanceTimestr = DateTime.Now.ToString("HH" + "mm") + " HRS";
+                                setLabelXSetting(labelAttendanceTime, labelAttendanceTimestr, 178, 54, 230, 398, Color.Black);
+                            });
                         }
                         DataTable c = MainClass.MngPAFBOS.GetCadetsByCadetID(matchID[0]);
                         DataRow[] rows = c.Select("CadetID=" + matchID[0]);
                         Image pic = ImageClass.GetImageFromBase64(rows[0]["Picture"].ToString());
 
-                        if (pictureBoxPhoto.InvokeRequired)
+                        if (pictureBoxPhoto.InvokeRequired) //CadetPic
                         {
+                            pictureBoxPhoto.ForeColor = System.Drawing.Color.Black;
                             pictureBoxPhoto.BeginInvoke((MethodInvoker)delegate () { pictureBoxPhoto.Image = pic; });
                         }
-                        if (labelName.InvokeRequired)
+                        if (labelName.InvokeRequired) //CadetName
                         {
+                            labelName.ForeColor = System.Drawing.Color.Black;
                             labelName.BeginInvoke((MethodInvoker)delegate () { labelName.Text = rows[0]["CadetName"].ToString(); });
                         }
-                        if (labelDelay.InvokeRequired)
+                        if (labelPakNumber.InvokeRequired) //CadetPak
                         {
-
-                            labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = SessionInformation; });
+                            labelPakNumber.ForeColor = System.Drawing.Color.Black;
+                            labelPakNumber.BeginInvoke((MethodInvoker)delegate () { labelPakNumber.Text = "Pak/ " + rows[0]["PAKNumber"].ToString(); });
                         }
-                        pictureBoxMainImage.Image = Properties.Resources.Success;
-                        #endregion
+                        if (labelDelay.InvokeRequired) //StatusDetails <<Book In Time:>>
+                        {
+                            labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = StatusDetails; });
+                            setLabelXSetting(labelDelay, StatusDetails, 220, 54, 12, 398, Color.Black);
+                        }
+                        if (pictureBoxMainImage.InvokeRequired) ////CadetPak << ScanImage >>
+                        {
+                            pictureBoxMainImage.BeginInvoke((MethodInvoker)delegate ()
+                            {
+                                pictureBoxMainImage.Image = Properties.Resources.ArrowUp;
+                                setImageProperties(pictureBoxMainImage, 311, 295, 450, 92, PictureBoxSizeMode.CenterImage);
+                            });
+                        }
+
                         //After Delay
                         System.Threading.Thread.Sleep(Delay);
                         //display Null All 
-                        #region
+                        labelHideNshow(true);
+                        labelHideNshowTimeDate(true, true);
+                        DefaultScanImagelocation();
+                        //DefaultImageProperties();
                         pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
                         if (labelAttendanceType.InvokeRequired)
                         {
@@ -440,300 +613,651 @@ namespace AttendanceScreen
                         {
                             pictureBoxPhoto.BeginInvoke((MethodInvoker)delegate () { pictureBoxPhoto.Image = null; });
                         }
+                        if (pictureBoxPhoto.InvokeRequired)
+                        {
+                            pictureBoxArrow.BeginInvoke((MethodInvoker)delegate () { pictureBoxArrow.Image = null; });
+                        }
                         if (labelName.InvokeRequired)
                         {
                             labelName.BeginInvoke((MethodInvoker)delegate () { labelName.Text = null; });
+                        }
+                        if (labelPakNumber.InvokeRequired)
+                        {
+                            labelPakNumber.BeginInvoke((MethodInvoker)delegate () { labelPakNumber.Text = null; });
                         }
                         if (labelDelay.InvokeRequired)
                         {
                             labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = null; });
                         }
-                        #endregion
+                    }
+                    #endregion
+                    #region Duplicate
+                    if (AttendanceType == "Duplicate")
+                    {
+                        speech.SpeakAsync("Please Wait for 1 Minute");
+                        //display From Database
+                        labelHideNshow(false);
+                        labelHideNshowTimeDate(false, false);
+                        DefaultScanCenterImagelocation();
+                        if (labelAttendanceType.InvokeRequired) //SessionInformation  << Please Wait for 1 Minute >>
+                        {
+                            setLabelXSetting(labelAttendanceType, AttendanceType, 680, 64, 155, 150, Color.Black);
+                            labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = SessionInformation; });
+                        }
+                        if (labelDelay.InvokeRequired) //StatusDetails <<(Too Many Attempts)>>
+                        {
+                            labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = StatusDetails; });
+                            setLabelXSetting(labelDelay, StatusDetails, 300, 54, 350, 210, Color.Red);
+                        }
+                        DataTable c = MainClass.MngPAFBOS.GetCadetsByCadetID(matchID[0]);
+                        DataRow[] rows = c.Select("CadetID=" + matchID[0]);
+                        Image pic = ImageClass.GetImageFromBase64(rows[0]["Picture"].ToString());
+
+                        if (pictureBoxMainImage.InvokeRequired) //MainPic
+                        {
+                            pictureBoxMainImage.BeginInvoke((MethodInvoker)delegate () { pictureBoxMainImage.Visible = false; });
+                        }
+                        if (pictureBoxPhoto.InvokeRequired) //CadetPic
+                        {
+                            pictureBoxPhoto.BeginInvoke((MethodInvoker)delegate () { pictureBoxPhoto.Image = pic; });
+                        }
+                        if (labelName.InvokeRequired) //CadetName
+                        {
+                            labelName.ForeColor = System.Drawing.Color.Black;
+                            labelName.BeginInvoke((MethodInvoker)delegate () { labelName.Text = rows[0]["CadetName"].ToString(); });
+                        }
+                        if (labelPakNumber.InvokeRequired) //CadetPak
+                        {
+                            labelPakNumber.ForeColor = System.Drawing.Color.Black;
+                            labelPakNumber.BeginInvoke((MethodInvoker)delegate () { labelPakNumber.Text = "Pak/ " + rows[0]["PAKNumber"].ToString(); });
+                        }
+
+                        //After Delay
+                        System.Threading.Thread.Sleep(Delay);
+                        //display Null All 
+                        labelHideNshow(true);
+                        labelHideNshowTimeDate(true, true);
+                        DefaultScanImagelocation();
+                       // DefaultImageProperties();
+                        if (labelAttendanceType.InvokeRequired)
+                        {
+                            labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = null; });
+                        }
+                        if (pictureBoxPhoto.InvokeRequired)
+                        {
+                            pictureBoxPhoto.BeginInvoke((MethodInvoker)delegate () { pictureBoxPhoto.Image = null; });
+                        }
+                        if (labelName.InvokeRequired)
+                        {
+                            labelName.BeginInvoke((MethodInvoker)delegate () { labelName.Text = null; });
+                        }
+                        if (labelPakNumber.InvokeRequired)
+                        {
+                            labelPakNumber.BeginInvoke((MethodInvoker)delegate () { labelPakNumber.Text = null; });
+                        }
+                        if (labelDelay.InvokeRequired) //StatusDetails <<(Too Many Attempts)>>
+                        {
+                            setLabelXSetting(labelDelay, StatusDetails, 845, 54, 12, 398, Color.Green);
+                            labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = null; });
+                        }
+                        if (pictureBoxMainImage.InvokeRequired) //MainPic
+                        {
+                            pictureBoxMainImage.BeginInvoke((MethodInvoker)delegate () { pictureBoxMainImage.Visible = true; });
+                        }
+
                     }
                     #endregion
                 }
-                //FLASE
-                else
+                else 
                 {
-                    #region//if Some Error Occur
-                    if (SessionInformation == "PENDING PUNISHMENT CANNOT ALLOWED BOOK OUT")
+                    #region PUNISHMENT
+                    if (AttendanceType == "Punishment")
                     {
-                        speech.SpeakAsync("PENDING PUNISHMENT CANNOT ALLOWED BOOK OUT");
+                        speech.SpeakAsync("Bookout Un Authorized Please Consult Bookout Incharge");
                         //display From Database
-                        #region
+                        labelHideNshow(false);
+                        labelHideNshowTimeDate(false, false);
+                        DefaultScanCenterImagelocation();
                         if (labelAttendanceType.InvokeRequired)
                         {
-                            labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = AttendanceType; });
+                            setLabelXSetting(labelAttendanceType, StatusDetails, 499, 64, 370, 33, Color.Black);
                         }
-
                         if (labelDelay.InvokeRequired)
                         {
+                            setLabelXSetting(labelDelay, SessionInformation, 537, 54, 340, 399, Color.Black);
+                            labelDelay.TextAlignment = System.Drawing.StringAlignment.Center;
+                        }
+
+                        if (pictureBoxMainImage.InvokeRequired)
+                        {
+                            setImageProperties(pictureBoxMainImage, 311, 225, 450, 140, PictureBoxSizeMode.Zoom);
+                            pictureBoxMainImage.BeginInvoke((MethodInvoker)delegate () { pictureBoxMainImage.Image = Properties.Resources.Failed; });
+                        }
+
+
+                        //After Delay
+                        System.Threading.Thread.Sleep(Delay);
+                        //display Null All 
+                        DefaultScanImagelocation();
+                       // DefaultImageProperties();
+                        labelHideNshow(true);
+                        labelHideNshowTimeDate(true, true);
+                        if (labelDelay.InvokeRequired)
+                        {
+                            labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = null; });
+                        }
+                        if (labelAttendanceType.InvokeRequired)
+                        {
+                            labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = null; });
+                        }
+                    }
+                    #endregion
+                    #region INVALID SESSION
+                    if (AttendanceType == "INVALID SESSION")
+                    {
+                        speech.SpeakAsync("INVALID SESSION");
+                        //display From Database
+                        labelHideNshow(false);
+                        labelHideNshowTimeDate(false, false);
+                        DefaultScanCenterImagelocation();
+                        if (labelDelay.InvokeRequired)
+                        {
+                            setLabelXSetting(labelDelay, SessionInformation, 250, 54, 505, 350, Color.Black);
                             labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = SessionInformation; });
                         }
                         pictureBoxMainImage.Image = Properties.Resources.Failed;
-                        #endregion
+                        Application.DoEvents();
+
                         //After Delay
                         System.Threading.Thread.Sleep(Delay);
+
                         //display Null All 
-                        #region
                         pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
-                        if (labelAttendanceType.InvokeRequired)
-                        {
-                            labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = null; });
-                        }
-                        if (labelAttendanceTime.InvokeRequired)
-                        {
-                            labelAttendanceTime.BeginInvoke((MethodInvoker)delegate () { labelAttendanceTime.Text = null; });
-                        }
+                        DefaultScanImagelocation();
+                        labelHideNshow(true);
+                        labelHideNshowTimeDate(true, true);
                         if (labelDelay.InvokeRequired)
                         {
                             labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = null; });
                         }
-                        #endregion
-                    }
-                    else
-                    {
-                        if (labelDelay.InvokeRequired)
-                        {
-                            labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = StatusDetails; });
-                        }
-                        //Delay
-                        System.Threading.Thread.Sleep(Delay);
-                        //Hide
-                        if (labelDelay.InvokeRequired)
-                        {
-                            labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = null; });
-                        }
-                        pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
                     }
                     #endregion
                 }
-
-
-
-            }//Thumb Search END
+                #endregion
+                //==============END=====================//
+            } //Thumb Search END
             else //if not found then search for rfmd
             {
                 stringfmds0 = td.AsEnumerable().Select(dr => dr.Field<string>("RFmd")).ToList();  //Access from DataTable
                 th = new ComparesionOfFMD(stringfmds0, fmd.Data, IDs.GetRange(0, IDs.Count), 0, matchID); //Access from DataTable
                 if (matchID.Count > 0)
                 {
-                    //store value in attendance table. 
-                    MainClass.MngPAFBOS.CreateAttendance(matchID[0], out SessionInformation, out AttendanceType, out Status, out StatusDetails);
+                     //store value in attendance table. 
+                     MainClass.MngPAFBOS.CreateAttendance(matchID[0], out SessionInformation, out AttendanceType, out Status, out StatusDetails);
+                    
 
-                    if (Status)
-                    {// Found Data
-                        #region
-                        //display
-                        if (labelAttendanceType.InvokeRequired)
-                        {
-                            labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = AttendanceType; });
-                        }
+                    //** Right_THUMB **//
+                    //==============START=====================//
+                    #region START To AND THUMB
+                    if (Status == true)
+                    {
+                        #region BOOK IN DELAY
 
-                        if (labelAttendanceTime.InvokeRequired)
+                        if (AttendanceType == "Delayed Booked In")
                         {
-                            labelAttendanceTime.BeginInvoke((MethodInvoker)delegate () { labelAttendanceTime.Text = DateTime.Now.ToString("hh:mm tt"); });
-                        }
-                        DataTable c = MainClass.MngPAFBOS.GetCadetsByCadetID(matchID[0]);
-                        DataRow[] rows = c.Select("CadetID=" + matchID[0]);
-                        Image pic = ImageClass.GetImageFromBase64(rows[0]["Picture"].ToString());
+                            speech.SpeakAsync("Delayed Booked In");
+                            //display From Database
+                            labelHideNshow(false);
+                            labelHideNshowTimeDate(false, false);
+                            DefaultScanCenterImagelocation();
+                            if (labelAttendanceType.InvokeRequired) //AttendanceType
+                            {
+                                setLabelXSetting(labelAttendanceType, AttendanceType, 486, 64, 370, 32, Color.Black);
+                                labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = AttendanceType; });
+                            }
+                            if (labelAttendanceTime.InvokeRequired) //Time
+                            {
+                                labelAttendanceTime.ForeColor = System.Drawing.Color.Black;
+                                labelAttendanceTime.BeginInvoke((MethodInvoker)delegate () { labelAttendanceTime.Text = DateTime.Now.ToString("HH"+"mm") + " HRS"; });
+                            }
+                            DataTable c = MainClass.MngPAFBOS.GetCadetsByCadetID(matchID[0]);
+                            DataRow[] rows = c.Select("CadetID=" + matchID[0]);
+                            Image pic = ImageClass.GetImageFromBase64(rows[0]["Picture"].ToString());
 
-                        if (pictureBoxPhoto.InvokeRequired)
-                        {
-                            pictureBoxPhoto.BeginInvoke((MethodInvoker)delegate () { pictureBoxPhoto.Image = pic; });
-                        }
-                        if (labelName.InvokeRequired)
-                        {
-                            labelName.BeginInvoke((MethodInvoker)delegate () { labelName.Text = rows[0]["CadetName"].ToString(); });
-                        }
-                        if (labelDelay.InvokeRequired)
-                        {
-                            labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = SessionInformation; });
-                        }
+                            if (pictureBoxPhoto.InvokeRequired) //CadetPic
+                            {
+                                pictureBoxPhoto.ForeColor = System.Drawing.Color.Black;
+                                pictureBoxPhoto.BeginInvoke((MethodInvoker)delegate () { pictureBoxPhoto.Image = pic; });
+                            }
+                            if (labelName.InvokeRequired) //CadetName
+                            {
+                                labelName.ForeColor = System.Drawing.Color.Black;
+                                labelName.BeginInvoke((MethodInvoker)delegate () { labelName.Text = rows[0]["CadetName"].ToString(); });
+                            }
+                            if (labelPakNumber.InvokeRequired) //CadetPak
+                            {
+                                labelPakNumber.ForeColor = System.Drawing.Color.Black;
+                                labelPakNumber.BeginInvoke((MethodInvoker)delegate () { labelPakNumber.Text = "Pak/ " + rows[0]["PAKNumber"].ToString(); });
+                            }
+                            if (labelDelay.InvokeRequired) //StatusDetails <<Book In Time:>>
+                            {
+                                labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = StatusDetails; });
+                                setLabelXSetting(labelDelay, StatusDetails, 190, 54, 12, 398, Color.Black);
 
-                        pictureBoxMainImage.Image = Properties.Resources.Success;
+                            }
+                            if (pictureBoxMainImage.InvokeRequired) ////CadetPak << ScanImage >>
+                            {
+                                pictureBoxMainImage.BeginInvoke((MethodInvoker)delegate ()
+                                {
+                                    pictureBoxMainImage.Image = Properties.Resources.ArrowDownDelay;
+                                    setImageProperties(pictureBoxMainImage, 311, 295, 450, 92, PictureBoxSizeMode.CenterImage);
+                                });
+                            }
 
+                            //After Delay
+                            System.Threading.Thread.Sleep(Delay);
+                            //display Null All 
+                            labelHideNshow(true);
+                            labelHideNshowTimeDate(true, true);
+                            DefaultScanImagelocation();
+                            //DefaultImageProperties();
+                            pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
+                            if (labelAttendanceType.InvokeRequired)
+                            {
+                                labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = null; });
+                            }
+                            if (labelAttendanceTime.InvokeRequired)
+                            {
+                                labelAttendanceTime.BeginInvoke((MethodInvoker)delegate () { labelAttendanceTime.Text = null; });
+                            }
+                            if (pictureBoxPhoto.InvokeRequired)
+                            {
+                                pictureBoxPhoto.BeginInvoke((MethodInvoker)delegate () { pictureBoxPhoto.Image = null; });
+                            }
+                            if (pictureBoxPhoto.InvokeRequired)
+                            {
+                                pictureBoxArrow.BeginInvoke((MethodInvoker)delegate () { pictureBoxArrow.Image = null; });
+                            }
+                            if (labelName.InvokeRequired)
+                            {
+                                labelName.BeginInvoke((MethodInvoker)delegate () { labelName.Text = null; });
+                            }
+                            if (labelPakNumber.InvokeRequired)
+                            {
+                                labelPakNumber.BeginInvoke((MethodInvoker)delegate () { labelPakNumber.Text = null; });
+                            }
+                            if (labelDelay.InvokeRequired)
+                            {
+                                labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = null; });
+                            }
+                        }
+                        #endregion
+                        #region BOOK IN
 
-                        //After Delay
-                        System.Threading.Thread.Sleep(Delay);
-                        pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
+                        if (AttendanceType == "Timely Booked In")
+                        {
+                            speech.SpeakAsync("THANK YOU");
+                            //display From Database
+                            labelHideNshow(false);
+                            labelHideNshowTimeDate(false, false);
+                            DefaultScanCenterImagelocation();
+                            if (labelAttendanceType.InvokeRequired) //AttendanceType
+                            {
+                                setLabelXSetting(labelAttendanceType, AttendanceType, 486, 64, 370, 32, Color.Black);
+                                labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = AttendanceType; });
+                            }
+                            if (labelAttendanceTime.InvokeRequired) //Time
+                            {
+                                labelAttendanceTime.ForeColor = System.Drawing.Color.Black;
+                                labelAttendanceTime.BeginInvoke((MethodInvoker)delegate () { labelAttendanceTime.Text = DateTime.Now.ToString("HH"+"mm") + " HRS"; });
+                            }
+                            DataTable c = MainClass.MngPAFBOS.GetCadetsByCadetID(matchID[0]);
+                            DataRow[] rows = c.Select("CadetID=" + matchID[0]);
+                            Image pic = ImageClass.GetImageFromBase64(rows[0]["Picture"].ToString());
 
-                        if (labelAttendanceType.InvokeRequired)
-                        {
-                            labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = null; });
-                        }
+                            if (pictureBoxPhoto.InvokeRequired) //CadetPic
+                            {
+                                pictureBoxPhoto.ForeColor = System.Drawing.Color.Black;
+                                pictureBoxPhoto.BeginInvoke((MethodInvoker)delegate () { pictureBoxPhoto.Image = pic; });
+                            }
+                            if (labelName.InvokeRequired) //CadetName
+                            {
+                                labelName.ForeColor = System.Drawing.Color.Black;
+                                labelName.BeginInvoke((MethodInvoker)delegate () { labelName.Text = rows[0]["CadetName"].ToString(); });
+                            }
+                            if (labelPakNumber.InvokeRequired) //CadetPak
+                            {
+                                labelPakNumber.ForeColor = System.Drawing.Color.Black;
+                                labelPakNumber.BeginInvoke((MethodInvoker)delegate () { labelPakNumber.Text = "Pak/ " + rows[0]["PAKNumber"].ToString(); });
+                            }
+                            if (labelDelay.InvokeRequired) //StatusDetails <<Book In Time:>>
+                            {
+                                labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = StatusDetails; });
+                                setLabelXSetting(labelDelay, StatusDetails, 190, 54, 12, 398, Color.Black);
 
-                        if (labelAttendanceTime.InvokeRequired)
-                        {
-                            labelAttendanceTime.BeginInvoke((MethodInvoker)delegate () { labelAttendanceTime.Text = null; });
+                            }
+                            if (pictureBoxMainImage.InvokeRequired) ////CadetPak << ScanImage >>
+                            {
+                                pictureBoxMainImage.BeginInvoke((MethodInvoker)delegate ()
+                                {
+                                    pictureBoxMainImage.Image = Properties.Resources.ArrowDown;
+                                    setImageProperties(pictureBoxMainImage, 311, 295, 450, 92, PictureBoxSizeMode.CenterImage);
+                                });
+                            }
+
+                            //After Delay
+                            System.Threading.Thread.Sleep(Delay);
+                            //display Null All 
+                            labelHideNshow(true);
+                            labelHideNshowTimeDate(true, true);
+                            //DefaultImageProperties();
+                            DefaultScanImagelocation();
+                            pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
+                            if (labelAttendanceType.InvokeRequired)
+                            {
+                                labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = null; });
+                            }
+                            if (labelAttendanceTime.InvokeRequired)
+                            {
+                                labelAttendanceTime.BeginInvoke((MethodInvoker)delegate () { labelAttendanceTime.Text = null; });
+                            }
+                            if (pictureBoxPhoto.InvokeRequired)
+                            {
+                                pictureBoxPhoto.BeginInvoke((MethodInvoker)delegate () { pictureBoxPhoto.Image = null; });
+                            }
+                            if (pictureBoxPhoto.InvokeRequired)
+                            {
+                                pictureBoxArrow.BeginInvoke((MethodInvoker)delegate () { pictureBoxArrow.Image = null; });
+                            }
+                            if (labelName.InvokeRequired)
+                            {
+                                labelName.BeginInvoke((MethodInvoker)delegate () { labelName.Text = null; });
+                            }
+                            if (labelPakNumber.InvokeRequired)
+                            {
+                                labelPakNumber.BeginInvoke((MethodInvoker)delegate () { labelPakNumber.Text = null; });
+                            }
+                            if (labelDelay.InvokeRequired)
+                            {
+                                labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = null; });
+                            }
                         }
-                        if (pictureBoxPhoto.InvokeRequired)
+                        #endregion
+                        #region BOOK OUT
+
+                        if (AttendanceType == "Book Out Authorized")
                         {
-                            pictureBoxPhoto.BeginInvoke((MethodInvoker)delegate () { pictureBoxPhoto.Image = null; });
+                            speech.SpeakAsync("THANK YOU");
+                            //display From Database
+                            labelHideNshow(false);
+                            labelHideNshowTimeDate(false, false);
+                            DefaultScanCenterImagelocation();
+                            if (labelAttendanceType.InvokeRequired) //AttendanceType
+                            {
+                                setLabelXSetting(labelAttendanceType, AttendanceType, 486, 64, 370, 32, Color.Black);
+                                labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = AttendanceType; });
+                            }
+                            if (labelAttendanceTime.InvokeRequired) //Time
+                            {
+                                labelAttendanceTime.ForeColor = System.Drawing.Color.Black;
+                                labelAttendanceTime.BeginInvoke((MethodInvoker)delegate ()
+                                {
+                                    string labelAttendanceTimestr = DateTime.Now.ToString("HH" + "mm") + " HRS";
+                                    setLabelXSetting(labelAttendanceTime, labelAttendanceTimestr, 178, 54, 230, 398, Color.Black);
+                                });
+                            }
+                            DataTable c = MainClass.MngPAFBOS.GetCadetsByCadetID(matchID[0]);
+                            DataRow[] rows = c.Select("CadetID=" + matchID[0]);
+                            Image pic = ImageClass.GetImageFromBase64(rows[0]["Picture"].ToString());
+
+                            if (pictureBoxPhoto.InvokeRequired) //CadetPic
+                            {
+                                pictureBoxPhoto.ForeColor = System.Drawing.Color.Black;
+                                pictureBoxPhoto.BeginInvoke((MethodInvoker)delegate () { pictureBoxPhoto.Image = pic; });
+                            }
+                            if (labelName.InvokeRequired) //CadetName
+                            {
+                                labelName.ForeColor = System.Drawing.Color.Black;
+                                labelName.BeginInvoke((MethodInvoker)delegate () { labelName.Text = rows[0]["CadetName"].ToString(); });
+                            }
+                            if (labelPakNumber.InvokeRequired) //CadetPak
+                            {
+                                labelPakNumber.ForeColor = System.Drawing.Color.Black;
+                                labelPakNumber.BeginInvoke((MethodInvoker)delegate () { labelPakNumber.Text = "Pak/ " + rows[0]["PAKNumber"].ToString(); });
+                            }
+                            if (labelDelay.InvokeRequired) //StatusDetails <<Book In Time:>>
+                            {
+                                labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = StatusDetails; });
+                                setLabelXSetting(labelDelay, StatusDetails, 220, 54, 12, 398, Color.Black);
+
+                            }
+                            if (pictureBoxMainImage.InvokeRequired) ////CadetPak << ScanImage >>
+                            {
+                                pictureBoxMainImage.BeginInvoke((MethodInvoker)delegate ()
+                                {
+                                    pictureBoxMainImage.Image = Properties.Resources.ArrowUp;
+                                    setImageProperties(pictureBoxMainImage, 311, 295, 450, 92, PictureBoxSizeMode.CenterImage);
+                                });
+                            }
+
+                            //After Delay
+                            System.Threading.Thread.Sleep(Delay);
+                            //display Null All 
+                            labelHideNshow(true);
+                            labelHideNshowTimeDate(true, true);
+                            DefaultScanImagelocation();
+                           // DefaultImageProperties();
+                            pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
+                            if (labelAttendanceType.InvokeRequired)
+                            {
+                                labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = null; });
+                            }
+                            if (labelAttendanceTime.InvokeRequired)
+                            {
+                                labelAttendanceTime.BeginInvoke((MethodInvoker)delegate () { labelAttendanceTime.Text = null; });
+                            }
+                            if (pictureBoxPhoto.InvokeRequired)
+                            {
+                                pictureBoxPhoto.BeginInvoke((MethodInvoker)delegate () { pictureBoxPhoto.Image = null; });
+                            }
+                            if (pictureBoxPhoto.InvokeRequired)
+                            {
+                                pictureBoxArrow.BeginInvoke((MethodInvoker)delegate () { pictureBoxArrow.Image = null; });
+                            }
+                            if (labelName.InvokeRequired)
+                            {
+                                labelName.BeginInvoke((MethodInvoker)delegate () { labelName.Text = null; });
+                            }
+                            if (labelPakNumber.InvokeRequired)
+                            {
+                                labelPakNumber.BeginInvoke((MethodInvoker)delegate () { labelPakNumber.Text = null; });
+                            }
+                            if (labelDelay.InvokeRequired)
+                            {
+                                labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = null; });
+                            }
                         }
-                        if (labelName.InvokeRequired)
+                        #endregion
+                        #region Duplicate
+                        if (AttendanceType == "Duplicate")
                         {
-                            labelName.BeginInvoke((MethodInvoker)delegate () { labelName.Text = null; });
-                        }
-                        if (labelDelay.InvokeRequired)
-                        {
-                            labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = null; });
+                            speech.SpeakAsync("Please Wait for 1 Minute");
+                            //display From Database
+                            labelHideNshow(false);
+                            labelHideNshowTimeDate(false, false);
+                            DefaultScanCenterImagelocation();
+                            if (labelAttendanceType.InvokeRequired) //SessionInformation  << Please Wait for 1 Minute >>
+                            {
+                                setLabelXSetting(labelAttendanceType, AttendanceType, 680, 64, 155, 150, Color.Black);
+                                labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = SessionInformation; });
+                            }
+                            if (labelDelay.InvokeRequired) //StatusDetails <<(Too Many Attempts)>>
+                            {
+                                labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = StatusDetails; });
+                                setLabelXSetting(labelDelay, StatusDetails, 300, 54, 350, 210, Color.Red);
+                            }
+                            DataTable c = MainClass.MngPAFBOS.GetCadetsByCadetID(matchID[0]);
+                            DataRow[] rows = c.Select("CadetID=" + matchID[0]);
+                            Image pic = ImageClass.GetImageFromBase64(rows[0]["Picture"].ToString());
+
+                            if (pictureBoxMainImage.InvokeRequired) //MainPic
+                            {
+                                pictureBoxMainImage.BeginInvoke((MethodInvoker)delegate () { pictureBoxMainImage.Visible = false; });
+                            }
+                            if (pictureBoxPhoto.InvokeRequired) //CadetPic
+                            {
+                                pictureBoxPhoto.BeginInvoke((MethodInvoker)delegate () { pictureBoxPhoto.Image = pic; });
+                            }
+                            if (labelName.InvokeRequired) //CadetName
+                            {
+                                labelName.ForeColor = System.Drawing.Color.Black;
+                                labelName.BeginInvoke((MethodInvoker)delegate () { labelName.Text = rows[0]["CadetName"].ToString(); });
+                            }
+                            if (labelPakNumber.InvokeRequired) //CadetPak
+                            {
+                                labelPakNumber.ForeColor = System.Drawing.Color.Black;
+                                labelPakNumber.BeginInvoke((MethodInvoker)delegate () { labelPakNumber.Text = "Pak/ " + rows[0]["PAKNumber"].ToString(); });
+                            }
+
+                            //After Delay
+                            System.Threading.Thread.Sleep(Delay);
+                            //display Null All 
+                            labelHideNshow(true);
+                            labelHideNshowTimeDate(true, true);
+                            DefaultScanImagelocation();
+                            //DefaultImageProperties();
+                            if (labelAttendanceType.InvokeRequired)
+                            {
+                                labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = null; });
+                            }
+                            if (pictureBoxPhoto.InvokeRequired)
+                            {
+                                pictureBoxPhoto.BeginInvoke((MethodInvoker)delegate () { pictureBoxPhoto.Image = null; });
+                            }
+                            if (labelName.InvokeRequired)
+                            {
+                                labelName.BeginInvoke((MethodInvoker)delegate () { labelName.Text = null; });
+                            }
+                            if (labelPakNumber.InvokeRequired)
+                            {
+                                labelPakNumber.BeginInvoke((MethodInvoker)delegate () { labelPakNumber.Text = null; });
+                            }
+                            if (labelDelay.InvokeRequired) //StatusDetails <<(Too Many Attempts)>>
+                            {
+                                setLabelXSetting(labelDelay, StatusDetails, 845, 54, 12, 398, Color.Green);
+                                labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = null; });
+                            }
+                            if (pictureBoxMainImage.InvokeRequired) //MainPic
+                            {
+                                pictureBoxMainImage.BeginInvoke((MethodInvoker)delegate () { pictureBoxMainImage.Visible = true; });
+                            }
+
                         }
                         #endregion
                     }
                     else
-                    {   //Not Found Data
-                        #region
-                        //if (labelDelay.InvokeRequired)
-                        //{
-                        //    labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = StatusDetails; });
-                        //}
-                        //System.Threading.Thread.Sleep(Delay);
-                        //if (labelDelay.InvokeRequired)
-                        //{
-                        //    labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = null; });
-                        //}
-                        //pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
+                    {
+                        #region PUNISHMENT
+                        if (AttendanceType == "Punishment")
+                        {
+                            speech.SpeakAsync("Bookout Un Authorized Please Consult Bookout Incharge");
+                            //display From Database
+                            labelHideNshow(false);
+                            labelHideNshowTimeDate(false, false);
+                            DefaultScanCenterImagelocation();
+                            if (labelAttendanceType.InvokeRequired)
+                            {
+                                setLabelXSetting(labelAttendanceType, StatusDetails, 499, 64, 370, 33, Color.Black);
+                            }
+                            if (labelDelay.InvokeRequired)
+                            {
+                                setLabelXSetting(labelDelay, SessionInformation, 537, 54, 340, 399, Color.Black);
+                                labelDelay.TextAlignment = System.Drawing.StringAlignment.Center;
+                            }
+
+                            if (pictureBoxMainImage.InvokeRequired)
+                            {
+                                setImageProperties(pictureBoxMainImage, 311, 225, 450, 140, PictureBoxSizeMode.Zoom);
+                                pictureBoxMainImage.BeginInvoke((MethodInvoker)delegate () { pictureBoxMainImage.Image = Properties.Resources.Failed; });
+                            }
+
+
+                            //After Delay
+                            System.Threading.Thread.Sleep(Delay);
+                            //display Null All 
+                            DefaultScanImagelocation();
+                           // DefaultImageProperties();
+                            labelHideNshow(true);
+                            labelHideNshowTimeDate(true, true);
+                            if (labelDelay.InvokeRequired)
+                            {
+                                labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = null; });
+                            }
+                            if (labelAttendanceType.InvokeRequired)
+                            {
+                                labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = null; });
+                            }
+                        }
                         #endregion
-                        //Found_Data
-                        #region
-                        //display
-                        if (labelAttendanceType.InvokeRequired)
+                        #region INVALID SESSION
+                        if (AttendanceType == "INVALID SESSION")
                         {
-                            labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = AttendanceType; });
-                        }
+                            speech.SpeakAsync("INVALID SESSION");
+                            //display From Database
+                            labelHideNshow(false);
+                            labelHideNshowTimeDate(false, false);
+                            DefaultScanCenterImagelocation();
+                            if (labelDelay.InvokeRequired)
+                            {
+                                setLabelXSetting(labelDelay, SessionInformation, 250, 54, 505, 350, Color.Black);
+                                labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = SessionInformation; });
+                            }
+                            pictureBoxMainImage.Image = Properties.Resources.Failed;
+                            Application.DoEvents();
 
-                        if (labelAttendanceTime.InvokeRequired)
-                        {
-                            labelAttendanceTime.BeginInvoke((MethodInvoker)delegate () { labelAttendanceTime.Text = DateTime.Now.ToString("hh:mm tt"); });
-                        }
-                        DataTable c = MainClass.MngPAFBOS.GetCadetsByCadetID(matchID[0]);
-                        DataRow[] rows = c.Select("CadetID=" + matchID[0]);
-                        Image pic = ImageClass.GetImageFromBase64(rows[0]["Picture"].ToString());
+                            //After Delay
+                            System.Threading.Thread.Sleep(Delay);
 
-                        if (labelDelay.InvokeRequired)
-                        {
-                            string First = SessionInformation.Substring(0, 18);
-                            string Second = SessionInformation.Substring(19, 21);
-                            SessionInformation = First + " \n " + Second;
-                            labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = SessionInformation; });
-                        }
-
-                        pictureBoxMainImage.Image = Properties.Resources.Failed_on_Pic;
-
-                        //After Delay
-                        System.Threading.Thread.Sleep(Delay);
-                        pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
-
-                        if (labelAttendanceType.InvokeRequired)
-                        {
-                            labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = null; });
-                        }
-
-                        if (labelAttendanceTime.InvokeRequired)
-                        {
-                            labelAttendanceTime.BeginInvoke((MethodInvoker)delegate () { labelAttendanceTime.Text = null; });
-                        }
-                        if (pictureBoxPhoto.InvokeRequired)
-                        {
-                            pictureBoxPhoto.BeginInvoke((MethodInvoker)delegate () { pictureBoxPhoto.Image = null; });
-                        }
-                        if (labelName.InvokeRequired)
-                        {
-                            labelName.BeginInvoke((MethodInvoker)delegate () { labelName.Text = null; });
-                        }
-                        if (labelDelay.InvokeRequired)
-                        {
-                            labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = null; });
+                            //display Null All 
+                            pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
+                            DefaultScanImagelocation();
+                            labelHideNshow(true);
+                            labelHideNshowTimeDate(true, true);
+                            if (labelDelay.InvokeRequired)
+                            {
+                                labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = null; });
+                            }
                         }
                         #endregion
                     }
+                    #endregion
+                    //==============END=====================//
                 }
                 else
                 {
-                    #region//if Some Error Occur
-                    if (SessionInformation == "PENDING PUNISHMENT CANNOT ALLOWED BOOK OUT")
-                    {
-                        speech.SpeakAsync("PENDING PUNISHMENT CANNOT ALLOWED BOOK OUT");
-                        //display From Database
-                        #region
-                        if (labelAttendanceType.InvokeRequired)
-                        {
-                            labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = AttendanceType; });
-                        }
-
-                        if (labelDelay.InvokeRequired)
-                        {
-                            labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = SessionInformation; });
-                        }
-                        pictureBoxMainImage.Image = Properties.Resources.Failed;
-                        #endregion
-                        //After Delay
-                        System.Threading.Thread.Sleep(Delay);
-                        //display Null All 
-                        #region
-                        pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
-                        if (labelAttendanceType.InvokeRequired)
-                        {
-                            labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = null; });
-                        }
-                        if (labelAttendanceTime.InvokeRequired)
-                        {
-                            labelAttendanceTime.BeginInvoke((MethodInvoker)delegate () { labelAttendanceTime.Text = null; });
-                        }
-                        if (labelDelay.InvokeRequired)
-                        {
-                            labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = null; });
-                        }
-                        #endregion
-                    }
-                    else
-                    {
-                        //display From Database
-                        #region
-                        
-                        if (labelAttendanceType.InvokeRequired)
-                        {
-                            labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = AttendanceType; });
-                        }
-
-                        if (labelDelay.InvokeRequired)
-                        {
-                            speech.SpeakAsync("INVALID");
-                            SessionInformation = "INVALID";
-                            labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = SessionInformation; });
-                        }
-                        pictureBoxMainImage.Image = Properties.Resources.Failed;
-                        #endregion
-                        //After Delay
-                        System.Threading.Thread.Sleep(Delay);
-                        //display Null All 
-                        #region
-                        pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
-                        if (labelAttendanceType.InvokeRequired)
-                        {
-                            labelAttendanceType.BeginInvoke((MethodInvoker)delegate () { labelAttendanceType.Text = null; });
-                        }
-                        if (labelAttendanceTime.InvokeRequired)
-                        {
-                            labelAttendanceTime.BeginInvoke((MethodInvoker)delegate () { labelAttendanceTime.Text = null; });
-                        }
-                        if (labelDelay.InvokeRequired)
-                        {
-                            labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = null; });
-                        }
-                        #endregion
-
-                    }
+                   #region INVALID_THUMB
+                    // SessionInformation = "INVALID THUMB";
+                    speech.SpeakAsync("INVALID THUMB IMPRESSION");
+                    labelHideNshow(false);
+                    labelHideNshowTimeDate(false, false);
+                    DefaultScanCenterImagelocation();
+                    setLabelXSetting(labelDelay, StatusDetails, 400, 54, 420, 350, Color.Black);
+                    labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = "INVALID THUMB IMPRESSION"; });
+                    pictureBoxMainImage.Image = Properties.Resources.Thumb;
+                    Application.DoEvents();
+                    //After Delay
+                    System.Threading.Thread.Sleep(Delay);
+                    //display Null All 
+                    labelHideNshow(true);
+                    labelHideNshowTimeDate(true, true);
+                    DefaultScanImagelocation();
+                    setLabelXSetting(labelDelay, StatusDetails, 270, 54, 420, 350, Color.Black);
+                    labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = null; });
+                    pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
                     #endregion
                 }
-
-                #endregion
-
-                //==============END=====================//
-               
-                #endregion
             }
+            #endregion
         }
         private void ShowUser()
         {
@@ -744,153 +1268,266 @@ namespace AttendanceScreen
 
             //display 
             DataTable c = MainClass.MngPAFBOS.GetCadetsByCardNumber(CardNo);
+            //From RFID Card
+            #region RFID_CARD
+
             if (c.Rows.Count > 0)
             {
-
                 //store value in attendance table.
                 MainClass.MngPAFBOS.CreateAttendance(int.Parse(c.Rows[0]["CadetID"].ToString()), out SessionInformation, out AttendanceType, out Status, out StatusDetails);
 
                 if (Status)
                 {
-                    if (SessionInformation == "SESSION EXPIRE")
+                    #region BOOK IN DELAY
+                    if (AttendanceType == "Delayed Booked In")
                     {
-                        speech.SpeakAsync("SESSION EXPIRE");
+                        speech.SpeakAsync("Delayed Booked In");
+                        //display From Database
+                        labelHideNshowCard(false);
+                        labelHideNshowCardTimeDate(false, false);
+                        DefaultScanCenterImagelocationCard();
+                        setLabelXSetting(labelAttendanceType, AttendanceType, 486, 64, 370, 32, Color.Black);
                         labelAttendanceType.Text = AttendanceType;
-                        //labelAttendanceTime.Text = DateTime.Now.ToString("HH:mm");
-                        //Image pic = ImageClass.GetImageFromBase64(c.Rows[0]["Picture"].ToString());
-                        //pictureBoxPhoto.Image = pic;
-                        //labelName.Text = c.Rows[0]["CadetName"].ToString();
-                        labelDelay.Text = SessionInformation;
-                        pictureBoxMainImage.Image = Properties.Resources.Failed;
-
-                        Application.DoEvents();
-
-                        //After Delay
-                        System.Threading.Thread.Sleep(Delay);
-                        pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
-                        labelAttendanceType.Text = null;
-                        labelAttendanceTime.Text = null;
-                        pictureBoxPhoto.Image = null;
-                        labelName.Text = null;
-                        labelDelay.Text = null;
-                    }
-                    if (SessionInformation == "INVALID SESSION")
-                    {
-                        speech.SpeakAsync("INVALID SESSION");
-                        labelAttendanceType.Text = AttendanceType;
-                        labelAttendanceTime.Text = DateTime.Now.ToString("HH:mm");
+                        labelAttendanceTime.ForeColor = System.Drawing.Color.Black;
+                        labelAttendanceTime.Text = DateTime.Now.ToString("HH"+"mm") + " HRS";
                         Image pic = ImageClass.GetImageFromBase64(c.Rows[0]["Picture"].ToString());
                         pictureBoxPhoto.Image = pic;
+                        labelName.ForeColor = System.Drawing.Color.Black;
                         labelName.Text = c.Rows[0]["CadetName"].ToString();
-                        labelDelay.Text = SessionInformation;
-                        pictureBoxMainImage.Image = Properties.Resources.Failed;
-
-                        Application.DoEvents();
+                        labelPakNumber.ForeColor = System.Drawing.Color.Black;
+                        labelPakNumber.Text = "Pak/ " + c.Rows[0]["PAKNumber"].ToString();
+                        setLabelXSetting(labelDelay, StatusDetails, 190, 54, 12, 398, Color.Black);
+                        labelDelay.Text = StatusDetails;
+                        setImageProperties(pictureBoxMainImage, 311, 295, 450, 92, PictureBoxSizeMode.CenterImage);
+                        pictureBoxMainImage.Image = Properties.Resources.ArrowDownDelay;
 
                         //After Delay
+                        Application.DoEvents();
                         System.Threading.Thread.Sleep(Delay);
-                        pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
+
+                        labelHideNshowCard(true);
+                        labelHideNshowCardTimeDate(true, true);
+                        DefaultScanImagelocationCard();
+                       // DefaultImagePropertiesCard();
                         labelAttendanceType.Text = null;
                         labelAttendanceTime.Text = null;
-                        pictureBoxPhoto.Image = null;
                         labelName.Text = null;
+                        labelPakNumber.Text = null;
                         labelDelay.Text = null;
+                        pictureBoxPhoto.Image = null;
+                        pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
                     }
-                    if (SessionInformation == "VALID SESSION")
+                    #endregion
+                    #region BOOK IN
+                    if (AttendanceType == "Timely Booked In")
                     {
                         speech.SpeakAsync("THANK YOU");
+                        //display From Database
+                        labelHideNshowCard(false);
+                        labelHideNshowCardTimeDate(false, false);
+                        DefaultScanCenterImagelocationCard();
+                        setLabelXSetting(labelAttendanceType, AttendanceType, 486, 64, 370, 32, Color.Black);
                         labelAttendanceType.Text = AttendanceType;
-                        labelAttendanceTime.Text = DateTime.Now.ToString("HH:mm");
+                        labelAttendanceTime.ForeColor = System.Drawing.Color.Black;
+                        labelAttendanceTime.Text = DateTime.Now.ToString("HH"+"mm") + " HRS";
                         Image pic = ImageClass.GetImageFromBase64(c.Rows[0]["Picture"].ToString());
                         pictureBoxPhoto.Image = pic;
+                        labelName.ForeColor = System.Drawing.Color.Black;
                         labelName.Text = c.Rows[0]["CadetName"].ToString();
-                        labelDelay.Text = SessionInformation;
-                        pictureBoxMainImage.Image = Properties.Resources.Success;
-
-                        Application.DoEvents();
+                        labelPakNumber.ForeColor = System.Drawing.Color.Black;
+                        labelPakNumber.Text = "Pak/ " + c.Rows[0]["PAKNumber"].ToString();
+                        setLabelXSetting(labelDelay, StatusDetails, 190, 54, 12, 398, Color.Black);
+                        labelDelay.Text = StatusDetails;
+                        setImageProperties(pictureBoxMainImage, 311, 295, 450, 92, PictureBoxSizeMode.CenterImage);
+                        pictureBoxMainImage.Image = Properties.Resources.ArrowDown;
 
                         //After Delay
+                        Application.DoEvents();
                         System.Threading.Thread.Sleep(Delay);
-                        pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
+
+                        labelHideNshowCard(true);
+                        labelHideNshowCardTimeDate(true, true);
+                        DefaultScanImagelocationCard();
+                       // DefaultImagePropertiesCard();
                         labelAttendanceType.Text = null;
                         labelAttendanceTime.Text = null;
-                        pictureBoxPhoto.Image = null;
                         labelName.Text = null;
+                        labelPakNumber.Text = null;
                         labelDelay.Text = null;
+                        pictureBoxPhoto.Image = null;
+                        pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
                     }
-                    if (SessionInformation == "ALREADY CHECKED")
+                    #endregion
+                    #region BOOK OUT
+                    if (AttendanceType == "Book Out Authorized")
                     {
-                        speech.SpeakAsync("ALREADY CHECKED");
+                        speech.SpeakAsync("THANK YOU");
+                        //display From Database
+                        labelHideNshowCard(false);
+                        labelHideNshowCardTimeDate(false, false);
+                        DefaultScanCenterImagelocationCard();
+                        setLabelXSetting(labelAttendanceType, AttendanceType, 486, 64, 370, 32, Color.Black);
                         labelAttendanceType.Text = AttendanceType;
-                        labelAttendanceTime.Text = DateTime.Now.ToString("HH:mm");
+                        labelAttendanceTime.ForeColor = System.Drawing.Color.Black;  //195, 398,178, 54, Default 
+                        string labelAttendanceTimestr = DateTime.Now.ToString("HH"+"mm") + " HRS";
+                        setLabelXSetting(labelAttendanceTime, labelAttendanceTimestr, 178, 54, 230, 398, Color.Black);
+
                         Image pic = ImageClass.GetImageFromBase64(c.Rows[0]["Picture"].ToString());
                         pictureBoxPhoto.Image = pic;
+                        labelName.ForeColor = System.Drawing.Color.Black;
                         labelName.Text = c.Rows[0]["CadetName"].ToString();
-                        labelDelay.Text = SessionInformation;
-                        pictureBoxMainImage.Image = Properties.Resources.Success;
-
-                        Application.DoEvents();
+                        labelPakNumber.ForeColor = System.Drawing.Color.Black;
+                        labelPakNumber.Text = "Pak/ " + c.Rows[0]["PAKNumber"].ToString();
+                        setLabelXSetting(labelDelay, StatusDetails, 220, 54, 12, 398, Color.Black);
+                        labelDelay.Text = StatusDetails;
+                        setImageProperties(pictureBoxMainImage, 311, 295, 450, 92, PictureBoxSizeMode.CenterImage);
+                        pictureBoxMainImage.Image = Properties.Resources.ArrowUp;
 
                         //After Delay
+                        Application.DoEvents();
                         System.Threading.Thread.Sleep(Delay);
-                        pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
+
+                        labelHideNshowCard(true);
+                        labelHideNshowCardTimeDate(true, true);
+                        DefaultScanImagelocationCard();
                         labelAttendanceType.Text = null;
+                        this.labelAttendanceTime.Location = new System.Drawing.Point(205, 398);
+                        this.labelAttendanceTime.Size = new System.Drawing.Size(178, 54);
                         labelAttendanceTime.Text = null;
+                        labelName.Text = null;
+                        labelPakNumber.Text = null;
+                     
+                        labelDelay.Text = null;
+                        pictureBoxPhoto.Image = null;
+                        //DefaultImagePropertiesCard();
+                        pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
+                    }
+                    #endregion
+                    #region Duplicate
+                    if (AttendanceType == "Duplicate")
+                    {
+                        speech.SpeakAsync("Please Wait for 1 Minute");
+                        //display From Database
+                        labelHideNshowCard(false);
+                        labelHideNshowCardTimeDate(false, false);
+                        DefaultScanCenterImagelocationCard();
+                        setLabelXSetting(labelAttendanceType, SessionInformation, 680, 64, 155, 150, Color.Black);
+                        labelAttendanceType.Text = SessionInformation;
+                        setLabelXSetting(labelDelay, StatusDetails, 300, 54, 350, 210, Color.Red);
+                        labelDelay.Text = StatusDetails;
+                        Image pic = ImageClass.GetImageFromBase64(c.Rows[0]["Picture"].ToString());
+                        pictureBoxPhoto.Image = pic;
+                        pictureBoxMainImage.Visible = false;
+                        labelName.ForeColor = System.Drawing.Color.Black;
+                        labelName.Text = c.Rows[0]["CadetName"].ToString();
+                        labelPakNumber.ForeColor = System.Drawing.Color.Black;
+                        labelPakNumber.Text = "Pak/ " + c.Rows[0]["PAKNumber"].ToString();
+                        //After Delay
+                        Application.DoEvents();
+                        System.Threading.Thread.Sleep(Delay);
+                        //display Null All 
+                        labelHideNshowCard(true);
+                        labelHideNshowCardTimeDate(true, true);
+                        DefaultScanImagelocationCard();
+                        //DefaultImagePropertiesCard();
+                        pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
+                        pictureBoxMainImage.Visible = true;
+                        labelAttendanceType.Text = null;
+                        labelDelay.Text = null;
+                        setLabelXSetting(labelDelay, null, 845, 54, 12, 398, Color.Black);
                         pictureBoxPhoto.Image = null;
                         labelName.Text = null;
-                        labelDelay.Text = null;
+                        labelPakNumber.Text = null;
                     }
+                    #endregion
                 }
                 else
                 {
-                    if (SessionInformation == "PENDING PUNISHMENT CANNOT ALLOWED BOOK OUT")
+                    #region PUNISHMANT
+                    if (AttendanceType == "Punishment")
                     {
-                        speech.SpeakAsync("PENDING PUNISHMENT CANNOT ALLOWED BOOK OUT");
-                        labelAttendanceType.Text = AttendanceType;
-                        //labelAttendanceTime.Text = DateTime.Now.ToString("HH:mm");
-                        //Image pic = ImageClass.GetImageFromBase64(c.Rows[0]["Picture"].ToString());
-                        //pictureBoxPhoto.Image = pic;
-                        //labelName.Text = c.Rows[0]["CadetName"].ToString();
-                        labelDelay.Text = SessionInformation;
+                        speech.SpeakAsync("Bookout Un Authorized");
+                        labelHideNshowCard(false);
+                        labelHideNshowCardTimeDate(false, false);
+                        DefaultScanCenterImagelocationCard();
+                        speech.SpeakAsync("Bookout Un Authorized Please Consult Bookout Incharge");
+                        setLabelXSetting(labelAttendanceType, StatusDetails, 499, 64, 370, 33, Color.Black);
+                        setLabelXSetting(labelDelay, SessionInformation, 537, 54, 340, 399, Color.Black);
+                        labelDelay.TextAlignment = System.Drawing.StringAlignment.Center;
+                        setImageProperties(pictureBoxMainImage, 311, 225, 450, 140, PictureBoxSizeMode.Zoom);
                         pictureBoxMainImage.Image = Properties.Resources.Failed;
 
                         Application.DoEvents();
-
                         //After Delay
                         System.Threading.Thread.Sleep(Delay);
-                        pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
-                        labelAttendanceType.Text = null;
-                        labelAttendanceTime.Text = null;
-                        pictureBoxPhoto.Image = null;
-                        labelName.Text = null;
+
+                        labelHideNshowCard(true);
+                        labelHideNshowCardTimeDate(true, true);
+                        DefaultScanImagelocationCard();
+                        //DefaultImageProperties();
                         labelDelay.Text = null;
+                        labelAttendanceType.Text = null;
                     }
-                    labelDelay.Text = StatusDetails;
-                    System.Threading.Thread.Sleep(Delay);
-                    labelDelay.Text = null;
-                    pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
+                    #endregion
+                    #region INVALID SESSION
+                    if (AttendanceType == "INVALID SESSION")
+                    {
+                        speech.SpeakAsync("INVALID SESSION");
+                        //display From Database
+                        setLabelXSetting(labelDelay, SessionInformation, 250, 54, 505, 350, Color.Black);
+                        //labelDelay.Text = SessionInformation;
+                        labelHideNshowCard(false);
+                        labelHideNshowCardTimeDate(false, false);
+                        DefaultScanCenterImagelocationCard();
+                        pictureBoxMainImage.Image = Properties.Resources.Failed;
+                        //After Delay
+                        Application.DoEvents();
+                        System.Threading.Thread.Sleep(Delay);
+                        //display Null All 
+                        labelHideNshowCard(true);
+                        labelHideNshowCardTimeDate(true, true);
+                        DefaultScanImagelocationCard();
+                        pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
+                        labelDelay.Text = null;
+
+                    }
+                    #endregion
                 }
             }
             else
             {
-                //display From Database
-                #region
+                #region INVALID CARD
+                labelHideNshowCard(false);
+                labelHideNshowCardTimeDate(false, false);
+                DefaultScanCenterImagelocationCard();
                 SessionInformation = "INVALID CARD";
                 speech.SpeakAsync("INVALID CARD");
-                labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = SessionInformation; });
+                labelDelay.Text = SessionInformation;
+                setLabelXSetting(labelDelay, SessionInformation, 199, 54, 505, 350, Color.Black);
                 pictureBoxMainImage.Image = Properties.Resources.Rfid_Card;
                 //Console.Beep();
                 Application.DoEvents();
-                #endregion
                 //After Delay
                 System.Threading.Thread.Sleep(Delay);
                 //display Null All 
-                #region
-                labelDelay.BeginInvoke((MethodInvoker)delegate () { labelDelay.Text = null; });
+                labelHideNshowCard(true);
+                labelHideNshowCardTimeDate(true, true);
+                DefaultScanImagelocationCard();
+                labelDelay.Text = null;
                 pictureBoxMainImage.Image = Properties.Resources.ScanFInger2;
                 #endregion
             }
+            #endregion
         }
 
+        private void labelDelay_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelAttendanceTime_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

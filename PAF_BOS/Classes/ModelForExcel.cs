@@ -8,6 +8,19 @@ namespace PAF_BOS.Classes
 {
     public class ModelForExcel
     {
+
+
+        public string Name
+        {
+            get { return Name; }
+            set {
+                 if(string.IsNullOrEmpty(value))
+                    throw new ArgumentException
+                    ("Name cannot be blank","Name");
+                 Name = value;
+                }
+        }
+
         public string CadetName { get; set; }
         public string Fname { get; set; }
         public string PakNo { get; set; }

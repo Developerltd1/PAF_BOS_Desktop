@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AAA_PAF_BOSModelStoreContainer" CdmEntityContainer="Entities">
+    <FunctionImportMapping FunctionImportName="usp_GetCreatedGroundSessionByCheckOUTDate" FunctionName="AAA_PAF_BOSModel.Store.usp_GetCreatedGroundSessionByCheckOUTDate">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="AAA_PAF_BOSModel.usp_GetCreatedGroundSessionByCheckOUTDate_Result">
+          <ScalarProperty Name="CheckOutActualTime" ColumnName="CheckOutActualTime" />
+          <ScalarProperty Name="ChecnInActualTime" ColumnName="ChecnInActualTime" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_GetGroundAttendanceCadet" FunctionName="AAA_PAF_BOSModel.Store.usp_GetGroundAttendanceCadet">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="AAA_PAF_BOSModel.usp_GetGroundAttendanceCadet_Result">
+          <ScalarProperty Name="Cadet_ID" ColumnName="Cadet_ID" />
+          <ScalarProperty Name="CadetName" ColumnName="CadetName" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="ActivityTitle" ColumnName="ActivityTitle" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="CadetCheckInTime" ColumnName="CadetCheckInTime" />
+          <ScalarProperty Name="CadetCheckOutTime" ColumnName="CadetCheckOutTime" />
+          <ScalarProperty Name="ChecnInActualTime" ColumnName="ChecnInActualTime" />
+          <ScalarProperty Name="CheckOutActualTime" ColumnName="CheckOutActualTime" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AttendanceScreen", "Attenda
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{71DE149D-A654-4965-8621-2F8E481305DA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebServicePAFBOS", "WebServicePAFBOS\WebServicePAFBOS.csproj", "{67D10551-B746-4AFC-BBB5-6E6510113C5D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{7A627D49-A3FA-405B-A6C9-72A6B35BC9DC}.Release|Any CPU.Build.0 = Release|Any CPU
 		{71DE149D-A654-4965-8621-2F8E481305DA}.Debug|Any CPU.ActiveCfg = Debug
 		{71DE149D-A654-4965-8621-2F8E481305DA}.Release|Any CPU.ActiveCfg = Release
+		{67D10551-B746-4AFC-BBB5-6E6510113C5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67D10551-B746-4AFC-BBB5-6E6510113C5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67D10551-B746-4AFC-BBB5-6E6510113C5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67D10551-B746-4AFC-BBB5-6E6510113C5D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

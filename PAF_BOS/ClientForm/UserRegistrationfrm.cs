@@ -56,7 +56,8 @@ namespace PAF_BOS
                     tbUserName.Text = "";
                     tbPassword.Text = "";
                     //cbSeniorOfficer.SelectedValue = 0;
-                   // cbRole.SelectedValue = 0;
+                    // cbRole.SelectedValue = 0;
+                    pictureBoxPhoto.Image = Properties.Resources.NoHuman;
                     JIMessageBox.ShowInformationMessage("User Created Successfully !");
                 }
                 else
@@ -79,8 +80,9 @@ namespace PAF_BOS
         }
         private void UserRegistrationfrm_Load(object sender, EventArgs e)
         {
-            udf_Combo();  
-            this.WindowState = FormWindowState.Maximized; 
+            this.WindowState = FormWindowState.Maximized;
+            udf_Combo();
+          
         }
         private void udf_Combo()
         {
@@ -95,7 +97,7 @@ namespace PAF_BOS
                 ListData.AutoSuggession_With_ComboBox(DtRoles, 1, cbRole, "RoleID", "Role");
                 ListData.AutoSuggession_With_ComboBox(DtSeniorOfficer,1, cbSeniorOfficer, "UserID", "FullName");
                 // ListData.AutoSuggession_With_ComboBox(DtUserDesignation, 1, cbDesignation, "UserID", "FullName");
-                List<String> DesignationList = new List<string>() { "-- Select Designation --","WC", "SQN1", "SQN2", "SQN3", "SQN4", "ADMIN", "CLERK" };
+                List<String> DesignationList = new List<string>() { "-- Select Designation --","Officer", "Staff", "Admin", "Clerk", "Sr. Cadet", "Cadet" };
                 cbDesignation.DataSource = DesignationList;
             }
             
@@ -163,6 +165,22 @@ namespace PAF_BOS
         }
 
         private void ribbonClientPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
+    
+
+        private void tabFormItem2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabFormItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupPanel2_Click(object sender, EventArgs e)
         {
 
         }

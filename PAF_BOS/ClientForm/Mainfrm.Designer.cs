@@ -32,6 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mainfrm));
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.ribbonPanel1 = new DevComponents.DotNetBar.RibbonPanel();
+            this.ribbonBar4 = new DevComponents.DotNetBar.RibbonBar();
+            this.btnItemAttendanceReport = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItemCadetAttendanceReport = new DevComponents.DotNetBar.ButtonItem();
+            this.buttonItemExcelSheet = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonBar3 = new DevComponents.DotNetBar.RibbonBar();
             this.btnItem_USER_ATTANDANCE_ACCESS = new DevComponents.DotNetBar.ButtonItem();
             this.btnItem_FORM_ROLES = new DevComponents.DotNetBar.ButtonItem();
@@ -39,16 +43,13 @@
             this.btnItem_USER = new DevComponents.DotNetBar.ButtonItem();
             this.btnItem_CADET_REGISTRATION = new DevComponents.DotNetBar.ButtonItem();
             this.btnItem_CADET_PUNSIHMENT = new DevComponents.DotNetBar.ButtonItem();
+            this.btnItem_ALLCADET_PUNSIHMENT = new DevComponents.DotNetBar.ButtonItem();
             this.btnItem_CADET_ATTANDANCE_PERMISSION = new DevComponents.DotNetBar.ButtonItem();
             this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION = new DevComponents.DotNetBar.ButtonItem();
             this.qatCustomizeItem1 = new DevComponents.DotNetBar.QatCustomizeItem();
             this.btnChangePassword = new DevComponents.DotNetBar.ButtonItem();
             this.AdminMenu = new DevComponents.DotNetBar.RibbonTabItem();
             this.ribbonControl1 = new DevComponents.DotNetBar.RibbonControl();
-            this.ribbonPanel2 = new DevComponents.DotNetBar.RibbonPanel();
-            this.ribbonBar2 = new DevComponents.DotNetBar.RibbonBar();
-            this.btnAttendanceReport = new DevComponents.DotNetBar.ButtonItem();
-            this.ribbonTabItem1 = new DevComponents.DotNetBar.RibbonTabItem();
             this.btnAbout = new DevComponents.DotNetBar.ApplicationButton();
             this.bar1 = new DevComponents.DotNetBar.Bar();
             this.labelLoginUser = new DevComponents.DotNetBar.LabelItem();
@@ -57,7 +58,6 @@
             this.btnManageClient = new DevComponents.DotNetBar.ButtonItem();
             this.ribbonPanel1.SuspendLayout();
             this.ribbonControl1.SuspendLayout();
-            this.ribbonPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bar1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,13 +69,14 @@
             // ribbonPanel1
             // 
             this.ribbonPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.ribbonPanel1.Controls.Add(this.ribbonBar4);
             this.ribbonPanel1.Controls.Add(this.ribbonBar3);
             this.ribbonPanel1.Controls.Add(this.ribbonBar1);
             this.ribbonPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ribbonPanel1.Location = new System.Drawing.Point(0, 0);
             this.ribbonPanel1.Name = "ribbonPanel1";
             this.ribbonPanel1.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel1.Size = new System.Drawing.Size(1021, 186);
+            this.ribbonPanel1.Size = new System.Drawing.Size(1005, 181);
             // 
             // 
             // 
@@ -89,6 +90,76 @@
             // 
             this.ribbonPanel1.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.ribbonPanel1.TabIndex = 1;
+            // 
+            // ribbonBar4
+            // 
+            this.ribbonBar4.AutoOverflowEnabled = true;
+            // 
+            // 
+            // 
+            this.ribbonBar4.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonBar4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.ribbonBar4.ContainerControlProcessDialogKey = true;
+            this.ribbonBar4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ribbonBar4.DragDropSupport = true;
+            this.ribbonBar4.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
+            this.btnItemAttendanceReport,
+            this.buttonItemCadetAttendanceReport,
+            this.buttonItemExcelSheet});
+            this.ribbonBar4.ItemSpacing = 10;
+            this.ribbonBar4.Location = new System.Drawing.Point(625, 0);
+            this.ribbonBar4.Name = "ribbonBar4";
+            this.ribbonBar4.Size = new System.Drawing.Size(322, 178);
+            this.ribbonBar4.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.ribbonBar4.TabIndex = 9;
+            this.ribbonBar4.Text = "Reports";
+            // 
+            // 
+            // 
+            this.ribbonBar4.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.ribbonBar4.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // btnItemAttendanceReport
+            // 
+            this.btnItemAttendanceReport.BeginGroup = true;
+            this.btnItemAttendanceReport.Image = global::PAF_BOS.Properties.Resources.attendance;
+            this.btnItemAttendanceReport.ImagePaddingHorizontal = 20;
+            this.btnItemAttendanceReport.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnItemAttendanceReport.Name = "btnItemAttendanceReport";
+            this.btnItemAttendanceReport.RibbonWordWrap = false;
+            this.btnItemAttendanceReport.SubItemsExpandWidth = 14;
+            this.btnItemAttendanceReport.Text = "Pass Out/In Report";
+            this.btnItemAttendanceReport.Click += new System.EventHandler(this.btnAttendanceReport);
+            // 
+            // buttonItemCadetAttendanceReport
+            // 
+            this.buttonItemCadetAttendanceReport.BeginGroup = true;
+            this.buttonItemCadetAttendanceReport.Image = global::PAF_BOS.Properties.Resources.attendance;
+            this.buttonItemCadetAttendanceReport.ImagePaddingHorizontal = 20;
+            this.buttonItemCadetAttendanceReport.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItemCadetAttendanceReport.Name = "buttonItemCadetAttendanceReport";
+            this.buttonItemCadetAttendanceReport.RibbonWordWrap = false;
+            this.buttonItemCadetAttendanceReport.SubItemsExpandWidth = 14;
+            this.buttonItemCadetAttendanceReport.Text = "Cadet History Report";
+            this.buttonItemCadetAttendanceReport.Click += new System.EventHandler(this.btnCadetAttendanceReport_Click);
+            // 
+            // buttonItemExcelSheet
+            // 
+            this.buttonItemExcelSheet.BeginGroup = true;
+            this.buttonItemExcelSheet.Image = global::PAF_BOS.Properties.Resources.attendance;
+            this.buttonItemExcelSheet.ImagePaddingHorizontal = 20;
+            this.buttonItemExcelSheet.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.buttonItemExcelSheet.Name = "buttonItemExcelSheet";
+            this.buttonItemExcelSheet.RibbonWordWrap = false;
+            this.buttonItemExcelSheet.SubItemsExpandWidth = 14;
+            this.buttonItemExcelSheet.Text = "Excel Sheet";
+            this.buttonItemExcelSheet.Click += new System.EventHandler(this.buttonItemExcelSheet_Click);
             // 
             // ribbonBar3
             // 
@@ -108,9 +179,9 @@
             this.btnItem_USER_ATTANDANCE_ACCESS,
             this.btnItem_FORM_ROLES});
             this.ribbonBar3.ItemSpacing = 10;
-            this.ribbonBar3.Location = new System.Drawing.Point(731, 0);
+            this.ribbonBar3.Location = new System.Drawing.Point(455, 0);
             this.ribbonBar3.Name = "ribbonBar3";
-            this.ribbonBar3.Size = new System.Drawing.Size(286, 183);
+            this.ribbonBar3.Size = new System.Drawing.Size(170, 178);
             this.ribbonBar3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar3.TabIndex = 8;
             this.ribbonBar3.Text = "User Management";
@@ -165,13 +236,14 @@
             this.btnItem_USER,
             this.btnItem_CADET_REGISTRATION,
             this.btnItem_CADET_PUNSIHMENT,
+            this.btnItem_ALLCADET_PUNSIHMENT,
             this.btnItem_CADET_ATTANDANCE_PERMISSION,
             this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION});
             this.ribbonBar1.ItemSpacing = 10;
             this.ribbonBar1.Location = new System.Drawing.Point(3, 0);
             this.ribbonBar1.Name = "ribbonBar1";
             this.ribbonBar1.Padding = new System.Windows.Forms.Padding(20, 0, 0, 0);
-            this.ribbonBar1.Size = new System.Drawing.Size(728, 183);
+            this.ribbonBar1.Size = new System.Drawing.Size(452, 178);
             this.ribbonBar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonBar1.TabIndex = 2;
             this.ribbonBar1.Text = "Management";
@@ -222,6 +294,18 @@
             this.btnItem_CADET_PUNSIHMENT.Text = "Add Cadet Punishments";
             this.btnItem_CADET_PUNSIHMENT.Click += new System.EventHandler(this.btnItemPUNISHMENT);
             // 
+            // btnItem_ALLCADET_PUNSIHMENT
+            // 
+            this.btnItem_ALLCADET_PUNSIHMENT.BeginGroup = true;
+            this.btnItem_ALLCADET_PUNSIHMENT.Image = global::PAF_BOS.Properties.Resources.limit;
+            this.btnItem_ALLCADET_PUNSIHMENT.ImagePaddingHorizontal = 20;
+            this.btnItem_ALLCADET_PUNSIHMENT.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
+            this.btnItem_ALLCADET_PUNSIHMENT.Name = "btnItem_ALLCADET_PUNSIHMENT";
+            this.btnItem_ALLCADET_PUNSIHMENT.RibbonWordWrap = false;
+            this.btnItem_ALLCADET_PUNSIHMENT.SubItemsExpandWidth = 14;
+            this.btnItem_ALLCADET_PUNSIHMENT.Text = "All Cadet Punishments";
+            this.btnItem_ALLCADET_PUNSIHMENT.Click += new System.EventHandler(this.btnItem_ALLCADET_PUNSIHMENT_Click);
+            // 
             // btnItem_CADET_ATTANDANCE_PERMISSION
             // 
             this.btnItem_CADET_ATTANDANCE_PERMISSION.BeginGroup = true;
@@ -231,20 +315,12 @@
             this.btnItem_CADET_ATTANDANCE_PERMISSION.Name = "btnItem_CADET_ATTANDANCE_PERMISSION";
             this.btnItem_CADET_ATTANDANCE_PERMISSION.RibbonWordWrap = false;
             this.btnItem_CADET_ATTANDANCE_PERMISSION.SubItemsExpandWidth = 14;
-            this.btnItem_CADET_ATTANDANCE_PERMISSION.Text = "Add Attandance Session";
+            this.btnItem_CADET_ATTANDANCE_PERMISSION.Text = "Add Pass Out/In Session";
             this.btnItem_CADET_ATTANDANCE_PERMISSION.Click += new System.EventHandler(this.btnItem_CADET_ATTANDANCE_PERMISSION_Click);
             // 
             // btnItem_CADET_GROUND_ATTANDANCE_PERMISSION
             // 
-            this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION.BeginGroup = true;
-            this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION.Image = global::PAF_BOS.Properties.Resources.attendance;
-            this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION.ImagePaddingHorizontal = 20;
-            this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
             this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION.Name = "btnItem_CADET_GROUND_ATTANDANCE_PERMISSION";
-            this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION.RibbonWordWrap = false;
-            this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION.SubItemsExpandWidth = 14;
-            this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION.Text = "Add Ground Attandance Session";
-            this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION.Click += new System.EventHandler(this.btnItem_CADET_GROUND_ATTANDANCE_PERMISSION_Click);
             // 
             // qatCustomizeItem1
             // 
@@ -275,11 +351,9 @@
             this.ribbonControl1.CaptionVisible = true;
             this.ribbonControl1.CategorizeMode = DevComponents.DotNetBar.eCategorizeMode.Categories;
             this.ribbonControl1.Controls.Add(this.ribbonPanel1);
-            this.ribbonControl1.Controls.Add(this.ribbonPanel2);
             this.ribbonControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.ribbonControl1.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.AdminMenu,
-            this.ribbonTabItem1});
+            this.AdminMenu});
             this.ribbonControl1.KeyTipsFont = new System.Drawing.Font("Tahoma", 7F);
             this.ribbonControl1.Location = new System.Drawing.Point(5, 1);
             this.ribbonControl1.Name = "ribbonControl1";
@@ -289,7 +363,7 @@
             this.btnChangePassword,
             this.qatCustomizeItem1});
             this.ribbonControl1.RibbonStripFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ribbonControl1.Size = new System.Drawing.Size(1021, 189);
+            this.ribbonControl1.Size = new System.Drawing.Size(1005, 184);
             this.ribbonControl1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.ribbonControl1.SystemText.MaximizeRibbonText = "&Maximize the Ribbon";
             this.ribbonControl1.SystemText.MinimizeRibbonText = "Mi&nimize the Ribbon";
@@ -310,80 +384,6 @@
             this.ribbonControl1.TabGroupsVisible = true;
             this.ribbonControl1.TabIndex = 4;
             this.ribbonControl1.Text = "CADET BOOK OUT/IN SYSTEM";
-            // 
-            // ribbonPanel2
-            // 
-            this.ribbonPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.ribbonPanel2.Controls.Add(this.ribbonBar2);
-            this.ribbonPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ribbonPanel2.Location = new System.Drawing.Point(0, 57);
-            this.ribbonPanel2.Name = "ribbonPanel2";
-            this.ribbonPanel2.Padding = new System.Windows.Forms.Padding(3, 0, 3, 3);
-            this.ribbonPanel2.Size = new System.Drawing.Size(1021, 129);
-            // 
-            // 
-            // 
-            this.ribbonPanel2.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.ribbonPanel2.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.ribbonPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.ribbonPanel2.TabIndex = 2;
-            this.ribbonPanel2.Visible = false;
-            // 
-            // ribbonBar2
-            // 
-            this.ribbonBar2.AutoOverflowEnabled = true;
-            // 
-            // 
-            // 
-            this.ribbonBar2.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.ribbonBar2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.ribbonBar2.ContainerControlProcessDialogKey = true;
-            this.ribbonBar2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.ribbonBar2.DragDropSupport = true;
-            this.ribbonBar2.Items.AddRange(new DevComponents.DotNetBar.BaseItem[] {
-            this.btnAttendanceReport});
-            this.ribbonBar2.ItemSpacing = 10;
-            this.ribbonBar2.Location = new System.Drawing.Point(3, 0);
-            this.ribbonBar2.Name = "ribbonBar2";
-            this.ribbonBar2.Size = new System.Drawing.Size(580, 126);
-            this.ribbonBar2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.ribbonBar2.TabIndex = 3;
-            this.ribbonBar2.Text = "Reports";
-            // 
-            // 
-            // 
-            this.ribbonBar2.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.ribbonBar2.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // btnAttendanceReport
-            // 
-            this.btnAttendanceReport.BeginGroup = true;
-            this.btnAttendanceReport.Image = global::PAF_BOS.Properties.Resources.attendance;
-            this.btnAttendanceReport.ImagePaddingHorizontal = 20;
-            this.btnAttendanceReport.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top;
-            this.btnAttendanceReport.Name = "btnAttendanceReport";
-            this.btnAttendanceReport.RibbonWordWrap = false;
-            this.btnAttendanceReport.SubItemsExpandWidth = 14;
-            this.btnAttendanceReport.Text = "Attendance Report";
-            this.btnAttendanceReport.Click += new System.EventHandler(this.btnAttendanceReport_Click);
-            // 
-            // ribbonTabItem1
-            // 
-            this.ribbonTabItem1.Name = "ribbonTabItem1";
-            this.ribbonTabItem1.Panel = this.ribbonPanel2;
-            this.ribbonTabItem1.Text = "Reports";
             // 
             // btnAbout
             // 
@@ -414,9 +414,9 @@
             this.labelLoginUser,
             this.labelLoggedInUser});
             this.bar1.LayoutType = DevComponents.DotNetBar.eLayoutType.TaskList;
-            this.bar1.Location = new System.Drawing.Point(5, 732);
+            this.bar1.Location = new System.Drawing.Point(5, 674);
             this.bar1.Name = "bar1";
-            this.bar1.Size = new System.Drawing.Size(78, 27);
+            this.bar1.Size = new System.Drawing.Size(78, 25);
             this.bar1.Stretch = true;
             this.bar1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.bar1.TabIndex = 6;
@@ -440,13 +440,13 @@
             this.tabStrip2.CloseButtonOnTabsVisible = true;
             this.tabStrip2.CloseButtonVisible = false;
             this.tabStrip2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tabStrip2.Location = new System.Drawing.Point(5, 190);
+            this.tabStrip2.Location = new System.Drawing.Point(5, 185);
             this.tabStrip2.MdiForm = this;
             this.tabStrip2.MdiTabbedDocuments = true;
             this.tabStrip2.Name = "tabStrip2";
             this.tabStrip2.SelectedTab = null;
             this.tabStrip2.SelectedTabFont = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabStrip2.Size = new System.Drawing.Size(1021, 26);
+            this.tabStrip2.Size = new System.Drawing.Size(1005, 26);
             this.tabStrip2.Style = DevComponents.DotNetBar.eTabStripStyle.Office2007Document;
             this.tabStrip2.TabAlignment = DevComponents.DotNetBar.eTabStripAlignment.Top;
             this.tabStrip2.TabIndex = 9;
@@ -470,7 +470,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1031, 761);
+            this.ClientSize = new System.Drawing.Size(1015, 701);
             this.Controls.Add(this.tabStrip2);
             this.Controls.Add(this.bar1);
             this.Controls.Add(this.ribbonControl1);
@@ -484,7 +484,6 @@
             this.ribbonPanel1.ResumeLayout(false);
             this.ribbonControl1.ResumeLayout(false);
             this.ribbonControl1.PerformLayout();
-            this.ribbonPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bar1)).EndInit();
             this.ResumeLayout(false);
 
@@ -510,12 +509,13 @@
         private DevComponents.DotNetBar.RibbonBar ribbonBar3;
         private DevComponents.DotNetBar.ButtonItem btnItem_FORM_ROLES;
         private DevComponents.DotNetBar.ButtonItem btnItem_USER_ATTANDANCE_ACCESS;
-        private DevComponents.DotNetBar.RibbonPanel ribbonPanel2;
-        private DevComponents.DotNetBar.RibbonBar ribbonBar2;
-        private DevComponents.DotNetBar.RibbonTabItem ribbonTabItem1;
         private DevComponents.DotNetBar.ButtonItem btnItem_USER;
         private DevComponents.DotNetBar.ButtonItem btnManageClient;
-        private DevComponents.DotNetBar.ButtonItem btnAttendanceReport;
         private DevComponents.DotNetBar.ButtonItem btnItem_CADET_GROUND_ATTANDANCE_PERMISSION;
+        private DevComponents.DotNetBar.RibbonBar ribbonBar4;
+        private DevComponents.DotNetBar.ButtonItem btnItemAttendanceReport;
+        private DevComponents.DotNetBar.ButtonItem buttonItemCadetAttendanceReport;
+        private DevComponents.DotNetBar.ButtonItem btnItem_ALLCADET_PUNSIHMENT;
+        private DevComponents.DotNetBar.ButtonItem buttonItemExcelSheet;
     }
 }

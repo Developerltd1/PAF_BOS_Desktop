@@ -85,8 +85,7 @@ C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\P
 C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\obj\Release\RdlCompile.compiled
 C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.exe
 C:\Users\AQIB\Desktop\Software WORK\PAF_BOS_System_Desktop\Project\New_Version\PAF_BOS\PAF_BOS\obj\Release\PAF_BOS.pdb
-D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\bin\Release\AppStart\AAA_PAF_BOS.mdf
-D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\bin\Release\AppStart\AAA_PAF_BOS_log.ldf
+D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\bin\Release\Reports\SingleCadetReportAttandance.rdlc
 D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\bin\Release\Reports\ReportAttandance.rdlc
 D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\bin\Release\App.config
 D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\bin\Release\PAF_BOS.exe.config
@@ -103,6 +102,7 @@ D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\bin\Release\LiveCharts.WinForms.dll
 D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\bin\Release\LiveCharts.Wpf.dll
 D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\bin\Release\Microsoft.ReportViewer.WinForms.dll
 D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\bin\Release\Microsoft.SqlServer.Types.dll
+D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\bin\Release\DevComponents.DotNetBar2.xml
 D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\bin\Release\ExcelDataReader.pdb
 D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\bin\Release\ExcelDataReader.xml
 D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\bin\Release\ExcelDataReader.DataSet.pdb
@@ -125,12 +125,14 @@ D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\bin\Release\zh-Hans\Microsoft.SqlServer.Types
 D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\bin\Release\zh-Hant\Microsoft.SqlServer.Types.resources.dll
 D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\obj\Release\PAF_BOS.CadetExcelDataImportfrm.resources
 D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\obj\Release\AttendanceSystem.Reports.Attendancefrm.resources
+D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\obj\Release\PAF_BOS.GroundAttandanceSessiontfrm.resources
 D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\obj\Release\PAF_BOS.Mainfrm.resources
 D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\obj\Release\PAF_BOS.DashBoardCharts.resources
+D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\obj\Release\PAF_BOS.AttandanceSessiontfrm.resources
+D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\obj\Release\ClientForm.SingleCadetAttendancefrm.resources
 D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\obj\Release\PAF_BOS.AdminForms.UserRolePermission.resources
 D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\obj\Release\PAF_BOS.CaderRegistrationfrm.resources
 D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\obj\Release\PAF_BOS.CadetPunishmentfrm.resources
-D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\obj\Release\PAF_BOS.AttandanceSessiontfrm.resources
 D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\obj\Release\PAF_BOS.CadetSearchPermissiontfrm.resources
 D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\obj\Release\PAF_BOS.UserRegistrationfrm.resources
 D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\obj\Release\PAF_BOS.Loginfrm.resources
@@ -141,3 +143,7 @@ D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\obj\Release\RdlCompile.cache
 D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\obj\Release\RdlCompile.compiled
 D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\obj\Release\PAF_BOS.exe
 D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\obj\Release\PAF_BOS.pdb
+D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\obj\Release\PAK_BOS.csprojResolveAssemblyReference.cache
+D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\obj\Release\PAF_BOS.CaderRemove.resources
+D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\obj\Release\PAF_BOS.CreatedAttandanceSessiontfrm.resources
+D:\PAF_BOS\PAF_BOS_Desktop\PAF_BOS\obj\Release\PAF_BOS.CCCadetPunishmentfrm.resources

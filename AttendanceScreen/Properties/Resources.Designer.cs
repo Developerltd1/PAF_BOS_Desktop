@@ -63,6 +63,36 @@ namespace AttendanceScreen.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ArrowDown {
+            get {
+                object obj = ResourceManager.GetObject("ArrowDown", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ArrowDownDelay {
+            get {
+                object obj = ResourceManager.GetObject("ArrowDownDelay", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ArrowUp {
+            get {
+                object obj = ResourceManager.GetObject("ArrowUp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cardddd {
             get {
                 object obj = ResourceManager.GetObject("Cardddd", resourceCulture);
@@ -113,6 +143,26 @@ namespace AttendanceScreen.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap PAF_logo {
+            get {
+                object obj = ResourceManager.GetObject("PAF_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RED {
+            get {
+                object obj = ResourceManager.GetObject("RED", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Rfid_Card {
             get {
                 object obj = ResourceManager.GetObject("Rfid_Card", resourceCulture);
@@ -146,6 +196,16 @@ namespace AttendanceScreen.Properties {
         internal static System.Drawing.Bitmap Success {
             get {
                 object obj = ResourceManager.GetObject("Success", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Thumb {
+            get {
+                object obj = ResourceManager.GetObject("Thumb", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

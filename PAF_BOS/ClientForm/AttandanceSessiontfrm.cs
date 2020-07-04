@@ -13,20 +13,23 @@ namespace PAF_BOS
         }
         private void UserRegistrationfrm_Load(object sender, EventArgs e)
         {
-            WindowState = FormWindowState.Maximized;  
-            FillGrid();
+            WindowState = FormWindowState.Maximized;
+            udm_CreatedSessionNyUserGrid();
+            SessionCreatedGrid();
+            
+            
         }
-        private void FillGrid()
+        private void SessionCreatedGrid()
         {
             bool Status = false;
             string StatusDetails = null; 
-            DataTable DT = MainClass.GetCadetDataByUserID(MainClass.UserID, out Status, out StatusDetails);
+            DataTable DT = MainClass.GetCadetDataForAttendanceSession(MainClass.UserID, out Status, out StatusDetails);
             if (Status)
             {
-                gridViewCadetAttandance.Rows.Clear();
+                gridViewCadetSessionNotCreated.Rows.Clear();
                 foreach (DataRow r in DT.Rows)
                 {
-                    gridViewCadetAttandance.Rows.Add(
+                    gridViewCadetSessionNotCreated.Rows.Add(
                         false,
                         r["CadetID"].ToString(),
                         r["CadetName"].ToString(),
@@ -43,8 +46,7 @@ namespace PAF_BOS
             {
                 JIMessageBox.ShowInformationMessage(StatusDetails);
             }
-        } 
-       
+        }
         private void btnCreateAttandanceSessions_Click(object sender, EventArgs e)
         {
            
@@ -55,26 +57,28 @@ namespace PAF_BOS
                 DateTime CheckInDate = DateTime.Parse(string.Format("{0} {1}", dtCheckIn.Value.ToString("dd-MMM-yyy"), tIn.SelectedTime));
                 DateTime CheckOutDate = DateTime.Parse(string.Format("{0} {1}", dtCheckOut.Value.ToString("dd-MMM-yyy"), tOut.SelectedTime));
                  
-
+                //2,4
                 int CadetID = 0;
-                foreach (DataGridViewRow row in gridViewCadetAttandance.Rows)
+                foreach (DataGridViewRow row in gridViewCadetSessionNotCreated.Rows)
                 {
 
                     if ((bool)row.Cells[0].Value)
                     {
                         CadetID = int.Parse(row.Cells["CadetID"].Value.ToString());
                         MainClass.MngPAFBOS.InsertAttendanceSessions(CheckOutDate, CheckInDate,CadetID, MainClass.UserID,out Status, out StatusDetails);
-                        if (Status == false)
-                        {
+
+                         if (Status == false)
+                         {
                             MessageBox.Show(StatusDetails, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                            break;
-                        }
+                         } 
                     }
                 }
 
                 if (Status)
                 {
                     JIMessageBox.ShowInformationMessage("Attandance Session Created Successfully ");
+
+                    udm_CreatedSessionNyUserGrid();
                 }
             }catch(Exception ex)
             {
@@ -83,9 +87,25 @@ namespace PAF_BOS
             }
         }
 
+        private void udm_CreatedSessionNyUserGrid()
+        {
+            #region udm_CreatedSessionNyUserGrid
+            var yesterday = DateTime.Today;
+            DataTable dt = MainClass.GetSessionByOutDate(yesterday);
+            dataGridViewCreatedSession.Rows.Clear();
+            foreach (DataRow r in dt.Rows)
+            {
+                dataGridViewCreatedSession.Rows.Add(
+                    DateTime.Parse(r["AllowedCheckOUTDateTime"].ToString()).ToString("dd-MMM-yyyy HH:mm").ToString(),
+                    DateTime.Parse(r["AllowedCheckINDateTime"].ToString()).ToString("dd-MMM-yyyy HH:mm").ToString(),
+                    r["CreatedBy"].ToString());
+            }
+            #endregion
+        }
+
         private void cbAll_CheckedChanged(object sender, EventArgs e)
         {
-            foreach (DataGridViewRow row in gridViewCadetAttandance.Rows)
+            foreach (DataGridViewRow row in gridViewCadetSessionNotCreated.Rows)
             {
                 if (row.Visible == true)
                     row.Cells[0].Value = cbAll.Checked;
@@ -124,7 +144,7 @@ namespace PAF_BOS
 
         private void SearchFilter(string Cell,string Criteria)
         {
-            foreach (DataGridViewRow row in gridViewCadetAttandance.Rows)
+            foreach (DataGridViewRow row in gridViewCadetSessionNotCreated.Rows)
             {
                 if (row.Cells[Cell].Value.ToString().ToLower().Contains(Criteria.ToLower()))
                     row.Visible = true;
@@ -144,6 +164,11 @@ namespace PAF_BOS
                     DateTime.Parse(r["AllowedCheckINDateTime"].ToString()).ToString("dd-MMM-yyyy HH:mm").ToString(),
                     r["CreatedBy"].ToString());
             }
+        }
+
+        private void tabControlSessionCreated_Click(object sender, EventArgs e)
+        {
+           // SessionCreatedGrid();
         }
     }
 }

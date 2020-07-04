@@ -82,55 +82,6 @@ namespace PAF_BOS
                 row.Cells["SelectCadet"].Value = cbAll.Checked;
             }
         } 
-        private void tbPak_TextChanged(object sender, EventArgs e)
-        {
-            if (radioButtonAvailableCadets.Checked)
-            {
-                foreach (DataGridViewRow row in gdvSearchCadet.Rows)
-                {
-                    if (row.Cells["PAKNumber"].Value.ToString().ToLower().Contains(tbPak.Text.ToLower()))
-                        row.Visible = true;
-                    else
-                        row.Visible = false;
-                }
-            }
-
-            if(radioButtonAllowedCadets.Checked)
-            {
-                foreach (DataGridViewRow row in dataGridViewAllowedCadets.Rows)
-                {
-                    if (row.Cells["AllowedPAKNumber"].Value.ToString().ToLower().Contains(tbPak.Text.ToLower()))
-                        row.Visible = true;
-                    else
-                        row.Visible = false;
-                }
-            }
-        } 
-        private void tbCadetName_TextChanged(object sender, EventArgs e)
-        {
-            if (radioButtonAvailableCadets.Checked)
-            {
-                foreach (DataGridViewRow row in gdvSearchCadet.Rows)
-                {
-                    if (row.Cells["CadetName"].Value.ToString().ToLower().Contains(tbCadetName.Text.ToLower()))
-                        row.Visible = true;
-                    else
-                        row.Visible = false;
-                }
-            }
-
-            if (radioButtonAllowedCadets.Checked)
-            {
-                foreach (DataGridViewRow row in dataGridViewAllowedCadets.Rows)
-                {
-                    if (row.Cells["AllowedCadetName"].Value.ToString().Contains(tbCadetName.Text.ToLower()))
-                        row.Visible = true;
-                    else
-                        row.Visible = false;
-                }
-            }
-
-        }   
        
         private void btnAddPermission_Click(object sender, EventArgs e)
         {
@@ -226,32 +177,7 @@ namespace PAF_BOS
             udf_GridView();
         }
 
-        private void textBoxCNIC_TextChanged(object sender, EventArgs e)
-        {
-            if (radioButtonAvailableCadets.Checked)
-            {
-                foreach (DataGridViewRow row in gdvSearchCadet.Rows)
-                {
-                    if (row.Cells["CNIC"].Value.ToString().ToLower().Contains(textBoxCNIC.Text.ToLower()))
-                        row.Visible = true;
-                    else
-                        row.Visible = false;
-                }
-            }
-
-            if (radioButtonAllowedCadets.Checked)
-            {
-                foreach (DataGridViewRow row in dataGridViewAllowedCadets.Rows)
-                {
-                    if (row.Cells["AllowedCNIC"].Value.ToString().ToLower().Contains(textBoxCNIC.Text.ToLower()))
-                        row.Visible = true;
-                    else
-                        row.Visible = false;
-                }
-            }
-
-        }
-
+     
         private void cbSearchPermission_SelectedIndexChanged(object sender, EventArgs e)
         {
             FillAssignedCadetsGridView(); 
@@ -286,24 +212,30 @@ namespace PAF_BOS
             }
         }
 
-        private void radioButtonAvailableCadets_CheckedChanged(object sender, EventArgs e)
+        private void textBoxCNIC_TextChanged(object sender, EventArgs e)
         {
-            if(!string.IsNullOrEmpty(textBoxCNIC.Text))
-                textBoxCNIC_TextChanged(sender, e);
-            if (!string.IsNullOrEmpty(tbPak.Text))
-                tbPak_TextChanged(sender, e);
-            if (!string.IsNullOrEmpty(tbCadetName.Text))
-                tbCadetName_TextChanged(sender, e); 
+            SearchFilter("CNIC", textBoxCNIC.Text);
         }
 
-        private void radioButtonAllowedCadets_CheckedChanged(object sender, EventArgs e)
+        private void tbCadetName_TextChanged(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(textBoxCNIC.Text))
-                textBoxCNIC_TextChanged(sender, e);
-            if (!string.IsNullOrEmpty(tbPak.Text))
-                tbPak_TextChanged(sender, e);
-            if (!string.IsNullOrEmpty(tbCadetName.Text))
-                tbCadetName_TextChanged(sender, e);
+            SearchFilter("CadetName", tbCadetName.Text);
+        }
+
+        private void tbPak_TextChanged(object sender, EventArgs e)
+        {
+            SearchFilter("PAKNumber", tbPak.Text);
+        }
+
+        private void SearchFilter(string Cell, string Criteria)
+        {
+            foreach (DataGridViewRow row in gdvSearchCadet.Rows)
+            {
+                if (row.Cells[Cell].Value.ToString().ToLower().Contains(Criteria.ToLower()))
+                    row.Visible = true;
+                else
+                    row.Visible = false;
+            }
         }
     }
 }

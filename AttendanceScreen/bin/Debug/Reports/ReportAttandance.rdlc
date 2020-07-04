@@ -533,14 +533,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="AllowedCheckOUTDateTime">
+                    <Textbox Name="BookOUT1">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>=CDate(Fields!AllowedCheckOUTDateTime.Value).ToString("dd-MMM-yyyy HH:mm")</Value>
+                              <Value>=CDate(Fields!BookOUT.Value).ToString("dd-MMM-yyyy HH:mm")</Value>
                               <Style />
                             </TextRun>
                           </TextRuns>
@@ -549,7 +549,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>AllowedCheckOUTDateTime</rd:DefaultName>
+                      <rd:DefaultName>BookOUT1</rd:DefaultName>
                       <Style>
                         <Border>
                           <Color>LightGrey</Color>
@@ -562,6 +562,7 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
+                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
                 <TablixCell>
@@ -709,7 +710,7 @@
           <Paragraph>
             <TextRuns>
               <TextRun>
-                <Value>ATHORIZED</Value>
+                <Value>ATHOURIZED</Value>
                 <Style>
                   <FontSize>12pt</FontSize>
                   <FontWeight>Bold</FontWeight>

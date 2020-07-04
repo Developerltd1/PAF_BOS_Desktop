@@ -14,36 +14,36 @@ namespace PAF_BOS
         private void UserRegistrationfrm_Load(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Maximized;  
-            FillGrid();
+          //  FillGrid();
         }
-        private void FillGrid()
-        {
-            bool Status = false;
-            string StatusDetails = null; 
-            DataTable DT = MainClass.GetCadetDataByUserID(MainClass.UserID, out Status, out StatusDetails);
-            if (Status)
-            {
-                gridViewCadetAttandance.Rows.Clear();
-                foreach (DataRow r in DT.Rows)
-                {
-                    gridViewCadetAttandance.Rows.Add(
-                        false,
-                        r["CadetID"].ToString(),
-                        r["CadetName"].ToString(),
-                        r["CNIC"].ToString(),
-                        r["PAKNumber"].ToString(),
-                        r["ContactNumber"].ToString(),
-                        r["Senior Officer"].ToString(),
-                        r["TapeName"].ToString(),
-                        r["Expr1"].ToString()
-                        );
-                } 
-            }
-            else
-            {
-                JIMessageBox.ShowInformationMessage(StatusDetails);
-            }
-        } 
+     // private void FillGrid()
+     // {
+     //     bool Status = false;
+     //     string StatusDetails = null; 
+     //     DataTable DT = MainClass.GetCadetDataByUserID(MainClass.UserID, out Status, out StatusDetails);
+     //     if (Status)
+     //     {
+     //         gridViewCadetAttandance.Rows.Clear();
+     //         foreach (DataRow r in DT.Rows)
+     //         {
+     //             gridViewCadetAttandance.Rows.Add(
+     //                 false,
+     //                 r["CadetID"].ToString(),
+     //                 r["CadetName"].ToString(),
+     //                 r["CNIC"].ToString(),
+     //                 r["PAKNumber"].ToString(),
+     //                 r["ContactNumber"].ToString(),
+     //                 r["Senior Officer"].ToString(),
+     //                 r["TapeName"].ToString(),
+     //                 r["Expr1"].ToString()
+     //                 );
+     //         } 
+     //     }
+     //     else
+     //     {
+     //         JIMessageBox.ShowInformationMessage(StatusDetails);
+     //     }
+     // } 
        
         private void btnCreateAttandanceSessions_Click(object sender, EventArgs e)
         {

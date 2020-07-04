@@ -71,14 +71,12 @@ namespace PAF_BOS
             DataTable dtBookOutIN = ds.Tables["Table12"];
             #endregion
 
+            DataTable DTCourses = MainClass.MngPAFBOS.GetCadetsAllCourses();
             string[] N = new string[6];
-            N[0] = "English";
-            N[1] = "Urdu";
-            N[2] = "Computer";
-            N[3] = "Science";
-            N[4] = "PakStudy";
-            N[5] = "Maths";
-
+            for (int i = 0; i < DTCourses.Rows.Count; i++)
+            {
+                N[i] = DTCourses.Rows[i][0].ToString();
+            }
 
             double[] M = new double[6];
             M[0] = Convert.ToDouble(dtEnglish.Rows[0][0].ToString());

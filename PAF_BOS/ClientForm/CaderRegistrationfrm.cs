@@ -21,15 +21,10 @@ namespace PAF_BOS
             InitializeComponent();
         } 
 
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBoxPassword_KeyUp(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-                btnLogin_Click(sender, e);
+           // if (e.KeyCode == Keys.Enter)
+              //  btnLogin_Click(sender, e);
         } 
 
         private void UserRegistrationfrm_Load(object sender, EventArgs e)
@@ -38,6 +33,7 @@ namespace PAF_BOS
             radioJuniorCadet.Checked = true;
             udf_Combo();
             CheckDevice();
+            udf_GridView();
         }
 
         #region FingerPrint Methods
@@ -454,8 +450,8 @@ namespace PAF_BOS
         }
 
         private void labelLeftThumb_Click(object sender, EventArgs e)
-        { 
-            pictureBoxLeftThumb.Image = null; 
+        {
+            pictureBoxLeftThumb.Image = null;
             LeftFinalFMD = null;
             LeftFMD1 = null;
             LeftFMD2 = null;
@@ -471,6 +467,149 @@ namespace PAF_BOS
             RightFMD2 = null;
             RightFMD3 = null;
             RightFMD4 = null;
+        }
+
+        private void groupPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupPanel4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+
+
+
+        #region REMOVE_CADET
+
+        private void udf_GridView()
+        {
+
+            //Show All Data
+            bool Status = false;
+            string StatusDetails = null;
+            DataTable DtAllCadets = MainClass.MngPAFBOS.GellAllCadets(out Status, out StatusDetails);
+            if (Status)
+            {
+                gdvAllCadet.Rows.Clear();
+                // gdvSearchCadet.DataSource = DtCadetsByTapeAndCourseID;
+                foreach (DataRow r in DtAllCadets.Rows)
+                {
+                    gdvAllCadet.Rows.Add(
+                        r["CadetID"].ToString(), r["CadetName"].ToString(), r["CadetFatherName"].ToString(), r["MobileNumber"].ToString(), r["CNIC"].ToString(), r["PAKNumber"].ToString(), r["TapeName"].ToString(), r["CourseName"].ToString());
+                }
+            }
+            else
+            {
+                JIMessageBox.ShowErrorMessage("Some Thing Went Wrong: " + StatusDetails);
+            }
+        }
+
+        #endregion
+
+        private void cbAll_CheckedChanged(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow row in gdvAllCadet.Rows)
+            {
+                row.Cells[0].Value = cbAll.Checked;
+            }
+        }
+
+        private void textBoxSearchTape_TextChanged(object sender, EventArgs e)
+        {
+            SearchFilter("Tape", textBoxSearchTape.Text);
+        }
+        private void textBoxSearchCourse_TextChanged(object sender, EventArgs e)
+        {
+            SearchFilter("CourseName", textBoxSearchCourse.Text);
+        }
+
+        private void textBoxSearchPak_TextChanged(object sender, EventArgs e)
+        {
+            SearchFilter("PAKNumber", textBoxSearchPak.Text);
+        }
+
+
+
+        private void SearchFilter(string Cell, string Criteria)
+        {
+            foreach (DataGridViewRow row in gdvAllCadet.Rows)
+            {
+                if (row.Cells[Cell].Value.ToString().ToLower().Contains(Criteria.ToLower()))
+                    row.Visible = true;
+                else
+                    row.Visible = false;
+            }
+        }
+
+        private void btnRemoveCadet_Click(object sender, EventArgs e)
+        {
+          try
+          {
+              bool Status = false;
+              string StatusDetails = null;
+               
+                  MainClass.MngPAFBOS.RemoveCadet(int.Parse(Cadetidd.Text), out Status, out StatusDetails);
+                         
+                  if (Status)
+                  {
+                      JIMessageBox.ShowInformationMessage("Cadet Remove Successfully \n Thank You");
+                    udf_GridView();
+                    udf_Clear();
+                }
+          }
+          catch (Exception ex)
+          {
+              JIMessageBox.ShowErrorMessage("Some Thing went Wrong: " + ex);
+          }
+        }
+
+        private void udf_Clear()
+        {
+           txCname.Text = "";
+           txFname.Text = "";
+           txMobile.Text = "";
+           txCnic.Text = "";
+           txPakNo.Text = "";
+           txTape.Text = "";
+           txCourse.Text = "";
+           pictureBox.Image = null;
+        }
+
+        private void gdvAllCadet_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                bool Status = false;
+                string StatusDetails = null;
+                if (e.RowIndex >= 0)
+                {
+                    DataGridViewRow Row = this.gdvAllCadet.Rows[e.RowIndex];
+                    Cadetidd.Text = Row.Cells["CadetID"].Value.ToString();
+                    txCname.Text = Row.Cells["CadetName"].Value.ToString();
+                    txFname.Text = Row.Cells["CadetFatherName"].Value.ToString();
+                    txMobile.Text = Row.Cells["MobileNumber"].Value.ToString();
+                    txCnic.Text = Row.Cells["PAKNumber"].Value.ToString();
+                    txPakNo.Text = Row.Cells["CNIC"].Value.ToString();
+                    txTape.Text = Row.Cells["Tape"].Value.ToString();
+                    txCourse.Text = Row.Cells["CourseName"].Value.ToString();
+                    DataTable dd = MainClass.MngPAFBOS.GetCadetsPictureByCadetID(Convert.ToInt32(Row.Cells["CadetID"].Value.ToString()));
+                    pictureBox.Image = ImageClass.GetImageFromBase64(dd.Rows[0][1].ToString());
+                }
+            }
+            catch (Exception ex)
+            {
+                JIMessageBox.ShowErrorMessage("Some Thing went Wrong: " + ex);
+            }
+        }
+
+        private void tabControl1_Click(object sender, EventArgs e)
+        {
+            udf_GridView();
         }
     }
 }

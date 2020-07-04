@@ -2,14 +2,15 @@
 <xs:schema id="DataSetReports" targetNamespace="http://tempuri.org/DataSetReports.xsd" xmlns:mstns="http://tempuri.org/DataSetReports.xsd" xmlns="http://tempuri.org/DataSetReports.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
-      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
           <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="AAA_PAF_BOSConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AAA_PAF_BOSConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PAF_BOS.Properties.Settings.GlobalReference.Default.AAA_PAF_BOSConnectionString" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PAFBOS_ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PAFBOS_ConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.PAF_BOS.Properties.Settings.GlobalReference.Default.PAFBOS_ConnectionString1" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="AttendanceReportTableAdapter" GeneratorDataComponentClassName="AttendanceReportTableAdapter" Name="AttendanceReport" UserDataComponentName="AttendanceReportTableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="AAA_PAF_BOSConnectionString (Settings)" DbObjectName="AAA_PAF_BOS.dbo.AttendanceReport" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="PAFBOS_ConnectionString1 (Settings)" DbObjectName="[D:\PAF_BOS\PAF_BOS_DESKTOP\PAF_BOS\AAA_PAF_BOS.MDF].dbo.AttendanceReport" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
                     <CommandText>dbo.AttendanceReport</CommandText>
@@ -34,6 +35,34 @@
               <Mapping SourceColumn="AllowedCheckINDateTime" DataSetColumn="AllowedCheckINDateTime" />
               <Mapping SourceColumn="FullName" DataSetColumn="FullName" />
               <Mapping SourceColumn="Designation" DataSetColumn="Designation" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="usp_GetCadetAttendanceReportByCadetIDTableAdapter" GeneratorDataComponentClassName="usp_GetCadetAttendanceReportByCadetIDTableAdapter" Name="usp_GetCadetAttendanceReportByCadetID" UserDataComponentName="usp_GetCadetAttendanceReportByCadetIDTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PAFBOS_ConnectionString1 (Settings)" DbObjectName="[D:\PAF_BOS\PAF_BOS_DESKTOP\PAF_BOS\AAA_PAF_BOS.MDF].dbo.usp_GetCadetAttendanceReportByCadetID" DbObjectType="StoredProcedure" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="StoredProcedure" ModifiedByUser="false">
+                    <CommandText>dbo.usp_GetCadetAttendanceReportByCadetID</CommandText>
+                    <Parameters>
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="ReturnValue" ParameterName="@RETURN_VALUE" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="int" DbType="Int32" Direction="Input" ParameterName="@CadetID" Precision="10" ProviderType="Int" Scale="0" Size="4" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="bit" DbType="Boolean" Direction="InputOutput" ParameterName="@Status" Precision="1" ProviderType="Bit" Scale="0" Size="1" SourceColumnNullMapping="false" SourceVersion="Current" />
+                      <Parameter AllowDbNull="true" AutogeneratedName="" DataSourceName="" DataTypeServer="varchar" DbType="AnsiString" Direction="InputOutput" ParameterName="@StatusDetails" Precision="0" ProviderType="VarChar" Scale="0" Size="200" SourceColumnNullMapping="false" SourceVersion="Current" />
+                    </Parameters>
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Cadet_ID" DataSetColumn="Cadet_ID" />
+              <Mapping SourceColumn="CadetName" DataSetColumn="CadetName" />
+              <Mapping SourceColumn="TapeName" DataSetColumn="TapeName" />
+              <Mapping SourceColumn="CourseName" DataSetColumn="CourseName" />
+              <Mapping SourceColumn="ActualOut" DataSetColumn="ActualOut" />
+              <Mapping SourceColumn="ActualIn" DataSetColumn="ActualIn" />
+              <Mapping SourceColumn="CadetOut" DataSetColumn="CadetOut" />
+              <Mapping SourceColumn="CadtIn" DataSetColumn="CadtIn" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -80,6 +109,38 @@
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="usp_GetCadetAttendanceReportByCadetID" msprop:Generator_TableClassName="usp_GetCadetAttendanceReportByCadetIDDataTable" msprop:Generator_TableVarName="tableusp_GetCadetAttendanceReportByCadetID" msprop:Generator_RowChangedName="usp_GetCadetAttendanceReportByCadetIDRowChanged" msprop:Generator_TablePropName="usp_GetCadetAttendanceReportByCadetID" msprop:Generator_RowDeletingName="usp_GetCadetAttendanceReportByCadetIDRowDeleting" msprop:Generator_RowChangingName="usp_GetCadetAttendanceReportByCadetIDRowChanging" msprop:Generator_RowEvHandlerName="usp_GetCadetAttendanceReportByCadetIDRowChangeEventHandler" msprop:Generator_RowDeletedName="usp_GetCadetAttendanceReportByCadetIDRowDeleted" msprop:Generator_RowClassName="usp_GetCadetAttendanceReportByCadetIDRow" msprop:Generator_UserTableName="usp_GetCadetAttendanceReportByCadetID" msprop:Generator_RowEvArgName="usp_GetCadetAttendanceReportByCadetIDRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cadet_ID" msprop:Generator_ColumnVarNameInTable="columnCadet_ID" msprop:Generator_ColumnPropNameInRow="Cadet_ID" msprop:Generator_ColumnPropNameInTable="Cadet_IDColumn" msprop:Generator_UserColumnName="Cadet_ID" type="xs:int" />
+              <xs:element name="CadetName" msprop:Generator_ColumnVarNameInTable="columnCadetName" msprop:Generator_ColumnPropNameInRow="CadetName" msprop:Generator_ColumnPropNameInTable="CadetNameColumn" msprop:Generator_UserColumnName="CadetName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TapeName" msprop:Generator_ColumnVarNameInTable="columnTapeName" msprop:Generator_ColumnPropNameInRow="TapeName" msprop:Generator_ColumnPropNameInTable="TapeNameColumn" msprop:Generator_UserColumnName="TapeName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CourseName" msprop:Generator_ColumnVarNameInTable="columnCourseName" msprop:Generator_ColumnPropNameInRow="CourseName" msprop:Generator_ColumnPropNameInTable="CourseNameColumn" msprop:Generator_UserColumnName="CourseName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ActualOut" msprop:Generator_ColumnVarNameInTable="columnActualOut" msprop:Generator_ColumnPropNameInRow="ActualOut" msprop:Generator_ColumnPropNameInTable="ActualOutColumn" msprop:Generator_UserColumnName="ActualOut" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ActualIn" msprop:Generator_ColumnVarNameInTable="columnActualIn" msprop:Generator_ColumnPropNameInRow="ActualIn" msprop:Generator_ColumnPropNameInTable="ActualInColumn" msprop:Generator_UserColumnName="ActualIn" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="CadetOut" msprop:Generator_ColumnVarNameInTable="columnCadetOut" msprop:Generator_ColumnPropNameInRow="CadetOut" msprop:Generator_ColumnPropNameInTable="CadetOutColumn" msprop:Generator_UserColumnName="CadetOut" type="xs:dateTime" />
+              <xs:element name="CadtIn" msprop:Generator_ColumnVarNameInTable="columnCadtIn" msprop:Generator_ColumnPropNameInRow="CadtIn" msprop:Generator_ColumnPropNameInTable="CadtInColumn" msprop:Generator_UserColumnName="CadtIn" type="xs:dateTime" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

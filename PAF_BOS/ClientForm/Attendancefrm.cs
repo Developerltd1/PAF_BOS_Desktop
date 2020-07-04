@@ -11,11 +11,11 @@ namespace AttendanceSystem.Reports
         public Attendancefrm()
         {
             InitializeComponent();
-            this.WindowState = FormWindowState.Maximized;
         } 
 
         private void Attendancefrm_Load(object sender, EventArgs e)
         {
+            this.WindowState = FormWindowState.Maximized;
             try
             {
                 FillClientComboCadets(); 

@@ -131,15 +131,16 @@
             // 
             // groupPanel9
             // 
+            this.groupPanel9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupPanel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
             this.groupPanel9.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel9.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel9.Controls.Add(this.chart2);
             this.groupPanel9.Controls.Add(this.labelX14);
             this.groupPanel9.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel9.Location = new System.Drawing.Point(459, 14);
+            this.groupPanel9.Location = new System.Drawing.Point(400, 249);
             this.groupPanel9.Name = "groupPanel9";
-            this.groupPanel9.Size = new System.Drawing.Size(463, 469);
+            this.groupPanel9.Size = new System.Drawing.Size(327, 234);
             // 
             // 
             // 
@@ -174,22 +175,27 @@
             // chart2
             // 
             this.chart2.BackColor = System.Drawing.Color.Transparent;
+            chartArea1.BackImageWrapMode = System.Windows.Forms.DataVisualization.Charting.ChartImageWrapMode.Unscaled;
+            chartArea1.BorderWidth = 0;
             chartArea1.Name = "ChartArea1";
             this.chart2.ChartAreas.Add(chartArea1);
             legend1.Docking = System.Windows.Forms.DataVisualization.Charting.Docking.Top;
             legend1.Name = "Legend1";
             this.chart2.Legends.Add(legend1);
-            this.chart2.Location = new System.Drawing.Point(2, 44);
+            this.chart2.Location = new System.Drawing.Point(3, 45);
             this.chart2.Name = "chart2";
-            this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Excel;
+            this.chart2.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             series1.ChartArea = "ChartArea1";
             series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             series1.IsValueShownAsLabel = true;
             series1.IsXValueIndexed = true;
-            series1.LabelBackColor = System.Drawing.Color.Lime;
-            series1.LabelBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            series1.LabelBackColor = System.Drawing.Color.Transparent;
+            series1.LabelBorderColor = System.Drawing.Color.White;
+            series1.LabelBorderWidth = 0;
+            series1.LabelForeColor = System.Drawing.Color.White;
             series1.Legend = "Legend1";
-            series1.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Square;
+            series1.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
             series1.Name = "Cadet BookOut";
             series1.SmartLabelStyle.IsMarkerOverlappingAllowed = true;
             series2.ChartArea = "ChartArea1";
@@ -198,9 +204,10 @@
             series2.Name = "Cadet BookIn";
             this.chart2.Series.Add(series1);
             this.chart2.Series.Add(series2);
-            this.chart2.Size = new System.Drawing.Size(452, 416);
+            this.chart2.Size = new System.Drawing.Size(312, 180);
             this.chart2.TabIndex = 15;
             this.chart2.Text = "chart2";
+            this.chart2.TextAntiAliasingQuality = System.Windows.Forms.DataVisualization.Charting.TextAntiAliasingQuality.Normal;
             // 
             // labelX14
             // 
@@ -211,15 +218,16 @@
             this.labelX14.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX14.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX14.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelX14.Location = new System.Drawing.Point(3, 5);
+            this.labelX14.Location = new System.Drawing.Point(5, 6);
             this.labelX14.Name = "labelX14";
-            this.labelX14.Size = new System.Drawing.Size(429, 33);
+            this.labelX14.Size = new System.Drawing.Size(312, 33);
             this.labelX14.TabIndex = 14;
             this.labelX14.Text = "Total Cadet BookOut/BookIn";
             this.labelX14.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // groupPanel1
             // 
+            this.groupPanel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
             this.groupPanel1.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
@@ -228,7 +236,7 @@
             this.groupPanel1.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel1.Location = new System.Drawing.Point(12, 249);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(441, 234);
+            this.groupPanel1.Size = new System.Drawing.Size(376, 234);
             // 
             // 
             // 
@@ -271,7 +279,7 @@
             this.labelX11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelX11.Location = new System.Drawing.Point(3, 6);
             this.labelX11.Name = "labelX11";
-            this.labelX11.Size = new System.Drawing.Size(429, 33);
+            this.labelX11.Size = new System.Drawing.Size(370, 33);
             this.labelX11.TabIndex = 14;
             this.labelX11.Text = "Total Cadet in Each Course";
             this.labelX11.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -287,30 +295,35 @@
             this.chart1.Location = new System.Drawing.Point(3, 40);
             this.chart1.Name = "chart1";
             series3.ChartArea = "ChartArea1";
+            series3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             series3.IsValueShownAsLabel = true;
             series3.IsXValueIndexed = true;
-            series3.LabelBackColor = System.Drawing.Color.Lime;
-            series3.LabelBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            series3.LabelAngle = 1;
+            series3.LabelBackColor = System.Drawing.Color.White;
+            series3.LabelBorderColor = System.Drawing.Color.Black;
+            series3.LabelBorderWidth = 0;
             series3.Legend = "Legend1";
             series3.MarkerStyle = System.Windows.Forms.DataVisualization.Charting.MarkerStyle.Circle;
             series3.Name = "Courses";
+            series3.ShadowOffset = 6;
             series3.SmartLabelStyle.IsMarkerOverlappingAllowed = true;
             this.chart1.Series.Add(series3);
-            this.chart1.Size = new System.Drawing.Size(429, 185);
+            this.chart1.Size = new System.Drawing.Size(355, 185);
             this.chart1.TabIndex = 13;
             this.chart1.Text = "chart1";
             // 
             // groupPanel7
             // 
+            this.groupPanel7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
             this.groupPanel7.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel7.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel7.Controls.Add(this.labelX8);
             this.groupPanel7.Controls.Add(this.groupPanel8);
             this.groupPanel7.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel7.Location = new System.Drawing.Point(242, 14);
+            this.groupPanel7.Location = new System.Drawing.Point(400, 43);
             this.groupPanel7.Name = "groupPanel7";
-            this.groupPanel7.Size = new System.Drawing.Size(211, 162);
+            this.groupPanel7.Size = new System.Drawing.Size(327, 200);
             // 
             // 
             // 
@@ -353,7 +366,7 @@
             this.labelX8.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelX8.Location = new System.Drawing.Point(3, 4);
             this.labelX8.Name = "labelX8";
-            this.labelX8.Size = new System.Drawing.Size(194, 30);
+            this.labelX8.Size = new System.Drawing.Size(314, 30);
             this.labelX8.TabIndex = 2;
             this.labelX8.Text = "Total Cadet";
             this.labelX8.TextAlignment = System.Drawing.StringAlignment.Center;
@@ -370,9 +383,9 @@
             this.groupPanel8.Controls.Add(this.labelX7);
             this.groupPanel8.Controls.Add(this.labelSenior);
             this.groupPanel8.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel8.Location = new System.Drawing.Point(3, 35);
+            this.groupPanel8.Location = new System.Drawing.Point(4, 40);
             this.groupPanel8.Name = "groupPanel8";
-            this.groupPanel8.Size = new System.Drawing.Size(199, 118);
+            this.groupPanel8.Size = new System.Drawing.Size(314, 151);
             // 
             // 
             // 
@@ -412,7 +425,7 @@
             this.labelX9.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX9.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX9.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelX9.Location = new System.Drawing.Point(21, 77);
+            this.labelX9.Location = new System.Drawing.Point(83, 63);
             this.labelX9.Name = "labelX9";
             this.labelX9.Size = new System.Drawing.Size(85, 23);
             this.labelX9.TabIndex = 5;
@@ -428,11 +441,11 @@
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelX2.Location = new System.Drawing.Point(21, 9);
+            this.labelX2.Location = new System.Drawing.Point(83, 91);
             this.labelX2.Name = "labelX2";
             this.labelX2.Size = new System.Drawing.Size(85, 33);
             this.labelX2.TabIndex = 1;
-            this.labelX2.Text = "Cadet";
+            this.labelX2.Text = "Total Cadet";
             this.labelX2.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
             // labelJunior
@@ -444,7 +457,7 @@
             this.labelJunior.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelJunior.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelJunior.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelJunior.Location = new System.Drawing.Point(112, 77);
+            this.labelJunior.Location = new System.Drawing.Point(174, 63);
             this.labelJunior.Name = "labelJunior";
             this.labelJunior.Size = new System.Drawing.Size(59, 23);
             this.labelJunior.TabIndex = 4;
@@ -460,7 +473,7 @@
             this.labelTotalCadet.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelTotalCadet.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTotalCadet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelTotalCadet.Location = new System.Drawing.Point(112, 9);
+            this.labelTotalCadet.Location = new System.Drawing.Point(174, 91);
             this.labelTotalCadet.Name = "labelTotalCadet";
             this.labelTotalCadet.Size = new System.Drawing.Size(59, 33);
             this.labelTotalCadet.TabIndex = 0;
@@ -476,7 +489,7 @@
             this.labelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX7.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelX7.Location = new System.Drawing.Point(21, 48);
+            this.labelX7.Location = new System.Drawing.Point(83, 34);
             this.labelX7.Name = "labelX7";
             this.labelX7.Size = new System.Drawing.Size(85, 23);
             this.labelX7.TabIndex = 3;
@@ -492,7 +505,7 @@
             this.labelSenior.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelSenior.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelSenior.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelSenior.Location = new System.Drawing.Point(112, 48);
+            this.labelSenior.Location = new System.Drawing.Point(174, 34);
             this.labelSenior.Name = "labelSenior";
             this.labelSenior.Size = new System.Drawing.Size(59, 23);
             this.labelSenior.TabIndex = 2;
@@ -501,15 +514,16 @@
             // 
             // groupPanel5
             // 
+            this.groupPanel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupPanel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
             this.groupPanel5.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel5.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel5.Controls.Add(this.labelX12);
             this.groupPanel5.Controls.Add(this.groupPanel4);
             this.groupPanel5.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel5.Location = new System.Drawing.Point(12, 14);
+            this.groupPanel5.Location = new System.Drawing.Point(12, 43);
             this.groupPanel5.Name = "groupPanel5";
-            this.groupPanel5.Size = new System.Drawing.Size(224, 229);
+            this.groupPanel5.Size = new System.Drawing.Size(382, 200);
             // 
             // 
             // 
@@ -550,7 +564,7 @@
             this.labelX12.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX12.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelX12.Location = new System.Drawing.Point(2, 4);
+            this.labelX12.Location = new System.Drawing.Point(67, 6);
             this.labelX12.Name = "labelX12";
             this.labelX12.Size = new System.Drawing.Size(212, 30);
             this.labelX12.TabIndex = 2;
@@ -575,9 +589,9 @@
             this.groupPanel4.Controls.Add(this.labelX6);
             this.groupPanel4.Controls.Add(this.labelEnglish);
             this.groupPanel4.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel4.Location = new System.Drawing.Point(3, 35);
+            this.groupPanel4.Location = new System.Drawing.Point(3, 38);
             this.groupPanel4.Name = "groupPanel4";
-            this.groupPanel4.Size = new System.Drawing.Size(211, 186);
+            this.groupPanel4.Size = new System.Drawing.Size(370, 153);
             // 
             // 
             // 
@@ -617,11 +631,11 @@
             this.labelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX4.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelX4.Location = new System.Drawing.Point(34, 69);
+            this.labelX4.Location = new System.Drawing.Point(28, 94);
             this.labelX4.Name = "labelX4";
             this.labelX4.Size = new System.Drawing.Size(81, 23);
             this.labelX4.TabIndex = 13;
-            this.labelX4.Text = "Computer";
+            this.labelX4.Text = "147 GD (P)";
             // 
             // labelComputer
             // 
@@ -632,7 +646,7 @@
             this.labelComputer.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelComputer.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelComputer.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelComputer.Location = new System.Drawing.Point(143, 69);
+            this.labelComputer.Location = new System.Drawing.Point(137, 94);
             this.labelComputer.Name = "labelComputer";
             this.labelComputer.Size = new System.Drawing.Size(41, 23);
             this.labelComputer.TabIndex = 12;
@@ -647,11 +661,11 @@
             this.labelX17.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX17.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX17.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelX17.Location = new System.Drawing.Point(34, 156);
+            this.labelX17.Location = new System.Drawing.Point(202, 94);
             this.labelX17.Name = "labelX17";
             this.labelX17.Size = new System.Drawing.Size(81, 23);
             this.labelX17.TabIndex = 11;
-            this.labelX17.Text = "Maths";
+            this.labelX17.Text = "144 GD (P)";
             // 
             // labelMaths
             // 
@@ -662,7 +676,7 @@
             this.labelMaths.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelMaths.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelMaths.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelMaths.Location = new System.Drawing.Point(143, 156);
+            this.labelMaths.Location = new System.Drawing.Point(311, 94);
             this.labelMaths.Name = "labelMaths";
             this.labelMaths.Size = new System.Drawing.Size(41, 23);
             this.labelMaths.TabIndex = 10;
@@ -677,11 +691,11 @@
             this.labelX10.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX10.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX10.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelX10.Location = new System.Drawing.Point(34, 127);
+            this.labelX10.Location = new System.Drawing.Point(202, 65);
             this.labelX10.Name = "labelX10";
             this.labelX10.Size = new System.Drawing.Size(81, 23);
             this.labelX10.TabIndex = 9;
-            this.labelX10.Text = "PakStudy";
+            this.labelX10.Text = "145 GD (P)";
             // 
             // labelPakStudy
             // 
@@ -692,7 +706,7 @@
             this.labelPakStudy.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelPakStudy.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelPakStudy.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelPakStudy.Location = new System.Drawing.Point(143, 127);
+            this.labelPakStudy.Location = new System.Drawing.Point(311, 65);
             this.labelPakStudy.Name = "labelPakStudy";
             this.labelPakStudy.Size = new System.Drawing.Size(41, 23);
             this.labelPakStudy.TabIndex = 8;
@@ -707,11 +721,11 @@
             this.labelX13.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX13.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX13.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelX13.Location = new System.Drawing.Point(34, 98);
+            this.labelX13.Location = new System.Drawing.Point(202, 36);
             this.labelX13.Name = "labelX13";
             this.labelX13.Size = new System.Drawing.Size(81, 23);
             this.labelX13.TabIndex = 7;
-            this.labelX13.Text = "Science";
+            this.labelX13.Text = "146 GD (P)";
             // 
             // labelScience
             // 
@@ -722,7 +736,7 @@
             this.labelScience.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelScience.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelScience.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelScience.Location = new System.Drawing.Point(143, 98);
+            this.labelScience.Location = new System.Drawing.Point(311, 36);
             this.labelScience.Name = "labelScience";
             this.labelScience.Size = new System.Drawing.Size(41, 23);
             this.labelScience.TabIndex = 6;
@@ -737,11 +751,11 @@
             this.labelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX1.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelX1.Location = new System.Drawing.Point(34, 40);
+            this.labelX1.Location = new System.Drawing.Point(28, 65);
             this.labelX1.Name = "labelX1";
             this.labelX1.Size = new System.Drawing.Size(81, 23);
             this.labelX1.TabIndex = 5;
-            this.labelX1.Text = "Urdu";
+            this.labelX1.Text = "148 GD (P)";
             // 
             // labelUrdu
             // 
@@ -752,7 +766,7 @@
             this.labelUrdu.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelUrdu.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelUrdu.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelUrdu.Location = new System.Drawing.Point(143, 40);
+            this.labelUrdu.Location = new System.Drawing.Point(137, 65);
             this.labelUrdu.Name = "labelUrdu";
             this.labelUrdu.Size = new System.Drawing.Size(41, 23);
             this.labelUrdu.TabIndex = 4;
@@ -767,11 +781,11 @@
             this.labelX6.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX6.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelX6.Location = new System.Drawing.Point(34, 11);
+            this.labelX6.Location = new System.Drawing.Point(28, 36);
             this.labelX6.Name = "labelX6";
             this.labelX6.Size = new System.Drawing.Size(81, 23);
             this.labelX6.TabIndex = 3;
-            this.labelX6.Text = "English";
+            this.labelX6.Text = "149 GD (P)";
             // 
             // labelEnglish
             // 
@@ -782,7 +796,7 @@
             this.labelEnglish.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelEnglish.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEnglish.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.labelEnglish.Location = new System.Drawing.Point(143, 11);
+            this.labelEnglish.Location = new System.Drawing.Point(137, 36);
             this.labelEnglish.Name = "labelEnglish";
             this.labelEnglish.Size = new System.Drawing.Size(41, 23);
             this.labelEnglish.TabIndex = 2;
@@ -790,6 +804,7 @@
             // 
             // groupPanel3
             // 
+            this.groupPanel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
             this.groupPanel3.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
@@ -797,9 +812,9 @@
             this.groupPanel3.Controls.Add(this.labelTotalSQN);
             this.groupPanel3.Controls.Add(this.groupPanel6);
             this.groupPanel3.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel3.Location = new System.Drawing.Point(349, 180);
+            this.groupPanel3.Location = new System.Drawing.Point(616, 129);
             this.groupPanel3.Name = "groupPanel3";
-            this.groupPanel3.Size = new System.Drawing.Size(104, 59);
+            this.groupPanel3.Size = new System.Drawing.Size(111, 76);
             // 
             // 
             // 
@@ -839,7 +854,7 @@
             this.labelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX5.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelX5.Location = new System.Drawing.Point(9, 4);
+            this.labelX5.Location = new System.Drawing.Point(9, 15);
             this.labelX5.Name = "labelX5";
             this.labelX5.Size = new System.Drawing.Size(80, 20);
             this.labelX5.TabIndex = 1;
@@ -855,7 +870,7 @@
             this.labelTotalSQN.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelTotalSQN.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTotalSQN.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelTotalSQN.Location = new System.Drawing.Point(9, 29);
+            this.labelTotalSQN.Location = new System.Drawing.Point(9, 40);
             this.labelTotalSQN.Name = "labelTotalSQN";
             this.labelTotalSQN.Size = new System.Drawing.Size(80, 18);
             this.labelTotalSQN.TabIndex = 0;
@@ -937,15 +952,16 @@
             // 
             // groupPanel2
             // 
+            this.groupPanel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.groupPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
             this.groupPanel2.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel2.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel2.Controls.Add(this.labelX3);
             this.groupPanel2.Controls.Add(this.labelTotalWC);
             this.groupPanel2.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel2.Location = new System.Drawing.Point(242, 179);
+            this.groupPanel2.Location = new System.Drawing.Point(616, 43);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(104, 59);
+            this.groupPanel2.Size = new System.Drawing.Size(111, 80);
             // 
             // 
             // 
@@ -975,6 +991,7 @@
             // 
             this.groupPanel2.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.groupPanel2.TabIndex = 3;
+            this.groupPanel2.Visible = false;
             // 
             // labelX3
             // 
@@ -985,7 +1002,7 @@
             this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX3.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelX3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelX3.Location = new System.Drawing.Point(7, 6);
+            this.labelX3.Location = new System.Drawing.Point(7, 15);
             this.labelX3.Name = "labelX3";
             this.labelX3.Size = new System.Drawing.Size(82, 18);
             this.labelX3.TabIndex = 1;
@@ -1001,7 +1018,7 @@
             this.labelTotalWC.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelTotalWC.Font = new System.Drawing.Font("Microsoft Tai Le", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTotalWC.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelTotalWC.Location = new System.Drawing.Point(7, 29);
+            this.labelTotalWC.Location = new System.Drawing.Point(7, 38);
             this.labelTotalWC.Name = "labelTotalWC";
             this.labelTotalWC.Size = new System.Drawing.Size(82, 22);
             this.labelTotalWC.TabIndex = 0;

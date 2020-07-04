@@ -136,6 +136,24 @@
   <ItemGroup>
     <None Include="Resources\Thumbbbb.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RED.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowDown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowUp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ArrowDownDelay.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thumb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PAF_logo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
