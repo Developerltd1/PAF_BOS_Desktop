@@ -3,6 +3,7 @@ using ExcelDataReader;
 using System;
 using System.Data;
 using System.IO;
+using System.Text;
 using System.Windows.Forms;
 
 namespace PAF_BOS
@@ -15,7 +16,8 @@ namespace PAF_BOS
         }
         private void UserRegistrationfrm_Load(object sender, EventArgs e)
         {
-            WindowState = FormWindowState.Maximized;  
+            this.WindowState = FormWindowState.Maximized;
+            Application.DoEvents();
         }
 
         DataTableCollection tableCollection;
@@ -69,10 +71,12 @@ namespace PAF_BOS
                                        );
             }
         }
+        System.Collections.Generic.List<string> str;
         private void buttonExportFile_Click(object sender, EventArgs e)
         {
             bool Status = false;
             string StatusDetails = null;
+            str = new System.Collections.Generic.List<string>();
             try
             {
                     foreach (DataGridViewRow row in gridViewExcel.Rows)
@@ -91,17 +95,16 @@ namespace PAF_BOS
                                                                                   int.Parse(row.Cells["Tape_ID"].Value.ToString()),
                                                                                   MainClass.UserID,
                                                                                   int.Parse(row.Cells["Role_ID"].Value.ToString()),
-                                                                                  out Status, out StatusDetails);
+                                                                                  out Status, out StatusDetails
+                                                                                );
                       if (Status == false)
                       {
-                          MessageBox.Show(StatusDetails, "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                          break;
                       }
                     }//End Foreach_Loop
+                    
                     if (Status)
                     {
-                        JIMessageBox.ShowInformationMessage("Excel Sheet" + tableCollection + "Exported Seccessfully");
-                        //FillGridViewAssignedForms();
+                      JIMessageBox.ShowInformationMessage("Excel Sheet Exported Seccessfully");
                     }
             }
             catch (Exception ex)

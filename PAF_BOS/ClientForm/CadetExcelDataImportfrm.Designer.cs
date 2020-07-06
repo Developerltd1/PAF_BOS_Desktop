@@ -143,12 +143,12 @@
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(110)))));
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.gridViewExcel.DefaultCellStyle = dataGridViewCellStyle2;
             this.gridViewExcel.EnableHeadersVisualStyles = false;
             this.gridViewExcel.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.gridViewExcel.Location = new System.Drawing.Point(10, 14);
+            this.gridViewExcel.Location = new System.Drawing.Point(10, 11);
             this.gridViewExcel.MultiSelect = false;
             this.gridViewExcel.Name = "gridViewExcel";
             this.gridViewExcel.ReadOnly = true;
@@ -160,7 +160,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gridViewExcel.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.gridViewExcel.Size = new System.Drawing.Size(929, 548);
+            this.gridViewExcel.Size = new System.Drawing.Size(923, 340);
             this.gridViewExcel.TabIndex = 59;
             this.gridViewExcel.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridViewExcel_CellContentClick);
             // 
@@ -380,7 +380,7 @@
             this.buttonExportFile.Size = new System.Drawing.Size(194, 37);
             this.buttonExportFile.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.buttonExportFile.TabIndex = 66;
-            this.buttonExportFile.Text = "Export File";
+            this.buttonExportFile.Text = "Export To Database";
             this.buttonExportFile.Click += new System.EventHandler(this.buttonExportFile_Click);
             // 
             // buttonSelectExcelFile
@@ -443,9 +443,9 @@
             this.groupPanel1.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel1.Controls.Add(this.gridViewExcel);
             this.groupPanel1.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel1.Location = new System.Drawing.Point(11, 116);
+            this.groupPanel1.Location = new System.Drawing.Point(11, 118);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(979, 690);
+            this.groupPanel1.Size = new System.Drawing.Size(979, 380);
             // 
             // 
             // 
@@ -638,7 +638,7 @@
             this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel3.Controls.Add(this.dataGridViewUpdate);
             this.groupPanel3.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel3.Location = new System.Drawing.Point(0, 104);
+            this.groupPanel3.Location = new System.Drawing.Point(3, 89);
             this.groupPanel3.Name = "groupPanel3";
             this.groupPanel3.Size = new System.Drawing.Size(970, 404);
             // 
@@ -711,12 +711,12 @@
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Tai Le", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(110)))));
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dataGridViewUpdate.DefaultCellStyle = dataGridViewCellStyle6;
             this.dataGridViewUpdate.EnableHeadersVisualStyles = false;
             this.dataGridViewUpdate.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.dataGridViewUpdate.Location = new System.Drawing.Point(5, 13);
+            this.dataGridViewUpdate.Location = new System.Drawing.Point(7, 13);
             this.dataGridViewUpdate.MultiSelect = false;
             this.dataGridViewUpdate.Name = "dataGridViewUpdate";
             dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -727,7 +727,7 @@
             dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewUpdate.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.dataGridViewUpdate.Size = new System.Drawing.Size(929, 352);
+            this.dataGridViewUpdate.Size = new System.Drawing.Size(947, 382);
             this.dataGridViewUpdate.TabIndex = 59;
             this.dataGridViewUpdate.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewUpdate_CellContentClick);
             // 
@@ -827,8 +827,6 @@
             this.Controls.Add(this.ribbonClientPanel1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "CadetExcelDataImportfrm";
             this.Text = "Cadet  Excel Data Export";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

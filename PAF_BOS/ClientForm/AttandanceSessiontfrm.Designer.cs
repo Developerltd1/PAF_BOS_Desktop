@@ -44,15 +44,6 @@
             this.btnCreateAttandanceSessions = new DevComponents.DotNetBar.ButtonX();
             this.cbAll = new System.Windows.Forms.CheckBox();
             this.gridViewCadetSessionNotCreated = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.Select = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.CadetID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CadetName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CNIC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PAKNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ContactNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SQN = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TapeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CourseName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ribbonClientPanel1 = new DevComponents.DotNetBar.Ribbon.RibbonClientPanel();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.textBoxCourseName = new DevComponents.DotNetBar.Controls.TextBoxX();
@@ -78,6 +69,15 @@
             this.groupPanel1 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.tabSessionCreated = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabItem1 = new DevComponents.DotNetBar.TabItem(this.components);
+            this.Select = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.CadetID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CadetName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CNIC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PAKNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ContactNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SQN = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TapeName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CourseName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.gridViewCadetSessionNotCreated)).BeginInit();
             this.ribbonClientPanel1.SuspendLayout();
             this.groupPanel2.SuspendLayout();
@@ -150,12 +150,12 @@
             // btnCreateAttandanceSessions
             // 
             this.btnCreateAttandanceSessions.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnCreateAttandanceSessions.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCreateAttandanceSessions.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnCreateAttandanceSessions.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
             this.btnCreateAttandanceSessions.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCreateAttandanceSessions.Location = new System.Drawing.Point(796, 90);
+            this.btnCreateAttandanceSessions.Location = new System.Drawing.Point(838, 21);
             this.btnCreateAttandanceSessions.Name = "btnCreateAttandanceSessions";
-            this.btnCreateAttandanceSessions.Size = new System.Drawing.Size(155, 95);
+            this.btnCreateAttandanceSessions.Size = new System.Drawing.Size(141, 71);
             this.btnCreateAttandanceSessions.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
             this.btnCreateAttandanceSessions.TabIndex = 61;
             this.btnCreateAttandanceSessions.Text = "Create Sessions";
@@ -164,7 +164,7 @@
             // cbAll
             // 
             this.cbAll.AutoSize = true;
-            this.cbAll.Location = new System.Drawing.Point(75, 1);
+            this.cbAll.Location = new System.Drawing.Point(61, 1);
             this.cbAll.Name = "cbAll";
             this.cbAll.Size = new System.Drawing.Size(15, 14);
             this.cbAll.TabIndex = 58;
@@ -218,65 +218,13 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.gridViewCadetSessionNotCreated.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.gridViewCadetSessionNotCreated.Size = new System.Drawing.Size(949, 140);
+            this.gridViewCadetSessionNotCreated.Size = new System.Drawing.Size(527, 384);
             this.gridViewCadetSessionNotCreated.TabIndex = 59;
-            // 
-            // Select
-            // 
-            this.Select.HeaderText = "Select";
-            this.Select.Name = "Select";
-            this.Select.Width = 60;
-            // 
-            // CadetID
-            // 
-            this.CadetID.HeaderText = "CadetID";
-            this.CadetID.Name = "CadetID";
-            this.CadetID.Visible = false;
-            // 
-            // CadetName
-            // 
-            this.CadetName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CadetName.HeaderText = "Cadet Name";
-            this.CadetName.Name = "CadetName";
-            // 
-            // CNIC
-            // 
-            this.CNIC.HeaderText = "CNIC";
-            this.CNIC.Name = "CNIC";
-            this.CNIC.Width = 150;
-            // 
-            // PAKNumber
-            // 
-            this.PAKNumber.HeaderText = "PAK Number";
-            this.PAKNumber.Name = "PAKNumber";
-            // 
-            // ContactNumber
-            // 
-            this.ContactNumber.HeaderText = "Contact Number";
-            this.ContactNumber.Name = "ContactNumber";
-            this.ContactNumber.Width = 150;
-            // 
-            // SQN
-            // 
-            this.SQN.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SQN.HeaderText = "Senior Officer";
-            this.SQN.Name = "SQN";
-            // 
-            // TapeName
-            // 
-            this.TapeName.HeaderText = "Tape";
-            this.TapeName.Name = "TapeName";
-            this.TapeName.Width = 80;
-            // 
-            // CourseName
-            // 
-            this.CourseName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CourseName.HeaderText = "Course Name";
-            this.CourseName.Name = "CourseName";
             // 
             // ribbonClientPanel1
             // 
             this.ribbonClientPanel1.CanvasColor = System.Drawing.SystemColors.Control;
+            this.ribbonClientPanel1.Controls.Add(this.btnCreateAttandanceSessions);
             this.ribbonClientPanel1.Controls.Add(this.groupPanel2);
             this.ribbonClientPanel1.Controls.Add(this.groupPanel5);
             this.ribbonClientPanel1.Controls.Add(this.groupPanel1);
@@ -320,7 +268,7 @@
             this.groupPanel2.DisabledBackColor = System.Drawing.Color.Empty;
             this.groupPanel2.Location = new System.Drawing.Point(3, 8);
             this.groupPanel2.Name = "groupPanel2";
-            this.groupPanel2.Size = new System.Drawing.Size(975, 84);
+            this.groupPanel2.Size = new System.Drawing.Size(831, 84);
             // 
             // 
             // 
@@ -361,12 +309,11 @@
             // 
             this.textBoxCourseName.Border.Class = "TextBoxBorder";
             this.textBoxCourseName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxCourseName.DisabledBackColor = System.Drawing.Color.White;
             this.textBoxCourseName.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCourseName.Location = new System.Drawing.Point(115, 34);
+            this.textBoxCourseName.Location = new System.Drawing.Point(134, 34);
             this.textBoxCourseName.Name = "textBoxCourseName";
             this.textBoxCourseName.PreventEnterBeep = true;
-            this.textBoxCourseName.Size = new System.Drawing.Size(188, 25);
+            this.textBoxCourseName.Size = new System.Drawing.Size(136, 25);
             this.textBoxCourseName.TabIndex = 28;
             this.textBoxCourseName.TextChanged += new System.EventHandler(this.textBoxCourseName_TextChanged);
             // 
@@ -378,12 +325,11 @@
             // 
             this.textBoxPAKNumber.Border.Class = "TextBoxBorder";
             this.textBoxPAKNumber.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxPAKNumber.DisabledBackColor = System.Drawing.Color.White;
             this.textBoxPAKNumber.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxPAKNumber.Location = new System.Drawing.Point(115, 6);
+            this.textBoxPAKNumber.Location = new System.Drawing.Point(134, 5);
             this.textBoxPAKNumber.Name = "textBoxPAKNumber";
             this.textBoxPAKNumber.PreventEnterBeep = true;
-            this.textBoxPAKNumber.Size = new System.Drawing.Size(188, 25);
+            this.textBoxPAKNumber.Size = new System.Drawing.Size(136, 25);
             this.textBoxPAKNumber.TabIndex = 28;
             this.textBoxPAKNumber.TextChanged += new System.EventHandler(this.textBoxPAKNumber_TextChanged);
             // 
@@ -396,7 +342,7 @@
             // 
             this.labelX13.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX13.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX13.Location = new System.Drawing.Point(14, 33);
+            this.labelX13.Location = new System.Drawing.Point(24, 33);
             this.labelX13.Name = "labelX13";
             this.labelX13.Size = new System.Drawing.Size(104, 23);
             this.labelX13.TabIndex = 59;
@@ -411,9 +357,9 @@
             // 
             this.labelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX2.Location = new System.Drawing.Point(14, 5);
+            this.labelX2.Location = new System.Drawing.Point(24, 7);
             this.labelX2.Name = "labelX2";
-            this.labelX2.Size = new System.Drawing.Size(104, 23);
+            this.labelX2.Size = new System.Drawing.Size(77, 23);
             this.labelX2.TabIndex = 59;
             this.labelX2.Text = "Pak No #:";
             // 
@@ -425,12 +371,11 @@
             // 
             this.textBoxSQN.Border.Class = "TextBoxBorder";
             this.textBoxSQN.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxSQN.DisabledBackColor = System.Drawing.Color.White;
             this.textBoxSQN.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSQN.Location = new System.Drawing.Point(770, 34);
+            this.textBoxSQN.Location = new System.Drawing.Point(664, 35);
             this.textBoxSQN.Name = "textBoxSQN";
             this.textBoxSQN.PreventEnterBeep = true;
-            this.textBoxSQN.Size = new System.Drawing.Size(188, 25);
+            this.textBoxSQN.Size = new System.Drawing.Size(136, 25);
             this.textBoxSQN.TabIndex = 61;
             this.textBoxSQN.TextChanged += new System.EventHandler(this.textBoxSQN_TextChanged);
             // 
@@ -443,7 +388,7 @@
             // 
             this.labelX12.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX12.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX12.Location = new System.Drawing.Point(656, 33);
+            this.labelX12.Location = new System.Drawing.Point(561, 36);
             this.labelX12.Name = "labelX12";
             this.labelX12.Size = new System.Drawing.Size(108, 23);
             this.labelX12.TabIndex = 60;
@@ -457,12 +402,11 @@
             // 
             this.textBoxCNIC.Border.Class = "TextBoxBorder";
             this.textBoxCNIC.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxCNIC.DisabledBackColor = System.Drawing.Color.White;
             this.textBoxCNIC.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCNIC.Location = new System.Drawing.Point(770, 6);
+            this.textBoxCNIC.Location = new System.Drawing.Point(664, 6);
             this.textBoxCNIC.Name = "textBoxCNIC";
             this.textBoxCNIC.PreventEnterBeep = true;
-            this.textBoxCNIC.Size = new System.Drawing.Size(188, 25);
+            this.textBoxCNIC.Size = new System.Drawing.Size(136, 25);
             this.textBoxCNIC.TabIndex = 61;
             this.textBoxCNIC.TextChanged += new System.EventHandler(this.textBoxCNIC_TextChanged);
             // 
@@ -474,12 +418,11 @@
             // 
             this.textBoxTapeName.Border.Class = "TextBoxBorder";
             this.textBoxTapeName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxTapeName.DisabledBackColor = System.Drawing.Color.White;
             this.textBoxTapeName.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxTapeName.Location = new System.Drawing.Point(425, 34);
+            this.textBoxTapeName.Location = new System.Drawing.Point(404, 36);
             this.textBoxTapeName.Name = "textBoxTapeName";
             this.textBoxTapeName.PreventEnterBeep = true;
-            this.textBoxTapeName.Size = new System.Drawing.Size(188, 25);
+            this.textBoxTapeName.Size = new System.Drawing.Size(136, 25);
             this.textBoxTapeName.TabIndex = 61;
             this.textBoxTapeName.TextChanged += new System.EventHandler(this.textBoxTapeName_TextChanged);
             // 
@@ -492,9 +435,9 @@
             // 
             this.labelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX8.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX8.Location = new System.Drawing.Point(656, 5);
+            this.labelX8.Location = new System.Drawing.Point(561, 6);
             this.labelX8.Name = "labelX8";
-            this.labelX8.Size = new System.Drawing.Size(108, 23);
+            this.labelX8.Size = new System.Drawing.Size(80, 23);
             this.labelX8.TabIndex = 60;
             this.labelX8.Text = "CNIC # : ";
             // 
@@ -507,7 +450,7 @@
             // 
             this.labelX10.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX10.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX10.Location = new System.Drawing.Point(324, 33);
+            this.labelX10.Location = new System.Drawing.Point(302, 36);
             this.labelX10.Name = "labelX10";
             this.labelX10.Size = new System.Drawing.Size(96, 23);
             this.labelX10.TabIndex = 60;
@@ -521,12 +464,11 @@
             // 
             this.textBoxCadetName.Border.Class = "TextBoxBorder";
             this.textBoxCadetName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxCadetName.DisabledBackColor = System.Drawing.Color.White;
             this.textBoxCadetName.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxCadetName.Location = new System.Drawing.Point(425, 6);
+            this.textBoxCadetName.Location = new System.Drawing.Point(404, 8);
             this.textBoxCadetName.Name = "textBoxCadetName";
             this.textBoxCadetName.PreventEnterBeep = true;
-            this.textBoxCadetName.Size = new System.Drawing.Size(188, 25);
+            this.textBoxCadetName.Size = new System.Drawing.Size(136, 25);
             this.textBoxCadetName.TabIndex = 61;
             this.textBoxCadetName.TextChanged += new System.EventHandler(this.textBoxCadetName_TextChanged);
             // 
@@ -539,7 +481,7 @@
             // 
             this.labelX9.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             this.labelX9.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX9.Location = new System.Drawing.Point(324, 5);
+            this.labelX9.Location = new System.Drawing.Point(303, 7);
             this.labelX9.Name = "labelX9";
             this.labelX9.Size = new System.Drawing.Size(96, 23);
             this.labelX9.TabIndex = 60;
@@ -547,18 +489,17 @@
             // 
             // groupPanel5
             // 
-            this.groupPanel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupPanel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.groupPanel5.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel5.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel5.Controls.Add(this.btnCreateAttandanceSessions);
             this.groupPanel5.Controls.Add(this.groupPanel4);
             this.groupPanel5.Controls.Add(this.groupPanel6);
             this.groupPanel5.Controls.Add(this.groupPanel3);
             this.groupPanel5.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel5.Location = new System.Drawing.Point(2, 286);
+            this.groupPanel5.Location = new System.Drawing.Point(2, 98);
             this.groupPanel5.Name = "groupPanel5";
-            this.groupPanel5.Size = new System.Drawing.Size(976, 243);
+            this.groupPanel5.Size = new System.Drawing.Size(423, 431);
             // 
             // 
             // 
@@ -591,14 +532,13 @@
             // 
             // groupPanel4
             // 
-            this.groupPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupPanel4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupPanel4.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel4.Controls.Add(this.dtCheckIn);
             this.groupPanel4.Controls.Add(this.tIn);
             this.groupPanel4.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel4.Location = new System.Drawing.Point(589, 8);
+            this.groupPanel4.Location = new System.Drawing.Point(211, 6);
             this.groupPanel4.Name = "groupPanel4";
             this.groupPanel4.Size = new System.Drawing.Size(199, 227);
             // 
@@ -642,9 +582,9 @@
             this.groupPanel6.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel6.Controls.Add(this.dataGridViewCreatedSession);
             this.groupPanel6.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel6.Location = new System.Drawing.Point(9, 7);
+            this.groupPanel6.Location = new System.Drawing.Point(8, 236);
             this.groupPanel6.Name = "groupPanel6";
-            this.groupPanel6.Size = new System.Drawing.Size(363, 228);
+            this.groupPanel6.Size = new System.Drawing.Size(402, 187);
             // 
             // 
             // 
@@ -718,7 +658,7 @@
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.WindowText;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dataGridViewCreatedSession.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
-            this.dataGridViewCreatedSession.Size = new System.Drawing.Size(357, 205);
+            this.dataGridViewCreatedSession.Size = new System.Drawing.Size(396, 164);
             this.dataGridViewCreatedSession.TabIndex = 59;
             // 
             // dataGridViewTextBoxColumn1
@@ -741,16 +681,15 @@
             // 
             // groupPanel3
             // 
-            this.groupPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupPanel3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.groupPanel3.CanvasColor = System.Drawing.SystemColors.Control;
             this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
             this.groupPanel3.Controls.Add(this.tOut);
             this.groupPanel3.Controls.Add(this.dtCheckOut);
             this.groupPanel3.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel3.Location = new System.Drawing.Point(378, 7);
+            this.groupPanel3.Location = new System.Drawing.Point(5, 5);
             this.groupPanel3.Name = "groupPanel3";
-            this.groupPanel3.Size = new System.Drawing.Size(199, 228);
+            this.groupPanel3.Size = new System.Drawing.Size(200, 228);
             // 
             // 
             // 
@@ -793,9 +732,9 @@
             this.groupPanel1.Controls.Add(this.gridViewCadetSessionNotCreated);
             this.groupPanel1.Controls.Add(this.cbAll);
             this.groupPanel1.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel1.Location = new System.Drawing.Point(4, 94);
+            this.groupPanel1.Location = new System.Drawing.Point(427, 95);
             this.groupPanel1.Name = "groupPanel1";
-            this.groupPanel1.Size = new System.Drawing.Size(975, 190);
+            this.groupPanel1.Size = new System.Drawing.Size(553, 434);
             // 
             // 
             // 
@@ -838,6 +777,59 @@
             this.tabItem1.Name = "tabItem1";
             this.tabItem1.Text = "Session Not Created";
             // 
+            // Select
+            // 
+            this.Select.HeaderText = "Select";
+            this.Select.Name = "Select";
+            this.Select.Width = 40;
+            // 
+            // CadetID
+            // 
+            this.CadetID.HeaderText = "CadetID";
+            this.CadetID.Name = "CadetID";
+            this.CadetID.Visible = false;
+            this.CadetID.Width = 5;
+            // 
+            // CadetName
+            // 
+            this.CadetName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CadetName.HeaderText = "Cadet Name";
+            this.CadetName.Name = "CadetName";
+            // 
+            // CNIC
+            // 
+            this.CNIC.HeaderText = "CNIC";
+            this.CNIC.Name = "CNIC";
+            this.CNIC.Width = 99;
+            // 
+            // PAKNumber
+            // 
+            this.PAKNumber.HeaderText = "PAK No";
+            this.PAKNumber.Name = "PAKNumber";
+            // 
+            // ContactNumber
+            // 
+            this.ContactNumber.HeaderText = "Contact No";
+            this.ContactNumber.Name = "ContactNumber";
+            // 
+            // SQN
+            // 
+            this.SQN.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.SQN.HeaderText = "Senior Officer";
+            this.SQN.Name = "SQN";
+            // 
+            // TapeName
+            // 
+            this.TapeName.HeaderText = "Tape";
+            this.TapeName.Name = "TapeName";
+            this.TapeName.Width = 50;
+            // 
+            // CourseName
+            // 
+            this.CourseName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CourseName.HeaderText = "Course Name";
+            this.CourseName.Name = "CourseName";
+            // 
             // AttandanceSessiontfrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -874,15 +866,6 @@
         private DevComponents.DotNetBar.ButtonX btnCreateAttandanceSessions;
         private System.Windows.Forms.CheckBox cbAll;
         private DevComponents.DotNetBar.Controls.DataGridViewX gridViewCadetSessionNotCreated;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Select;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CadetID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CadetName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CNIC;
-        private System.Windows.Forms.DataGridViewTextBoxColumn PAKNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ContactNumber;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SQN;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TapeName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CourseName;
         private DevComponents.DotNetBar.Ribbon.RibbonClientPanel ribbonClientPanel1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel1;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel2;
@@ -908,5 +891,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private DevComponents.DotNetBar.TabItem tabSessionCreated;
         private DevComponents.DotNetBar.TabItem tabItem1;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Select;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CadetID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CadetName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CNIC;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PAKNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ContactNumber;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SQN;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TapeName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CourseName;
     }
 }
