@@ -319,12 +319,156 @@ namespace PAF_BOS
                 public string UserPassword { get; set; }
             }
 
+            public class MdlCadet
+            {
+                public int UserID { get; set; }
+                public int CadetID              { get; set; }
+                public int SQN_User_ID          { get; set; }
+                public int Course_ID            { get; set; }
+                public int Tape_ID              { get; set; }
+                public int CreatedBy_User_ID    { get; set; }
+                public int Role_ID              { get; set; }
+                public int Batch                { get; set; }
+                public string CadetName            { get; set; }
+                public string CadetFatherName      { get; set; }
+                public string PAKNumber            { get; set; }
+                public string Address              { get; set; }
+                public string CNIC                 { get; set; }
+                public string BloodGroup           { get; set; }
+                public string ContactNumber        { get; set; }
+                public string MobileNumber         { get; set; }
+                public string RFIDCardNumber       { get; set; }
+                public string LFMD                 { get; set; }
+                public string RFMD                 { get; set; }
+                public string LThumbImage          { get; set; }
+                public string RThumbImage          { get; set; }
+                public string Picture              { get; set; }
+
+
+        }
             #endregion
             #endregion  //MODELS END
 
             #region OPERATIONS
+            public static DataTable Cadets_SelectByRFIDCard(int RFIDCard, out bool _Status, out string _StatusDetails)
+            {
+                _Status = false;
+                _StatusDetails = null;
 
 
+                // DataTable Declaration
+                DataTable dt = new DataTable();
+
+                SqlConnection conn = null;
+                SqlCommand cmd = null;
+                try
+                {
+                    string ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["PAFBOS_ConnectionString"].ToString();
+                    conn = new SqlConnection(ConnectionString);
+                    cmd = new SqlCommand("Cadets_SelectByRFIDCard", conn);
+
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
+
+                    cmd.Parameters.AddWithValue("@RFIDCard", RFIDCard);
+
+                    SqlParameter _StatusParm = new SqlParameter("@_Status", SqlDbType.Bit);
+                    _StatusParm.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(_StatusParm);
+
+                    SqlParameter _StatusDetailsParm = new SqlParameter("@_StatusDetails", SqlDbType.VarChar, 100);
+                    _StatusDetailsParm.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(_StatusDetailsParm);
+
+                    conn.Open();
+                    Adapter.Fill(dt);
+                    conn.Close();
+
+                    _Status = (bool)_StatusParm.Value;
+                    _StatusDetails = (string)_StatusDetailsParm.Value;
+
+                    return dt;
+                }
+                catch (Exception ex)
+                {
+                    _Status = false;
+                    _StatusDetails = ex.Message;
+
+                    //Return Value
+                    return dt;
+                }
+                finally
+                {
+                    conn.Dispose();
+                    cmd.Dispose();
+                }
+            }
+
+            public static void Cadets_UpdateByRFIDCard(MdlCadet ClsCadetsObj, out bool _Status, out string _StatusDetails)
+            {
+                _Status = false;
+                _StatusDetails = null;
+
+                SqlConnection conn = null;
+                SqlCommand cmd = null;
+                try
+                {
+                    string ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["PAFBOS_ConnectionString"].ToString();
+                    conn = new SqlConnection(ConnectionString);
+                    cmd = new SqlCommand("Cadets_UpdateByRFIDCard", conn);
+
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@CadetID", ClsCadetsObj.CadetID);
+                    cmd.Parameters.AddWithValue("@SQN_User_ID", ClsCadetsObj.SQN_User_ID);
+                    cmd.Parameters.AddWithValue("@Course_ID", ClsCadetsObj.Course_ID);
+                    cmd.Parameters.AddWithValue("@Tape_ID", ClsCadetsObj.Tape_ID);
+                    cmd.Parameters.AddWithValue("@CreatedBy_User_ID", ClsCadetsObj.CreatedBy_User_ID);
+                    cmd.Parameters.AddWithValue("@Role_ID", ClsCadetsObj.Role_ID);
+                    cmd.Parameters.AddWithValue("@Batch", ClsCadetsObj.Batch);
+                    cmd.Parameters.AddWithValue("@CadetName", ClsCadetsObj.CadetName);
+                    cmd.Parameters.AddWithValue("@CadetFatherName", ClsCadetsObj.CadetFatherName);
+                    cmd.Parameters.AddWithValue("@PAKNumber", ClsCadetsObj.PAKNumber);
+                    cmd.Parameters.AddWithValue("@Address", ClsCadetsObj.Address);
+                    cmd.Parameters.AddWithValue("@CNIC", ClsCadetsObj.CNIC);
+                    cmd.Parameters.AddWithValue("@BloodGroup", ClsCadetsObj.BloodGroup);
+                    cmd.Parameters.AddWithValue("@ContactNumber", ClsCadetsObj.ContactNumber);
+                    cmd.Parameters.AddWithValue("@MobileNumber", ClsCadetsObj.MobileNumber);
+                    cmd.Parameters.AddWithValue("@RFIDCardNumber", ClsCadetsObj.RFIDCardNumber);
+
+                    cmd.Parameters.AddWithValue("@LFMD", ClsCadetsObj.LFMD);
+                    cmd.Parameters.AddWithValue("@RFMD", ClsCadetsObj.RFMD);
+                    cmd.Parameters.AddWithValue("@LThumbImage", ClsCadetsObj.LThumbImage);
+                    cmd.Parameters.AddWithValue("@RThumbImage", ClsCadetsObj.RThumbImage);
+                    cmd.Parameters.AddWithValue("@Picture", ClsCadetsObj.Picture);
+
+                    SqlParameter _StatusParm = new SqlParameter("@_Status", SqlDbType.Bit);
+                    _StatusParm.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(_StatusParm);
+
+                    SqlParameter _StatusDetailsParm = new SqlParameter("@_StatusDetails", SqlDbType.VarChar, 100);
+                    _StatusDetailsParm.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(_StatusDetailsParm);
+
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+
+                    _Status = (bool)_StatusParm.Value;
+                    _StatusDetails = (string)_StatusDetailsParm.Value;
+                }
+                catch (Exception ex)
+                {
+                    _Status = false;
+                    _StatusDetails = ex.Message;
+                    return;
+                }
+                finally
+                {
+                    conn.Dispose();
+                    cmd.Dispose();
+                }
+            }
             public static void UpdateCadet_with_InsertCadetHistory1(int CadetID, int SQN_User_ID, int Course_ID, int Tape_ID, int Role_ID, int CreatedBy_User_ID, string Batch, string CadetName, string CadetFatherName, string PAKNumber, string Address, string CNIC, string BloodGroup, string ContactNumber, string MobileNumber, string RFIDCardNumber, out bool _Status, out string _StatusDetails)
             {
                 _Status = false;
@@ -384,8 +528,6 @@ namespace PAF_BOS
                     cmd.Dispose();
                 }
             }
-
-
             public static DataTable GetCadetsAllCourses()
             {
 
@@ -563,7 +705,7 @@ namespace PAF_BOS
                 {
                     string ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["PAFBOS_ConnectionString"].ToString();
                     conn = new SqlConnection(ConnectionString);
-                    cmd = new SqlCommand("Select CadetID,CadetName,CadetFatherName,PAKNumber,[Address],CNIC,BloodGroup,ContactNumber,MobileNumber,RFIDCardNumber,SQN_User_ID,Course_ID,Tape_ID,CreatedBy_User_ID,Role_ID from Cadets", conn);
+                    cmd = new SqlCommand("Select CadetID,CadetName,CadetFatherName,PAKNumber,[Address],CNIC,BloodGroup,ContactNumber,MobileNumber,RFIDCardNumber,SQN_User_ID,Course_ID,Tape_ID,CreatedBy_User_ID,Role_ID from Cadets WHERE  IsActive = True", conn);
 
                     SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
                     conn.Open();

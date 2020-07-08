@@ -226,5 +226,10 @@ namespace PAF_BOS.AdminForms
                 JIMessageBox.ShowErrorMessage("Some Thing went Wrong: " + ex);
             }
         }
+
+        private void dataGridViewGrantedPermissions_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

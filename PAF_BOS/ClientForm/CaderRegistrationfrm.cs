@@ -260,8 +260,6 @@ namespace PAF_BOS
                     LFMD = Fmd.SerializeXml(LeftFinalFMD.Data);
                     RFMD = Fmd.SerializeXml(RightFinalFMD.Data);
 
-                    
-
                     int SeniorOfficeID = Convert.ToInt32(cbSeniorOfficer.SelectedValue);
                     int courseid = Convert.ToInt32(cbCourse.SelectedValue);
                     int tapeid = Convert.ToInt32(cbTape.SelectedValue);
@@ -610,6 +608,148 @@ namespace PAF_BOS
         private void tabControl1_Click(object sender, EventArgs e)
         {
             udf_GridView();
+        }
+
+        private void textBoxX11_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSearchRFID_Click(object sender, EventArgs e)
+        {
+            udf_UpdatePanelCombo();
+            udf_GetCadetDataByRFIDCard();
+        }
+
+        private void udf_GetCadetDataByRFIDCard()
+        {
+            bool Status = false;
+            string StatusDetails = null;
+            DataTable dt =  MainClass.MngPAFBOS.Cadets_SelectByRFIDCard(Convert.ToInt32(tbSearchRFIDCard.Text),out Status, out StatusDetails);
+
+            utbCadetName    .Text = Convert.ToString(dt.Rows[0][0].ToString()); // CadetID
+            ucbSeniorOfficer.Text = Convert.ToString(dt.Rows[0][1].ToString()); // SQN_User_ID
+            ucbCourse       .Text = Convert.ToString(dt.Rows[0][2].ToString()); // Course_ID
+            ucbTape         .Text = Convert.ToString(dt.Rows[0][3].ToString()); // Tape_ID
+                                                   //dt.Rows[0][4].ToString(); // CreatedBy_User_ID
+            utbCadetName    .Text = Convert.ToString(dt.Rows[0][5].ToString()); // CadetName
+            utbFatherName   .Text = Convert.ToString(dt.Rows[0][6].ToString()); // CadetFatherName
+            utbPAK          .Text = Convert.ToString(dt.Rows[0][7].ToString()); // PAKNumber
+            utbAddress      .Text = Convert.ToString(dt.Rows[0][8].ToString()); // Address
+            utbCNIC         .Text = Convert.ToString(dt.Rows[0][9].ToString()); // CNIC
+            ucbBloodGroup   .Text = Convert.ToString(dt.Rows[0][10].ToString()); // BloodGroup
+            utbContact      .Text = Convert.ToString(dt.Rows[0][11].ToString()); // ContactNumber
+            utbMobile       .Text = Convert.ToString(dt.Rows[0][12].ToString()); // MobileNumber
+            utbRFIDCard     .Text = Convert.ToString(dt.Rows[0][13].ToString()); // RFIDCardNumber
+            uCadetPic       .Image = ImageClass.GetImageFromBase64(dt.Rows[0][14].ToString()); // Picture
+            uThumbLeft      .Image = ImageClass.GetImageFromBase64(dt.Rows[0][15].ToString()); // LThumbImage
+            uThumbRight     .Image = ImageClass.GetImageFromBase64(dt.Rows[0][16].ToString()); // RThumbImage
+                                                   //dt.Rows[0][17].ToString(); // LFMD
+                                                   //dt.Rows[0][18].ToString(); // RFMD
+        }
+
+        private void udf_UpdatePanelCombo()
+        {
+            bool Status = false;
+            string StatusDetails = null;
+            DataTable DtRoles = MainClass.MngPAFBOS.GetRoles(out Status, out StatusDetails);
+            DataTable DtSeniorOfficer = MainClass.MngPAFBOS.usp_GetSeniorOfficerByUserID(out Status, out StatusDetails);
+            DataTable DtCadetTape = MainClass.MngPAFBOS.GetCadetTapes(out Status, out StatusDetails);
+            DataTable DtCadetCourses = MainClass.MngPAFBOS.GetCadetCourses(out Status, out StatusDetails);
+            if (Status)
+            {
+                ListData.AutoSuggession_With_ComboBox(DtSeniorOfficer, 1, ucbSeniorOfficer, "UserID", "FullName");
+                ListData.AutoSuggession_With_ComboBox(DtCadetTape, 1, ucbTape, "TapeID", "TapeName");
+                ListData.AutoSuggession_With_ComboBox(DtCadetCourses, 1, ucbCourse, "CourseID", "CourseName");
+            }
+            List<String> BloodGroupList = new List<string>() { "-- Select Bloodgroup --", "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" };
+            ucbBloodGroup.DataSource = BloodGroupList;
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            bool Status = false;
+            string StatusDetails = null;
+            try
+            {
+                if (radioSeniorCadet.Checked) { radioOfCadet = 5; }
+                if (radioJuniorCadet.Checked) { radioOfCadet = 6; }
+                if (udf_Validation(tbCadet.Text, tbFatherName.Text, tbPAKNumber.Text, tbCNIC.Text, CbBloodGroup.Text, tbContactNo.Text, tbMobileNo.Text, tbRFIDCardNo.Text, cbSeniorOfficer.Text, cbTape.Text, cbCourse.Text, radioOfCadet) == true)
+                {
+                    string batch = "STATIC-BATCH";
+
+                    string LFMD = null;
+                    string RFMD = null;
+                    string LIMG = ImageClass.GetBase64StringFromImage(pictureBoxLeftThumb.Image);
+                    string RIMG = ImageClass.GetBase64StringFromImage(pictureBoxRightThumb.Image);
+
+                    if (LeftFinalFMD == null && RightFinalFMD == null)
+                    {
+                        MessageBox.Show("Finger Scan Required of Both Fingers, Scan Again");
+                        return;
+                    }
+
+                    LFMD = Fmd.SerializeXml(LeftFinalFMD.Data);
+                    RFMD = Fmd.SerializeXml(RightFinalFMD.Data);
+
+
+
+                    int SeniorOfficeID = Convert.ToInt32(cbSeniorOfficer.SelectedValue);
+                    int courseid = Convert.ToInt32(cbCourse.SelectedValue);
+                    int tapeid = Convert.ToInt32(cbTape.SelectedValue);
+                    int userid = MainClass.UserID;
+                    Bitmap img = ImageClass.Resize((Bitmap)pictureBoxPhoto.Image, new Size(100, 100), System.Drawing.Imaging.ImageFormat.Jpeg);
+                    string Photo = ImageClass.GetBase64StringFromImage(img); //Resize & Convert to String
+
+
+
+
+
+                   // MainClass.MngPAFBOS.MdlCadet mdl = new MainClass.MngPAFBOS.MdlCadet();
+                   // CadetID
+                   // SQN_User_ID
+                   // Course_ID
+                   // Tape_ID
+                   // CreatedBy_User_ID
+                   // Role_ID
+                   // Batch
+                   // CadetName
+                   // CadetFatherName
+                   // PAKNumber
+                   // Address
+                   // CNIC
+                   // BloodGroup
+                   // ContactNumber
+                   // MobileNumber
+                   // RFIDCardNumber
+
+
+
+                    //MainClass.MngPAFBOS.Cadets_UpdateByRFIDCard();
+
+                    MainClass.MngPAFBOS.InsertCadet_with_CadetHistory(batch, tbCadet.Text, tbFatherName.Text,
+                        tbPAKNumber.Text, tbAddress.Text, tbCNIC.Text, CbBloodGroup.Text, tbContactNo.Text, tbMobileNo.Text, Photo, tbRFIDCardNo.Text,
+                        LFMD, RFMD, LIMG, RIMG, SeniorOfficeID, courseid, tapeid, MainClass.UserID, radioOfCadet, out Status, out StatusDetails);
+
+                    if (Status)
+                    {
+                        JIMessageBox.ShowInformationMessage("Record Updated Successfully !");
+                        ClearFormFields();
+                    }
+                    else
+                    {
+                        JIMessageBox.ShowErrorMessage("Some Thing Went Wrong: " + StatusDetails);
+                    }
+                }
+                else
+                {
+                    JIMessageBox.ShowErrorMessage("Please Fill All Fields");
+                }
+            }
+            catch (Exception ex)
+            {
+                JIMessageBox.ShowErrorMessage(ex.Message);
+            }
         }
     }
 }
