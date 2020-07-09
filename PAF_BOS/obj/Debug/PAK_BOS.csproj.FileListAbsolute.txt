@@ -113,4 +113,3 @@ D:\PAF_BOS\GitHUb_Clone\PAF_BOS_Desktop\PAF_BOS\obj\Debug\RdlCompile.cache
 D:\PAF_BOS\GitHUb_Clone\PAF_BOS_Desktop\PAF_BOS\obj\Debug\RdlCompile.compiled
 D:\PAF_BOS\GitHUb_Clone\PAF_BOS_Desktop\PAF_BOS\obj\Debug\PAF_BOS.exe
 D:\PAF_BOS\GitHUb_Clone\PAF_BOS_Desktop\PAF_BOS\obj\Debug\PAF_BOS.pdb
-D:\PAF_BOS\GitHUb_Clone\PAF_BOS_Desktop\PAF_BOS\obj\Debug\PAK_BOS.csprojResolveAssemblyReference.cache
