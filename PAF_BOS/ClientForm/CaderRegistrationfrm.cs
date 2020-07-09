@@ -58,49 +58,100 @@ namespace PAF_BOS
         {
             try
             {
-                if (radioButtonLeftThumb.Checked)
+                if (tabItemNew.IsSelected)
                 {
-                    if (pictureBoxLeftThumb.InvokeRequired)
+                    #region TabItemNEW
+                    if (radioButtonLeftThumb.Checked)
                     {
-                        SendMessageCallback d = new SendMessageCallback(SendMessage);
-                        Invoke(d, new object[] { action, payload });
-                    }
-                    else
-                    {
-                        switch (action)
+                        if (pictureBoxLeftThumb.InvokeRequired)
                         {
-                            case FingerScannerClass.Action.SendMessage:
-                                MessageBox.Show((string)payload);
-                                break;
-                            case FingerScannerClass.Action.SendBitmap:
-                                pictureBoxLeftThumb.Image = (Bitmap)payload;
-                                pictureBoxLeftThumb.Refresh();
-                                break;
+                            SendMessageCallback d = new SendMessageCallback(SendMessage);
+                            Invoke(d, new object[] { action, payload });
+                        }
+                        else
+                        {
+                            switch (action)
+                            {
+                                case FingerScannerClass.Action.SendMessage:
+                                    MessageBox.Show((string)payload);
+                                    break;
+                                case FingerScannerClass.Action.SendBitmap:
+                                    pictureBoxLeftThumb.Image = (Bitmap)payload;
+                                    pictureBoxLeftThumb.Refresh();
+                                    break;
+                            }
                         }
                     }
-                }
-                else if (radioButtonRightThumb.Checked)
-                {
-                    if (radioButtonRightThumb.InvokeRequired)
+                    else if (radioButtonRightThumb.Checked)
                     {
-                        SendMessageCallback d = new SendMessageCallback(SendMessage);
-                        Invoke(d, new object[] { action, payload });
-                    }
-                    else
-                    {
-                        switch (action)
+                        if (radioButtonRightThumb.InvokeRequired)
                         {
-                            case FingerScannerClass.Action.SendMessage:
-                                MessageBox.Show((string)payload);
-                                break;
-                            case FingerScannerClass.Action.SendBitmap:
-                                pictureBoxRightThumb.Image = (Bitmap)payload;
-                                pictureBoxRightThumb.Refresh();
-                                break;
+                            SendMessageCallback d = new SendMessageCallback(SendMessage);
+                            Invoke(d, new object[] { action, payload });
+                        }
+                        else
+                        {
+                            switch (action)
+                            {
+                                case FingerScannerClass.Action.SendMessage:
+                                    MessageBox.Show((string)payload);
+                                    break;
+                                case FingerScannerClass.Action.SendBitmap:
+                                    pictureBoxRightThumb.Image = (Bitmap)payload;
+                                    pictureBoxRightThumb.Refresh();
+                                    break;
+                            }
                         }
                     }
+                    #endregion
                 }
-
+                if (tabItemUpdate.IsSelected)
+                { 
+                    #region TabItemUpdate
+                    if (UradioButtonLeftThumb.Checked)
+                    {
+                        if (uThumbLeft.InvokeRequired)
+                        {
+                            SendMessageCallback d = new SendMessageCallback(SendMessage);
+                            Invoke(d, new object[] { action, payload });
+                        }
+                        else
+                        {
+                            switch (action)
+                            {
+                                case FingerScannerClass.Action.SendMessage:
+                                    MessageBox.Show((string)payload);
+                                    break;
+                                case FingerScannerClass.Action.SendBitmap:
+                                    uThumbLeft.Image = (Bitmap)payload;
+                                    uThumbLeft.Refresh();
+                                    break;
+                            }
+                        }
+                    }
+                    else if (UradioButtonRightThumb.Checked)
+                    {
+                        if (UradioButtonRightThumb.InvokeRequired)
+                        {
+                            SendMessageCallback d = new SendMessageCallback(SendMessage);
+                            Invoke(d, new object[] { action, payload });
+                        }
+                        else
+                        {
+                            switch (action)
+                            {
+                                case FingerScannerClass.Action.SendMessage:
+                                    MessageBox.Show((string)payload);
+                                    break;
+                                case FingerScannerClass.Action.SendBitmap:
+                                    uThumbRight.Image = (Bitmap)payload;
+                                    uThumbRight.Refresh();
+                                    break;
+                            }
+                        }
+                    }
+                #endregion
+                }
             }
             catch (Exception)
             {
@@ -118,14 +169,33 @@ namespace PAF_BOS
                 {
                     SendMessage(FingerScannerClass.Action.SendBitmap, FingerScannerClass.CreateBitmap(fiv.RawImage, fiv.Width, fiv.Height));
                 }
-                if (radioButtonRightThumb.Checked)
+                #region tabItemNEW
+                if (tabItemNew.IsSelected)
                 {
-                    pictureBoxRightThumb.Tag = captureResult;
+                    if (radioButtonRightThumb.Checked)
+                    {
+                        pictureBoxRightThumb.Tag = captureResult;
+                    }
+                    else if (radioButtonLeftThumb.Checked)
+                    {
+                        pictureBoxLeftThumb.Tag = captureResult;
+                    }
                 }
-                else if (radioButtonLeftThumb.Checked)
+                #endregion
+                #region tabItemUPATE
+                if (tabItemUpdate.IsSelected)
                 {
-                    pictureBoxLeftThumb.Tag = captureResult;
+                    if (UradioButtonRightThumb.Checked)
+                    {
+                        uThumbRight.Tag = captureResult;
+                    }
+                    else if (UradioButtonLeftThumb.Checked)
+                    {
+                        uThumbLeft.Tag = captureResult;
+                    }
                 }
+                #endregion
+
                 this.Invoke(new EventHandler(DisplayData));
             }
             catch (Exception ex)
@@ -157,65 +227,131 @@ namespace PAF_BOS
         }
         private void DisplayData(object sender, EventArgs e)
         {
-            if (radioButtonLeftThumb.Checked)
+            #region tabItemNEW
+            if (tabItemNew.IsSelected)
             {
-                Fid fid = ((CaptureResult)pictureBoxLeftThumb.Tag).Data;
-
-                if (LeftFMD1 == null)
-                    LeftFMD1 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
-                else if (LeftFMD2 == null)
-                    LeftFMD2 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
-                else if (LeftFMD3 == null)
-                    LeftFMD3 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
-                else if (LeftFMD4 == null)
+                if (radioButtonLeftThumb.Checked)
                 {
-                    LeftFMD4 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
-                    List<Fmd> fmds = new List<Fmd>();
-                    fmds.Add(LeftFMD1.Data);
-                    fmds.Add(LeftFMD2.Data);
-                    fmds.Add(LeftFMD3.Data);
-                    fmds.Add(LeftFMD4.Data);
-                    LeftFinalFMD = Enrollment.CreateEnrollmentFmd(Constants.Formats.Fmd.ANSI, fmds);
-                    if (LeftFinalFMD.ResultCode == Constants.ResultCode.DP_SUCCESS)
+                    Fid fid = ((CaptureResult)pictureBoxLeftThumb.Tag).Data;
+
+                    if (LeftFMD1 == null)
+                        LeftFMD1 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
+                    else if (LeftFMD2 == null)
+                        LeftFMD2 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
+                    else if (LeftFMD3 == null)
+                        LeftFMD3 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
+                    else if (LeftFMD4 == null)
                     {
-                        MessageBox.Show("Successfully Scanned !!!");
-                        LeftFMD1 = null;
-                        LeftFMD2 = null;
-                        LeftFMD3 = null;
-                        LeftFMD4 = null;
+                        LeftFMD4 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
+                        List<Fmd> fmds = new List<Fmd>();
+                        fmds.Add(LeftFMD1.Data);
+                        fmds.Add(LeftFMD2.Data);
+                        fmds.Add(LeftFMD3.Data);
+                        fmds.Add(LeftFMD4.Data);
+                        LeftFinalFMD = Enrollment.CreateEnrollmentFmd(Constants.Formats.Fmd.ANSI, fmds);
+                        if (LeftFinalFMD.ResultCode == Constants.ResultCode.DP_SUCCESS)
+                        {
+                            MessageBox.Show("Successfully Scanned !!!");
+                            LeftFMD1 = null;
+                            LeftFMD2 = null;
+                            LeftFMD3 = null;
+                            LeftFMD4 = null;
+                        }
+                    }
+
+                }
+                else if (radioButtonRightThumb.Checked)
+                {
+                    Fid fid = ((CaptureResult)pictureBoxRightThumb.Tag).Data;
+
+                    if (RightFMD1 == null) RightFMD1 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
+                    else if (RightFMD2 == null) RightFMD2 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
+                    else if (RightFMD3 == null) RightFMD3 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
+                    else if (RightFMD4 == null)
+                    {
+                        RightFMD4 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
+                        List<Fmd> fmds = new List<Fmd>();
+                        fmds.Add(RightFMD1.Data);
+                        fmds.Add(RightFMD2.Data);
+                        fmds.Add(RightFMD3.Data);
+                        fmds.Add(RightFMD4.Data);
+                        RightFinalFMD = Enrollment.CreateEnrollmentFmd(Constants.Formats.Fmd.ANSI, fmds);
+                        if (RightFinalFMD.ResultCode == Constants.ResultCode.DP_SUCCESS)
+                        {
+                            MessageBox.Show("Successfully Scanned !!!");
+                            RightFMD1 = null;
+                            RightFMD2 = null;
+                            RightFMD3 = null;
+                            RightFMD4 = null;
+                        }
                     }
                 }
-
             }
-            else if (radioButtonRightThumb.Checked)
+            #endregion
+            #region tabItemUPDATE
+            if (tabItemUpdate.IsSelected)
             {
-                Fid fid = ((CaptureResult)pictureBoxRightThumb.Tag).Data;
-
-                if (RightFMD1 == null) RightFMD1 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
-                else if (RightFMD2 == null) RightFMD2 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
-                else if (RightFMD3 == null) RightFMD3 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
-                else if (RightFMD4 == null)
+                if (UradioButtonLeftThumb.Checked)
                 {
-                    RightFMD4 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
-                    List<Fmd> fmds = new List<Fmd>();
-                    fmds.Add(RightFMD1.Data);
-                    fmds.Add(RightFMD2.Data);
-                    fmds.Add(RightFMD3.Data);
-                    fmds.Add(RightFMD4.Data);
-                    RightFinalFMD = Enrollment.CreateEnrollmentFmd(Constants.Formats.Fmd.ANSI, fmds);
-                    if (RightFinalFMD.ResultCode == Constants.ResultCode.DP_SUCCESS)
+                    Fid fid = ((CaptureResult)uThumbLeft.Tag).Data;
+
+                    if (LeftFMD1 == null)
+                        LeftFMD1 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
+                    else if (LeftFMD2 == null)
+                        LeftFMD2 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
+                    else if (LeftFMD3 == null)
+                        LeftFMD3 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
+                    else if (LeftFMD4 == null)
                     {
-                        MessageBox.Show("Successfully Scanned !!!");
-                        RightFMD1 = null;
-                        RightFMD2 = null;
-                        RightFMD3 = null;
-                        RightFMD4 = null;
+                        LeftFMD4 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
+                        List<Fmd> fmds = new List<Fmd>();
+                        fmds.Add(LeftFMD1.Data);
+                        fmds.Add(LeftFMD2.Data);
+                        fmds.Add(LeftFMD3.Data);
+                        fmds.Add(LeftFMD4.Data);
+                        LeftFinalFMD = Enrollment.CreateEnrollmentFmd(Constants.Formats.Fmd.ANSI, fmds);
+                        if (LeftFinalFMD.ResultCode == Constants.ResultCode.DP_SUCCESS)
+                        {
+                            MessageBox.Show("Successfully Scanned !!!");
+                            LeftFMD1 = null;
+                            LeftFMD2 = null;
+                            LeftFMD3 = null;
+                            LeftFMD4 = null;
+                        }
+                    }
+
+                }
+                else if (UradioButtonRightThumb.Checked)
+                {
+                    Fid fid = ((CaptureResult)uThumbRight.Tag).Data;
+
+                    if (RightFMD1 == null) RightFMD1 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
+                    else if (RightFMD2 == null) RightFMD2 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
+                    else if (RightFMD3 == null) RightFMD3 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
+                    else if (RightFMD4 == null)
+                    {
+                        RightFMD4 = FeatureExtraction.CreateFmdFromFid(fid, Constants.Formats.Fmd.ANSI);
+                        List<Fmd> fmds = new List<Fmd>();
+                        fmds.Add(RightFMD1.Data);
+                        fmds.Add(RightFMD2.Data);
+                        fmds.Add(RightFMD3.Data);
+                        fmds.Add(RightFMD4.Data);
+                        RightFinalFMD = Enrollment.CreateEnrollmentFmd(Constants.Formats.Fmd.ANSI, fmds);
+                        if (RightFinalFMD.ResultCode == Constants.ResultCode.DP_SUCCESS)
+                        {
+                            MessageBox.Show("Successfully Scanned !!!");
+                            RightFMD1 = null;
+                            RightFMD2 = null;
+                            RightFMD3 = null;
+                            RightFMD4 = null;
+                        }
                     }
                 }
             }
+            #endregion
         }
         #endregion
-         
+
         private void udf_Combo()
         {
             bool Status = false;
@@ -316,6 +452,35 @@ namespace PAF_BOS
             LeftFMD2 = null;
             LeftFMD3 = null;
             LeftFMD4 = null; 
+            RightFMD1 = null;
+            RightFMD2 = null;
+            RightFMD3 = null;
+            RightFMD4 = null;
+        }
+        private void UpdateTabClearFormFields()
+        {
+            //lblSeniorOfficer.Text = "";
+            utbCadetName.Text = null;
+            utbAddress.Text = null;
+            utbFatherName.Text = null;
+            utbPAK.Text = null;
+            utbCNIC.Text = null;
+            ucbBloodGroup.Text = null;
+            utbContact.Text = null;
+            utbMobile.Text = null;
+            utbRFIDCard.Text = null;
+            ucbSeniorOfficer.Text = null;
+            ucbTape.Text = null;
+            ucbCourse.Text = null;
+            uCadetPic.Image = Properties.Resources.NoHuman;
+            uThumbRight.Image = null;
+            uThumbLeft.Image = null;
+            RightFinalFMD = null;
+            LeftFinalFMD = null;
+            LeftFMD1 = null;
+            LeftFMD2 = null;
+            LeftFMD3 = null;
+            LeftFMD4 = null;
             RightFMD1 = null;
             RightFMD2 = null;
             RightFMD3 = null;
@@ -617,45 +782,91 @@ namespace PAF_BOS
 
         private void btnSearchRFID_Click(object sender, EventArgs e)
         {
-            udf_UpdatePanelCombo();
+            
             udf_GetCadetDataByRFIDCard();
         }
-
+        string chk;
+        DataTable dt;
         private void udf_GetCadetDataByRFIDCard()
         {
-            bool Status = false;
-            string StatusDetails = null;
-            DataTable dt =  MainClass.MngPAFBOS.Cadets_SelectByRFIDCard(Convert.ToInt32(tbSearchRFIDCard.Text),out Status, out StatusDetails);
-
-            utbCadetName    .Text = Convert.ToString(dt.Rows[0][0].ToString()); // CadetID
-            ucbSeniorOfficer.Text = Convert.ToString(dt.Rows[0][1].ToString()); // SQN_User_ID
-            ucbCourse       .Text = Convert.ToString(dt.Rows[0][2].ToString()); // Course_ID
-            ucbTape         .Text = Convert.ToString(dt.Rows[0][3].ToString()); // Tape_ID
-                                                   //dt.Rows[0][4].ToString(); // CreatedBy_User_ID
-            utbCadetName    .Text = Convert.ToString(dt.Rows[0][5].ToString()); // CadetName
-            utbFatherName   .Text = Convert.ToString(dt.Rows[0][6].ToString()); // CadetFatherName
-            utbPAK          .Text = Convert.ToString(dt.Rows[0][7].ToString()); // PAKNumber
-            utbAddress      .Text = Convert.ToString(dt.Rows[0][8].ToString()); // Address
-            utbCNIC         .Text = Convert.ToString(dt.Rows[0][9].ToString()); // CNIC
-            ucbBloodGroup   .Text = Convert.ToString(dt.Rows[0][10].ToString()); // BloodGroup
-            utbContact      .Text = Convert.ToString(dt.Rows[0][11].ToString()); // ContactNumber
-            utbMobile       .Text = Convert.ToString(dt.Rows[0][12].ToString()); // MobileNumber
-            utbRFIDCard     .Text = Convert.ToString(dt.Rows[0][13].ToString()); // RFIDCardNumber
-            uCadetPic       .Image = ImageClass.GetImageFromBase64(dt.Rows[0][14].ToString()); // Picture
-            uThumbLeft      .Image = ImageClass.GetImageFromBase64(dt.Rows[0][15].ToString()); // LThumbImage
-            uThumbRight     .Image = ImageClass.GetImageFromBase64(dt.Rows[0][16].ToString()); // RThumbImage
-                                                   //dt.Rows[0][17].ToString(); // LFMD
-                                                   //dt.Rows[0][18].ToString(); // RFMD
+            try
+            {
+                bool Status = false;
+                string StatusDetails = null;
+                dt = MainClass.MngPAFBOS.Cadets_SelectByRFIDCard(Convert.ToString(tbSearchRFIDCard.Text), out Status, out StatusDetails);
+                    if (Status)
+                    {
+                        udf_UpdatePanelCombo();
+                        ucbSeniorOfficer.Text = Convert.ToString(dt.Rows[0]["FullName"].ToString()); // FullName
+                        ucbCourse.Text = Convert.ToString(dt.Rows[0]["CourseName"].ToString()); // CourseName
+                        utbCadetName.Text = Convert.ToString(dt.Rows[0]["CadetName"].ToString()); // CadetName
+                        utbFatherName.Text = Convert.ToString(dt.Rows[0]["CadetFatherName"].ToString()); // CadetFatherName
+                        utbPAK.Text = Convert.ToString(dt.Rows[0]["PAKNumber"].ToString()); // PAKNumber
+                        utbAddress.Text = Convert.ToString(dt.Rows[0]["Address"].ToString()); // Address
+                        utbCNIC.Text = Convert.ToString(dt.Rows[0]["CNIC"].ToString()); // CNIC
+                        ucbBloodGroup.Text = Convert.ToString(dt.Rows[0]["BloodGroup"].ToString()); // BloodGroup
+                        utbContact.Text = Convert.ToString(dt.Rows[0]["ContactNumber"].ToString()); // ContactNumber
+                        utbMobile.Text = Convert.ToString(dt.Rows[0]["MobileNumber"].ToString()); // MobileNumber
+                        utbRFIDCard.Text = Convert.ToString(dt.Rows[0]["RFIDCardNumber"].ToString()); // RFIDCardNumber
+                        ucbTape.Text = Convert.ToString(dt.Rows[0]["TapeName"].ToString()); // TapeName
+                        chk = Convert.ToString(dt.Rows[0]["Role"].ToString()); // TapeName
+                        if (chk == "Cadet") uchkJuniorCadet.Checked = true;
+                        else
+                        if (chk == "Sr. Cadet") uchkSeniorCadet.Checked = true;
+                        uCadetPic.Image = ImageClass.GetImageFromBase64(dt.Rows[0]["Picture"].ToString()); // Picture
+                        uThumbLeft.Image = ImageClass.GetImageFromBase64(dt.Rows[0]["LThumbImage"].ToString()); // LThumbImage
+                        uThumbRight.Image = ImageClass.GetImageFromBase64(dt.Rows[0]["RThumbImage"].ToString()); // RThumbImage
+                                                                                                                 //dt.Rows[0]["CreatedBy_User_ID"].ToString(); // CreatedBy_User_ID
+                                                                                                                 //dt.Rows[0]["LFMD"].ToString(); // LFMD
+                                                                                                                 //dt.Rows[0]["RFMD"].ToString(); // RFMD
+                    }
+                    else
+                    {
+                        if (StatusDetails == "Invalid Card")
+                        {
+                            JIMessageBox.ShowErrorMessage(StatusDetails);
+                            ucbSeniorOfficer.Text = null;
+                            ucbCourse.Text = null;
+                            utbCadetName.Text = null;
+                            utbFatherName.Text = null;
+                            utbPAK.Text = null;
+                            utbAddress.Text = null;
+                            utbCNIC.Text = null;
+                            ucbBloodGroup.Text = null;
+                            utbContact.Text = null;
+                            utbMobile.Text = null;
+                            utbRFIDCard.Text = null;
+                            ucbTape.Text = null;
+                            uCadetPic.Image = null;
+                            uThumbLeft.Image = null;
+                            uThumbRight.Image = null;
+                        }
+                        else
+                        {
+                            JIMessageBox.ShowErrorMessage("Some Thing Went Wrong: " + StatusDetails);
+                        }
+                    }
+            }
+            catch(Exception ex)
+            {
+                JIMessageBox.ShowErrorMessage("Error: "+ ex);
+            }
         }
-
+        public static int roleZreo;
+        public static int SeniorOfficerZreo;
+        public static int CadetTapeZreo;
+        public static int CadetCoursesZreo;
         private void udf_UpdatePanelCombo()
         {
             bool Status = false;
             string StatusDetails = null;
-            DataTable DtRoles = MainClass.MngPAFBOS.GetRoles(out Status, out StatusDetails);
-            DataTable DtSeniorOfficer = MainClass.MngPAFBOS.usp_GetSeniorOfficerByUserID(out Status, out StatusDetails);
-            DataTable DtCadetTape = MainClass.MngPAFBOS.GetCadetTapes(out Status, out StatusDetails);
-            DataTable DtCadetCourses = MainClass.MngPAFBOS.GetCadetCourses(out Status, out StatusDetails);
+             DataTable DtRoles = MainClass.MngPAFBOS.GetRoles(out Status, out StatusDetails);
+             DataTable DtSeniorOfficer = MainClass.MngPAFBOS.usp_GetSeniorOfficerByUserID(out Status, out StatusDetails);
+             DataTable DtCadetTape = MainClass.MngPAFBOS.GetCadetTapes(out Status, out StatusDetails);
+             DataTable DtCadetCourses = MainClass.MngPAFBOS.GetCadetCourses(out Status, out StatusDetails);
+
+            
+
             if (Status)
             {
                 ListData.AutoSuggession_With_ComboBox(DtSeniorOfficer, 1, ucbSeniorOfficer, "UserID", "FullName");
@@ -668,88 +879,115 @@ namespace PAF_BOS
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            bool Status = false;
-            string StatusDetails = null;
             try
             {
-                if (radioSeniorCadet.Checked) { radioOfCadet = 5; }
-                if (radioJuniorCadet.Checked) { radioOfCadet = 6; }
-                if (udf_Validation(tbCadet.Text, tbFatherName.Text, tbPAKNumber.Text, tbCNIC.Text, CbBloodGroup.Text, tbContactNo.Text, tbMobileNo.Text, tbRFIDCardNo.Text, cbSeniorOfficer.Text, cbTape.Text, cbCourse.Text, radioOfCadet) == true)
+                bool Status = false;
+                string StatusDetails = null; 
+                
+                if (Convert.ToInt32(ucbSeniorOfficer.SelectedValue) > 0 && Convert.ToInt32(ucbTape.SelectedValue) > 0 && Convert.ToInt32(ucbCourse.SelectedValue) > 0 && ucbBloodGroup.Text != "-- Select Bloodgroup --")
                 {
-                    string batch = "STATIC-BATCH";
+                    MainClass.MngPAFBOS.MdlCadet mdl = new MainClass.MngPAFBOS.MdlCadet();
+                    int uRadioOfCadet = 0;
+                    if (chk == "Cadet") { uRadioOfCadet = 6; }
+                    else
+                    if (chk == "Sr. Cadet") { uRadioOfCadet = 5; }
 
-                    string LFMD = null;
-                    string RFMD = null;
-                    string LIMG = ImageClass.GetBase64StringFromImage(pictureBoxLeftThumb.Image);
-                    string RIMG = ImageClass.GetBase64StringFromImage(pictureBoxRightThumb.Image);
-
-                    if (LeftFinalFMD == null && RightFinalFMD == null)
+                    if (uchkSeniorCadet.Checked)
+                        uRadioOfCadet = 5;
+                    if (uchkJuniorCadet.Checked)
+                        uRadioOfCadet = 6;
+                    
+                    if (udf_Validation(utbCadetName.Text, utbFatherName.Text, utbPAK.Text, utbCNIC.Text, ucbBloodGroup.Text, utbContact.Text, utbMobile.Text, utbRFIDCard.Text, ucbSeniorOfficer.Text, ucbTape.Text, ucbCourse.Text, uRadioOfCadet) == true)
                     {
-                        MessageBox.Show("Finger Scan Required of Both Fingers, Scan Again");
-                        return;
-                    }
 
-                    LFMD = Fmd.SerializeXml(LeftFinalFMD.Data);
-                    RFMD = Fmd.SerializeXml(RightFinalFMD.Data);
+                        string LIMG = ImageClass.GetBase64StringFromImage(uThumbLeft.Image);
+                        string RIMG = ImageClass.GetBase64StringFromImage(uThumbRight.Image);
 
-
-
-                    int SeniorOfficeID = Convert.ToInt32(cbSeniorOfficer.SelectedValue);
-                    int courseid = Convert.ToInt32(cbCourse.SelectedValue);
-                    int tapeid = Convert.ToInt32(cbTape.SelectedValue);
-                    int userid = MainClass.UserID;
-                    Bitmap img = ImageClass.Resize((Bitmap)pictureBoxPhoto.Image, new Size(100, 100), System.Drawing.Imaging.ImageFormat.Jpeg);
-                    string Photo = ImageClass.GetBase64StringFromImage(img); //Resize & Convert to String
+                         if (LeftFinalFMD == null && RightFinalFMD == null)
+                         {
+                             MessageBox.Show("Finger Scan Required of Both Fingers, Scan Again");
+                             return;
+                         }
+                        string LFMD = null;
+                        string RFMD = null;
+                         LFMD = Fmd.SerializeXml(LeftFinalFMD.Data);
+                         RFMD = Fmd.SerializeXml(RightFinalFMD.Data);
 
 
+                        mdl.SQN_User_ID = Convert.ToInt32(ucbSeniorOfficer.SelectedValue);
+                        mdl.Course_ID = Convert.ToInt32(ucbCourse.SelectedValue);
+                        mdl.Tape_ID = Convert.ToInt32(ucbTape.SelectedValue);
+                        mdl.CreatedBy_User_ID = Convert.ToInt32(ucbSeniorOfficer.SelectedValue);
+                        Bitmap img = ImageClass.Resize((Bitmap)uCadetPic.Image, new Size(100, 100), System.Drawing.Imaging.ImageFormat.Jpeg);
+                        mdl.Picture = ImageClass.GetBase64StringFromImage(img); //Resize & Convert to String
+                        mdl.Role_ID = uRadioOfCadet;
+                        mdl.Batch = "Static_Batch";
+                        mdl.CadetName = utbCadetName.Text;
+                        mdl.CadetFatherName = utbFatherName.Text;
+                        mdl.PAKNumber = utbPAK.Text;
+                        mdl.Address = utbAddress.Text;
+                        mdl.CNIC = utbCNIC.Text;
+                        mdl.BloodGroup = ucbBloodGroup.Text;
+                        mdl.ContactNumber = utbContact.Text;
+                        mdl.MobileNumber = utbMobile.Text;
+                        mdl.RFIDCardNumber = utbRFIDCard.Text;
+                        mdl.LFMD = dt.Rows[0]["LFMD"].ToString();
+                        mdl.RFMD = dt.Rows[0]["RFMD"].ToString();
+                        mdl.RThumbImage = LIMG;
+                        mdl.LThumbImage = RIMG;
+                        mdl.LFMD = LFMD;
+                        mdl.RFMD = RFMD;
+                        MainClass.MngPAFBOS.Cadets_UpdateByRFIDCard(mdl, out Status, out StatusDetails);
 
-
-
-                   // MainClass.MngPAFBOS.MdlCadet mdl = new MainClass.MngPAFBOS.MdlCadet();
-                   // CadetID
-                   // SQN_User_ID
-                   // Course_ID
-                   // Tape_ID
-                   // CreatedBy_User_ID
-                   // Role_ID
-                   // Batch
-                   // CadetName
-                   // CadetFatherName
-                   // PAKNumber
-                   // Address
-                   // CNIC
-                   // BloodGroup
-                   // ContactNumber
-                   // MobileNumber
-                   // RFIDCardNumber
-
-
-
-                    //MainClass.MngPAFBOS.Cadets_UpdateByRFIDCard();
-
-                    MainClass.MngPAFBOS.InsertCadet_with_CadetHistory(batch, tbCadet.Text, tbFatherName.Text,
-                        tbPAKNumber.Text, tbAddress.Text, tbCNIC.Text, CbBloodGroup.Text, tbContactNo.Text, tbMobileNo.Text, Photo, tbRFIDCardNo.Text,
-                        LFMD, RFMD, LIMG, RIMG, SeniorOfficeID, courseid, tapeid, MainClass.UserID, radioOfCadet, out Status, out StatusDetails);
-
-                    if (Status)
-                    {
-                        JIMessageBox.ShowInformationMessage("Record Updated Successfully !");
-                        ClearFormFields();
+                        if (Status)
+                        {
+                            JIMessageBox.ShowInformationMessage("Record Updated Successfully !");
+                            UpdateTabClearFormFields();
+                        }
+                        else
+                        {
+                            JIMessageBox.ShowErrorMessage("Some Thing Went Wrong: " + StatusDetails);
+                        }
                     }
                     else
                     {
-                        JIMessageBox.ShowErrorMessage("Some Thing Went Wrong: " + StatusDetails);
+                        JIMessageBox.ShowErrorMessage("Please Fill All Fields");
                     }
                 }
                 else
                 {
-                    JIMessageBox.ShowErrorMessage("Please Fill All Fields");
+                    JIMessageBox.ShowErrorMessage("Please Select Correct Fields");
                 }
             }
             catch (Exception ex)
             {
                 JIMessageBox.ShowErrorMessage(ex.Message);
             }
+        }
+
+        private void buttonSelectPicture_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                openFileDialogSelectPicture.FileName = "";
+                openFileDialogSelectPicture.Filter = "Image Files(*.JPG;*.PNG;*.BMP)|*.JPG;*.PNG;*.BMP";
+                openFileDialogSelectPicture.FilterIndex = 2;
+                openFileDialogSelectPicture.RestoreDirectory = true;
+
+                if (openFileDialogSelectPicture.ShowDialog() == DialogResult.OK)
+                {
+                    uCadetPic.ImageLocation = openFileDialogSelectPicture.FileName;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void buttonUpdateTebClear_Click(object sender, EventArgs e)
+        {
+            UpdateTabClearFormFields();
         }
     }
 }

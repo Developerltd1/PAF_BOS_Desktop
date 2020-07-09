@@ -328,7 +328,7 @@ namespace PAF_BOS
                 public int Tape_ID              { get; set; }
                 public int CreatedBy_User_ID    { get; set; }
                 public int Role_ID              { get; set; }
-                public int Batch                { get; set; }
+                public string Batch                { get; set; }
                 public string CadetName            { get; set; }
                 public string CadetFatherName      { get; set; }
                 public string PAKNumber            { get; set; }
@@ -350,7 +350,7 @@ namespace PAF_BOS
             #endregion  //MODELS END
 
             #region OPERATIONS
-            public static DataTable Cadets_SelectByRFIDCard(int RFIDCard, out bool _Status, out string _StatusDetails)
+            public static DataTable Cadets_SelectByRFIDCard(string RFIDCard, out bool _Status, out string _StatusDetails)
             {
                 _Status = false;
                 _StatusDetails = null;
@@ -419,7 +419,7 @@ namespace PAF_BOS
 
                     cmd.CommandType = CommandType.StoredProcedure;
 
-                    cmd.Parameters.AddWithValue("@CadetID", ClsCadetsObj.CadetID);
+                    //cmd.Parameters.AddWithValue("@CadetID", ClsCadetsObj.CadetID);
                     cmd.Parameters.AddWithValue("@SQN_User_ID", ClsCadetsObj.SQN_User_ID);
                     cmd.Parameters.AddWithValue("@Course_ID", ClsCadetsObj.Course_ID);
                     cmd.Parameters.AddWithValue("@Tape_ID", ClsCadetsObj.Tape_ID);

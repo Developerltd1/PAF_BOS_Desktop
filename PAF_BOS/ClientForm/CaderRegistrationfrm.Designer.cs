@@ -39,44 +39,52 @@
             this.styleManager1 = new DevComponents.DotNetBar.StyleManager(this.components);
             this.ribbonClientPanel1 = new DevComponents.DotNetBar.Ribbon.RibbonClientPanel();
             this.tabControl1 = new DevComponents.DotNetBar.TabControl();
-            this.tabControlPanel2 = new DevComponents.DotNetBar.TabControlPanel();
-            this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.textBoxSearchPak = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.labelX22 = new DevComponents.DotNetBar.LabelX();
-            this.textBoxSearchCourse = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.labelX21 = new DevComponents.DotNetBar.LabelX();
-            this.textBoxSearchTape = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.labelX20 = new DevComponents.DotNetBar.LabelX();
-            this.groupPanel6 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.Cadetidd = new DevComponents.DotNetBar.LabelX();
-            this.labelX24 = new DevComponents.DotNetBar.LabelX();
-            this.txCourse = new DevComponents.DotNetBar.LabelX();
-            this.btnRemoveCadet = new DevComponents.DotNetBar.ButtonX();
-            this.pictureBox = new System.Windows.Forms.PictureBox();
-            this.labelX3 = new DevComponents.DotNetBar.LabelX();
-            this.txMobile = new DevComponents.DotNetBar.LabelX();
-            this.txFname = new DevComponents.DotNetBar.LabelX();
-            this.labelX12 = new DevComponents.DotNetBar.LabelX();
-            this.labelX13 = new DevComponents.DotNetBar.LabelX();
-            this.txCnic = new DevComponents.DotNetBar.LabelX();
-            this.txTape = new DevComponents.DotNetBar.LabelX();
-            this.labelX15 = new DevComponents.DotNetBar.LabelX();
-            this.labelX19 = new DevComponents.DotNetBar.LabelX();
-            this.txPakNo = new DevComponents.DotNetBar.LabelX();
-            this.txCname = new DevComponents.DotNetBar.LabelX();
-            this.labelX23 = new DevComponents.DotNetBar.LabelX();
-            this.groupPanel4 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.gdvAllCadet = new DevComponents.DotNetBar.Controls.DataGridViewX();
-            this.CadetID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CadetName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CadetFatherName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MobileNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PAKNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CNIC = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tape = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CourseName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cbAll = new System.Windows.Forms.CheckBox();
-            this.tabIRemove = new DevComponents.DotNetBar.TabItem(this.components);
+            this.tabControlPanel3 = new DevComponents.DotNetBar.TabControlPanel();
+            this.groupPanel8 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.btnUpdate = new DevComponents.DotNetBar.ButtonX();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.UradioButtonRightThumb = new System.Windows.Forms.RadioButton();
+            this.labelX40 = new DevComponents.DotNetBar.LabelX();
+            this.UradioButtonLeftThumb = new System.Windows.Forms.RadioButton();
+            this.uCadetPic = new System.Windows.Forms.PictureBox();
+            this.uThumbRight = new System.Windows.Forms.PictureBox();
+            this.uThumbLeft = new System.Windows.Forms.PictureBox();
+            this.labelX41 = new DevComponents.DotNetBar.LabelX();
+            this.labelX42 = new DevComponents.DotNetBar.LabelX();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.utbRFIDCard = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX43 = new DevComponents.DotNetBar.LabelX();
+            this.uchkSeniorCadet = new System.Windows.Forms.RadioButton();
+            this.uchkJuniorCadet = new System.Windows.Forms.RadioButton();
+            this.labelX44 = new DevComponents.DotNetBar.LabelX();
+            this.groupPanel7 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.ucbBloodGroup = new System.Windows.Forms.ComboBox();
+            this.utbCadetName = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.utbMobile = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX29 = new DevComponents.DotNetBar.LabelX();
+            this.labelX30 = new DevComponents.DotNetBar.LabelX();
+            this.labelX31 = new DevComponents.DotNetBar.LabelX();
+            this.labelX32 = new DevComponents.DotNetBar.LabelX();
+            this.ucbSeniorOfficer = new System.Windows.Forms.ComboBox();
+            this.utbContact = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.utbCNIC = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.ucbTape = new System.Windows.Forms.ComboBox();
+            this.labelX33 = new DevComponents.DotNetBar.LabelX();
+            this.labelX34 = new DevComponents.DotNetBar.LabelX();
+            this.labelX35 = new DevComponents.DotNetBar.LabelX();
+            this.ucbCourse = new System.Windows.Forms.ComboBox();
+            this.utbFatherName = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX36 = new DevComponents.DotNetBar.LabelX();
+            this.labelX37 = new DevComponents.DotNetBar.LabelX();
+            this.utbPAK = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX38 = new DevComponents.DotNetBar.LabelX();
+            this.labelX39 = new DevComponents.DotNetBar.LabelX();
+            this.utbAddress = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.groupPanel5 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.btnSearchRFID = new DevComponents.DotNetBar.ButtonX();
+            this.tbSearchRFIDCard = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX27 = new DevComponents.DotNetBar.LabelX();
+            this.tabItemUpdate = new DevComponents.DotNetBar.TabItem(this.components);
             this.tabControlPanel1 = new DevComponents.DotNetBar.TabControlPanel();
             this.groupPanel2 = new DevComponents.DotNetBar.Controls.GroupPanel();
             this.CbBloodGroup = new System.Windows.Forms.ComboBox();
@@ -119,64 +127,61 @@
             this.radioSeniorCadet = new System.Windows.Forms.RadioButton();
             this.radioJuniorCadet = new System.Windows.Forms.RadioButton();
             this.labelX14 = new DevComponents.DotNetBar.LabelX();
-            this.tabItem1 = new DevComponents.DotNetBar.TabItem(this.components);
+            this.tabItemNew = new DevComponents.DotNetBar.TabItem(this.components);
+            this.tabControlPanel2 = new DevComponents.DotNetBar.TabControlPanel();
+            this.groupPanel3 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.textBoxSearchPak = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX22 = new DevComponents.DotNetBar.LabelX();
+            this.textBoxSearchCourse = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX21 = new DevComponents.DotNetBar.LabelX();
+            this.textBoxSearchTape = new DevComponents.DotNetBar.Controls.TextBoxX();
+            this.labelX20 = new DevComponents.DotNetBar.LabelX();
+            this.groupPanel6 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.Cadetidd = new DevComponents.DotNetBar.LabelX();
+            this.labelX24 = new DevComponents.DotNetBar.LabelX();
+            this.txCourse = new DevComponents.DotNetBar.LabelX();
+            this.btnRemoveCadet = new DevComponents.DotNetBar.ButtonX();
+            this.pictureBox = new System.Windows.Forms.PictureBox();
+            this.labelX3 = new DevComponents.DotNetBar.LabelX();
+            this.txMobile = new DevComponents.DotNetBar.LabelX();
+            this.txFname = new DevComponents.DotNetBar.LabelX();
+            this.labelX12 = new DevComponents.DotNetBar.LabelX();
+            this.labelX13 = new DevComponents.DotNetBar.LabelX();
+            this.txCnic = new DevComponents.DotNetBar.LabelX();
+            this.txTape = new DevComponents.DotNetBar.LabelX();
+            this.labelX15 = new DevComponents.DotNetBar.LabelX();
+            this.labelX19 = new DevComponents.DotNetBar.LabelX();
+            this.txPakNo = new DevComponents.DotNetBar.LabelX();
+            this.txCname = new DevComponents.DotNetBar.LabelX();
+            this.labelX23 = new DevComponents.DotNetBar.LabelX();
+            this.groupPanel4 = new DevComponents.DotNetBar.Controls.GroupPanel();
+            this.gdvAllCadet = new DevComponents.DotNetBar.Controls.DataGridViewX();
+            this.CadetID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CadetName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CadetFatherName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MobileNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PAKNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CNIC = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Tape = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CourseName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cbAll = new System.Windows.Forms.CheckBox();
+            this.tabIRemove = new DevComponents.DotNetBar.TabItem(this.components);
             this.btnCancel = new DevComponents.DotNetBar.ButtonX();
             this.openFileDialogSelectPicture = new System.Windows.Forms.OpenFileDialog();
-            this.tabItemUpdate = new DevComponents.DotNetBar.TabItem(this.components);
-            this.tabControlPanel3 = new DevComponents.DotNetBar.TabControlPanel();
-            this.groupPanel5 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.tbSearchRFIDCard = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.labelX27 = new DevComponents.DotNetBar.LabelX();
-            this.groupPanel7 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.ucbBloodGroup = new System.Windows.Forms.ComboBox();
-            this.utbCadetName = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.utbMobile = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.labelX29 = new DevComponents.DotNetBar.LabelX();
-            this.labelX30 = new DevComponents.DotNetBar.LabelX();
-            this.labelX31 = new DevComponents.DotNetBar.LabelX();
-            this.labelX32 = new DevComponents.DotNetBar.LabelX();
-            this.ucbSeniorOfficer = new System.Windows.Forms.ComboBox();
-            this.utbContact = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.utbCNIC = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.ucbTape = new System.Windows.Forms.ComboBox();
-            this.labelX33 = new DevComponents.DotNetBar.LabelX();
-            this.labelX34 = new DevComponents.DotNetBar.LabelX();
-            this.labelX35 = new DevComponents.DotNetBar.LabelX();
-            this.ucbCourse = new System.Windows.Forms.ComboBox();
-            this.utbFatherName = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.labelX36 = new DevComponents.DotNetBar.LabelX();
-            this.labelX37 = new DevComponents.DotNetBar.LabelX();
-            this.utbPAK = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.labelX38 = new DevComponents.DotNetBar.LabelX();
-            this.labelX39 = new DevComponents.DotNetBar.LabelX();
-            this.utbAddress = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.groupPanel8 = new DevComponents.DotNetBar.Controls.GroupPanel();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.labelX40 = new DevComponents.DotNetBar.LabelX();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.uCadetPic = new System.Windows.Forms.PictureBox();
-            this.uThumbRight = new System.Windows.Forms.PictureBox();
-            this.uThumbLeft = new System.Windows.Forms.PictureBox();
-            this.labelX41 = new DevComponents.DotNetBar.LabelX();
-            this.labelX42 = new DevComponents.DotNetBar.LabelX();
-            this.btnUpdate = new DevComponents.DotNetBar.ButtonX();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.utbRFIDCard = new DevComponents.DotNetBar.Controls.TextBoxX();
-            this.labelX43 = new DevComponents.DotNetBar.LabelX();
-            this.uchkSeniorCadet = new System.Windows.Forms.RadioButton();
-            this.uchkJuniorCadet = new System.Windows.Forms.RadioButton();
-            this.labelX44 = new DevComponents.DotNetBar.LabelX();
-            this.btnSearchRFID = new DevComponents.DotNetBar.ButtonX();
+            this.buttonSelectPicture = new DevComponents.DotNetBar.ButtonX();
+            this.buttonUpdateTebClear = new DevComponents.DotNetBar.ButtonX();
             this.ribbonClientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).BeginInit();
             this.tabControl1.SuspendLayout();
-            this.tabControlPanel2.SuspendLayout();
-            this.groupPanel3.SuspendLayout();
-            this.groupPanel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
-            this.groupPanel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gdvAllCadet)).BeginInit();
+            this.tabControlPanel3.SuspendLayout();
+            this.groupPanel8.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uCadetPic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uThumbRight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uThumbLeft)).BeginInit();
+            this.groupBox6.SuspendLayout();
+            this.groupPanel7.SuspendLayout();
+            this.groupPanel5.SuspendLayout();
             this.tabControlPanel1.SuspendLayout();
             this.groupPanel2.SuspendLayout();
             this.groupPanel1.SuspendLayout();
@@ -186,15 +191,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLeftThumb)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            this.tabControlPanel3.SuspendLayout();
-            this.groupPanel5.SuspendLayout();
-            this.groupPanel7.SuspendLayout();
-            this.groupPanel8.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.uCadetPic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uThumbRight)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uThumbLeft)).BeginInit();
-            this.groupBox6.SuspendLayout();
+            this.tabControlPanel2.SuspendLayout();
+            this.groupPanel3.SuspendLayout();
+            this.groupPanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            this.groupPanel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gdvAllCadet)).BeginInit();
             this.SuspendLayout();
             // 
             // labelX1
@@ -289,653 +291,796 @@
             this.tabControl1.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox;
             this.tabControl1.Tabs.Add(this.tabIRemove);
             this.tabControl1.Tabs.Add(this.tabItemUpdate);
-            this.tabControl1.Tabs.Add(this.tabItem1);
+            this.tabControl1.Tabs.Add(this.tabItemNew);
             this.tabControl1.Text = "tabControl1";
             this.tabControl1.Click += new System.EventHandler(this.tabControl1_Click);
             // 
-            // tabControlPanel2
+            // tabControlPanel3
             // 
-            this.tabControlPanel2.Controls.Add(this.groupPanel3);
-            this.tabControlPanel2.Controls.Add(this.groupPanel6);
-            this.tabControlPanel2.Controls.Add(this.groupPanel4);
-            this.tabControlPanel2.DisabledBackColor = System.Drawing.Color.Empty;
-            this.tabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControlPanel2.Location = new System.Drawing.Point(0, 26);
-            this.tabControlPanel2.Name = "tabControlPanel2";
-            this.tabControlPanel2.Padding = new System.Windows.Forms.Padding(1);
-            this.tabControlPanel2.Size = new System.Drawing.Size(934, 485);
-            this.tabControlPanel2.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
-            this.tabControlPanel2.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
-            this.tabControlPanel2.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.tabControlPanel2.Style.BorderColor.Color = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(156)))));
-            this.tabControlPanel2.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right) 
+            this.tabControlPanel3.Controls.Add(this.groupPanel8);
+            this.tabControlPanel3.Controls.Add(this.groupPanel7);
+            this.tabControlPanel3.Controls.Add(this.groupPanel5);
+            this.tabControlPanel3.DisabledBackColor = System.Drawing.Color.Empty;
+            this.tabControlPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControlPanel3.Location = new System.Drawing.Point(0, 26);
+            this.tabControlPanel3.Name = "tabControlPanel3";
+            this.tabControlPanel3.Padding = new System.Windows.Forms.Padding(1);
+            this.tabControlPanel3.Size = new System.Drawing.Size(934, 485);
+            this.tabControlPanel3.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
+            this.tabControlPanel3.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
+            this.tabControlPanel3.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.tabControlPanel3.Style.BorderColor.Color = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(156)))));
+            this.tabControlPanel3.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right) 
             | DevComponents.DotNetBar.eBorderSide.Bottom)));
-            this.tabControlPanel2.Style.GradientAngle = 90;
-            this.tabControlPanel2.TabIndex = 5;
-            this.tabControlPanel2.TabItem = this.tabIRemove;
+            this.tabControlPanel3.Style.GradientAngle = 90;
+            this.tabControlPanel3.TabIndex = 12;
+            this.tabControlPanel3.TabItem = this.tabItemUpdate;
             // 
-            // groupPanel3
+            // groupPanel8
             // 
-            this.groupPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupPanel3.CanvasColor = System.Drawing.SystemColors.Control;
-            this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel3.Controls.Add(this.textBoxSearchPak);
-            this.groupPanel3.Controls.Add(this.labelX22);
-            this.groupPanel3.Controls.Add(this.textBoxSearchCourse);
-            this.groupPanel3.Controls.Add(this.labelX21);
-            this.groupPanel3.Controls.Add(this.textBoxSearchTape);
-            this.groupPanel3.Controls.Add(this.labelX20);
-            this.groupPanel3.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel3.Location = new System.Drawing.Point(3, 3);
-            this.groupPanel3.Name = "groupPanel3";
-            this.groupPanel3.Size = new System.Drawing.Size(929, 46);
-            // 
-            // 
-            // 
-            this.groupPanel3.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.groupPanel3.Style.BackColorGradientAngle = 90;
-            this.groupPanel3.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.groupPanel3.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel3.Style.BorderBottomWidth = 1;
-            this.groupPanel3.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.groupPanel3.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel3.Style.BorderLeftWidth = 1;
-            this.groupPanel3.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel3.Style.BorderRightWidth = 1;
-            this.groupPanel3.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel3.Style.BorderTopWidth = 1;
-            this.groupPanel3.Style.CornerDiameter = 4;
-            this.groupPanel3.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.groupPanel3.Style.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupPanel3.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.groupPanel3.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
-            // 
-            // 
-            // 
-            this.groupPanel3.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.groupPanel3.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel3.TabIndex = 90;
-            // 
-            // textBoxSearchPak
-            // 
-            this.textBoxSearchPak.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.textBoxSearchPak.Border.Class = "TextBoxBorder";
-            this.textBoxSearchPak.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxSearchPak.DisabledBackColor = System.Drawing.Color.White;
-            this.textBoxSearchPak.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearchPak.Location = new System.Drawing.Point(700, 8);
-            this.textBoxSearchPak.MaxLength = 10;
-            this.textBoxSearchPak.Name = "textBoxSearchPak";
-            this.textBoxSearchPak.PreventEnterBeep = true;
-            this.textBoxSearchPak.Size = new System.Drawing.Size(173, 26);
-            this.textBoxSearchPak.TabIndex = 7;
-            this.textBoxSearchPak.TextChanged += new System.EventHandler(this.textBoxSearchPak_TextChanged);
-            // 
-            // labelX22
-            // 
-            this.labelX22.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX22.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX22.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX22.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX22.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelX22.Location = new System.Drawing.Point(636, 9);
-            this.labelX22.Name = "labelX22";
-            this.labelX22.Size = new System.Drawing.Size(58, 23);
-            this.labelX22.TabIndex = 6;
-            this.labelX22.Text = "Pak No:";
-            // 
-            // textBoxSearchCourse
-            // 
-            this.textBoxSearchCourse.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.textBoxSearchCourse.Border.Class = "TextBoxBorder";
-            this.textBoxSearchCourse.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxSearchCourse.DisabledBackColor = System.Drawing.Color.White;
-            this.textBoxSearchCourse.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearchCourse.Location = new System.Drawing.Point(406, 7);
-            this.textBoxSearchCourse.MaxLength = 10;
-            this.textBoxSearchCourse.Name = "textBoxSearchCourse";
-            this.textBoxSearchCourse.PreventEnterBeep = true;
-            this.textBoxSearchCourse.Size = new System.Drawing.Size(173, 26);
-            this.textBoxSearchCourse.TabIndex = 5;
-            this.textBoxSearchCourse.TextChanged += new System.EventHandler(this.textBoxSearchCourse_TextChanged);
-            // 
-            // labelX21
-            // 
-            this.labelX21.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX21.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX21.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX21.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelX21.Location = new System.Drawing.Point(337, 8);
-            this.labelX21.Name = "labelX21";
-            this.labelX21.Size = new System.Drawing.Size(63, 23);
-            this.labelX21.TabIndex = 4;
-            this.labelX21.Text = "Course:";
-            // 
-            // textBoxSearchTape
-            // 
-            this.textBoxSearchTape.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.textBoxSearchTape.Border.Class = "TextBoxBorder";
-            this.textBoxSearchTape.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.textBoxSearchTape.DisabledBackColor = System.Drawing.Color.White;
-            this.textBoxSearchTape.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxSearchTape.Location = new System.Drawing.Point(108, 7);
-            this.textBoxSearchTape.MaxLength = 10;
-            this.textBoxSearchTape.Name = "textBoxSearchTape";
-            this.textBoxSearchTape.PreventEnterBeep = true;
-            this.textBoxSearchTape.Size = new System.Drawing.Size(173, 26);
-            this.textBoxSearchTape.TabIndex = 3;
-            this.textBoxSearchTape.TextChanged += new System.EventHandler(this.textBoxSearchTape_TextChanged);
-            // 
-            // labelX20
-            // 
-            this.labelX20.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX20.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX20.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX20.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelX20.Location = new System.Drawing.Point(56, 8);
-            this.labelX20.Name = "labelX20";
-            this.labelX20.Size = new System.Drawing.Size(46, 23);
-            this.labelX20.TabIndex = 2;
-            this.labelX20.Text = "Tape:";
-            // 
-            // groupPanel6
-            // 
-            this.groupPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
-            this.groupPanel6.CanvasColor = System.Drawing.SystemColors.Control;
-            this.groupPanel6.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel6.Controls.Add(this.Cadetidd);
-            this.groupPanel6.Controls.Add(this.labelX24);
-            this.groupPanel6.Controls.Add(this.txCourse);
-            this.groupPanel6.Controls.Add(this.btnRemoveCadet);
-            this.groupPanel6.Controls.Add(this.pictureBox);
-            this.groupPanel6.Controls.Add(this.labelX3);
-            this.groupPanel6.Controls.Add(this.txMobile);
-            this.groupPanel6.Controls.Add(this.txFname);
-            this.groupPanel6.Controls.Add(this.labelX12);
-            this.groupPanel6.Controls.Add(this.labelX13);
-            this.groupPanel6.Controls.Add(this.txCnic);
-            this.groupPanel6.Controls.Add(this.txTape);
-            this.groupPanel6.Controls.Add(this.labelX15);
-            this.groupPanel6.Controls.Add(this.labelX19);
-            this.groupPanel6.Controls.Add(this.txPakNo);
-            this.groupPanel6.Controls.Add(this.txCname);
-            this.groupPanel6.Controls.Add(this.labelX23);
-            this.groupPanel6.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel6.Location = new System.Drawing.Point(2, 265);
-            this.groupPanel6.Name = "groupPanel6";
-            this.groupPanel6.Size = new System.Drawing.Size(928, 220);
-            // 
-            // 
-            // 
-            this.groupPanel6.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
-            this.groupPanel6.Style.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
-            this.groupPanel6.Style.BackColorGradientAngle = 90;
-            this.groupPanel6.Style.BackgroundImagePosition = DevComponents.DotNetBar.eStyleBackgroundImage.Center;
-            this.groupPanel6.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel6.Style.BorderBottomWidth = 1;
-            this.groupPanel6.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemExpandedBackground2;
-            this.groupPanel6.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel6.Style.BorderLeftWidth = 1;
-            this.groupPanel6.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel6.Style.BorderRightWidth = 1;
-            this.groupPanel6.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel6.Style.BorderTopWidth = 1;
-            this.groupPanel6.Style.CornerDiameter = 4;
-            this.groupPanel6.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel6.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel6.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.groupPanel6.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
-            // 
-            // 
-            // 
-            this.groupPanel6.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.groupPanel6.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel6.TabIndex = 89;
-            // 
-            // Cadetidd
-            // 
-            this.Cadetidd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.Cadetidd.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.Cadetidd.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.Cadetidd.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Cadetidd.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Cadetidd.Location = new System.Drawing.Point(9, 11);
-            this.Cadetidd.Name = "Cadetidd";
-            this.Cadetidd.Size = new System.Drawing.Size(52, 19);
-            this.Cadetidd.TabIndex = 51;
-            this.Cadetidd.Text = "Cadetid";
-            this.Cadetidd.Visible = false;
-            // 
-            // labelX24
-            // 
-            this.labelX24.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX24.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX24.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX24.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX24.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelX24.Location = new System.Drawing.Point(83, 185);
-            this.labelX24.Name = "labelX24";
-            this.labelX24.Size = new System.Drawing.Size(96, 23);
-            this.labelX24.TabIndex = 49;
-            this.labelX24.Text = "Course:";
-            // 
-            // txCourse
-            // 
-            this.txCourse.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txCourse.BackColor = System.Drawing.Color.OldLace;
-            // 
-            // 
-            // 
-            this.txCourse.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txCourse.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txCourse.Location = new System.Drawing.Point(200, 185);
-            this.txCourse.Name = "txCourse";
-            this.txCourse.Size = new System.Drawing.Size(225, 23);
-            this.txCourse.TabIndex = 50;
-            // 
-            // btnRemoveCadet
-            // 
-            this.btnRemoveCadet.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnRemoveCadet.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnRemoveCadet.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnRemoveCadet.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRemoveCadet.Location = new System.Drawing.Point(692, 73);
-            this.btnRemoveCadet.Name = "btnRemoveCadet";
-            this.btnRemoveCadet.Size = new System.Drawing.Size(173, 79);
-            this.btnRemoveCadet.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnRemoveCadet.TabIndex = 48;
-            this.btnRemoveCadet.Text = "Remove Cadet";
-            this.btnRemoveCadet.Click += new System.EventHandler(this.btnRemoveCadet_Click);
-            // 
-            // pictureBox
-            // 
-            this.pictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.pictureBox.BackColor = System.Drawing.Color.DarkGray;
-            this.pictureBox.Location = new System.Drawing.Point(468, 17);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(185, 192);
-            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox.TabIndex = 45;
-            this.pictureBox.TabStop = false;
-            // 
-            // labelX3
-            // 
-            this.labelX3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX3.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelX3.Location = new System.Drawing.Point(82, 129);
-            this.labelX3.Name = "labelX3";
-            this.labelX3.Size = new System.Drawing.Size(77, 23);
-            this.labelX3.TabIndex = 25;
-            this.labelX3.Text = "Pak No:";
-            // 
-            // txMobile
-            // 
-            this.txMobile.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txMobile.BackColor = System.Drawing.Color.OldLace;
-            // 
-            // 
-            // 
-            this.txMobile.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txMobile.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txMobile.Location = new System.Drawing.Point(200, 73);
-            this.txMobile.Name = "txMobile";
-            this.txMobile.Size = new System.Drawing.Size(225, 23);
-            this.txMobile.TabIndex = 45;
-            // 
-            // txFname
-            // 
-            this.txFname.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txFname.BackColor = System.Drawing.Color.OldLace;
-            // 
-            // 
-            // 
-            this.txFname.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txFname.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txFname.Location = new System.Drawing.Point(200, 45);
-            this.txFname.Name = "txFname";
-            this.txFname.Size = new System.Drawing.Size(225, 23);
-            this.txFname.TabIndex = 44;
-            // 
-            // labelX12
-            // 
-            this.labelX12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX12.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX12.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX12.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelX12.Location = new System.Drawing.Point(83, 157);
-            this.labelX12.Name = "labelX12";
-            this.labelX12.Size = new System.Drawing.Size(96, 23);
-            this.labelX12.TabIndex = 13;
-            this.labelX12.Text = "Tape:";
-            // 
-            // labelX13
-            // 
-            this.labelX13.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX13.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX13.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX13.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelX13.Location = new System.Drawing.Point(83, 47);
-            this.labelX13.Name = "labelX13";
-            this.labelX13.Size = new System.Drawing.Size(111, 23);
-            this.labelX13.TabIndex = 29;
-            this.labelX13.Text = "Father Name:";
-            // 
-            // txCnic
-            // 
-            this.txCnic.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txCnic.BackColor = System.Drawing.Color.OldLace;
-            // 
-            // 
-            // 
-            this.txCnic.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txCnic.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txCnic.Location = new System.Drawing.Point(200, 101);
-            this.txCnic.Name = "txCnic";
-            this.txCnic.Size = new System.Drawing.Size(225, 23);
-            this.txCnic.TabIndex = 47;
-            // 
-            // txTape
-            // 
-            this.txTape.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txTape.BackColor = System.Drawing.Color.OldLace;
-            // 
-            // 
-            // 
-            this.txTape.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txTape.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txTape.Location = new System.Drawing.Point(200, 157);
-            this.txTape.Name = "txTape";
-            this.txTape.Size = new System.Drawing.Size(225, 23);
-            this.txTape.TabIndex = 41;
-            // 
-            // labelX15
-            // 
-            this.labelX15.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX15.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX15.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX15.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelX15.Location = new System.Drawing.Point(83, 101);
-            this.labelX15.Name = "labelX15";
-            this.labelX15.Size = new System.Drawing.Size(111, 23);
-            this.labelX15.TabIndex = 37;
-            this.labelX15.Text = "CNIC:";
-            // 
-            // labelX19
-            // 
-            this.labelX19.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX19.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX19.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX19.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX19.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelX19.Location = new System.Drawing.Point(83, 73);
-            this.labelX19.Name = "labelX19";
-            this.labelX19.Size = new System.Drawing.Size(111, 23);
-            this.labelX19.TabIndex = 33;
-            this.labelX19.Text = "Mobile No:";
-            // 
-            // txPakNo
-            // 
-            this.txPakNo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txPakNo.BackColor = System.Drawing.Color.OldLace;
-            // 
-            // 
-            // 
-            this.txPakNo.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txPakNo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txPakNo.Location = new System.Drawing.Point(200, 129);
-            this.txPakNo.Name = "txPakNo";
-            this.txPakNo.Size = new System.Drawing.Size(225, 23);
-            this.txPakNo.TabIndex = 42;
-            // 
-            // txCname
-            // 
-            this.txCname.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txCname.BackColor = System.Drawing.Color.OldLace;
-            // 
-            // 
-            // 
-            this.txCname.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.txCname.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txCname.Location = new System.Drawing.Point(200, 17);
-            this.txCname.Name = "txCname";
-            this.txCname.Size = new System.Drawing.Size(225, 23);
-            this.txCname.TabIndex = 40;
-            // 
-            // labelX23
-            // 
-            this.labelX23.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX23.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX23.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX23.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX23.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.labelX23.Location = new System.Drawing.Point(83, 17);
-            this.labelX23.Name = "labelX23";
-            this.labelX23.Size = new System.Drawing.Size(111, 23);
-            this.labelX23.TabIndex = 11;
-            this.labelX23.Text = "Cadet Name:";
-            // 
-            // groupPanel4
-            // 
-            this.groupPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.groupPanel8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupPanel4.CanvasColor = System.Drawing.SystemColors.Control;
-            this.groupPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel4.Controls.Add(this.gdvAllCadet);
-            this.groupPanel4.Controls.Add(this.cbAll);
-            this.groupPanel4.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel4.Location = new System.Drawing.Point(3, 55);
-            this.groupPanel4.Name = "groupPanel4";
-            this.groupPanel4.Size = new System.Drawing.Size(929, 204);
+            this.groupPanel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
+            this.groupPanel8.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel8.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel8.Controls.Add(this.buttonUpdateTebClear);
+            this.groupPanel8.Controls.Add(this.btnUpdate);
+            this.groupPanel8.Controls.Add(this.groupBox4);
+            this.groupPanel8.Controls.Add(this.groupBox6);
+            this.groupPanel8.DisabledBackColor = System.Drawing.Color.Empty;
+            this.groupPanel8.Location = new System.Drawing.Point(388, 55);
+            this.groupPanel8.Name = "groupPanel8";
+            this.groupPanel8.Size = new System.Drawing.Size(529, 421);
             // 
             // 
             // 
-            this.groupPanel4.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.groupPanel4.Style.BackColorGradientAngle = 90;
-            this.groupPanel4.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.groupPanel4.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel4.Style.BorderBottomWidth = 1;
-            this.groupPanel4.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.groupPanel4.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel4.Style.BorderLeftWidth = 1;
-            this.groupPanel4.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel4.Style.BorderRightWidth = 1;
-            this.groupPanel4.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel4.Style.BorderTopWidth = 1;
-            this.groupPanel4.Style.CornerDiameter = 4;
-            this.groupPanel4.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.groupPanel4.Style.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupPanel4.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.groupPanel4.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            this.groupPanel8.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
+            this.groupPanel8.Style.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
+            this.groupPanel8.Style.BackColorGradientAngle = 90;
+            this.groupPanel8.Style.BackgroundImagePosition = DevComponents.DotNetBar.eStyleBackgroundImage.Center;
+            this.groupPanel8.Style.BorderBottomWidth = 1;
+            this.groupPanel8.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.MenuUnusedBackground;
+            this.groupPanel8.Style.BorderLeftWidth = 1;
+            this.groupPanel8.Style.BorderRightWidth = 1;
+            this.groupPanel8.Style.BorderTopWidth = 1;
+            this.groupPanel8.Style.CornerDiameter = 4;
+            this.groupPanel8.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel8.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel8.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel8.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
             // 
             // 
             // 
-            this.groupPanel4.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel8.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
             // 
             // 
             // 
-            this.groupPanel4.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel4.TabIndex = 88;
-            this.groupPanel4.Text = "Available Cadets";
-            this.groupPanel4.Click += new System.EventHandler(this.groupPanel4_Click);
+            this.groupPanel8.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel8.TabIndex = 93;
             // 
-            // gdvAllCadet
+            // btnUpdate
             // 
-            this.gdvAllCadet.AllowUserToAddRows = false;
-            this.gdvAllCadet.AllowUserToDeleteRows = false;
-            this.gdvAllCadet.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnUpdate.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnUpdate.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnUpdate.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdate.Location = new System.Drawing.Point(265, 340);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(236, 59);
+            this.btnUpdate.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnUpdate.TabIndex = 6;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gdvAllCadet.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.gdvAllCadet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gdvAllCadet.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.CadetID,
-            this.CadetName,
-            this.CadetFatherName,
-            this.MobileNumber,
-            this.PAKNumber,
-            this.CNIC,
-            this.Tape,
-            this.CourseName});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(21)))), ((int)(((byte)(110)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gdvAllCadet.DefaultCellStyle = dataGridViewCellStyle2;
-            this.gdvAllCadet.EnableHeadersVisualStyles = false;
-            this.gdvAllCadet.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
-            this.gdvAllCadet.Location = new System.Drawing.Point(6, 3);
-            this.gdvAllCadet.MultiSelect = false;
-            this.gdvAllCadet.Name = "gdvAllCadet";
-            this.gdvAllCadet.ReadOnly = true;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gdvAllCadet.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.gdvAllCadet.Size = new System.Drawing.Size(914, 167);
-            this.gdvAllCadet.TabIndex = 77;
-            this.gdvAllCadet.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gdvAllCadet_CellClick);
+            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox4.Controls.Add(this.buttonSelectPicture);
+            this.groupBox4.Controls.Add(this.UradioButtonRightThumb);
+            this.groupBox4.Controls.Add(this.labelX40);
+            this.groupBox4.Controls.Add(this.UradioButtonLeftThumb);
+            this.groupBox4.Controls.Add(this.uCadetPic);
+            this.groupBox4.Controls.Add(this.uThumbRight);
+            this.groupBox4.Controls.Add(this.uThumbLeft);
+            this.groupBox4.Controls.Add(this.labelX41);
+            this.groupBox4.Controls.Add(this.labelX42);
+            this.groupBox4.ForeColor = System.Drawing.Color.Transparent;
+            this.groupBox4.Location = new System.Drawing.Point(19, 103);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(491, 231);
+            this.groupBox4.TabIndex = 9;
+            this.groupBox4.TabStop = false;
             // 
-            // CadetID
+            // UradioButtonRightThumb
             // 
-            this.CadetID.HeaderText = "CadetID";
-            this.CadetID.Name = "CadetID";
-            this.CadetID.ReadOnly = true;
-            this.CadetID.Visible = false;
+            this.UradioButtonRightThumb.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.UradioButtonRightThumb.AutoSize = true;
+            this.UradioButtonRightThumb.Font = new System.Drawing.Font("Arial", 10F);
+            this.UradioButtonRightThumb.ForeColor = System.Drawing.Color.Black;
+            this.UradioButtonRightThumb.Location = new System.Drawing.Point(339, 200);
+            this.UradioButtonRightThumb.Name = "UradioButtonRightThumb";
+            this.UradioButtonRightThumb.Size = new System.Drawing.Size(143, 20);
+            this.UradioButtonRightThumb.TabIndex = 5;
+            this.UradioButtonRightThumb.Text = "Scan Right Thumb";
+            this.UradioButtonRightThumb.UseVisualStyleBackColor = true;
             // 
-            // CadetName
+            // labelX40
             // 
-            this.CadetName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CadetName.HeaderText = "Cadet Name";
-            this.CadetName.Name = "CadetName";
-            this.CadetName.ReadOnly = true;
+            this.labelX40.Anchor = System.Windows.Forms.AnchorStyles.None;
             // 
-            // CadetFatherName
             // 
-            this.CadetFatherName.HeaderText = "Father Name";
-            this.CadetFatherName.Name = "CadetFatherName";
-            this.CadetFatherName.ReadOnly = true;
             // 
-            // MobileNumber
+            this.labelX40.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX40.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX40.ForeColor = System.Drawing.Color.Black;
+            this.labelX40.Location = new System.Drawing.Point(20, 9);
+            this.labelX40.Name = "labelX40";
+            this.labelX40.Size = new System.Drawing.Size(138, 23);
+            this.labelX40.TabIndex = 0;
+            this.labelX40.Text = "User Picture";
+            this.labelX40.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
-            this.MobileNumber.HeaderText = "Mobile No";
-            this.MobileNumber.Name = "MobileNumber";
-            this.MobileNumber.ReadOnly = true;
+            // UradioButtonLeftThumb
             // 
-            // PAKNumber
+            this.UradioButtonLeftThumb.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.UradioButtonLeftThumb.AutoSize = true;
+            this.UradioButtonLeftThumb.Checked = true;
+            this.UradioButtonLeftThumb.Font = new System.Drawing.Font("Arial", 10F);
+            this.UradioButtonLeftThumb.ForeColor = System.Drawing.Color.Black;
+            this.UradioButtonLeftThumb.Location = new System.Drawing.Point(185, 200);
+            this.UradioButtonLeftThumb.Name = "UradioButtonLeftThumb";
+            this.UradioButtonLeftThumb.Size = new System.Drawing.Size(134, 20);
+            this.UradioButtonLeftThumb.TabIndex = 3;
+            this.UradioButtonLeftThumb.TabStop = true;
+            this.UradioButtonLeftThumb.Text = "Scan Left Thumb";
+            this.UradioButtonLeftThumb.UseVisualStyleBackColor = true;
             // 
-            this.PAKNumber.HeaderText = "PAK Number";
-            this.PAKNumber.Name = "PAKNumber";
-            this.PAKNumber.ReadOnly = true;
+            // uCadetPic
             // 
-            // CNIC
+            this.uCadetPic.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.uCadetPic.BackColor = System.Drawing.Color.LightGray;
+            this.uCadetPic.Location = new System.Drawing.Point(20, 38);
+            this.uCadetPic.Name = "uCadetPic";
+            this.uCadetPic.Size = new System.Drawing.Size(138, 153);
+            this.uCadetPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.uCadetPic.TabIndex = 17;
+            this.uCadetPic.TabStop = false;
             // 
-            this.CNIC.HeaderText = "CNIC";
-            this.CNIC.Name = "CNIC";
-            this.CNIC.ReadOnly = true;
+            // uThumbRight
             // 
-            // Tape
+            this.uThumbRight.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.uThumbRight.BackColor = System.Drawing.Color.LightGray;
+            this.uThumbRight.Location = new System.Drawing.Point(339, 38);
+            this.uThumbRight.Name = "uThumbRight";
+            this.uThumbRight.Size = new System.Drawing.Size(138, 153);
+            this.uThumbRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.uThumbRight.TabIndex = 17;
+            this.uThumbRight.TabStop = false;
             // 
-            this.Tape.HeaderText = "Tape";
-            this.Tape.Name = "Tape";
-            this.Tape.ReadOnly = true;
-            this.Tape.Width = 40;
+            // uThumbLeft
             // 
-            // CourseName
+            this.uThumbLeft.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.uThumbLeft.BackColor = System.Drawing.Color.LightGray;
+            this.uThumbLeft.Location = new System.Drawing.Point(185, 38);
+            this.uThumbLeft.Name = "uThumbLeft";
+            this.uThumbLeft.Size = new System.Drawing.Size(138, 153);
+            this.uThumbLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.uThumbLeft.TabIndex = 17;
+            this.uThumbLeft.TabStop = false;
             // 
-            this.CourseName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CourseName.HeaderText = "Course Name";
-            this.CourseName.Name = "CourseName";
-            this.CourseName.ReadOnly = true;
+            // labelX41
             // 
-            // cbAll
+            this.labelX41.Anchor = System.Windows.Forms.AnchorStyles.None;
             // 
-            this.cbAll.AutoSize = true;
-            this.cbAll.Location = new System.Drawing.Point(62, 9);
-            this.cbAll.Name = "cbAll";
-            this.cbAll.Size = new System.Drawing.Size(15, 14);
-            this.cbAll.TabIndex = 74;
-            this.cbAll.UseVisualStyleBackColor = true;
-            this.cbAll.CheckedChanged += new System.EventHandler(this.cbAll_CheckedChanged);
             // 
-            // tabIRemove
             // 
-            this.tabIRemove.AttachedControl = this.tabControlPanel2;
-            this.tabIRemove.Name = "tabIRemove";
-            this.tabIRemove.Text = "Remove Cadet";
+            this.labelX41.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX41.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX41.ForeColor = System.Drawing.Color.Black;
+            this.labelX41.Location = new System.Drawing.Point(185, 9);
+            this.labelX41.Name = "labelX41";
+            this.labelX41.Size = new System.Drawing.Size(138, 23);
+            this.labelX41.TabIndex = 2;
+            this.labelX41.Text = "Left Thumb";
+            this.labelX41.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // labelX42
+            // 
+            this.labelX42.Anchor = System.Windows.Forms.AnchorStyles.None;
+            // 
+            // 
+            // 
+            this.labelX42.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX42.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX42.ForeColor = System.Drawing.Color.Black;
+            this.labelX42.Location = new System.Drawing.Point(339, 9);
+            this.labelX42.Name = "labelX42";
+            this.labelX42.Size = new System.Drawing.Size(138, 23);
+            this.labelX42.TabIndex = 4;
+            this.labelX42.Text = "Right Thumb";
+            this.labelX42.TextAlignment = System.Drawing.StringAlignment.Center;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.groupBox6.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox6.Controls.Add(this.utbRFIDCard);
+            this.groupBox6.Controls.Add(this.labelX43);
+            this.groupBox6.Controls.Add(this.uchkSeniorCadet);
+            this.groupBox6.Controls.Add(this.uchkJuniorCadet);
+            this.groupBox6.Controls.Add(this.labelX44);
+            this.groupBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.groupBox6.ForeColor = System.Drawing.Color.Black;
+            this.groupBox6.Location = new System.Drawing.Point(19, 21);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(491, 76);
+            this.groupBox6.TabIndex = 7;
+            this.groupBox6.TabStop = false;
+            // 
+            // utbRFIDCard
+            // 
+            this.utbRFIDCard.Anchor = System.Windows.Forms.AnchorStyles.None;
+            // 
+            // 
+            // 
+            this.utbRFIDCard.Border.Class = "TextBoxBorder";
+            this.utbRFIDCard.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.utbRFIDCard.DisabledBackColor = System.Drawing.Color.White;
+            this.utbRFIDCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.utbRFIDCard.Location = new System.Drawing.Point(130, 18);
+            this.utbRFIDCard.MaxLength = 10;
+            this.utbRFIDCard.Name = "utbRFIDCard";
+            this.utbRFIDCard.PreventEnterBeep = true;
+            this.utbRFIDCard.Size = new System.Drawing.Size(257, 26);
+            this.utbRFIDCard.TabIndex = 1;
+            this.utbRFIDCard.TextChanged += new System.EventHandler(this.textBoxX11_TextChanged);
+            // 
+            // labelX43
+            // 
+            this.labelX43.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX43.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX43.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX43.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX43.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelX43.Location = new System.Drawing.Point(40, 46);
+            this.labelX43.Name = "labelX43";
+            this.labelX43.Size = new System.Drawing.Size(60, 23);
+            this.labelX43.TabIndex = 2;
+            this.labelX43.Text = "Role:";
+            // 
+            // uchkSeniorCadet
+            // 
+            this.uchkSeniorCadet.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.uchkSeniorCadet.AutoSize = true;
+            this.uchkSeniorCadet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uchkSeniorCadet.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.uchkSeniorCadet.Location = new System.Drawing.Point(283, 50);
+            this.uchkSeniorCadet.Name = "uchkSeniorCadet";
+            this.uchkSeniorCadet.Size = new System.Drawing.Size(104, 20);
+            this.uchkSeniorCadet.TabIndex = 4;
+            this.uchkSeniorCadet.TabStop = true;
+            this.uchkSeniorCadet.Text = "Senior Cadet";
+            this.uchkSeniorCadet.UseVisualStyleBackColor = true;
+            // 
+            // uchkJuniorCadet
+            // 
+            this.uchkJuniorCadet.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.uchkJuniorCadet.AutoSize = true;
+            this.uchkJuniorCadet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.uchkJuniorCadet.ForeColor = System.Drawing.SystemColors.MenuText;
+            this.uchkJuniorCadet.Location = new System.Drawing.Point(164, 50);
+            this.uchkJuniorCadet.Name = "uchkJuniorCadet";
+            this.uchkJuniorCadet.Size = new System.Drawing.Size(101, 20);
+            this.uchkJuniorCadet.TabIndex = 3;
+            this.uchkJuniorCadet.TabStop = true;
+            this.uchkJuniorCadet.Text = "Junior Cadet";
+            this.uchkJuniorCadet.UseVisualStyleBackColor = true;
+            // 
+            // labelX44
+            // 
+            this.labelX44.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX44.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX44.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX44.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX44.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelX44.Location = new System.Drawing.Point(40, 17);
+            this.labelX44.Name = "labelX44";
+            this.labelX44.Size = new System.Drawing.Size(92, 23);
+            this.labelX44.TabIndex = 0;
+            this.labelX44.Text = "RFID Card:";
+            // 
+            // groupPanel7
+            // 
+            this.groupPanel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.groupPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
+            this.groupPanel7.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel7.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel7.Controls.Add(this.ucbBloodGroup);
+            this.groupPanel7.Controls.Add(this.utbCadetName);
+            this.groupPanel7.Controls.Add(this.utbMobile);
+            this.groupPanel7.Controls.Add(this.labelX29);
+            this.groupPanel7.Controls.Add(this.labelX30);
+            this.groupPanel7.Controls.Add(this.labelX31);
+            this.groupPanel7.Controls.Add(this.labelX32);
+            this.groupPanel7.Controls.Add(this.ucbSeniorOfficer);
+            this.groupPanel7.Controls.Add(this.utbContact);
+            this.groupPanel7.Controls.Add(this.utbCNIC);
+            this.groupPanel7.Controls.Add(this.ucbTape);
+            this.groupPanel7.Controls.Add(this.labelX33);
+            this.groupPanel7.Controls.Add(this.labelX34);
+            this.groupPanel7.Controls.Add(this.labelX35);
+            this.groupPanel7.Controls.Add(this.ucbCourse);
+            this.groupPanel7.Controls.Add(this.utbFatherName);
+            this.groupPanel7.Controls.Add(this.labelX36);
+            this.groupPanel7.Controls.Add(this.labelX37);
+            this.groupPanel7.Controls.Add(this.utbPAK);
+            this.groupPanel7.Controls.Add(this.labelX38);
+            this.groupPanel7.Controls.Add(this.labelX39);
+            this.groupPanel7.Controls.Add(this.utbAddress);
+            this.groupPanel7.DisabledBackColor = System.Drawing.Color.Empty;
+            this.groupPanel7.Location = new System.Drawing.Point(7, 55);
+            this.groupPanel7.Name = "groupPanel7";
+            this.groupPanel7.Size = new System.Drawing.Size(375, 421);
+            // 
+            // 
+            // 
+            this.groupPanel7.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
+            this.groupPanel7.Style.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
+            this.groupPanel7.Style.BackColorGradientAngle = 90;
+            this.groupPanel7.Style.BackgroundImagePosition = DevComponents.DotNetBar.eStyleBackgroundImage.Center;
+            this.groupPanel7.Style.BorderBottomWidth = 1;
+            this.groupPanel7.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.MenuUnusedBackground;
+            this.groupPanel7.Style.BorderLeftWidth = 1;
+            this.groupPanel7.Style.BorderRightWidth = 1;
+            this.groupPanel7.Style.BorderTopWidth = 1;
+            this.groupPanel7.Style.CornerDiameter = 4;
+            this.groupPanel7.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel7.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel7.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel7.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // 
+            // 
+            this.groupPanel7.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.groupPanel7.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel7.TabIndex = 92;
+            // 
+            // ucbBloodGroup
+            // 
+            this.ucbBloodGroup.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ucbBloodGroup.Font = new System.Drawing.Font("Arial", 12F);
+            this.ucbBloodGroup.FormattingEnabled = true;
+            this.ucbBloodGroup.Items.AddRange(new object[] {
+            "A+",
+            "B+",
+            "AB+",
+            "A-",
+            "B-",
+            "AB-",
+            "O+",
+            "O-"});
+            this.ucbBloodGroup.Location = new System.Drawing.Point(145, 201);
+            this.ucbBloodGroup.Name = "ucbBloodGroup";
+            this.ucbBloodGroup.Size = new System.Drawing.Size(210, 26);
+            this.ucbBloodGroup.TabIndex = 5;
+            // 
+            // utbCadetName
+            // 
+            this.utbCadetName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            // 
+            // 
+            // 
+            this.utbCadetName.Border.Class = "TextBoxBorder";
+            this.utbCadetName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.utbCadetName.DisabledBackColor = System.Drawing.Color.White;
+            this.utbCadetName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.utbCadetName.Location = new System.Drawing.Point(145, 28);
+            this.utbCadetName.Name = "utbCadetName";
+            this.utbCadetName.PreventEnterBeep = true;
+            this.utbCadetName.Size = new System.Drawing.Size(210, 26);
+            this.utbCadetName.TabIndex = 0;
+            // 
+            // utbMobile
+            // 
+            this.utbMobile.Anchor = System.Windows.Forms.AnchorStyles.None;
+            // 
+            // 
+            // 
+            this.utbMobile.Border.Class = "TextBoxBorder";
+            this.utbMobile.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.utbMobile.DisabledBackColor = System.Drawing.Color.White;
+            this.utbMobile.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.utbMobile.Location = new System.Drawing.Point(145, 269);
+            this.utbMobile.Name = "utbMobile";
+            this.utbMobile.PreventEnterBeep = true;
+            this.utbMobile.Size = new System.Drawing.Size(210, 26);
+            this.utbMobile.TabIndex = 7;
+            // 
+            // labelX29
+            // 
+            this.labelX29.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX29.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX29.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX29.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX29.Location = new System.Drawing.Point(20, 234);
+            this.labelX29.Name = "labelX29";
+            this.labelX29.Size = new System.Drawing.Size(115, 23);
+            this.labelX29.TabIndex = 18;
+            this.labelX29.Text = "Contact #:";
+            // 
+            // labelX30
+            // 
+            this.labelX30.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX30.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX30.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX30.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX30.Location = new System.Drawing.Point(20, 27);
+            this.labelX30.Name = "labelX30";
+            this.labelX30.Size = new System.Drawing.Size(115, 23);
+            this.labelX30.TabIndex = 12;
+            this.labelX30.Text = "Cadet Name:";
+            // 
+            // labelX31
+            // 
+            this.labelX31.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX31.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX31.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX31.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX31.Location = new System.Drawing.Point(20, 371);
+            this.labelX31.Name = "labelX31";
+            this.labelX31.Size = new System.Drawing.Size(115, 23);
+            this.labelX31.TabIndex = 22;
+            this.labelX31.Text = "Senior Officer:";
+            // 
+            // labelX32
+            // 
+            this.labelX32.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX32.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX32.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX32.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX32.Location = new System.Drawing.Point(20, 303);
+            this.labelX32.Name = "labelX32";
+            this.labelX32.Size = new System.Drawing.Size(115, 23);
+            this.labelX32.TabIndex = 20;
+            this.labelX32.Text = "Tape:";
+            // 
+            // ucbSeniorOfficer
+            // 
+            this.ucbSeniorOfficer.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ucbSeniorOfficer.Font = new System.Drawing.Font("Arial", 12F);
+            this.ucbSeniorOfficer.FormattingEnabled = true;
+            this.ucbSeniorOfficer.Location = new System.Drawing.Point(145, 371);
+            this.ucbSeniorOfficer.Name = "ucbSeniorOfficer";
+            this.ucbSeniorOfficer.Size = new System.Drawing.Size(210, 26);
+            this.ucbSeniorOfficer.TabIndex = 10;
+            // 
+            // utbContact
+            // 
+            this.utbContact.Anchor = System.Windows.Forms.AnchorStyles.None;
+            // 
+            // 
+            // 
+            this.utbContact.Border.Class = "TextBoxBorder";
+            this.utbContact.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.utbContact.DisabledBackColor = System.Drawing.Color.White;
+            this.utbContact.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.utbContact.Location = new System.Drawing.Point(145, 235);
+            this.utbContact.Name = "utbContact";
+            this.utbContact.PreventEnterBeep = true;
+            this.utbContact.Size = new System.Drawing.Size(210, 26);
+            this.utbContact.TabIndex = 6;
+            // 
+            // utbCNIC
+            // 
+            this.utbCNIC.Anchor = System.Windows.Forms.AnchorStyles.None;
+            // 
+            // 
+            // 
+            this.utbCNIC.Border.Class = "TextBoxBorder";
+            this.utbCNIC.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.utbCNIC.DisabledBackColor = System.Drawing.Color.White;
+            this.utbCNIC.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.utbCNIC.Location = new System.Drawing.Point(145, 167);
+            this.utbCNIC.Name = "utbCNIC";
+            this.utbCNIC.PreventEnterBeep = true;
+            this.utbCNIC.Size = new System.Drawing.Size(210, 26);
+            this.utbCNIC.TabIndex = 4;
+            // 
+            // ucbTape
+            // 
+            this.ucbTape.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ucbTape.Font = new System.Drawing.Font("Arial", 12F);
+            this.ucbTape.FormattingEnabled = true;
+            this.ucbTape.Location = new System.Drawing.Point(145, 303);
+            this.ucbTape.Name = "ucbTape";
+            this.ucbTape.Size = new System.Drawing.Size(210, 26);
+            this.ucbTape.TabIndex = 8;
+            // 
+            // labelX33
+            // 
+            this.labelX33.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX33.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX33.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX33.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX33.Location = new System.Drawing.Point(20, 201);
+            this.labelX33.Name = "labelX33";
+            this.labelX33.Size = new System.Drawing.Size(115, 23);
+            this.labelX33.TabIndex = 17;
+            this.labelX33.Text = "Blood Group:";
+            // 
+            // labelX34
+            // 
+            this.labelX34.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX34.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX34.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX34.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX34.Location = new System.Drawing.Point(20, 340);
+            this.labelX34.Name = "labelX34";
+            this.labelX34.Size = new System.Drawing.Size(115, 23);
+            this.labelX34.TabIndex = 21;
+            this.labelX34.Text = "Course:";
+            // 
+            // labelX35
+            // 
+            this.labelX35.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX35.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX35.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX35.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX35.Location = new System.Drawing.Point(20, 268);
+            this.labelX35.Name = "labelX35";
+            this.labelX35.Size = new System.Drawing.Size(115, 23);
+            this.labelX35.TabIndex = 19;
+            this.labelX35.Text = "Mobile #:";
+            // 
+            // ucbCourse
+            // 
+            this.ucbCourse.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.ucbCourse.Font = new System.Drawing.Font("Arial", 12F);
+            this.ucbCourse.FormattingEnabled = true;
+            this.ucbCourse.Location = new System.Drawing.Point(145, 337);
+            this.ucbCourse.Name = "ucbCourse";
+            this.ucbCourse.Size = new System.Drawing.Size(210, 26);
+            this.ucbCourse.TabIndex = 9;
+            // 
+            // utbFatherName
+            // 
+            this.utbFatherName.Anchor = System.Windows.Forms.AnchorStyles.None;
+            // 
+            // 
+            // 
+            this.utbFatherName.Border.Class = "TextBoxBorder";
+            this.utbFatherName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.utbFatherName.DisabledBackColor = System.Drawing.Color.White;
+            this.utbFatherName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.utbFatherName.Location = new System.Drawing.Point(145, 62);
+            this.utbFatherName.Name = "utbFatherName";
+            this.utbFatherName.PreventEnterBeep = true;
+            this.utbFatherName.Size = new System.Drawing.Size(210, 26);
+            this.utbFatherName.TabIndex = 1;
+            // 
+            // labelX36
+            // 
+            this.labelX36.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX36.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX36.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX36.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX36.Location = new System.Drawing.Point(20, 66);
+            this.labelX36.Name = "labelX36";
+            this.labelX36.Size = new System.Drawing.Size(115, 23);
+            this.labelX36.TabIndex = 13;
+            this.labelX36.Text = "F. Name:";
+            // 
+            // labelX37
+            // 
+            this.labelX37.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX37.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX37.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX37.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX37.Location = new System.Drawing.Point(20, 166);
+            this.labelX37.Name = "labelX37";
+            this.labelX37.Size = new System.Drawing.Size(115, 23);
+            this.labelX37.TabIndex = 16;
+            this.labelX37.Text = "CNIC:";
+            // 
+            // utbPAK
+            // 
+            this.utbPAK.Anchor = System.Windows.Forms.AnchorStyles.None;
+            // 
+            // 
+            // 
+            this.utbPAK.Border.Class = "TextBoxBorder";
+            this.utbPAK.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.utbPAK.DisabledBackColor = System.Drawing.Color.White;
+            this.utbPAK.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.utbPAK.Location = new System.Drawing.Point(145, 96);
+            this.utbPAK.Name = "utbPAK";
+            this.utbPAK.PreventEnterBeep = true;
+            this.utbPAK.Size = new System.Drawing.Size(210, 26);
+            this.utbPAK.TabIndex = 2;
+            // 
+            // labelX38
+            // 
+            this.labelX38.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX38.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX38.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX38.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX38.Location = new System.Drawing.Point(20, 129);
+            this.labelX38.Name = "labelX38";
+            this.labelX38.Size = new System.Drawing.Size(115, 23);
+            this.labelX38.TabIndex = 15;
+            this.labelX38.Text = "Address:";
+            // 
+            // labelX39
+            // 
+            this.labelX39.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX39.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX39.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX39.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX39.Location = new System.Drawing.Point(20, 95);
+            this.labelX39.Name = "labelX39";
+            this.labelX39.Size = new System.Drawing.Size(115, 23);
+            this.labelX39.TabIndex = 14;
+            this.labelX39.Text = "PAK #:";
+            // 
+            // utbAddress
+            // 
+            this.utbAddress.Anchor = System.Windows.Forms.AnchorStyles.None;
+            // 
+            // 
+            // 
+            this.utbAddress.Border.Class = "TextBoxBorder";
+            this.utbAddress.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.utbAddress.DisabledBackColor = System.Drawing.Color.White;
+            this.utbAddress.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.utbAddress.Location = new System.Drawing.Point(145, 130);
+            this.utbAddress.Name = "utbAddress";
+            this.utbAddress.PreventEnterBeep = true;
+            this.utbAddress.Size = new System.Drawing.Size(210, 26);
+            this.utbAddress.TabIndex = 3;
+            // 
+            // groupPanel5
+            // 
+            this.groupPanel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupPanel5.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel5.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel5.Controls.Add(this.btnSearchRFID);
+            this.groupPanel5.Controls.Add(this.tbSearchRFIDCard);
+            this.groupPanel5.Controls.Add(this.labelX27);
+            this.groupPanel5.DisabledBackColor = System.Drawing.Color.Empty;
+            this.groupPanel5.Location = new System.Drawing.Point(7, 4);
+            this.groupPanel5.Name = "groupPanel5";
+            this.groupPanel5.Size = new System.Drawing.Size(910, 46);
+            // 
+            // 
+            // 
+            this.groupPanel5.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel5.Style.BackColorGradientAngle = 90;
+            this.groupPanel5.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.groupPanel5.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel5.Style.BorderBottomWidth = 1;
+            this.groupPanel5.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel5.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel5.Style.BorderLeftWidth = 1;
+            this.groupPanel5.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel5.Style.BorderRightWidth = 1;
+            this.groupPanel5.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel5.Style.BorderTopWidth = 1;
+            this.groupPanel5.Style.CornerDiameter = 4;
+            this.groupPanel5.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel5.Style.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupPanel5.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel5.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // 
+            // 
+            this.groupPanel5.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.groupPanel5.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel5.TabIndex = 91;
+            // 
+            // btnSearchRFID
+            // 
+            this.btnSearchRFID.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnSearchRFID.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnSearchRFID.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnSearchRFID.Location = new System.Drawing.Point(524, 7);
+            this.btnSearchRFID.Name = "btnSearchRFID";
+            this.btnSearchRFID.Size = new System.Drawing.Size(138, 29);
+            this.btnSearchRFID.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnSearchRFID.TabIndex = 4;
+            this.btnSearchRFID.Text = "Search";
+            this.btnSearchRFID.Click += new System.EventHandler(this.btnSearchRFID_Click);
+            // 
+            // tbSearchRFIDCard
+            // 
+            this.tbSearchRFIDCard.Anchor = System.Windows.Forms.AnchorStyles.None;
+            // 
+            // 
+            // 
+            this.tbSearchRFIDCard.Border.Class = "TextBoxBorder";
+            this.tbSearchRFIDCard.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.tbSearchRFIDCard.DisabledBackColor = System.Drawing.Color.White;
+            this.tbSearchRFIDCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSearchRFIDCard.Location = new System.Drawing.Point(250, 8);
+            this.tbSearchRFIDCard.MaxLength = 10;
+            this.tbSearchRFIDCard.Name = "tbSearchRFIDCard";
+            this.tbSearchRFIDCard.PreventEnterBeep = true;
+            this.tbSearchRFIDCard.Size = new System.Drawing.Size(268, 26);
+            this.tbSearchRFIDCard.TabIndex = 3;
+            // 
+            // labelX27
+            // 
+            this.labelX27.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX27.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX27.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX27.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX27.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelX27.Location = new System.Drawing.Point(156, 8);
+            this.labelX27.Name = "labelX27";
+            this.labelX27.Size = new System.Drawing.Size(88, 23);
+            this.labelX27.TabIndex = 2;
+            this.labelX27.Text = "RFID Card:";
+            // 
+            // tabItemUpdate
+            // 
+            this.tabItemUpdate.AttachedControl = this.tabControlPanel3;
+            this.tabItemUpdate.Name = "tabItemUpdate";
+            this.tabItemUpdate.Text = "Update Cadet";
             // 
             // tabControlPanel1
             // 
@@ -957,7 +1102,7 @@
             | DevComponents.DotNetBar.eBorderSide.Bottom)));
             this.tabControlPanel1.Style.GradientAngle = 90;
             this.tabControlPanel1.TabIndex = 1;
-            this.tabControlPanel1.TabItem = this.tabItem1;
+            this.tabControlPanel1.TabItem = this.tabItemNew;
             // 
             // groupPanel2
             // 
@@ -1646,11 +1791,655 @@
             this.labelX14.TabIndex = 0;
             this.labelX14.Text = "RFID Card:";
             // 
-            // tabItem1
+            // tabItemNew
             // 
-            this.tabItem1.AttachedControl = this.tabControlPanel1;
-            this.tabItem1.Name = "tabItem1";
-            this.tabItem1.Text = "New Cadet";
+            this.tabItemNew.AttachedControl = this.tabControlPanel1;
+            this.tabItemNew.Name = "tabItemNew";
+            this.tabItemNew.Text = "New Cadet";
+            // 
+            // tabControlPanel2
+            // 
+            this.tabControlPanel2.Controls.Add(this.groupPanel3);
+            this.tabControlPanel2.Controls.Add(this.groupPanel6);
+            this.tabControlPanel2.Controls.Add(this.groupPanel4);
+            this.tabControlPanel2.DisabledBackColor = System.Drawing.Color.Empty;
+            this.tabControlPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControlPanel2.Location = new System.Drawing.Point(0, 26);
+            this.tabControlPanel2.Name = "tabControlPanel2";
+            this.tabControlPanel2.Padding = new System.Windows.Forms.Padding(1);
+            this.tabControlPanel2.Size = new System.Drawing.Size(934, 485);
+            this.tabControlPanel2.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
+            this.tabControlPanel2.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
+            this.tabControlPanel2.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
+            this.tabControlPanel2.Style.BorderColor.Color = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(156)))));
+            this.tabControlPanel2.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right) 
+            | DevComponents.DotNetBar.eBorderSide.Bottom)));
+            this.tabControlPanel2.Style.GradientAngle = 90;
+            this.tabControlPanel2.TabIndex = 5;
+            this.tabControlPanel2.TabItem = this.tabIRemove;
+            // 
+            // groupPanel3
+            // 
+            this.groupPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupPanel3.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel3.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel3.Controls.Add(this.textBoxSearchPak);
+            this.groupPanel3.Controls.Add(this.labelX22);
+            this.groupPanel3.Controls.Add(this.textBoxSearchCourse);
+            this.groupPanel3.Controls.Add(this.labelX21);
+            this.groupPanel3.Controls.Add(this.textBoxSearchTape);
+            this.groupPanel3.Controls.Add(this.labelX20);
+            this.groupPanel3.DisabledBackColor = System.Drawing.Color.Empty;
+            this.groupPanel3.Location = new System.Drawing.Point(3, 3);
+            this.groupPanel3.Name = "groupPanel3";
+            this.groupPanel3.Size = new System.Drawing.Size(929, 46);
+            // 
+            // 
+            // 
+            this.groupPanel3.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel3.Style.BackColorGradientAngle = 90;
+            this.groupPanel3.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.groupPanel3.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel3.Style.BorderBottomWidth = 1;
+            this.groupPanel3.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel3.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel3.Style.BorderLeftWidth = 1;
+            this.groupPanel3.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel3.Style.BorderRightWidth = 1;
+            this.groupPanel3.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel3.Style.BorderTopWidth = 1;
+            this.groupPanel3.Style.CornerDiameter = 4;
+            this.groupPanel3.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel3.Style.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupPanel3.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel3.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // 
+            // 
+            this.groupPanel3.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.groupPanel3.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel3.TabIndex = 90;
+            // 
+            // textBoxSearchPak
+            // 
+            this.textBoxSearchPak.Anchor = System.Windows.Forms.AnchorStyles.None;
+            // 
+            // 
+            // 
+            this.textBoxSearchPak.Border.Class = "TextBoxBorder";
+            this.textBoxSearchPak.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.textBoxSearchPak.DisabledBackColor = System.Drawing.Color.White;
+            this.textBoxSearchPak.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSearchPak.Location = new System.Drawing.Point(700, 8);
+            this.textBoxSearchPak.MaxLength = 10;
+            this.textBoxSearchPak.Name = "textBoxSearchPak";
+            this.textBoxSearchPak.PreventEnterBeep = true;
+            this.textBoxSearchPak.Size = new System.Drawing.Size(173, 26);
+            this.textBoxSearchPak.TabIndex = 7;
+            this.textBoxSearchPak.TextChanged += new System.EventHandler(this.textBoxSearchPak_TextChanged);
+            // 
+            // labelX22
+            // 
+            this.labelX22.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX22.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX22.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX22.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX22.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelX22.Location = new System.Drawing.Point(636, 9);
+            this.labelX22.Name = "labelX22";
+            this.labelX22.Size = new System.Drawing.Size(58, 23);
+            this.labelX22.TabIndex = 6;
+            this.labelX22.Text = "Pak No:";
+            // 
+            // textBoxSearchCourse
+            // 
+            this.textBoxSearchCourse.Anchor = System.Windows.Forms.AnchorStyles.None;
+            // 
+            // 
+            // 
+            this.textBoxSearchCourse.Border.Class = "TextBoxBorder";
+            this.textBoxSearchCourse.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.textBoxSearchCourse.DisabledBackColor = System.Drawing.Color.White;
+            this.textBoxSearchCourse.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSearchCourse.Location = new System.Drawing.Point(406, 7);
+            this.textBoxSearchCourse.MaxLength = 10;
+            this.textBoxSearchCourse.Name = "textBoxSearchCourse";
+            this.textBoxSearchCourse.PreventEnterBeep = true;
+            this.textBoxSearchCourse.Size = new System.Drawing.Size(173, 26);
+            this.textBoxSearchCourse.TabIndex = 5;
+            this.textBoxSearchCourse.TextChanged += new System.EventHandler(this.textBoxSearchCourse_TextChanged);
+            // 
+            // labelX21
+            // 
+            this.labelX21.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX21.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX21.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX21.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX21.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelX21.Location = new System.Drawing.Point(337, 8);
+            this.labelX21.Name = "labelX21";
+            this.labelX21.Size = new System.Drawing.Size(63, 23);
+            this.labelX21.TabIndex = 4;
+            this.labelX21.Text = "Course:";
+            // 
+            // textBoxSearchTape
+            // 
+            this.textBoxSearchTape.Anchor = System.Windows.Forms.AnchorStyles.None;
+            // 
+            // 
+            // 
+            this.textBoxSearchTape.Border.Class = "TextBoxBorder";
+            this.textBoxSearchTape.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.textBoxSearchTape.DisabledBackColor = System.Drawing.Color.White;
+            this.textBoxSearchTape.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxSearchTape.Location = new System.Drawing.Point(108, 7);
+            this.textBoxSearchTape.MaxLength = 10;
+            this.textBoxSearchTape.Name = "textBoxSearchTape";
+            this.textBoxSearchTape.PreventEnterBeep = true;
+            this.textBoxSearchTape.Size = new System.Drawing.Size(173, 26);
+            this.textBoxSearchTape.TabIndex = 3;
+            this.textBoxSearchTape.TextChanged += new System.EventHandler(this.textBoxSearchTape_TextChanged);
+            // 
+            // labelX20
+            // 
+            this.labelX20.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX20.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX20.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX20.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX20.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.labelX20.Location = new System.Drawing.Point(56, 8);
+            this.labelX20.Name = "labelX20";
+            this.labelX20.Size = new System.Drawing.Size(46, 23);
+            this.labelX20.TabIndex = 2;
+            this.labelX20.Text = "Tape:";
+            // 
+            // groupPanel6
+            // 
+            this.groupPanel6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupPanel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
+            this.groupPanel6.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel6.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel6.Controls.Add(this.Cadetidd);
+            this.groupPanel6.Controls.Add(this.labelX24);
+            this.groupPanel6.Controls.Add(this.txCourse);
+            this.groupPanel6.Controls.Add(this.btnRemoveCadet);
+            this.groupPanel6.Controls.Add(this.pictureBox);
+            this.groupPanel6.Controls.Add(this.labelX3);
+            this.groupPanel6.Controls.Add(this.txMobile);
+            this.groupPanel6.Controls.Add(this.txFname);
+            this.groupPanel6.Controls.Add(this.labelX12);
+            this.groupPanel6.Controls.Add(this.labelX13);
+            this.groupPanel6.Controls.Add(this.txCnic);
+            this.groupPanel6.Controls.Add(this.txTape);
+            this.groupPanel6.Controls.Add(this.labelX15);
+            this.groupPanel6.Controls.Add(this.labelX19);
+            this.groupPanel6.Controls.Add(this.txPakNo);
+            this.groupPanel6.Controls.Add(this.txCname);
+            this.groupPanel6.Controls.Add(this.labelX23);
+            this.groupPanel6.DisabledBackColor = System.Drawing.Color.Empty;
+            this.groupPanel6.Location = new System.Drawing.Point(2, 265);
+            this.groupPanel6.Name = "groupPanel6";
+            this.groupPanel6.Size = new System.Drawing.Size(928, 220);
+            // 
+            // 
+            // 
+            this.groupPanel6.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
+            this.groupPanel6.Style.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
+            this.groupPanel6.Style.BackColorGradientAngle = 90;
+            this.groupPanel6.Style.BackgroundImagePosition = DevComponents.DotNetBar.eStyleBackgroundImage.Center;
+            this.groupPanel6.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel6.Style.BorderBottomWidth = 1;
+            this.groupPanel6.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.ItemExpandedBackground2;
+            this.groupPanel6.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel6.Style.BorderLeftWidth = 1;
+            this.groupPanel6.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel6.Style.BorderRightWidth = 1;
+            this.groupPanel6.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel6.Style.BorderTopWidth = 1;
+            this.groupPanel6.Style.CornerDiameter = 4;
+            this.groupPanel6.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel6.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
+            this.groupPanel6.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel6.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // 
+            // 
+            this.groupPanel6.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.groupPanel6.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel6.TabIndex = 89;
+            // 
+            // Cadetidd
+            // 
+            this.Cadetidd.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.Cadetidd.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.Cadetidd.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.Cadetidd.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Cadetidd.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Cadetidd.Location = new System.Drawing.Point(9, 11);
+            this.Cadetidd.Name = "Cadetidd";
+            this.Cadetidd.Size = new System.Drawing.Size(52, 19);
+            this.Cadetidd.TabIndex = 51;
+            this.Cadetidd.Text = "Cadetid";
+            this.Cadetidd.Visible = false;
+            // 
+            // labelX24
+            // 
+            this.labelX24.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX24.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX24.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX24.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX24.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelX24.Location = new System.Drawing.Point(83, 185);
+            this.labelX24.Name = "labelX24";
+            this.labelX24.Size = new System.Drawing.Size(96, 23);
+            this.labelX24.TabIndex = 49;
+            this.labelX24.Text = "Course:";
+            // 
+            // txCourse
+            // 
+            this.txCourse.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txCourse.BackColor = System.Drawing.Color.OldLace;
+            // 
+            // 
+            // 
+            this.txCourse.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txCourse.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txCourse.Location = new System.Drawing.Point(200, 185);
+            this.txCourse.Name = "txCourse";
+            this.txCourse.Size = new System.Drawing.Size(225, 23);
+            this.txCourse.TabIndex = 50;
+            // 
+            // btnRemoveCadet
+            // 
+            this.btnRemoveCadet.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.btnRemoveCadet.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btnRemoveCadet.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.btnRemoveCadet.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveCadet.Location = new System.Drawing.Point(692, 73);
+            this.btnRemoveCadet.Name = "btnRemoveCadet";
+            this.btnRemoveCadet.Size = new System.Drawing.Size(173, 79);
+            this.btnRemoveCadet.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.btnRemoveCadet.TabIndex = 48;
+            this.btnRemoveCadet.Text = "Remove Cadet";
+            this.btnRemoveCadet.Click += new System.EventHandler(this.btnRemoveCadet_Click);
+            // 
+            // pictureBox
+            // 
+            this.pictureBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.pictureBox.BackColor = System.Drawing.Color.DarkGray;
+            this.pictureBox.Location = new System.Drawing.Point(468, 17);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(185, 192);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox.TabIndex = 45;
+            this.pictureBox.TabStop = false;
+            // 
+            // labelX3
+            // 
+            this.labelX3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX3.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelX3.Location = new System.Drawing.Point(82, 129);
+            this.labelX3.Name = "labelX3";
+            this.labelX3.Size = new System.Drawing.Size(77, 23);
+            this.labelX3.TabIndex = 25;
+            this.labelX3.Text = "Pak No:";
+            // 
+            // txMobile
+            // 
+            this.txMobile.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txMobile.BackColor = System.Drawing.Color.OldLace;
+            // 
+            // 
+            // 
+            this.txMobile.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txMobile.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txMobile.Location = new System.Drawing.Point(200, 73);
+            this.txMobile.Name = "txMobile";
+            this.txMobile.Size = new System.Drawing.Size(225, 23);
+            this.txMobile.TabIndex = 45;
+            // 
+            // txFname
+            // 
+            this.txFname.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txFname.BackColor = System.Drawing.Color.OldLace;
+            // 
+            // 
+            // 
+            this.txFname.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txFname.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txFname.Location = new System.Drawing.Point(200, 45);
+            this.txFname.Name = "txFname";
+            this.txFname.Size = new System.Drawing.Size(225, 23);
+            this.txFname.TabIndex = 44;
+            // 
+            // labelX12
+            // 
+            this.labelX12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX12.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX12.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX12.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX12.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelX12.Location = new System.Drawing.Point(83, 157);
+            this.labelX12.Name = "labelX12";
+            this.labelX12.Size = new System.Drawing.Size(96, 23);
+            this.labelX12.TabIndex = 13;
+            this.labelX12.Text = "Tape:";
+            // 
+            // labelX13
+            // 
+            this.labelX13.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX13.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX13.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX13.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX13.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelX13.Location = new System.Drawing.Point(83, 47);
+            this.labelX13.Name = "labelX13";
+            this.labelX13.Size = new System.Drawing.Size(111, 23);
+            this.labelX13.TabIndex = 29;
+            this.labelX13.Text = "Father Name:";
+            // 
+            // txCnic
+            // 
+            this.txCnic.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txCnic.BackColor = System.Drawing.Color.OldLace;
+            // 
+            // 
+            // 
+            this.txCnic.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txCnic.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txCnic.Location = new System.Drawing.Point(200, 101);
+            this.txCnic.Name = "txCnic";
+            this.txCnic.Size = new System.Drawing.Size(225, 23);
+            this.txCnic.TabIndex = 47;
+            // 
+            // txTape
+            // 
+            this.txTape.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txTape.BackColor = System.Drawing.Color.OldLace;
+            // 
+            // 
+            // 
+            this.txTape.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txTape.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txTape.Location = new System.Drawing.Point(200, 157);
+            this.txTape.Name = "txTape";
+            this.txTape.Size = new System.Drawing.Size(225, 23);
+            this.txTape.TabIndex = 41;
+            // 
+            // labelX15
+            // 
+            this.labelX15.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX15.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX15.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX15.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelX15.Location = new System.Drawing.Point(83, 101);
+            this.labelX15.Name = "labelX15";
+            this.labelX15.Size = new System.Drawing.Size(111, 23);
+            this.labelX15.TabIndex = 37;
+            this.labelX15.Text = "CNIC:";
+            // 
+            // labelX19
+            // 
+            this.labelX19.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX19.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX19.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX19.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX19.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelX19.Location = new System.Drawing.Point(83, 73);
+            this.labelX19.Name = "labelX19";
+            this.labelX19.Size = new System.Drawing.Size(111, 23);
+            this.labelX19.TabIndex = 33;
+            this.labelX19.Text = "Mobile No:";
+            // 
+            // txPakNo
+            // 
+            this.txPakNo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txPakNo.BackColor = System.Drawing.Color.OldLace;
+            // 
+            // 
+            // 
+            this.txPakNo.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txPakNo.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txPakNo.Location = new System.Drawing.Point(200, 129);
+            this.txPakNo.Name = "txPakNo";
+            this.txPakNo.Size = new System.Drawing.Size(225, 23);
+            this.txPakNo.TabIndex = 42;
+            // 
+            // txCname
+            // 
+            this.txCname.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txCname.BackColor = System.Drawing.Color.OldLace;
+            // 
+            // 
+            // 
+            this.txCname.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.txCname.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txCname.Location = new System.Drawing.Point(200, 17);
+            this.txCname.Name = "txCname";
+            this.txCname.Size = new System.Drawing.Size(225, 23);
+            this.txCname.TabIndex = 40;
+            // 
+            // labelX23
+            // 
+            this.labelX23.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.labelX23.BackColor = System.Drawing.Color.Transparent;
+            // 
+            // 
+            // 
+            this.labelX23.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.labelX23.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelX23.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.labelX23.Location = new System.Drawing.Point(83, 17);
+            this.labelX23.Name = "labelX23";
+            this.labelX23.Size = new System.Drawing.Size(111, 23);
+            this.labelX23.TabIndex = 11;
+            this.labelX23.Text = "Cadet Name:";
+            // 
+            // groupPanel4
+            // 
+            this.groupPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupPanel4.CanvasColor = System.Drawing.SystemColors.Control;
+            this.groupPanel4.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
+            this.groupPanel4.Controls.Add(this.gdvAllCadet);
+            this.groupPanel4.Controls.Add(this.cbAll);
+            this.groupPanel4.DisabledBackColor = System.Drawing.Color.Empty;
+            this.groupPanel4.Location = new System.Drawing.Point(3, 55);
+            this.groupPanel4.Name = "groupPanel4";
+            this.groupPanel4.Size = new System.Drawing.Size(929, 204);
+            // 
+            // 
+            // 
+            this.groupPanel4.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
+            this.groupPanel4.Style.BackColorGradientAngle = 90;
+            this.groupPanel4.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
+            this.groupPanel4.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel4.Style.BorderBottomWidth = 1;
+            this.groupPanel4.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
+            this.groupPanel4.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel4.Style.BorderLeftWidth = 1;
+            this.groupPanel4.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel4.Style.BorderRightWidth = 1;
+            this.groupPanel4.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
+            this.groupPanel4.Style.BorderTopWidth = 1;
+            this.groupPanel4.Style.CornerDiameter = 4;
+            this.groupPanel4.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
+            this.groupPanel4.Style.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupPanel4.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
+            this.groupPanel4.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
+            // 
+            // 
+            // 
+            this.groupPanel4.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            // 
+            // 
+            // 
+            this.groupPanel4.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
+            this.groupPanel4.TabIndex = 88;
+            this.groupPanel4.Text = "Available Cadets";
+            this.groupPanel4.Click += new System.EventHandler(this.groupPanel4_Click);
+            // 
+            // gdvAllCadet
+            // 
+            this.gdvAllCadet.AllowUserToAddRows = false;
+            this.gdvAllCadet.AllowUserToDeleteRows = false;
+            this.gdvAllCadet.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gdvAllCadet.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.gdvAllCadet.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gdvAllCadet.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CadetID,
+            this.CadetName,
+            this.CadetFatherName,
+            this.MobileNumber,
+            this.PAKNumber,
+            this.CNIC,
+            this.Tape,
+            this.CourseName});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gdvAllCadet.DefaultCellStyle = dataGridViewCellStyle2;
+            this.gdvAllCadet.EnableHeadersVisualStyles = false;
+            this.gdvAllCadet.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(215)))), ((int)(((byte)(229)))));
+            this.gdvAllCadet.Location = new System.Drawing.Point(6, 3);
+            this.gdvAllCadet.MultiSelect = false;
+            this.gdvAllCadet.Name = "gdvAllCadet";
+            this.gdvAllCadet.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gdvAllCadet.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.gdvAllCadet.Size = new System.Drawing.Size(914, 167);
+            this.gdvAllCadet.TabIndex = 77;
+            this.gdvAllCadet.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gdvAllCadet_CellClick);
+            // 
+            // CadetID
+            // 
+            this.CadetID.HeaderText = "CadetID";
+            this.CadetID.Name = "CadetID";
+            this.CadetID.ReadOnly = true;
+            this.CadetID.Visible = false;
+            // 
+            // CadetName
+            // 
+            this.CadetName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CadetName.HeaderText = "Cadet Name";
+            this.CadetName.Name = "CadetName";
+            this.CadetName.ReadOnly = true;
+            // 
+            // CadetFatherName
+            // 
+            this.CadetFatherName.HeaderText = "Father Name";
+            this.CadetFatherName.Name = "CadetFatherName";
+            this.CadetFatherName.ReadOnly = true;
+            // 
+            // MobileNumber
+            // 
+            this.MobileNumber.HeaderText = "Mobile No";
+            this.MobileNumber.Name = "MobileNumber";
+            this.MobileNumber.ReadOnly = true;
+            // 
+            // PAKNumber
+            // 
+            this.PAKNumber.HeaderText = "PAK Number";
+            this.PAKNumber.Name = "PAKNumber";
+            this.PAKNumber.ReadOnly = true;
+            // 
+            // CNIC
+            // 
+            this.CNIC.HeaderText = "CNIC";
+            this.CNIC.Name = "CNIC";
+            this.CNIC.ReadOnly = true;
+            // 
+            // Tape
+            // 
+            this.Tape.HeaderText = "Tape";
+            this.Tape.Name = "Tape";
+            this.Tape.ReadOnly = true;
+            this.Tape.Width = 40;
+            // 
+            // CourseName
+            // 
+            this.CourseName.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CourseName.HeaderText = "Course Name";
+            this.CourseName.Name = "CourseName";
+            this.CourseName.ReadOnly = true;
+            // 
+            // cbAll
+            // 
+            this.cbAll.AutoSize = true;
+            this.cbAll.Location = new System.Drawing.Point(62, 9);
+            this.cbAll.Name = "cbAll";
+            this.cbAll.Size = new System.Drawing.Size(15, 14);
+            this.cbAll.TabIndex = 74;
+            this.cbAll.UseVisualStyleBackColor = true;
+            this.cbAll.CheckedChanged += new System.EventHandler(this.cbAll_CheckedChanged);
+            // 
+            // tabIRemove
+            // 
+            this.tabIRemove.AttachedControl = this.tabControlPanel2;
+            this.tabIRemove.Name = "tabIRemove";
+            this.tabIRemove.Text = "Remove Cadet";
             // 
             // btnCancel
             // 
@@ -1664,790 +2453,32 @@
             // 
             this.openFileDialogSelectPicture.FileName = "openFileDialog1";
             // 
-            // tabItemUpdate
-            // 
-            this.tabItemUpdate.AttachedControl = this.tabControlPanel3;
-            this.tabItemUpdate.Name = "tabItemUpdate";
-            this.tabItemUpdate.Text = "Update Cadet";
-            // 
-            // tabControlPanel3
-            // 
-            this.tabControlPanel3.Controls.Add(this.groupPanel8);
-            this.tabControlPanel3.Controls.Add(this.groupPanel7);
-            this.tabControlPanel3.Controls.Add(this.groupPanel5);
-            this.tabControlPanel3.DisabledBackColor = System.Drawing.Color.Empty;
-            this.tabControlPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControlPanel3.Location = new System.Drawing.Point(0, 26);
-            this.tabControlPanel3.Name = "tabControlPanel3";
-            this.tabControlPanel3.Padding = new System.Windows.Forms.Padding(1);
-            this.tabControlPanel3.Size = new System.Drawing.Size(934, 485);
-            this.tabControlPanel3.Style.BackColor1.Color = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(179)))), ((int)(((byte)(231)))));
-            this.tabControlPanel3.Style.BackColor2.Color = System.Drawing.Color.FromArgb(((int)(((byte)(223)))), ((int)(((byte)(237)))), ((int)(((byte)(254)))));
-            this.tabControlPanel3.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine;
-            this.tabControlPanel3.Style.BorderColor.Color = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(97)))), ((int)(((byte)(156)))));
-            this.tabControlPanel3.Style.BorderSide = ((DevComponents.DotNetBar.eBorderSide)(((DevComponents.DotNetBar.eBorderSide.Left | DevComponents.DotNetBar.eBorderSide.Right) 
-            | DevComponents.DotNetBar.eBorderSide.Bottom)));
-            this.tabControlPanel3.Style.GradientAngle = 90;
-            this.tabControlPanel3.TabIndex = 12;
-            this.tabControlPanel3.TabItem = this.tabItemUpdate;
-            // 
-            // groupPanel5
-            // 
-            this.groupPanel5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupPanel5.CanvasColor = System.Drawing.SystemColors.Control;
-            this.groupPanel5.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel5.Controls.Add(this.btnSearchRFID);
-            this.groupPanel5.Controls.Add(this.tbSearchRFIDCard);
-            this.groupPanel5.Controls.Add(this.labelX27);
-            this.groupPanel5.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel5.Location = new System.Drawing.Point(7, 4);
-            this.groupPanel5.Name = "groupPanel5";
-            this.groupPanel5.Size = new System.Drawing.Size(910, 46);
-            // 
-            // 
-            // 
-            this.groupPanel5.Style.BackColor2SchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground2;
-            this.groupPanel5.Style.BackColorGradientAngle = 90;
-            this.groupPanel5.Style.BackColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBackground;
-            this.groupPanel5.Style.BorderBottom = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel5.Style.BorderBottomWidth = 1;
-            this.groupPanel5.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelBorder;
-            this.groupPanel5.Style.BorderLeft = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel5.Style.BorderLeftWidth = 1;
-            this.groupPanel5.Style.BorderRight = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel5.Style.BorderRightWidth = 1;
-            this.groupPanel5.Style.BorderTop = DevComponents.DotNetBar.eStyleBorderType.Solid;
-            this.groupPanel5.Style.BorderTopWidth = 1;
-            this.groupPanel5.Style.CornerDiameter = 4;
-            this.groupPanel5.Style.CornerType = DevComponents.DotNetBar.eCornerType.Rounded;
-            this.groupPanel5.Style.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupPanel5.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.groupPanel5.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
-            // 
-            // 
-            // 
-            this.groupPanel5.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.groupPanel5.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel5.TabIndex = 91;
-            // 
-            // tbSearchRFIDCard
-            // 
-            this.tbSearchRFIDCard.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.tbSearchRFIDCard.Border.Class = "TextBoxBorder";
-            this.tbSearchRFIDCard.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.tbSearchRFIDCard.DisabledBackColor = System.Drawing.Color.White;
-            this.tbSearchRFIDCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSearchRFIDCard.Location = new System.Drawing.Point(250, 8);
-            this.tbSearchRFIDCard.MaxLength = 10;
-            this.tbSearchRFIDCard.Name = "tbSearchRFIDCard";
-            this.tbSearchRFIDCard.PreventEnterBeep = true;
-            this.tbSearchRFIDCard.Size = new System.Drawing.Size(268, 26);
-            this.tbSearchRFIDCard.TabIndex = 3;
-            // 
-            // labelX27
-            // 
-            this.labelX27.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX27.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX27.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX27.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX27.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelX27.Location = new System.Drawing.Point(156, 8);
-            this.labelX27.Name = "labelX27";
-            this.labelX27.Size = new System.Drawing.Size(88, 23);
-            this.labelX27.TabIndex = 2;
-            this.labelX27.Text = "RFID Card:";
-            // 
-            // groupPanel7
-            // 
-            this.groupPanel7.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.groupPanel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
-            this.groupPanel7.CanvasColor = System.Drawing.SystemColors.Control;
-            this.groupPanel7.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel7.Controls.Add(this.ucbBloodGroup);
-            this.groupPanel7.Controls.Add(this.utbCadetName);
-            this.groupPanel7.Controls.Add(this.utbMobile);
-            this.groupPanel7.Controls.Add(this.labelX29);
-            this.groupPanel7.Controls.Add(this.labelX30);
-            this.groupPanel7.Controls.Add(this.labelX31);
-            this.groupPanel7.Controls.Add(this.labelX32);
-            this.groupPanel7.Controls.Add(this.ucbSeniorOfficer);
-            this.groupPanel7.Controls.Add(this.utbContact);
-            this.groupPanel7.Controls.Add(this.utbCNIC);
-            this.groupPanel7.Controls.Add(this.ucbTape);
-            this.groupPanel7.Controls.Add(this.labelX33);
-            this.groupPanel7.Controls.Add(this.labelX34);
-            this.groupPanel7.Controls.Add(this.labelX35);
-            this.groupPanel7.Controls.Add(this.ucbCourse);
-            this.groupPanel7.Controls.Add(this.utbFatherName);
-            this.groupPanel7.Controls.Add(this.labelX36);
-            this.groupPanel7.Controls.Add(this.labelX37);
-            this.groupPanel7.Controls.Add(this.utbPAK);
-            this.groupPanel7.Controls.Add(this.labelX38);
-            this.groupPanel7.Controls.Add(this.labelX39);
-            this.groupPanel7.Controls.Add(this.utbAddress);
-            this.groupPanel7.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel7.Location = new System.Drawing.Point(7, 55);
-            this.groupPanel7.Name = "groupPanel7";
-            this.groupPanel7.Size = new System.Drawing.Size(375, 421);
-            // 
-            // 
-            // 
-            this.groupPanel7.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
-            this.groupPanel7.Style.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
-            this.groupPanel7.Style.BackColorGradientAngle = 90;
-            this.groupPanel7.Style.BackgroundImagePosition = DevComponents.DotNetBar.eStyleBackgroundImage.Center;
-            this.groupPanel7.Style.BorderBottomWidth = 1;
-            this.groupPanel7.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.MenuUnusedBackground;
-            this.groupPanel7.Style.BorderLeftWidth = 1;
-            this.groupPanel7.Style.BorderRightWidth = 1;
-            this.groupPanel7.Style.BorderTopWidth = 1;
-            this.groupPanel7.Style.CornerDiameter = 4;
-            this.groupPanel7.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel7.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel7.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.groupPanel7.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
-            // 
-            // 
-            // 
-            this.groupPanel7.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.groupPanel7.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel7.TabIndex = 92;
-            // 
-            // ucbBloodGroup
-            // 
-            this.ucbBloodGroup.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ucbBloodGroup.Font = new System.Drawing.Font("Arial", 12F);
-            this.ucbBloodGroup.FormattingEnabled = true;
-            this.ucbBloodGroup.Items.AddRange(new object[] {
-            "A+",
-            "B+",
-            "AB+",
-            "A-",
-            "B-",
-            "AB-",
-            "O+",
-            "O-"});
-            this.ucbBloodGroup.Location = new System.Drawing.Point(145, 201);
-            this.ucbBloodGroup.Name = "ucbBloodGroup";
-            this.ucbBloodGroup.Size = new System.Drawing.Size(210, 26);
-            this.ucbBloodGroup.TabIndex = 5;
-            // 
-            // utbCadetName
-            // 
-            this.utbCadetName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.utbCadetName.Border.Class = "TextBoxBorder";
-            this.utbCadetName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.utbCadetName.DisabledBackColor = System.Drawing.Color.White;
-            this.utbCadetName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.utbCadetName.Location = new System.Drawing.Point(145, 28);
-            this.utbCadetName.Name = "utbCadetName";
-            this.utbCadetName.PreventEnterBeep = true;
-            this.utbCadetName.Size = new System.Drawing.Size(210, 26);
-            this.utbCadetName.TabIndex = 0;
-            // 
-            // utbMobile
-            // 
-            this.utbMobile.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.utbMobile.Border.Class = "TextBoxBorder";
-            this.utbMobile.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.utbMobile.DisabledBackColor = System.Drawing.Color.White;
-            this.utbMobile.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.utbMobile.Location = new System.Drawing.Point(145, 269);
-            this.utbMobile.Name = "utbMobile";
-            this.utbMobile.PreventEnterBeep = true;
-            this.utbMobile.Size = new System.Drawing.Size(210, 26);
-            this.utbMobile.TabIndex = 7;
-            // 
-            // labelX29
-            // 
-            this.labelX29.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX29.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX29.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX29.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX29.Location = new System.Drawing.Point(20, 234);
-            this.labelX29.Name = "labelX29";
-            this.labelX29.Size = new System.Drawing.Size(115, 23);
-            this.labelX29.TabIndex = 18;
-            this.labelX29.Text = "Contact #:";
-            // 
-            // labelX30
-            // 
-            this.labelX30.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX30.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX30.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX30.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX30.Location = new System.Drawing.Point(20, 27);
-            this.labelX30.Name = "labelX30";
-            this.labelX30.Size = new System.Drawing.Size(115, 23);
-            this.labelX30.TabIndex = 12;
-            this.labelX30.Text = "Cadet Name:";
-            // 
-            // labelX31
-            // 
-            this.labelX31.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX31.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX31.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX31.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX31.Location = new System.Drawing.Point(20, 371);
-            this.labelX31.Name = "labelX31";
-            this.labelX31.Size = new System.Drawing.Size(115, 23);
-            this.labelX31.TabIndex = 22;
-            this.labelX31.Text = "Senior Officer:";
-            // 
-            // labelX32
-            // 
-            this.labelX32.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX32.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX32.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX32.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX32.Location = new System.Drawing.Point(20, 303);
-            this.labelX32.Name = "labelX32";
-            this.labelX32.Size = new System.Drawing.Size(115, 23);
-            this.labelX32.TabIndex = 20;
-            this.labelX32.Text = "Tape:";
-            // 
-            // ucbSeniorOfficer
-            // 
-            this.ucbSeniorOfficer.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ucbSeniorOfficer.Font = new System.Drawing.Font("Arial", 12F);
-            this.ucbSeniorOfficer.FormattingEnabled = true;
-            this.ucbSeniorOfficer.Location = new System.Drawing.Point(145, 371);
-            this.ucbSeniorOfficer.Name = "ucbSeniorOfficer";
-            this.ucbSeniorOfficer.Size = new System.Drawing.Size(210, 26);
-            this.ucbSeniorOfficer.TabIndex = 10;
-            // 
-            // utbContact
-            // 
-            this.utbContact.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.utbContact.Border.Class = "TextBoxBorder";
-            this.utbContact.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.utbContact.DisabledBackColor = System.Drawing.Color.White;
-            this.utbContact.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.utbContact.Location = new System.Drawing.Point(145, 235);
-            this.utbContact.Name = "utbContact";
-            this.utbContact.PreventEnterBeep = true;
-            this.utbContact.Size = new System.Drawing.Size(210, 26);
-            this.utbContact.TabIndex = 6;
-            // 
-            // utbCNIC
-            // 
-            this.utbCNIC.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.utbCNIC.Border.Class = "TextBoxBorder";
-            this.utbCNIC.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.utbCNIC.DisabledBackColor = System.Drawing.Color.White;
-            this.utbCNIC.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.utbCNIC.Location = new System.Drawing.Point(145, 167);
-            this.utbCNIC.Name = "utbCNIC";
-            this.utbCNIC.PreventEnterBeep = true;
-            this.utbCNIC.Size = new System.Drawing.Size(210, 26);
-            this.utbCNIC.TabIndex = 4;
-            // 
-            // ucbTape
-            // 
-            this.ucbTape.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ucbTape.Font = new System.Drawing.Font("Arial", 12F);
-            this.ucbTape.FormattingEnabled = true;
-            this.ucbTape.Location = new System.Drawing.Point(145, 303);
-            this.ucbTape.Name = "ucbTape";
-            this.ucbTape.Size = new System.Drawing.Size(210, 26);
-            this.ucbTape.TabIndex = 8;
-            // 
-            // labelX33
-            // 
-            this.labelX33.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX33.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX33.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX33.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX33.Location = new System.Drawing.Point(20, 201);
-            this.labelX33.Name = "labelX33";
-            this.labelX33.Size = new System.Drawing.Size(115, 23);
-            this.labelX33.TabIndex = 17;
-            this.labelX33.Text = "Blood Group:";
-            // 
-            // labelX34
-            // 
-            this.labelX34.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX34.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX34.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX34.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX34.Location = new System.Drawing.Point(20, 340);
-            this.labelX34.Name = "labelX34";
-            this.labelX34.Size = new System.Drawing.Size(115, 23);
-            this.labelX34.TabIndex = 21;
-            this.labelX34.Text = "Course:";
-            // 
-            // labelX35
-            // 
-            this.labelX35.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX35.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX35.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX35.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX35.Location = new System.Drawing.Point(20, 268);
-            this.labelX35.Name = "labelX35";
-            this.labelX35.Size = new System.Drawing.Size(115, 23);
-            this.labelX35.TabIndex = 19;
-            this.labelX35.Text = "Mobile #:";
-            // 
-            // ucbCourse
-            // 
-            this.ucbCourse.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.ucbCourse.Font = new System.Drawing.Font("Arial", 12F);
-            this.ucbCourse.FormattingEnabled = true;
-            this.ucbCourse.Location = new System.Drawing.Point(145, 337);
-            this.ucbCourse.Name = "ucbCourse";
-            this.ucbCourse.Size = new System.Drawing.Size(210, 26);
-            this.ucbCourse.TabIndex = 9;
-            // 
-            // utbFatherName
-            // 
-            this.utbFatherName.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.utbFatherName.Border.Class = "TextBoxBorder";
-            this.utbFatherName.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.utbFatherName.DisabledBackColor = System.Drawing.Color.White;
-            this.utbFatherName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.utbFatherName.Location = new System.Drawing.Point(145, 62);
-            this.utbFatherName.Name = "utbFatherName";
-            this.utbFatherName.PreventEnterBeep = true;
-            this.utbFatherName.Size = new System.Drawing.Size(210, 26);
-            this.utbFatherName.TabIndex = 1;
-            // 
-            // labelX36
-            // 
-            this.labelX36.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX36.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX36.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX36.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX36.Location = new System.Drawing.Point(20, 66);
-            this.labelX36.Name = "labelX36";
-            this.labelX36.Size = new System.Drawing.Size(115, 23);
-            this.labelX36.TabIndex = 13;
-            this.labelX36.Text = "F. Name:";
-            // 
-            // labelX37
-            // 
-            this.labelX37.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX37.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX37.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX37.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX37.Location = new System.Drawing.Point(20, 166);
-            this.labelX37.Name = "labelX37";
-            this.labelX37.Size = new System.Drawing.Size(115, 23);
-            this.labelX37.TabIndex = 16;
-            this.labelX37.Text = "CNIC:";
-            // 
-            // utbPAK
-            // 
-            this.utbPAK.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.utbPAK.Border.Class = "TextBoxBorder";
-            this.utbPAK.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.utbPAK.DisabledBackColor = System.Drawing.Color.White;
-            this.utbPAK.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.utbPAK.Location = new System.Drawing.Point(145, 96);
-            this.utbPAK.Name = "utbPAK";
-            this.utbPAK.PreventEnterBeep = true;
-            this.utbPAK.Size = new System.Drawing.Size(210, 26);
-            this.utbPAK.TabIndex = 2;
-            // 
-            // labelX38
-            // 
-            this.labelX38.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX38.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX38.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX38.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX38.Location = new System.Drawing.Point(20, 129);
-            this.labelX38.Name = "labelX38";
-            this.labelX38.Size = new System.Drawing.Size(115, 23);
-            this.labelX38.TabIndex = 15;
-            this.labelX38.Text = "Address:";
-            // 
-            // labelX39
-            // 
-            this.labelX39.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX39.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX39.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX39.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX39.Location = new System.Drawing.Point(20, 95);
-            this.labelX39.Name = "labelX39";
-            this.labelX39.Size = new System.Drawing.Size(115, 23);
-            this.labelX39.TabIndex = 14;
-            this.labelX39.Text = "PAK #:";
-            // 
-            // utbAddress
-            // 
-            this.utbAddress.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.utbAddress.Border.Class = "TextBoxBorder";
-            this.utbAddress.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.utbAddress.DisabledBackColor = System.Drawing.Color.White;
-            this.utbAddress.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.utbAddress.Location = new System.Drawing.Point(145, 130);
-            this.utbAddress.Name = "utbAddress";
-            this.utbAddress.PreventEnterBeep = true;
-            this.utbAddress.Size = new System.Drawing.Size(210, 26);
-            this.utbAddress.TabIndex = 3;
-            // 
-            // groupPanel8
-            // 
-            this.groupPanel8.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupPanel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
-            this.groupPanel8.CanvasColor = System.Drawing.SystemColors.Control;
-            this.groupPanel8.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.Office2007;
-            this.groupPanel8.Controls.Add(this.btnUpdate);
-            this.groupPanel8.Controls.Add(this.groupBox4);
-            this.groupPanel8.Controls.Add(this.groupBox6);
-            this.groupPanel8.DisabledBackColor = System.Drawing.Color.Empty;
-            this.groupPanel8.Location = new System.Drawing.Point(388, 55);
-            this.groupPanel8.Name = "groupPanel8";
-            this.groupPanel8.Size = new System.Drawing.Size(529, 421);
-            // 
-            // 
-            // 
-            this.groupPanel8.Style.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
-            this.groupPanel8.Style.BackColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(194)))), ((int)(((byte)(217)))), ((int)(((byte)(247)))));
-            this.groupPanel8.Style.BackColorGradientAngle = 90;
-            this.groupPanel8.Style.BackgroundImagePosition = DevComponents.DotNetBar.eStyleBackgroundImage.Center;
-            this.groupPanel8.Style.BorderBottomWidth = 1;
-            this.groupPanel8.Style.BorderColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.MenuUnusedBackground;
-            this.groupPanel8.Style.BorderLeftWidth = 1;
-            this.groupPanel8.Style.BorderRightWidth = 1;
-            this.groupPanel8.Style.BorderTopWidth = 1;
-            this.groupPanel8.Style.CornerDiameter = 4;
-            this.groupPanel8.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel8.Style.TextAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Center;
-            this.groupPanel8.Style.TextColorSchemePart = DevComponents.DotNetBar.eColorSchemePart.PanelText;
-            this.groupPanel8.Style.TextLineAlignment = DevComponents.DotNetBar.eStyleTextAlignment.Near;
-            // 
-            // 
-            // 
-            this.groupPanel8.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            // 
-            // 
-            // 
-            this.groupPanel8.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel8.TabIndex = 93;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox4.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox4.Controls.Add(this.radioButton1);
-            this.groupBox4.Controls.Add(this.labelX40);
-            this.groupBox4.Controls.Add(this.radioButton2);
-            this.groupBox4.Controls.Add(this.uCadetPic);
-            this.groupBox4.Controls.Add(this.uThumbRight);
-            this.groupBox4.Controls.Add(this.uThumbLeft);
-            this.groupBox4.Controls.Add(this.labelX41);
-            this.groupBox4.Controls.Add(this.labelX42);
-            this.groupBox4.ForeColor = System.Drawing.Color.Transparent;
-            this.groupBox4.Location = new System.Drawing.Point(19, 103);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(491, 231);
-            this.groupBox4.TabIndex = 9;
-            this.groupBox4.TabStop = false;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Arial", 10F);
-            this.radioButton1.ForeColor = System.Drawing.Color.Black;
-            this.radioButton1.Location = new System.Drawing.Point(339, 200);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(143, 20);
-            this.radioButton1.TabIndex = 5;
-            this.radioButton1.Text = "Scan Right Thumb";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // labelX40
-            // 
-            this.labelX40.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.labelX40.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX40.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX40.ForeColor = System.Drawing.Color.Black;
-            this.labelX40.Location = new System.Drawing.Point(20, 9);
-            this.labelX40.Name = "labelX40";
-            this.labelX40.Size = new System.Drawing.Size(138, 23);
-            this.labelX40.TabIndex = 0;
-            this.labelX40.Text = "User Picture";
-            this.labelX40.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Checked = true;
-            this.radioButton2.Font = new System.Drawing.Font("Arial", 10F);
-            this.radioButton2.ForeColor = System.Drawing.Color.Black;
-            this.radioButton2.Location = new System.Drawing.Point(185, 200);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(134, 20);
-            this.radioButton2.TabIndex = 3;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Scan Left Thumb";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // uCadetPic
-            // 
-            this.uCadetPic.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.uCadetPic.BackColor = System.Drawing.Color.LightGray;
-            this.uCadetPic.Location = new System.Drawing.Point(20, 38);
-            this.uCadetPic.Name = "uCadetPic";
-            this.uCadetPic.Size = new System.Drawing.Size(138, 153);
-            this.uCadetPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.uCadetPic.TabIndex = 17;
-            this.uCadetPic.TabStop = false;
-            // 
-            // uThumbRight
-            // 
-            this.uThumbRight.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.uThumbRight.BackColor = System.Drawing.Color.LightGray;
-            this.uThumbRight.Location = new System.Drawing.Point(339, 38);
-            this.uThumbRight.Name = "uThumbRight";
-            this.uThumbRight.Size = new System.Drawing.Size(138, 153);
-            this.uThumbRight.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.uThumbRight.TabIndex = 17;
-            this.uThumbRight.TabStop = false;
-            // 
-            // uThumbLeft
-            // 
-            this.uThumbLeft.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.uThumbLeft.BackColor = System.Drawing.Color.LightGray;
-            this.uThumbLeft.Location = new System.Drawing.Point(185, 38);
-            this.uThumbLeft.Name = "uThumbLeft";
-            this.uThumbLeft.Size = new System.Drawing.Size(138, 153);
-            this.uThumbLeft.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.uThumbLeft.TabIndex = 17;
-            this.uThumbLeft.TabStop = false;
-            // 
-            // labelX41
-            // 
-            this.labelX41.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.labelX41.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX41.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX41.ForeColor = System.Drawing.Color.Black;
-            this.labelX41.Location = new System.Drawing.Point(185, 9);
-            this.labelX41.Name = "labelX41";
-            this.labelX41.Size = new System.Drawing.Size(138, 23);
-            this.labelX41.TabIndex = 2;
-            this.labelX41.Text = "Left Thumb";
-            this.labelX41.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // labelX42
-            // 
-            this.labelX42.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.labelX42.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX42.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX42.ForeColor = System.Drawing.Color.Black;
-            this.labelX42.Location = new System.Drawing.Point(339, 9);
-            this.labelX42.Name = "labelX42";
-            this.labelX42.Size = new System.Drawing.Size(138, 23);
-            this.labelX42.TabIndex = 4;
-            this.labelX42.Text = "Right Thumb";
-            this.labelX42.TextAlignment = System.Drawing.StringAlignment.Center;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnUpdate.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnUpdate.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnUpdate.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.Location = new System.Drawing.Point(173, 343);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(206, 59);
-            this.btnUpdate.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnUpdate.TabIndex = 6;
-            this.btnUpdate.Text = "Update";
-            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.groupBox6.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox6.Controls.Add(this.utbRFIDCard);
-            this.groupBox6.Controls.Add(this.labelX43);
-            this.groupBox6.Controls.Add(this.uchkSeniorCadet);
-            this.groupBox6.Controls.Add(this.uchkJuniorCadet);
-            this.groupBox6.Controls.Add(this.labelX44);
-            this.groupBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.groupBox6.ForeColor = System.Drawing.Color.Black;
-            this.groupBox6.Location = new System.Drawing.Point(19, 21);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(491, 76);
-            this.groupBox6.TabIndex = 7;
-            this.groupBox6.TabStop = false;
-            // 
-            // utbRFIDCard
-            // 
-            this.utbRFIDCard.Anchor = System.Windows.Forms.AnchorStyles.None;
-            // 
-            // 
-            // 
-            this.utbRFIDCard.Border.Class = "TextBoxBorder";
-            this.utbRFIDCard.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.utbRFIDCard.DisabledBackColor = System.Drawing.Color.White;
-            this.utbRFIDCard.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.utbRFIDCard.Location = new System.Drawing.Point(130, 18);
-            this.utbRFIDCard.MaxLength = 10;
-            this.utbRFIDCard.Name = "utbRFIDCard";
-            this.utbRFIDCard.PreventEnterBeep = true;
-            this.utbRFIDCard.Size = new System.Drawing.Size(257, 26);
-            this.utbRFIDCard.TabIndex = 1;
-            this.utbRFIDCard.TextChanged += new System.EventHandler(this.textBoxX11_TextChanged);
-            // 
-            // labelX43
-            // 
-            this.labelX43.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX43.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX43.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX43.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX43.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelX43.Location = new System.Drawing.Point(40, 46);
-            this.labelX43.Name = "labelX43";
-            this.labelX43.Size = new System.Drawing.Size(60, 23);
-            this.labelX43.TabIndex = 2;
-            this.labelX43.Text = "Role:";
-            // 
-            // uchkSeniorCadet
-            // 
-            this.uchkSeniorCadet.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.uchkSeniorCadet.AutoSize = true;
-            this.uchkSeniorCadet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uchkSeniorCadet.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.uchkSeniorCadet.Location = new System.Drawing.Point(283, 50);
-            this.uchkSeniorCadet.Name = "uchkSeniorCadet";
-            this.uchkSeniorCadet.Size = new System.Drawing.Size(104, 20);
-            this.uchkSeniorCadet.TabIndex = 4;
-            this.uchkSeniorCadet.TabStop = true;
-            this.uchkSeniorCadet.Text = "Senior Cadet";
-            this.uchkSeniorCadet.UseVisualStyleBackColor = true;
-            // 
-            // uchkJuniorCadet
-            // 
-            this.uchkJuniorCadet.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.uchkJuniorCadet.AutoSize = true;
-            this.uchkJuniorCadet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.uchkJuniorCadet.ForeColor = System.Drawing.SystemColors.MenuText;
-            this.uchkJuniorCadet.Location = new System.Drawing.Point(164, 50);
-            this.uchkJuniorCadet.Name = "uchkJuniorCadet";
-            this.uchkJuniorCadet.Size = new System.Drawing.Size(101, 20);
-            this.uchkJuniorCadet.TabIndex = 3;
-            this.uchkJuniorCadet.TabStop = true;
-            this.uchkJuniorCadet.Text = "Junior Cadet";
-            this.uchkJuniorCadet.UseVisualStyleBackColor = true;
-            // 
-            // labelX44
-            // 
-            this.labelX44.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelX44.BackColor = System.Drawing.Color.Transparent;
-            // 
-            // 
-            // 
-            this.labelX44.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.labelX44.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelX44.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelX44.Location = new System.Drawing.Point(40, 17);
-            this.labelX44.Name = "labelX44";
-            this.labelX44.Size = new System.Drawing.Size(92, 23);
-            this.labelX44.TabIndex = 0;
-            this.labelX44.Text = "RFID Card:";
-            // 
-            // btnSearchRFID
-            // 
-            this.btnSearchRFID.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
-            this.btnSearchRFID.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSearchRFID.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
-            this.btnSearchRFID.Location = new System.Drawing.Point(524, 7);
-            this.btnSearchRFID.Name = "btnSearchRFID";
-            this.btnSearchRFID.Size = new System.Drawing.Size(138, 29);
-            this.btnSearchRFID.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnSearchRFID.TabIndex = 4;
-            this.btnSearchRFID.Text = "Search";
-            this.btnSearchRFID.Click += new System.EventHandler(this.btnSearchRFID_Click);
+            // buttonSelectPicture
+            // 
+            this.buttonSelectPicture.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonSelectPicture.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonSelectPicture.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonSelectPicture.Location = new System.Drawing.Point(20, 197);
+            this.buttonSelectPicture.Name = "buttonSelectPicture";
+            this.buttonSelectPicture.Size = new System.Drawing.Size(138, 23);
+            this.buttonSelectPicture.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonSelectPicture.TabIndex = 18;
+            this.buttonSelectPicture.Text = "Select From File";
+            this.buttonSelectPicture.Click += new System.EventHandler(this.buttonSelectPicture_Click);
+            // 
+            // buttonUpdateTebClear
+            // 
+            this.buttonUpdateTebClear.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton;
+            this.buttonUpdateTebClear.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.buttonUpdateTebClear.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground;
+            this.buttonUpdateTebClear.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUpdateTebClear.Location = new System.Drawing.Point(39, 340);
+            this.buttonUpdateTebClear.Name = "buttonUpdateTebClear";
+            this.buttonUpdateTebClear.Size = new System.Drawing.Size(220, 59);
+            this.buttonUpdateTebClear.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
+            this.buttonUpdateTebClear.TabIndex = 10;
+            this.buttonUpdateTebClear.Text = "Clear";
+            this.buttonUpdateTebClear.Click += new System.EventHandler(this.buttonUpdateTebClear_Click);
             // 
             // CaderRegistrationfrm
             // 
@@ -2466,13 +2497,17 @@
             this.ribbonClientPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.tabControl1)).EndInit();
             this.tabControl1.ResumeLayout(false);
-            this.tabControlPanel2.ResumeLayout(false);
-            this.groupPanel3.ResumeLayout(false);
-            this.groupPanel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
-            this.groupPanel4.ResumeLayout(false);
-            this.groupPanel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gdvAllCadet)).EndInit();
+            this.tabControlPanel3.ResumeLayout(false);
+            this.groupPanel8.ResumeLayout(false);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.uCadetPic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uThumbRight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.uThumbLeft)).EndInit();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            this.groupPanel7.ResumeLayout(false);
+            this.groupPanel5.ResumeLayout(false);
             this.tabControlPanel1.ResumeLayout(false);
             this.groupPanel2.ResumeLayout(false);
             this.groupPanel1.ResumeLayout(false);
@@ -2484,17 +2519,13 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.tabControlPanel3.ResumeLayout(false);
-            this.groupPanel5.ResumeLayout(false);
-            this.groupPanel7.ResumeLayout(false);
-            this.groupPanel8.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.uCadetPic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uThumbRight)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.uThumbLeft)).EndInit();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
+            this.tabControlPanel2.ResumeLayout(false);
+            this.groupPanel3.ResumeLayout(false);
+            this.groupPanel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            this.groupPanel4.ResumeLayout(false);
+            this.groupPanel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gdvAllCadet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2551,7 +2582,7 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private DevComponents.DotNetBar.TabControl tabControl1;
         private DevComponents.DotNetBar.TabControlPanel tabControlPanel1;
-        private DevComponents.DotNetBar.TabItem tabItem1;
+        private DevComponents.DotNetBar.TabItem tabItemNew;
         private DevComponents.DotNetBar.TabControlPanel tabControlPanel2;
         private DevComponents.DotNetBar.TabItem tabIRemove;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel3;
@@ -2620,9 +2651,9 @@
         private DevComponents.DotNetBar.TabItem tabItemUpdate;
         private DevComponents.DotNetBar.Controls.GroupPanel groupPanel8;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton UradioButtonRightThumb;
         private DevComponents.DotNetBar.LabelX labelX40;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton UradioButtonLeftThumb;
         private System.Windows.Forms.PictureBox uCadetPic;
         private System.Windows.Forms.PictureBox uThumbRight;
         private System.Windows.Forms.PictureBox uThumbLeft;
@@ -2636,5 +2667,7 @@
         private System.Windows.Forms.RadioButton uchkJuniorCadet;
         private DevComponents.DotNetBar.LabelX labelX44;
         private DevComponents.DotNetBar.ButtonX btnSearchRFID;
+        private DevComponents.DotNetBar.ButtonX buttonSelectPicture;
+        private DevComponents.DotNetBar.ButtonX buttonUpdateTebClear;
     }
 }
