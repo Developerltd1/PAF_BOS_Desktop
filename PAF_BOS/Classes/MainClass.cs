@@ -403,6 +403,65 @@ namespace PAF_BOS
                     cmd.Dispose();
                 }
             }
+            public static void Cadets_UpdateByRFIDCardWithOutThumb(MdlCadet ClsCadetsObj, out bool _Status, out string _StatusDetails)
+            {
+                _Status = false;
+                _StatusDetails = null;
+
+                SqlConnection conn = null;
+                SqlCommand cmd = null;
+                try
+                {
+                    string ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["PAFBOS_ConnectionString"].ToString();
+                    conn = new SqlConnection(ConnectionString);
+                    cmd = new SqlCommand("Cadets_UpdateByRFIDCardWithOutThumb", conn);
+
+                    cmd.CommandType = CommandType.StoredProcedure;
+
+                    cmd.Parameters.AddWithValue("@SQN_User_ID", ClsCadetsObj.SQN_User_ID);
+                    cmd.Parameters.AddWithValue("@Course_ID", ClsCadetsObj.Course_ID);
+                    cmd.Parameters.AddWithValue("@Tape_ID", ClsCadetsObj.Tape_ID);
+                    cmd.Parameters.AddWithValue("@CreatedBy_User_ID", ClsCadetsObj.CreatedBy_User_ID);
+                    cmd.Parameters.AddWithValue("@Role_ID", ClsCadetsObj.Role_ID);
+                    cmd.Parameters.AddWithValue("@Batch", ClsCadetsObj.Batch);
+                    cmd.Parameters.AddWithValue("@CadetName", ClsCadetsObj.CadetName);
+                    cmd.Parameters.AddWithValue("@CadetFatherName", ClsCadetsObj.CadetFatherName);
+                    cmd.Parameters.AddWithValue("@PAKNumber", ClsCadetsObj.PAKNumber);
+                    cmd.Parameters.AddWithValue("@Address", ClsCadetsObj.Address);
+                    cmd.Parameters.AddWithValue("@CNIC", ClsCadetsObj.CNIC);
+                    cmd.Parameters.AddWithValue("@BloodGroup", ClsCadetsObj.BloodGroup);
+                    cmd.Parameters.AddWithValue("@ContactNumber", ClsCadetsObj.ContactNumber);
+                    cmd.Parameters.AddWithValue("@MobileNumber", ClsCadetsObj.MobileNumber);
+                    cmd.Parameters.AddWithValue("@RFIDCardNumber", ClsCadetsObj.RFIDCardNumber);
+                    cmd.Parameters.AddWithValue("@Picture", ClsCadetsObj.Picture);
+
+                    SqlParameter _StatusParm = new SqlParameter("@_Status", SqlDbType.Bit);
+                    _StatusParm.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(_StatusParm);
+
+                    SqlParameter _StatusDetailsParm = new SqlParameter("@_StatusDetails", SqlDbType.VarChar, 100);
+                    _StatusDetailsParm.Direction = ParameterDirection.Output;
+                    cmd.Parameters.Add(_StatusDetailsParm);
+
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+
+                    _Status = (bool)_StatusParm.Value;
+                    _StatusDetails = (string)_StatusDetailsParm.Value;
+                }
+                catch (Exception ex)
+                {
+                    _Status = false;
+                    _StatusDetails = ex.Message;
+                    return;
+                }
+                finally
+                {
+                    conn.Dispose();
+                    cmd.Dispose();
+                }
+            }
 
             public static void Cadets_UpdateByRFIDCard(MdlCadet ClsCadetsObj, out bool _Status, out string _StatusDetails)
             {

@@ -881,9 +881,11 @@ namespace PAF_BOS
         {
             try
             {
-                bool Status = false;
-                string StatusDetails = null; 
-                
+              bool Status = false;
+              string StatusDetails = null;
+                if (cbWithThumb.Checked)
+                { 
+                   #region WithTHUMB
                 if (Convert.ToInt32(ucbSeniorOfficer.SelectedValue) > 0 && Convert.ToInt32(ucbTape.SelectedValue) > 0 && Convert.ToInt32(ucbCourse.SelectedValue) > 0 && ucbBloodGroup.Text != "-- Select Bloodgroup --")
                 {
                     MainClass.MngPAFBOS.MdlCadet mdl = new MainClass.MngPAFBOS.MdlCadet();
@@ -957,6 +959,68 @@ namespace PAF_BOS
                 else
                 {
                     JIMessageBox.ShowErrorMessage("Please Select Correct Fields");
+                }
+                    #endregion
+                }else
+                { 
+                   #region WithOutTHUMB
+
+                if (Convert.ToInt32(ucbSeniorOfficer.SelectedValue) > 0 && Convert.ToInt32(ucbTape.SelectedValue) > 0 && Convert.ToInt32(ucbCourse.SelectedValue) > 0 && ucbBloodGroup.Text != "-- Select Bloodgroup --")
+                {
+                    MainClass.MngPAFBOS.MdlCadet mdl = new MainClass.MngPAFBOS.MdlCadet();
+                    int uRadioOfCadet = 0;
+                    if (chk == "Cadet") { uRadioOfCadet = 6; }
+                    else
+                    if (chk == "Sr. Cadet") { uRadioOfCadet = 5; }
+
+                    if (uchkSeniorCadet.Checked)
+                        uRadioOfCadet = 5;
+                    if (uchkJuniorCadet.Checked)
+                        uRadioOfCadet = 6;
+
+                    if (udf_Validation(utbCadetName.Text, utbFatherName.Text, utbPAK.Text, utbCNIC.Text, ucbBloodGroup.Text, utbContact.Text, utbMobile.Text, utbRFIDCard.Text, ucbSeniorOfficer.Text, ucbTape.Text, ucbCourse.Text, uRadioOfCadet) == true)
+                    {
+                        mdl.SQN_User_ID = Convert.ToInt32(ucbSeniorOfficer.SelectedValue);
+                        mdl.Course_ID = Convert.ToInt32(ucbCourse.SelectedValue);
+                        mdl.Tape_ID = Convert.ToInt32(ucbTape.SelectedValue);
+                        mdl.CreatedBy_User_ID = Convert.ToInt32(ucbSeniorOfficer.SelectedValue);
+                        Bitmap img = ImageClass.Resize((Bitmap)uCadetPic.Image, new Size(100, 100), System.Drawing.Imaging.ImageFormat.Jpeg);
+                        mdl.Picture = ImageClass.GetBase64StringFromImage(img); //Resize & Convert to String
+                        mdl.Role_ID = uRadioOfCadet;
+                        mdl.Batch = "Static_Batch";
+                        mdl.CadetName = utbCadetName.Text;
+                        mdl.CadetFatherName = utbFatherName.Text;
+                        mdl.PAKNumber = utbPAK.Text;
+                        mdl.Address = utbAddress.Text;
+                        mdl.CNIC = utbCNIC.Text;
+                        mdl.BloodGroup = ucbBloodGroup.Text;
+                        mdl.ContactNumber = utbContact.Text;
+                        mdl.MobileNumber = utbMobile.Text;
+                        mdl.RFIDCardNumber = utbRFIDCard.Text;
+                       
+                        MainClass.MngPAFBOS.Cadets_UpdateByRFIDCardWithOutThumb(mdl, out Status, out StatusDetails);
+
+                        if (Status)
+                        {
+                            JIMessageBox.ShowInformationMessage("Record Updated Successfully !");
+                            UpdateTabClearFormFields();
+                        }
+                        else
+                        {
+                            JIMessageBox.ShowErrorMessage("Some Thing Went Wrong: " + StatusDetails);
+                        }
+                    }
+                    else
+                    {
+                        JIMessageBox.ShowErrorMessage("Please Fill All Fields");
+                    }
+                }
+                else
+                {
+                    JIMessageBox.ShowErrorMessage("Please Select Correct Fields");
+                }
+
+                    #endregion
                 }
             }
             catch (Exception ex)
