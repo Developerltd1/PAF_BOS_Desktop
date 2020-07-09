@@ -764,7 +764,7 @@ namespace PAF_BOS
                 {
                     string ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["PAFBOS_ConnectionString"].ToString();
                     conn = new SqlConnection(ConnectionString);
-                    cmd = new SqlCommand("Select CadetID,CadetName,CadetFatherName,PAKNumber,[Address],CNIC,BloodGroup,ContactNumber,MobileNumber,RFIDCardNumber,SQN_User_ID,Course_ID,Tape_ID,CreatedBy_User_ID,Role_ID from Cadets WHERE  IsActive = True", conn);
+                    cmd = new SqlCommand("Select CadetID,CadetName,CadetFatherName,PAKNumber,[Address],CNIC,BloodGroup,ContactNumber,MobileNumber,RFIDCardNumber,SQN_User_ID,Course_ID,Tape_ID,CreatedBy_User_ID,Role_ID from Cadets WHERE  IsActive = 'True'", conn);
 
                     SqlDataAdapter Adapter = new SqlDataAdapter(cmd);
                     conn.Open();

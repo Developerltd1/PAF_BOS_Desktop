@@ -400,7 +400,7 @@ namespace PAF_BOS
                     int courseid = Convert.ToInt32(cbCourse.SelectedValue);
                     int tapeid = Convert.ToInt32(cbTape.SelectedValue);
                     int userid = MainClass.UserID; 
-                    Bitmap img = ImageClass.Resize((Bitmap)pictureBoxPhoto.Image, new Size(100, 100), System.Drawing.Imaging.ImageFormat.Jpeg);
+                    Bitmap img = ImageClass.Resize((Bitmap)pictureBoxPhoto.Image, new Size(200, 200), System.Drawing.Imaging.ImageFormat.Jpeg);
                     string Photo = ImageClass.GetBase64StringFromImage(img); //Resize & Convert to String
 
                     MainClass.MngPAFBOS.InsertCadet_with_CadetHistory(batch, tbCadet.Text, tbFatherName.Text, 
@@ -920,7 +920,7 @@ namespace PAF_BOS
                         mdl.Course_ID = Convert.ToInt32(ucbCourse.SelectedValue);
                         mdl.Tape_ID = Convert.ToInt32(ucbTape.SelectedValue);
                         mdl.CreatedBy_User_ID = Convert.ToInt32(ucbSeniorOfficer.SelectedValue);
-                        Bitmap img = ImageClass.Resize((Bitmap)uCadetPic.Image, new Size(100, 100), System.Drawing.Imaging.ImageFormat.Jpeg);
+                        Bitmap img = ImageClass.Resize((Bitmap)uCadetPic.Image, new Size(300, 300), System.Drawing.Imaging.ImageFormat.Jpeg);
                         mdl.Picture = ImageClass.GetBase64StringFromImage(img); //Resize & Convert to String
                         mdl.Role_ID = uRadioOfCadet;
                         mdl.Batch = "Static_Batch";
@@ -984,7 +984,7 @@ namespace PAF_BOS
                         mdl.Course_ID = Convert.ToInt32(ucbCourse.SelectedValue);
                         mdl.Tape_ID = Convert.ToInt32(ucbTape.SelectedValue);
                         mdl.CreatedBy_User_ID = Convert.ToInt32(ucbSeniorOfficer.SelectedValue);
-                        Bitmap img = ImageClass.Resize((Bitmap)uCadetPic.Image, new Size(100, 100), System.Drawing.Imaging.ImageFormat.Jpeg);
+                        Bitmap img = ImageClass.Resize((Bitmap)uCadetPic.Image, new Size(300, 300), System.Drawing.Imaging.ImageFormat.Jpeg);
                         mdl.Picture = ImageClass.GetBase64StringFromImage(img); //Resize & Convert to String
                         mdl.Role_ID = uRadioOfCadet;
                         mdl.Batch = "Static_Batch";

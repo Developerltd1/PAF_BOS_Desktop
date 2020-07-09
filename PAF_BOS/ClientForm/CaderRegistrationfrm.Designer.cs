@@ -320,7 +320,7 @@
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(148, 55);
             this.btnUpdate.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnUpdate.TabIndex = 6;
+            this.btnUpdate.TabIndex = 17;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
@@ -333,7 +333,7 @@
             this.UradioButtonRightThumb.Location = new System.Drawing.Point(363, 351);
             this.UradioButtonRightThumb.Name = "UradioButtonRightThumb";
             this.UradioButtonRightThumb.Size = new System.Drawing.Size(107, 20);
-            this.UradioButtonRightThumb.TabIndex = 5;
+            this.UradioButtonRightThumb.TabIndex = 13;
             this.UradioButtonRightThumb.Text = "Right Thumb";
             this.UradioButtonRightThumb.UseVisualStyleBackColor = true;
             // 
@@ -349,7 +349,7 @@
             this.labelX40.Location = new System.Drawing.Point(41, 183);
             this.labelX40.Name = "labelX40";
             this.labelX40.Size = new System.Drawing.Size(118, 23);
-            this.labelX40.TabIndex = 0;
+            this.labelX40.TabIndex = 23;
             this.labelX40.Text = "User Picture";
             this.labelX40.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
@@ -363,7 +363,7 @@
             this.UradioButtonLeftThumb.Location = new System.Drawing.Point(209, 351);
             this.UradioButtonLeftThumb.Name = "UradioButtonLeftThumb";
             this.UradioButtonLeftThumb.Size = new System.Drawing.Size(98, 20);
-            this.UradioButtonLeftThumb.TabIndex = 3;
+            this.UradioButtonLeftThumb.TabIndex = 12;
             this.UradioButtonLeftThumb.TabStop = true;
             this.UradioButtonLeftThumb.Text = "Left Thumb";
             this.UradioButtonLeftThumb.UseVisualStyleBackColor = true;
@@ -413,7 +413,7 @@
             this.labelX41.Location = new System.Drawing.Point(206, 183);
             this.labelX41.Name = "labelX41";
             this.labelX41.Size = new System.Drawing.Size(115, 23);
-            this.labelX41.TabIndex = 2;
+            this.labelX41.TabIndex = 22;
             this.labelX41.Text = "Scan Thumb";
             this.labelX41.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
@@ -429,7 +429,7 @@
             this.labelX42.Location = new System.Drawing.Point(360, 183);
             this.labelX42.Name = "labelX42";
             this.labelX42.Size = new System.Drawing.Size(115, 23);
-            this.labelX42.TabIndex = 4;
+            this.labelX42.TabIndex = 21;
             this.labelX42.Text = "Scan Thumb";
             this.labelX42.TextAlignment = System.Drawing.StringAlignment.Center;
             // 
@@ -448,7 +448,7 @@
             this.utbRFIDCard.Name = "utbRFIDCard";
             this.utbRFIDCard.PreventEnterBeep = true;
             this.utbRFIDCard.Size = new System.Drawing.Size(257, 26);
-            this.utbRFIDCard.TabIndex = 1;
+            this.utbRFIDCard.TabIndex = 14;
             this.utbRFIDCard.TextChanged += new System.EventHandler(this.textBoxX11_TextChanged);
             // 
             // labelX43
@@ -464,7 +464,7 @@
             this.labelX43.Location = new System.Drawing.Point(501, 226);
             this.labelX43.Name = "labelX43";
             this.labelX43.Size = new System.Drawing.Size(60, 23);
-            this.labelX43.TabIndex = 2;
+            this.labelX43.TabIndex = 19;
             this.labelX43.Text = "Role:";
             // 
             // uchkSeniorCadet
@@ -476,7 +476,7 @@
             this.uchkSeniorCadet.Location = new System.Drawing.Point(744, 230);
             this.uchkSeniorCadet.Name = "uchkSeniorCadet";
             this.uchkSeniorCadet.Size = new System.Drawing.Size(104, 20);
-            this.uchkSeniorCadet.TabIndex = 4;
+            this.uchkSeniorCadet.TabIndex = 16;
             this.uchkSeniorCadet.TabStop = true;
             this.uchkSeniorCadet.Text = "Senior Cadet";
             this.uchkSeniorCadet.UseVisualStyleBackColor = true;
@@ -490,7 +490,7 @@
             this.uchkJuniorCadet.Location = new System.Drawing.Point(625, 230);
             this.uchkJuniorCadet.Name = "uchkJuniorCadet";
             this.uchkJuniorCadet.Size = new System.Drawing.Size(101, 20);
-            this.uchkJuniorCadet.TabIndex = 3;
+            this.uchkJuniorCadet.TabIndex = 15;
             this.uchkJuniorCadet.TabStop = true;
             this.uchkJuniorCadet.Text = "Junior Cadet";
             this.uchkJuniorCadet.UseVisualStyleBackColor = true;
@@ -508,7 +508,7 @@
             this.labelX44.Location = new System.Drawing.Point(501, 197);
             this.labelX44.Name = "labelX44";
             this.labelX44.Size = new System.Drawing.Size(92, 23);
-            this.labelX44.TabIndex = 0;
+            this.labelX44.TabIndex = 20;
             this.labelX44.Text = "RFID Card:";
             // 
             // groupPanel7
@@ -586,7 +586,7 @@
             // 
             // 
             this.groupPanel7.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel7.TabIndex = 92;
+            this.groupPanel7.TabIndex = 0;
             // 
             // ucbBloodGroup
             // 
@@ -605,7 +605,7 @@
             this.ucbBloodGroup.Location = new System.Drawing.Point(675, 98);
             this.ucbBloodGroup.Name = "ucbBloodGroup";
             this.ucbBloodGroup.Size = new System.Drawing.Size(160, 26);
-            this.ucbBloodGroup.TabIndex = 5;
+            this.ucbBloodGroup.TabIndex = 7;
             // 
             // utbCadetName
             // 
@@ -637,7 +637,7 @@
             this.utbMobile.Name = "utbMobile";
             this.utbMobile.PreventEnterBeep = true;
             this.utbMobile.Size = new System.Drawing.Size(160, 26);
-            this.utbMobile.TabIndex = 7;
+            this.utbMobile.TabIndex = 4;
             // 
             // labelX29
             // 
@@ -651,7 +651,7 @@
             this.labelX29.Location = new System.Drawing.Point(45, 67);
             this.labelX29.Name = "labelX29";
             this.labelX29.Size = new System.Drawing.Size(96, 23);
-            this.labelX29.TabIndex = 18;
+            this.labelX29.TabIndex = 33;
             this.labelX29.Text = "Contact #:";
             // 
             // labelX30
@@ -666,7 +666,7 @@
             this.labelX30.Location = new System.Drawing.Point(48, 36);
             this.labelX30.Name = "labelX30";
             this.labelX30.Size = new System.Drawing.Size(96, 23);
-            this.labelX30.TabIndex = 12;
+            this.labelX30.TabIndex = 34;
             this.labelX30.Text = "Cadet Name:";
             // 
             // labelX31
@@ -681,7 +681,7 @@
             this.labelX31.Location = new System.Drawing.Point(562, 135);
             this.labelX31.Name = "labelX31";
             this.labelX31.Size = new System.Drawing.Size(112, 23);
-            this.labelX31.TabIndex = 22;
+            this.labelX31.TabIndex = 24;
             this.labelX31.Text = "Senior Officer:";
             // 
             // labelX32
@@ -696,7 +696,7 @@
             this.labelX32.Location = new System.Drawing.Point(319, 135);
             this.labelX32.Name = "labelX32";
             this.labelX32.Size = new System.Drawing.Size(45, 23);
-            this.labelX32.TabIndex = 20;
+            this.labelX32.TabIndex = 28;
             this.labelX32.Text = "Tape:";
             // 
             // ucbSeniorOfficer
@@ -723,7 +723,7 @@
             this.utbContact.Name = "utbContact";
             this.utbContact.PreventEnterBeep = true;
             this.utbContact.Size = new System.Drawing.Size(160, 26);
-            this.utbContact.TabIndex = 6;
+            this.utbContact.TabIndex = 3;
             // 
             // utbCNIC
             // 
@@ -739,7 +739,7 @@
             this.utbCNIC.Name = "utbCNIC";
             this.utbCNIC.PreventEnterBeep = true;
             this.utbCNIC.Size = new System.Drawing.Size(160, 26);
-            this.utbCNIC.TabIndex = 4;
+            this.utbCNIC.TabIndex = 5;
             // 
             // ucbTape
             // 
@@ -749,7 +749,7 @@
             this.ucbTape.Location = new System.Drawing.Point(393, 133);
             this.ucbTape.Name = "ucbTape";
             this.ucbTape.Size = new System.Drawing.Size(160, 26);
-            this.ucbTape.TabIndex = 8;
+            this.ucbTape.TabIndex = 9;
             // 
             // labelX33
             // 
@@ -763,7 +763,7 @@
             this.labelX33.Location = new System.Drawing.Point(565, 100);
             this.labelX33.Name = "labelX33";
             this.labelX33.Size = new System.Drawing.Size(104, 23);
-            this.labelX33.TabIndex = 17;
+            this.labelX33.TabIndex = 25;
             this.labelX33.Text = "Blood Group:";
             // 
             // labelX34
@@ -778,7 +778,7 @@
             this.labelX34.Location = new System.Drawing.Point(48, 135);
             this.labelX34.Name = "labelX34";
             this.labelX34.Size = new System.Drawing.Size(66, 23);
-            this.labelX34.TabIndex = 21;
+            this.labelX34.TabIndex = 31;
             this.labelX34.Text = "Course:";
             // 
             // labelX35
@@ -793,7 +793,7 @@
             this.labelX35.Location = new System.Drawing.Point(320, 67);
             this.labelX35.Name = "labelX35";
             this.labelX35.Size = new System.Drawing.Size(81, 23);
-            this.labelX35.TabIndex = 19;
+            this.labelX35.TabIndex = 29;
             this.labelX35.Text = "Mobile #:";
             // 
             // ucbCourse
@@ -804,7 +804,7 @@
             this.ucbCourse.Location = new System.Drawing.Point(152, 133);
             this.ucbCourse.Name = "ucbCourse";
             this.ucbCourse.Size = new System.Drawing.Size(158, 26);
-            this.ucbCourse.TabIndex = 9;
+            this.ucbCourse.TabIndex = 8;
             // 
             // utbFatherName
             // 
@@ -834,7 +834,7 @@
             this.labelX36.Location = new System.Drawing.Point(320, 36);
             this.labelX36.Name = "labelX36";
             this.labelX36.Size = new System.Drawing.Size(67, 23);
-            this.labelX36.TabIndex = 13;
+            this.labelX36.TabIndex = 30;
             this.labelX36.Text = "F. Name:";
             // 
             // labelX37
@@ -849,7 +849,7 @@
             this.labelX37.Location = new System.Drawing.Point(566, 67);
             this.labelX37.Name = "labelX37";
             this.labelX37.Size = new System.Drawing.Size(61, 23);
-            this.labelX37.TabIndex = 16;
+            this.labelX37.TabIndex = 26;
             this.labelX37.Text = "CNIC:";
             // 
             // utbPAK
@@ -880,7 +880,7 @@
             this.labelX38.Location = new System.Drawing.Point(45, 100);
             this.labelX38.Name = "labelX38";
             this.labelX38.Size = new System.Drawing.Size(96, 23);
-            this.labelX38.TabIndex = 15;
+            this.labelX38.TabIndex = 32;
             this.labelX38.Text = "Address:";
             // 
             // labelX39
@@ -895,7 +895,7 @@
             this.labelX39.Location = new System.Drawing.Point(566, 36);
             this.labelX39.Name = "labelX39";
             this.labelX39.Size = new System.Drawing.Size(61, 23);
-            this.labelX39.TabIndex = 14;
+            this.labelX39.TabIndex = 27;
             this.labelX39.Text = "PAK #:";
             // 
             // utbAddress
@@ -912,7 +912,7 @@
             this.utbAddress.Name = "utbAddress";
             this.utbAddress.PreventEnterBeep = true;
             this.utbAddress.Size = new System.Drawing.Size(401, 26);
-            this.utbAddress.TabIndex = 3;
+            this.utbAddress.TabIndex = 6;
             // 
             // groupPanel5
             // 
@@ -956,7 +956,7 @@
             // 
             // 
             this.groupPanel5.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square;
-            this.groupPanel5.TabIndex = 91;
+            this.groupPanel5.TabIndex = 0;
             // 
             // btnSearchRFID
             // 
@@ -967,7 +967,7 @@
             this.btnSearchRFID.Name = "btnSearchRFID";
             this.btnSearchRFID.Size = new System.Drawing.Size(138, 29);
             this.btnSearchRFID.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.btnSearchRFID.TabIndex = 4;
+            this.btnSearchRFID.TabIndex = 2;
             this.btnSearchRFID.Text = "Search";
             this.btnSearchRFID.Click += new System.EventHandler(this.btnSearchRFID_Click);
             // 
@@ -986,7 +986,7 @@
             this.tbSearchRFIDCard.Name = "tbSearchRFIDCard";
             this.tbSearchRFIDCard.PreventEnterBeep = true;
             this.tbSearchRFIDCard.Size = new System.Drawing.Size(268, 26);
-            this.tbSearchRFIDCard.TabIndex = 3;
+            this.tbSearchRFIDCard.TabIndex = 1;
             // 
             // labelX27
             // 
@@ -1001,7 +1001,7 @@
             this.labelX27.Location = new System.Drawing.Point(158, 8);
             this.labelX27.Name = "labelX27";
             this.labelX27.Size = new System.Drawing.Size(88, 23);
-            this.labelX27.TabIndex = 2;
+            this.labelX27.TabIndex = 3;
             this.labelX27.Text = "RFID Card:";
             // 
             // tabItemUpdate
@@ -2390,7 +2390,7 @@
             this.buttonSelectPicture.Name = "buttonSelectPicture";
             this.buttonSelectPicture.Size = new System.Drawing.Size(115, 23);
             this.buttonSelectPicture.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonSelectPicture.TabIndex = 18;
+            this.buttonSelectPicture.TabIndex = 11;
             this.buttonSelectPicture.Text = "Select From File";
             this.buttonSelectPicture.Click += new System.EventHandler(this.buttonSelectPicture_Click);
             // 
@@ -2404,7 +2404,7 @@
             this.buttonUpdateTebClear.Name = "buttonUpdateTebClear";
             this.buttonUpdateTebClear.Size = new System.Drawing.Size(143, 55);
             this.buttonUpdateTebClear.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled;
-            this.buttonUpdateTebClear.TabIndex = 10;
+            this.buttonUpdateTebClear.TabIndex = 18;
             this.buttonUpdateTebClear.Text = "Clear";
             this.buttonUpdateTebClear.Click += new System.EventHandler(this.buttonUpdateTebClear_Click);
             // 
@@ -2416,7 +2416,7 @@
             this.cbWithThumb.Location = new System.Drawing.Point(14, 13);
             this.cbWithThumb.Name = "cbWithThumb";
             this.cbWithThumb.Size = new System.Drawing.Size(69, 20);
-            this.cbWithThumb.TabIndex = 23;
+            this.cbWithThumb.TabIndex = 0;
             this.cbWithThumb.Text = "Thumb";
             this.cbWithThumb.UseVisualStyleBackColor = false;
             // 
