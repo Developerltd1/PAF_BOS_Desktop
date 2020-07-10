@@ -1053,5 +1053,25 @@ namespace PAF_BOS
         {
             UpdateTabClearFormFields();
         }
+
+        private void ULeftThumbClear_Click(object sender, EventArgs e)
+        {
+            uThumbLeft.Image = null;
+            LeftFinalFMD = null;
+            LeftFMD1 = null;
+            LeftFMD2 = null;
+            LeftFMD3 = null;
+            LeftFMD4 = null;
+        }
+
+        private void URightThumbClear_Click(object sender, EventArgs e)
+        {
+            uThumbRight.Image = null;
+            RightFinalFMD = null;
+            RightFMD1 = null;
+            RightFMD2 = null;
+            RightFMD3 = null;
+            RightFMD4 = null;
+        }
     }
 }
